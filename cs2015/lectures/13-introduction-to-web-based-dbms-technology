@@ -1,0 +1,10 @@
+
+
+Architecture refers to how the db is setup. eg the tiers the web app uses. 
+
+3 Tier architecture:
+    Client layer
+    Server layer/server
+    Database layer/server
+
+
