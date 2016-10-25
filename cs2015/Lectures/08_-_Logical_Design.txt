@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-07T15:11:59+01:00
+
+====== 08 - Logical Design ======
+Created Friday 07 October 2016
+

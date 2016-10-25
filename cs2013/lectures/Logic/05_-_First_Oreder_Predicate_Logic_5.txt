@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-24T12:03:22+01:00
+
+====== 05 - First Oreder Predicate Logic 5 ======
+Created Monday 24 October 2016
+
+===== Satisfiabiity: =====
+	A formula p is satisfiable iff it has a model
+	A set S of formulas is satisfiable iff there is a model M such that for all p in S, M is a model of p
+
+
+===== Compactness Theorem: =====
+	If all finite subsets of a set S of FOPL formulas are satisfiable then S itself is satisfiable.
+
+#Try to do "the number of elements is even"

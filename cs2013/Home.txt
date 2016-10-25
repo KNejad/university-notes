@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-13T08:38:20+01:00
+
+====== Home ======
+Created Tuesday 13 September 2016
+
+
+Title: Mathematics For Computing Science
+
+===== Lecturer: =====
+	Kees van Deemter
+	k.vdeemter@abdn.ac.uk
+
+http://homepages.abdn.ac.uk/k.vdeemter/pages/teaching/CS2013/

@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-25T16:50:30+01:00
+
+====== Symbols and Abbreviations ======
+Created Sunday 25 September 2016
+
+
+// List of mathematical symbols: //https://en.wikipedia.org/wiki/List_of_mathematical_symbols
+
+⊆ : Subset
+⊇ : Superset
+λ : Empty String
+T* : The set of all strings over T
+T + : T* without λ
+∀ : For all
+∈ : An element of
+∋ : Such that (S.T)
+∪ : Union
+∩ : intersect
+∫ : With Respect To (W.R.T)
+u.d: Universe of Discourse 
+iff: If and only if
+^: and
+∨: or
+→: If Then
+⊕ : Exclusive or
+
+
+===== FSA: =====
+	A: Usually stands for the [[Lectures:Formal Language:02 - FSA|FSA]]
+	Q = states = a finite set;
+	I = initial states = a nonempty subset of Q;
+	F = final states = a subset of Q;
+	T = an alphabet;
+	E = edges = a subset of Q × (T + λ) × Q.
+	

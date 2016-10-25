@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-06T09:15:08+01:00
+
+====== Practicals ======
+Created Thursday 06 October 2016
+
+Database Name: (e.g. 'u01kpn15_cs2015') 
+Database UID: (same as Database Name above) 
+Database password: eW8iwvKZ6wrVS9O98r2R 
+Database host: mysql.abdn.ac.uk
+
+
+Data Types: http://www.w3schools.com/sql/sql_datatypes_general.asp

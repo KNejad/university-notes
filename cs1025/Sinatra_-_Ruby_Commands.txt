@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-16T14:29:49+01:00
+
+====== Sinatra - Ruby Commands ======
+Created Friday 16 September 2016
+
+Output a string: puts StringName
+Convert to string: VariableName.to_s
+Print Format: "hello: #[VariableName]"
+Keyboard Input: gets
+Get variables from Post request: Params(:VariableName) 
+Load view (view has to be in views directory): erb :my_view 
+Load HAML View: haml :haml_view
+Add layout to view: create a file in the views dir called layout.erb with <%= yield %> at the end. This will be added as the view for your erb files.
+
+===== Variable Format: =====
+	Local:   My_var = "dave"
+	Object: @My_var = "dave"
+	Class: @@My_var = "dave"
+	Global: $My_var = "dave"
+
+
+===== Basic Code Structure: =====
+	get '/directory' do
+		"Code Here"
+	end
+
+	Replace get with post for a post request
+	
+	
+

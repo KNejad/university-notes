@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-13T11:02:49+01:00
+
+====== 02 - FSA ======
+Created Tuesday 13 September 2016
+
+===== Example of a Finite State Machine: =====
+	{{./pasted_image.png}}
+	The arrow points to the initial state 
+	The double circle is the final state
+
+
+===== Formal Definitions: =====
+	A Finite State Automaton (FSA) is a 5-tuple (Q, I, F, T, E) where:
+	Q = states = a finite set;
+	I = initial states = a nonempty subset of Q;
+	F = final states = a subset of Q;
+	T = an alphabet;
+	E = edges = a subset of Q × (T + λ) × Q.
+
+
+The above definition of an FSA allows nondeterminism
+
+===== Non-Determinism: =====
+	1. From one state there could be a number of edges with the same label. Have to remember possible branching points as we trace out a path, and investigate all branches.
+	2. Some of the edges could be labelled with λ, the empty string. How does this affect our algorithm?
+	3. May be more than one initial state. Where do we start?
+
+===== Deterministic: =====
+	1. there are no λ-labelled edges;
+	2. for any pair of state and symbol (q,t), there is at most one edge (q,t, p)
+	3. there is only one initial state.
+
+===== Minimum Size of FSA's: =====
+	Let A = (Q,I,F,T,E). Definition: For any two strings, x, y in T*, x and y are distinguishable w.r.t. A if there is a string z ∈ T* s.t. exactly one of xz and yz are in L(A). z distinguishes x and y w.r.t. A.
+	This means that with x and y as input, A must end in different states - A has to distinguish x and y in order to give the right results for xz and yz. This is used to prove the next result:
+	
+==== Theorem: (proof omitted): ====
+Let L ⊆ T*. 
+If there is a set of n elements of T* s.t. any two of its elements are distinguishable w.r.t. A, then any FSA that recognizes L must have at least n states.
+
+
+
