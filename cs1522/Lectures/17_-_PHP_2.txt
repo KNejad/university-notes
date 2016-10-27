@@ -1,0 +1,62 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-15T15:05:06+00:00
+
+====== 17 - PHP 2 ======
+Created Tuesday 15 March 2016
+
+
+===== Common PHP Tasks: =====
+	Handling dates and times
+	Service side includes
+	PHP sessions
+	Email
+	Form validation
+
+
+===== PHP has a LARGE set of functions: =====
+	File system
+	Mail
+	Audio, video and image manipulation
+	Date and Time
+	Compression
+	Credit card processing
+	Cryptography
+	Database
+
+
+==== Date And Time: ====
+	<?php echo date("Y/m/d") ?>
+	mktime(hour, minute, second, month, day, year, is_dst)
+	
+
+
+===== You can insert the content of one PHP file into another: =====
+	PHP file before the server executes it, with the
+	include("file,php") or require("file.php") function (include will continue if file is not found but require will not work)
+
+
+===== PHP Session: =====
+	A PHP session allows to store persistent data between different requests.
+	Sessions work by creating a unique ID (UID) for each visitor and store variables based on this UID.
+	Before you can store user information in your PHP session, you must first start up the session.
+	The session_start() function must appear BEFORE the <html> tag
+	
+
+==== User Variables: ====
+	 <?php
+		session_start();
+		$_SESSION['name']=$_GET["name"];
+	?>
+	<?php
+		unset($_SESSION['name']);
+	?>
+
+
+==== Send An Email: ====
+	mail(to, subject, message, headers, parameters)
+	to (Required) specifies the receiver.
+	subject (Required) specifies the subject of the email.
+	message (Required) defines the message to be sent.
+	headers (Optional) specifies additional headers, like from, Cc, and Bcc.
+	parameters (Optional) Specifies an additional parameters.
