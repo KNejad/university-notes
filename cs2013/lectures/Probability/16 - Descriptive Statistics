@@ -1,0 +1,3 @@
+P(B|R) = the probability of B given R (ie the probability of picking B after R is picked)
+
+Bins: Ranges in a field (ie probability of being between 1.6m and 1.8m)
