@@ -1,0 +1,8 @@
+Gaussian Curve{
+	A Gaussian curve is like a bell curve but without the 2 small peaks;
+	img(gaussian-curve.png);
+}
+
+Conditional Independence{
+	Two events A and B are independant if P(A,B) = P(A)P(B);
+}
