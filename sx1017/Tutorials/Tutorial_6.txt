@@ -1,0 +1,13 @@
+Poster Project{
+	Needs footnotes;
+	Idea{
+		Halal Meat{
+			Graph;
+			Story about halal meet;
+		}
+		Conclusion;
+	}
+	Title should be the topic title;
+	My project is due on the 16th of November;
+	I am the last to present;
+}

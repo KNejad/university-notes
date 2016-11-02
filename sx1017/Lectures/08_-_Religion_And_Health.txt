@@ -1,0 +1,10 @@
+Secular= "of this world" in latin;
+
+Sigmund Freud{Religion is a mental disorder;}
+
+Spirituality questions{
+	Who am I?;
+	Where did I come from?;
+	Where am I goind?;
+	Why?;
+}
