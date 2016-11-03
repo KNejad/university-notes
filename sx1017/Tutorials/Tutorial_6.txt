@@ -1,13 +1,20 @@
-Poster Project{
-	Needs footnotes;
-	Idea{
-		Halal Meat{
-			Graph;
-			Story about halal meet;
-		}
-		Conclusion;
-	}
-	Title should be the topic title;
-	My project is due on the 16th of November;
-	I am the last to present;
-}
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Tutorial 6 ======
+Created Wednesday 2 November 2016
+
+===== Poster Project: =====
+	Needs footnotes
+	
+==== Idea: ====
+
+=== Halal Meat: ===
+	Graph;
+	Story about halal meet;
+
+Conclusion
+Title should be the topic title
+My project is due on the 16th of November
+I am the last to present
+

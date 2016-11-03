@@ -1,16 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Tutorial 5 ======
+Created Wednesday 26 October 2016
+
 Can a scientist be religious?
 
-about article{
+===== About Article: =====
+'''
+Title:leading scientists still reject god
+Author: Edward J. Larson & Larry Witham
+'''
 
-	title(leading scientists still reject god);
-	author(Edward J. Larson & Larry Witham);
-
-}
 
 
-quote{
+===== Quote: =====
 	Research on this topic began with the eminent US psychologist James H. Leuba and his landmark survey of 1914. He found that 58% of 1,000 randomly selected US scientists expressed disbelief or doubt in the existence of God, and that this figure rose to near 70% among the 400 "greater" scientists within his sample. Leuba repeated his survey in somewhat different form 20 years later, and found that these percentages had increased to 67 and 85, respectively
-}
 
 In 1996 belief amongs greater scientist was only 7%
 

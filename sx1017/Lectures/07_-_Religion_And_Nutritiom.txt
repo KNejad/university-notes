@@ -1,3 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== 08 - Religion And Nutrition ======
+Created Wednesday 26 October 2016
+
 Lecturer is rambling about nutrition and controlling your intake. 
 
 Talks about how science is failing because scientists always change their minds. 
