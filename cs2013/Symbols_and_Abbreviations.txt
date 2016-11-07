@@ -25,6 +25,7 @@ iff: If and only if
 ∨: or
 →: If Then
 ⊕ : Exclusive or
+P(A|B): the probability of A given B
 
 
 ===== FSA: =====
