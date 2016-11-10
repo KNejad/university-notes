@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-08T15:28:42+00:00
+
+====== 17 - Query Processing ======
+Created Tuesday November 8 2016
+
+===== Relational Algebra: =====
+	A symbolic formal way of describing relational operations
+	Says how, as well as what (order is important)
+	Can use re-write rules to simplify and optimise complex queries
+
+
+==== Basic Operators: ====
+	Selection: σ
+	Projection: π
+	Rename: ρ
+
+
