@@ -5,4 +5,19 @@ Creation-Date: 2016-10-04T11:08:07+01:00
 ====== 06 - Grammar ======
 Created Tuesday 04 October 2016
 
-//Check Slides
+A language is a set of strings over an alphabet.
+
+===== Languages serve two purposes in computing: =====
+	Communicating instructions or information
+	Defining valid communications
+	
+===== Production Rules: =====
+		X -> aX: This means that X can be substituted by aX in our language
+
+
+===== Context-free Grammar (CFG): =====
+	A set of production rules that describe all possible strings in a given formal language. 
+
+
+===== Context-free Language (CFL): =====
+	A language which can be defined by a context-free grammar.

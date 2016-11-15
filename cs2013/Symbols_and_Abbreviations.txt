@@ -29,7 +29,7 @@ P(A|B): the probability of A given B
 
 
 ===== FSA: =====
-	A: Usually stands for the [[Lectures:Formal Language:02 - FSA|FSA]]
+	A: Usually stands for the FSA
 	Q = states = a finite set;
 	I = initial states = a nonempty subset of Q;
 	F = final states = a subset of Q;

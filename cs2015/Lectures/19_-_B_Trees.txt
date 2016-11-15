@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-15T15:18:38+00:00
+
+====== 19 - B Trees ======
+Created Tuesday 15 November 2016
+
+Balanced Tree
+
+Organises index in organised way.
+Balanced: Any piece of information would take the same amount of jumps to access
+
+===== Multi-level Index: =====
+	The key idea used to improve search efficiency is to add another level of index to the initial level of index
+	This idea can be repeated several times to define several levels of index
+
+
+===== Leaf Node: =====
+	Any node that does not have child nodes. 
+
+
+===== B+ Trees: =====
+	B-Tree stores data pointers in non-leaf nodes and also leaf nodes (refer to the figure on Slide 5)
+	B+-Tree stores data pointers in leaf nodes only
+
+
+===== Trees: =====
+	Trees are aranged such that you can follow the nodes by viewing the left leaf for smaller values than the node value and the right leaf for larger values than the node. 
+	Nodes can also have ranges (ie 3 8) then anything between 3 and 8 (including 3, excluding 8) will be in the central node
+	
+
