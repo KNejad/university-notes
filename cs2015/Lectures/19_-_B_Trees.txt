@@ -8,8 +8,12 @@ Created Tuesday 15 November 2016
 Balanced Tree
 
 Organises index in organised way.
-Balanced: Any piece of information would take the same amount of jumps to access
+Balance2d: Any piece of information would take the same amount of jumps to access
 
+===== ACID: =====
+	A transaction in a database system must maintain ACID properties
+	ACID stands for: Atomicity, Consistency, Isolation, and Durability
+	
 ===== Multi-level Index: =====
 	The key idea used to improve search efficiency is to add another level of index to the initial level of index
 	This idea can be repeated several times to define several levels of index

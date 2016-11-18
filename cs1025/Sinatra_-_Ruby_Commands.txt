@@ -23,10 +23,32 @@ Add layout to view: create a file in the views dir called layout.erb with <%= yi
 
 ===== Basic Code Structure: =====
 	get '/directory' do
-		"Code Here"
+		#Code Here
 	end
 
 	Replace get with post for a post request
 	
 	
+
+===== Object Oriented Programming: =====
+	Ruby natively supports OOP;
+	
+	class classname
+		#code
+		
+		def initialize(param1, param2)
+			@info = param1
+		end
+	end
+
+
+==== Inheritance: ====
+	Classes can inherite other classes with the < sign
+	
+	class classname < inheritedclass
+			def initialize(param1, param2, param3)
+			super(param1,  param2) #calls the parent class
+				@extra_info = param3
+			end
+	end
 
