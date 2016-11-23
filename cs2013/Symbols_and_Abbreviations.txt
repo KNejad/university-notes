@@ -26,6 +26,7 @@ iff: If and only if
 →: If Then
 ⊕ : Exclusive or
 P(A|B): the probability of A given B
+Π : https://en.wiktionary.org/wiki/%CE%A0 
 
 
 ===== FSA: =====
