@@ -8,6 +8,7 @@ Created Tuesday 04 October 2016
 ===== Structural constraints: =====
 	Apply on the entity types that participate in a relationship
 	
+
 ==== Three types of binary relations: ====
 	one-to-one – 1:1
 	one-to-many – 1:*
@@ -25,6 +26,7 @@ Created Tuesday 04 October 2016
 ==== Aggregation: ====
 	{{./pasted_image.png}}
 	
+
 ==== Composition Indicator: ====
 	{{./pasted_image001.png}}
 	
@@ -41,4 +43,3 @@ Created Tuesday 04 October 2016
 
 ==== Multi Valued Entity: ====
 	An entity that can be stored in different formats. eg phone number can be +44 07393993 or just 07393993
-,

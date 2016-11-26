@@ -19,7 +19,7 @@ Created Tuesday 13 September 2016
 	HireDate DATE, Sex SexType);
 
 
-==== Maximum number of connect55ions: ====
+==== Maximum number of connections: ====
 	CREATE ASSERTION StaffNotOverLoaded
 	CHECK (NOT EXISTS
 	(SELECT StaffNo FROM PropertyForRent

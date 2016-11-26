@@ -39,12 +39,13 @@ Created Tuesday 27 September 2016
 	WHERE L.LeftCol Θ R.Rightcol;
 	Θ is one of:  =  ! = <> < > <= >= 
 	
+
 ==== Outer Joins: ====
 	A join that may include unmatched rows
 	
 
 
-==== Equi Join: ====
+==== Equai Join: ====
 	A special case of theta join (= predicate)
 
 

@@ -10,5 +10,7 @@ Conceptual design: Modelling data in the domain
 Logical Design: Given the conceptual design, logical design involves
 
 
-//Find out what UML notation is
+===== UML Notation: =====
+	UML notation is a way of modeling and visualising a database.
+	
 

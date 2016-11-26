@@ -27,8 +27,8 @@ Aggregate functions compute summarization (or aggregation) of data
 
 
 ===== Having: =====
-	Like where
-	where clause introduces a condition on individual rows; having clause introduces a condition on aggregations
+	Like "where" clause
+	"where" clause introduces a condition on individual rows; having clause introduces a condition on aggregations
 
 
 ===== Combining Results: =====
