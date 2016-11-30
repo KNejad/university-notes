@@ -1,0 +1,100 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T18:22:02+00:00
+
+====== 2015 ======
+Created Wed Nov 30 2016
+
+
+Note: There are tables in the exam file. 
+
+1) Answer all the items within this question.
+
+(a) In the context of relational databases,
+
+i) ‘A database can be defined as a shared collection of logically related data and its metadata’. Explain what is meant by metadata in this definition. (2)
+	Metadata is the datatypes types of the fields for example timestamp for dob field. Also indexes are metadata
+
+ii) Explain why you think the ‘Employee’ table does or does not exhibit referential integrity. (2)
+	It does not exhibit referential integrity because (theoretically) somebodies national insurance number could change and then the records would not correctly referenced.
+	
+iii) What is the result of executing the following statement?
+
+INSERT INTO Employee VALUES(JF22222, Joanne, Flecher,12 James Road Inverness, F); (2)
+
+Inserts  a new record into the Employee table with these values: JF22222, Joanne, Flecher,12 James Road Inverness, F
+
+(b) 
+
+i) Define what third normal form (3NF) is. (1)
+	A relation that is in 1NF and 2NF and in which no non-primary-key attribute is transitively dependent on the primary key.
+	
+ii) Explain why the ‘Dependent’ table is in third normal form. (Assume that Dependent table has NIno, Dependent_Fname and RelationShip as primary keys) (2)
+	For it to be in 3NF it needs to be in both 1NF and 2NF 
+	it is in 1NF because everything is atomic
+	it is in 2NF because every non-primary key value is related to the primary key
+	And finally no non-primary-key attribute is transitively dependent on the primary key.
+
+iii) A friend of yours after critically examining the above database makes the comment: “The Plocation attribute in Project table should be removed because the Plocation information can be determined by the Dno foreign key.” Write your response to this comment. (2)
+	He is correct because the way the DB is now creates redundant data. So by removing the Plocation there would be no redundent data.
+	
+(c) At the logical (relational) level, the relational database for a company with several departments located in different cities shown above is composed of six tables: department, dept_location, project, employee, dependent and works_on (each with some associated records). Using UML notation, draw an enhanced entity-relationship diagram (EER) that represents the same database structure at the conceptual level. For each entity, show its minimum and maximum participatory constraints in the relationship and explain your choice of values. (6)
+	{{~/Diagram1.png}}
+	
+	One department can have many employees.... (fill in the rest)
+	
+	
+(d) It has been decided to extend the relational database for the company shown above to store information about the different projects that employees have worked on in the past and monthly salary payments paid to employees. A past project has a Project Number, Name, Location, Project Completed, Date Completed and a link to employees who worked on the project. The monthly salary payment information for each employee is to be extended to include a NIno, Monthly Salary and Date paid. Assume the above description is the only information available to you about past projects of the company. Also assume that you have access to the details (EER design and data dictionary) of the existing database which is shown above. You are allowed to use any entities/tables from the existing database for helping with the extension/integration. 
+
+i) Create a conceptual model for the above requirements and show your model as an EER diagram using the UML notation. (4)
+	Skiping because XBOX time!
+
+ii) Transform the conceptual EER model from above into a set of relations, explaining in detail the steps you have followed. (4)
+	Same as question 2 of the second assignment
+
+
+2. Please answer all the items in this section.
+
+(a) In relation to database systems:
+i. Explain the main steps involved in connecting to and querying a database from an application developed in PHP. (3)
+	Conect to database using server address username password and port
+	Select database
+	Query database
+	Assing result to a variable
+	Output results 
+
+ii. In the context of transaction management, explain what is meant by the term ‘two-phase locking’. (4)
+	The transaction locks data that it is using and then releases the data when it is done with it.
+	
+iii. Explain how views and privileges help you to achieve fine grain access control over data in database tables. (4)
+	By creating views it makes it much for users to access data without having to recreate queries every time 
+	with privileges you can access a database but not edit it. This way you can be sure that a user does not alter data which they should not.
+	
+(b) In SQL, give one example of a Data Control Language (DCL) statement (use the Employee table if you need to refer to a table in your answer). (1)
+	Grant all in database.Employee to "user"@"domain" 
+	
+(c) Write an SQL statement to update the salary of employees working in the production department by £1500. (2)
+	update Employee set salary = salary + 1500 
+	where department = production
+	
+	
+(d) Write an SQL statement to change the Employee table by adding a new column representing date of birth of employees. You can set the column (field) data type to be CHAR type. (2)
+	alter table Employee add DOB CHAR
+
+(e) Write an SQL query to show the first and last names of those employees who have dependents and also show the number of dependents for each of these employees. Sort the list in the alphabetical order of employee first name and last name. (5)
+
+	//not my code
+	select fname,lname, count(dependants) as dcount
+	from employees, dependants
+	where employee.nino = dependant.nino
+	group by dependants 
+	sort by fname,lname DESC
+	
+(f) Write an SQL query to show the names of employees and the names of the projects each of them works on and the total number of hours each of them spends on each of the projects. (4)
+	select fname, lname, hours, pname
+	from employee, works_on, project
+	where works_on.nino = employee.nino
+	AND works_on.pno = project.pno
+	
+	
+
