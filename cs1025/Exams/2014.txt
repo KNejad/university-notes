@@ -1,0 +1,273 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T18:07:52+00:00
+
+====== 2014 ======
+Created Tue Nov 29 2016
+
+This exam paper is from 16 December 2014
+Rubric (e.g. Answer any TWO questions. Each question is worth 25 marks; the marks for each part of a question are shown in brackets.)
+
+
+===== 1. =====
+
+==== a) Define what the Ruby Object Model is and explain how the model works when calling a user-defined method such as myRoutine() within your code. You may illustrate the model in the form of a diagram. [9] ====
+	The ruby object model is the way ruby finds objects when called. 
+	
+	When the method myRoutine() is called
+	Ruby looks for myRoutine() through the receiving object’s instance methods. If found execute myRoutine()
+	if not found check objects class. If found execute myRoutine()
+	if not found check objects parent class. If found execute myRoutine()
+	If not found: Go back to the object and call method ‘method_missing’ if exist
+	If not exist: Go to object’s class, and parent’s classes
+	If method_missing not found:  raise a NoMethodError 
+
+
+==== b) In terms of developing Web applications using the Ruby gem Sinatra, define what type of language Sinatra is and discuss the advantages and disadvantages of using Sinatra to implement a Web application. [4] ====
+	Sinatra is an interpreted language. This means that the code is not compiled but an interprator "reads" the code to execute commands.
+	Sinatra allows quick and easy web development, however, for large projects sinatra may prove to be difficult since it is ment for small web projects and proof of concept projects.
+	Ruby on rails is better suited for larger projects however it has a steeper learning curve and longer setup time. This means Ruby is not well suited for small projects.
+
+
+==== c) Given the following Sinatra Web application, explain what the main aspects of the code do, and what changes you would make to the code so that the output is displayed using a view in a browser. [7] ====
+
+require 'sinatra'
+set(:probability) { |value| condition { rand <= value } }
+get '/' do
+'Welcome! Press <a href=”/win_or_lose”>START</a> to see result.'
+end
+get '/win_or_lose', :probability < 0.5 do
+"You won!"
+end
+get '/win_or_lose' do
+"Sorry, you lost."
+end
+
+Note this code does not actually work!
+
+The code shows a welcome message with a link. If you click on the link there is a 50% chance of "You won!" appearing and a 50% chance of "Sorry, you lost." appearing on the screen.
+
+Improved code:
+
+require 'sinatra'
+set(:probability) { |value| condition { rand <= value } }
+get '/' do
+ erb :welcome 
+end
+get '/win_or_lose', :probability < 0.5 do
+	erb :win 
+end
+get '/win_or_lose' do
+	erb :lose 
+end
+
+views/welcome.erb:
+	Welcome! Press <a href=”/win_or_lose”>START</a> to see result.
+
+views/lose.erb:
+	Sorry, you lost.
+views/win.erb:
+	You won!
+	
+
+==== d) Given the following Ruby code, explain what the main aspects of the code do, and any changes that you would make to improve the code. [5] ====
+# PROGRAM
+def adjustcount(x)
+	return if x.zero?
+	puts x
+	adjustcount(x-1)
+end
+# END PROGRAM
+
+The code is a recursive function which prints out all numbers from x down to 1 
+
+Improved code:
+def adjustcount(input)
+	for x in input.downto(1) do 
+		print x
+	end
+end
+
+===== 2. =====
+
+==== a) Consider the following Ruby class: ====
+class VarTest
+$foo2
+@@foo1=1
+VAR=100
+def set_foo(n)
+@foo = n
+end
+end
+
+=== i) What kind of variable is @foo? [1] ===
+	@foo is an object variable 
+
+
+=== ii) What is the scope of @foo? [1] ===
+	it is accesable from within its own class
+
+
+=== iii) Can @foo be altered or observed from outside the object? [1] ===
+	No
+
+
+=== iv) What is the value of @foo before it is initialised? [1] ===
+	nil
+
+
+=== v) What kind of variable is @@foo1? [1] ===
+	@@foo1 is a class variable
+
+
+=== vi) What kind of variable is $foo2, and what is its scope? [1] ===
+	$foo2 is a global variable and is accesible from anywhere
+
+
+=== vii) What kind of variable is VAR? [1] ===
+	VAR is a local variable
+	
+
+==== b) Explain the difference between an array and a hash in Ruby, and describe an example where you would use each in a programme.[1] ====
+	An array stores a list of values which are accesable by refrences their index. Hashes are key value pairs. To access a hash you can either use its index or the key.
+	A hash would be used if we are trying to link user id with username.
+	An array would be used if we just want a list of usernames but the names do not need to be linked to an id 
+
+
+==== c) Show the result of executing the following Ruby program. [5] ====
+#program for question c
+puts 'A: Welcome'
+s = 'Novel'
+puts 'B: '+' Media = ' + s
+novel = [ 'Fantasy', 'Westerns', 'Mysteries' ]
+puts 'C:'
+puts novel
+puts 'D:'
+puts novel.sort
+puts "E: #{novel[2]} + #{novel.length}"
+
+A: Welcome
+B: Media = Novel
+C:
+Fantasy
+Westerns
+Mysteries
+D: 
+Fantasy
+Mysteries
+Westerns
+E:  Westerns + 3
+
+==== d) Consider the following HTML code: ====
+<HTML>
+<BODY>
+<CENTER>Below is a table</CENTER><br>
+<TABLE BORDER='1' ALIGN='center'>
+<TR> <TD>1</TD> <TD>2</TD> </TR>
+<TR><TD>3</TD><TD>4</TD> </TR>
+</BODY>
+</HTML>
+It will display the following table in the browser:
+
+This is a table
++----------+
+|  1  |  2    |
+|  3  |  4    |
++----------+
+
+What is the output of the following Ruby program? Explain the reason. [8]
+
+def printPage(row, column)
+	fileHtml = File.new("myPage.html", "w+")
+	fileHtml.puts "<HTML><BODY>"
+	fileHtml.puts "<CENTER>This is another Table</CENTER><br>"
+	fileHtml.puts "<TABLE BORDER='1' ALIGN='center'>"
+	i=0
+	row.times do
+		fileHtml.puts "<TR>"
+		column.times do
+			if (i%2==0)
+				i=i+1
+			else
+				i=i+3
+			end
+			fileHtml.puts "<TD>"+i.to_s+"</TD>"
+		end
+		fileHtml.puts "</TR>"
+	end
+	fileHtml.puts "</BODY></HTML>"
+	fileHtml.close()
+end
+printPage(4,4)
+
+the output is a file called myPage.html with the following content:
+<HTML><BODY>
+<CENTER>  This is another Table </CENTER><br>
+<TABLE BORDER='1' ALIGN='center'>
+<TR>
+<TD> 1</TD>
+<TD> 4</TD>
+<TD> 5</TD>
+<TD> 8</TD>
+</TR>
+<TR>
+<TD> 9</TD>
+<TD> 12</TD>
+<TD> 13</TD>
+<TD> 16</TD>
+</TR>
+<TR>
+<TD> 17</TD>
+<TD> 20</TD>
+<TD> 21</TD>
+<TD> 24</TD>
+</TR>
+<TR>
+<TD> 25</TD>
+<TD> 28</TD>
+<TD> 29</TD>
+<TD> 32</TD>
+</TR>
+</BODY></HTML>
+
+What the program does:
+
+The program outputs a number of columns equal to the input "columns"
+On each repeat it increment i by 1 if it is even and by 3 if it is not
+Then it appends <TD> i </TD> to the file.
+It repeats the above row times 
+
+===== 3. =====
+
+==== a) Testing should follow a test driven development approach. Explain how you would use a TDD approach to develop an app for keeping track of birthday present suggestions for people. Aunt Hazel gets scented candles (but not vanilla ones), while Uncle Mike gets books about the 1960s youth culture would be two examples. You DO NOT need to write code for this. You should explain the steps youd take to develop this app following a TDD approach, and maybe offer some pseudocode to illustrate your steps. (8) ====
+	To begin with I would create a test which creates a person named "john" then check to see if john exists (this way we know that creating a person works)
+	Then the test will fail since we have not implemented the feature yet.
+	Create code to pass the test. then run the test
+	If the test passes move on to the next step else return to above step
+	Create a test which creates a gift idea for "john" then check to see if that idea exists (this way we know that creating a gift idea works)
+	Then the test will fail since we have not implemented the feature yet.
+	Create code to pass the test. then run the test
+	If the test passes move on to the next step else return to above step
+	Create a test to delete "john" and pass test if "john" no longer exists
+	Then the test will fail since we have not implemented the feature yet.
+	Create code to pass the test. then run the test
+	If the test passes move on to the next step else return to above step
+	Completed all tests pass and code should now work.
+
+
+==== b) Version source control is an important part of software development. Explain what it is, and why it is important both for individual developers and also for team development of applications. (8) ====
+	VSC is used when developing so that we can undo changes and so that multiple developers can work on the same project at the same time. When using VSC (such as git) the code will be much easier to manage and when we make changes to the code we can merge our changes automatically with other peoples work without having to manually look at every line of code and decide what to keep. In addition all changes made can be viewed by all users by pulling the changes to the local repo. Finally if somebody accidentally makes a mistake which ruins some functionallity it would be much easier to role back the code to a previous verison which is working.
+	
+
+==== c) You are creating an app to weather readings for home gardens. It should keep track of daily temperatures, wind speed and precipitation taken from sensors every hour. For simplicity this is kept in a file entered line by line each hour. There should be methods for daily high and low temperatures plus precipitation and wind readings, as well as weekly and monthly averages. Explain how you and your team member would develop this app using Git for source control following a Test Driven Development approach. (9) ====
+	The project can be divided into these parts: keeping track of daily temperatures, create methods for daily high and low, outputing information to UI, reading info from file
+	To begin, we would all use a git repository and each member of the team can work on one part of the project on seperate branches.
+	Using TDD each member will create tests to pass their part of the project
+	After the tests fail the team members will create code to pass the test.
+	If the tests pass they will merge it into the master branch
+	Then run the tests again.
+	If all tests pass push the changes. If not rewrite code to pass tests
+	Once all tests are passed we move on to the next part of the project and follow the same steps as above.
+
+
+

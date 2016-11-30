@@ -18,9 +18,10 @@ Rubric (e.g. Answer TWO questions. Each question is worth 25 marks; the marks fo
 	Ruby looks for myRoutine() through the receiving object’s instance methods. If found execute myRoutine()
 	if not found check objects class. If found execute myRoutine()
 	if not found check objects parent class. If found execute myRoutine()
-If not found: Go back to the object and call method ‘method_missing’ if exist
-If not exist: Go to object’s class, and parent’s classes
-If method_missing not found:  raise a NoMethodError 
+	If not found: Go back to the object and call method ‘method_missing’ if exist
+	If not exist: Go to object’s class, and parent’s classes
+	If method_missing not found:  raise a NoMethodError 
+
 
 ==== b) In Sinatra, explain what Routes are and using an example explain how they are used. [4] ====
 	Sinatra routes are the way sinatra interprets routes used on the web to access files. For example if a user types the url domain.com/hello/world Then sinatra can load a relevent page for  /hello/world by using get '/hello/world' do
@@ -139,16 +140,16 @@ break
 	src.puts "<br>"
 	
 	def make_table (xsize,ysize) 
-		src =  "<table>"
+		output =  "<table>"
 		for x in 1..xsize do
-			src +=  "<tr>"
+			output +=  "<tr>"
 			for y in 1..ysize do
-				 src +=  "<td> #{x} #{y} </td>"
+				 output +=  "<td> #{x} #{y} </td>"
 			end
-			src +="</tr>"
+			output +="</tr>"
 		end
-		src +="</table>"
-		return src
+		output +="</table>"
+		return output
 	end
 	
 	result =  make_table(5,6)
