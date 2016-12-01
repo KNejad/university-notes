@@ -39,9 +39,7 @@ iii) A friend of yours after critically examining the above database makes the c
 	He is correct because the way the DB is now creates redundant data. So by removing the Plocation there would be no redundent data.
 	
 (c) At the logical (relational) level, the relational database for a company with several departments located in different cities shown above is composed of six tables: department, dept_location, project, employee, dependent and works_on (each with some associated records). Using UML notation, draw an enhanced entity-relationship diagram (EER) that represents the same database structure at the conceptual level. For each entity, show its minimum and maximum participatory constraints in the relationship and explain your choice of values. (6)
-	{{~/Diagram1.png}}
-	
-	One department can have many employees.... (fill in the rest)
+	This is just a diagram like part 1 of assignment 2.
 	
 	
 (d) It has been decided to extend the relational database for the company shown above to store information about the different projects that employees have worked on in the past and monthly salary payments paid to employees. A past project has a Project Number, Name, Location, Project Completed, Date Completed and a link to employees who worked on the project. The monthly salary payment information for each employee is to be extended to include a NIno, Monthly Salary and Date paid. Assume the above description is the only information available to you about past projects of the company. Also assume that you have access to the details (EER design and data dictionary) of the existing database which is shown above. You are allowed to use any entities/tables from the existing database for helping with the extension/integration. 
@@ -98,3 +96,34 @@ iii. Explain how views and privileges help you to achieve fine grain access cont
 	
 	
 
+3. Answer all items to the following question.
+
+(a) In relation to relational databases:
+
+i) Briefly explain the major steps involved in relational database query processing. (3)
+
+ii) Explain how relational algebra trees (RATs) are used in query optimisation. (2)
+
+(b) In relation to implementing secure database transactions over the internet, briefly explain the purpose of using (i) public key / private key encryption, (ii) digital signatures, and (iii) digital certificates. (3)
+
+(c) In relational databases:
+
+i) What is an index? (1)
+ii) Using the Department table as an example, show how indexing works. (2)
+
+(d) Consider the following SQL query which refers to the Department and Employee tables given for this exam paper:
+SELECT D.Dname
+FROM Employee E, Department D
+WHERE E.Dno = D.Dno
+AND E.Lname='Smith'
+AND E.Fname='John';
+
+Write down three different but logically equivalent ways of expressing the above query in relational algebra, using the relational algebra notation (∏ for projection, σ P for selection with predicate P, × for a Cartesian product, for a natural join, and for conjunction). In your answers, use the given table aliases for brevity, use brackets as necessary to avoid ambiguities, and label your answers A, B and C. (6)
+
+(e) In the SQL query given above, suppose the Department and Employees tables have many rows but no indexes. Arrange your solutions (A, B, C) from question 3. (d) in order of efficiency (where A is the most efficient and C is the least efficient) and justify your answer. (3)
+
+(f) Consider the following B+ tree
+{{./pasted_image.png}}
+
+Draw the tree after a new record, whose search key field value of 14, is inserted into
+the tree. (5)

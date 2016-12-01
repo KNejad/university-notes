@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T20:49:26+00:00
+
+====== 20 - MySQL ======
+Created Thu Dec 1 2016
+
+
+===== Query Engine Components: =====
+	Syntax parser
+	Query Optimiser: 
+	Execution component
+	
+===== Storage Engines: =====
+	MyISAM: Default for MySQL 
+InnoDB: Transactional
+Memory: All tables are stored in RAM
+
+A single MySQL database can have tables of different types
+
+
+===== Explain: =====
+	Users can add EXPLAIN before a command for MySQL to explain how the query was done

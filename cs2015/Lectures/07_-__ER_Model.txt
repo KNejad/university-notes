@@ -5,6 +5,8 @@ Creation-Date: 2016-10-04T15:06:42+01:00
 ====== 07 -  ER Model ======
 Created Tuesday 04 October 2016
 
+ER Model stands for: Entity Relationship Model
+
 ===== Structural constraints: =====
 	Apply on the entity types that participate in a relationship
 	
