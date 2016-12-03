@@ -11,10 +11,11 @@ Created Thu Dec 1 2016
 	Query Optimiser: 
 	Execution component
 	
+
 ===== Storage Engines: =====
 	MyISAM: Default for MySQL 
-InnoDB: Transactional
-Memory: All tables are stored in RAM
+	InnoDB: Transactional
+	Memory: All tables are stored in RAM
 
 A single MySQL database can have tables of different types
 

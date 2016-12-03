@@ -125,7 +125,7 @@ end
 
 
 === vii) What kind of variable is VAR? [1] ===
-	VAR is a local variable
+	VAR is a local constant
 	
 
 ==== b) Explain the difference between an array and a hash in Ruby, and describe an example where you would use each in a programme.[1] ====

@@ -24,6 +24,7 @@ Aggregate functions compute summarization (or aggregation) of data
 	Sometimes we want to group data before applying aggregate functions
 	This gives us ‘subtotals’ rather than ‘overall total’
 	GROUP BY is used to achieve that
+	GROUP BY column_name;
 
 
 ===== Having: =====

@@ -15,13 +15,16 @@ Created Friday 4 November 2016
 
 ===== The Lost Update Problem: =====
 	If 2 queries get run at the same time conflicts may arise.
-	
+
+
 ==== Serialising Transactios: ====
 	By serialising transactions then no conflicts can arise since no queries are running at the same time
 	
+
 ==== Locks: ====
 	Locks may be used to serialise only the required transactions that may cause conflicts
 	
+
 ==== Deadlocks: ====
 	If 2 queries are running concurrently and they both need item a and b. Q1 gets a Q2 gets b (they lock the files) then both are waiting for the other and you get a deadlock.
 	
