@@ -1,0 +1,178 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T16:19:33+00:00
+
+====== 2014 ======
+Created Sun Dec 4 2016
+
+Rubric (e.g. Answer TWO questions. Each question is worth 25 marks; the marks for each part of a question are shown in brackets.)
+
+Note: There are tables in the exam file. 
+
+===== 1. =====
+
+==== a) At the logical level (relational level), the relational database for the training company shown above is composed of seven tables: trainer, trainee, course, registration, assessments, batch and submissions (each with some associated records). Using UML notation, draw an enhanced entity-relationship (EER) diagram that represents the same database structure at the conceptual level. For each entity, show its minimum and maximum participatory constraints in the relationship and explain your choice of values. (6) ====
+	Same as assignment 2 question 1
+
+
+==== b) It has been decided to extend the relational database for the training company shown above to store information about the different programmes of study that trainees can pursue towards obtaining accreditation. A diploma is a one-year study programme while a higher diploma programme involves studying for four years. Each year of study is divided into two terms and each term involves trainees registering for a specific set of four courses (all recommended four courses are compulsory and there are no elective courses). Assume the above description as the only information available to you about programmes of study. Also assume that you have access to the details (EER design and data dictionary) of the existing database which is shown above. You are allowed to use any entities/tables from the existing database for helping with the extension/integration. ====
+
+=== i) Create a conceptual model for the above requirements and show your model as an Enhanced Entity Relationship (EER) diagram using the UML notation. (4) ===
+	Same as first question with some improvements
+
+
+=== ii) Transform the conceptual model from above into a connected set of tables in your design, explaining in detail the steps you have followed. (4) ===
+
+==== c) In the context of relational databases, ====
+
+=== i) Does the ‘Submissions’ table have referential integrity? Justify your answer (answers without justifications will be ignored). (2) ===
+	Yes it does because all (non null) foreign key fields in the table refrence an existing entry in the table it refers to
+	
+
+=== ii) What is the result of executing the following statement? (2) ===
+
+INSERT INTO Submissions
+VALUES(4723568,1,2074,12,25);
+
+A new entry is added into the Submissions table with 
+TraineeID : 4723568
+AssesmentID: 1
+CourseID: 2074
+SubmissionDate: the current date (assuming the database is setup to automatically fill in the date field
+BatchID: 12 
+Mark: 25
+
+=== iii) If the above database is implemented as a MYSQL server database, what table type you would choose for the Submissions table and why? (2) ===
+	I would pick InnoDB  since it supports referential integrity
+	
+	
+
+==== d) In terms of database design, ====
+
+=== i) What is meant by third normal form (3NF)? (1) ===
+	A database is in Bacus Third Normal Form if it is in First Normal Form, Second Normal Form, and no non-primary keys attributes are transitively dependant on the primary key
+
+
+=== ii) Is the ‘Submissions’ table in third normal form? Justify your answer (answers without justifications will be ignored). Assume that the Submissions table has TraineetId, AssessmentId and CourseId as primary key. (2) ===
+	It is because:
+	It is in 1NF since the only data from other tables is the foreign key
+	It is in 2NF All non primary keys are dependant on the primary key
+	And no non-primary keys are transitively dependant on the primary key
+
+
+=== iii) A friend of yours after critically examining the above database makes the following comment “Marks obtained by a trainee should be recorded in the Trainee table but not in the Submissions table because they belong to that trainee.” Write your response to the above comment. (2) ===
+	I disagree because if it was done like that then each tranee could only have one mark. This way the trainee can have many different marks on different assessments
+	
+
+===== 2. =====
+
+==== a) The commercial training company wants to send email messages warning trainees who failed to submit all of the required assessments (Assume that the reminders contain a standard message automatically sent to trainees without any reference to specific courses or assessments). Write an SQL query to list all the TraineeIds, names and emails of trainees who have not submitted any of the required assessments. (4) ====
+
+SELECT Trainee.TraineeID Trainee.fname Trainee.lnam Trainee.email
+FROM Trainee
+WHERE NOT EXISTS(SELCT * FROM Trainee, Submissions WHERE Trainee.TraineeID = Submissions.TraineeID)
+
+==== b) The department runs a policy to penalize late submissions by subtracting 5% of the marks. Write an SQL query to list the TraineeIds, names, course title, assessment title and reduced mark (mark obtained after applying the penalty) for all the submissions that were received after the deadline. (4) ====
+	Update submissions, assessments 
+	set mark = mark - mark/20
+	WHERE SubmissionDate > SubmissionDeadline
+	
+	SELECT submission.TraineeID, fname, lname CourseTitle, Assessment.Title, mark 
+	FROM Submissions,  Trainee, Assessment, Course
+	WHERE submission.TraineeID = trainee.traineeid
+	AND course.courseid = assessment.courseid
+	AND assessment.assessmentid = submission.assessmentid 
+	
+
+==== c) Trainees are allowed to appeal against their marks in assessments. The director of the company, who is in charge of appeals, contacts the appropriate trainer who marked the script under appeal. Suppose that Julie Pole appeals against her mark for the SQL assignment in the course 2074. Write an SQL query showing the details of the trainer who marked her script. (4) ====
+	SELECT trainer.trainerid, trainer.fname, trainer.lname, trainer.email
+	FROM trainer, trainee, submissions, batch
+	WHERE trainee.lname = 'Pole'
+	AND trainee.fname = 'Julie'
+	AND trainer.trainerid = batch.trainerid
+	AND assessment.batchid = batch.batchid
+	
+
+==== d) In relational databases, ====
+
+=== i) Explain what a view is. (1) ===
+	A view is a safe and easy way to show virtual tables.
+	ie. it saves a query and dynamically creates the resulting table each time the query is run.
+	
+
+=== ii) As stated above, the director of the company owns all the tables in the database. She decides to control trainers’ access to data. Each trainer is allowed to view information related to submissions that they mark without any trainee details. Write an SQL query to define a view that shows submission details such as course title, assessment title, max_marks for an assessment, without any trainee details for May Collins. (3) ===
+	CREATE VIEW maygrades AS 
+	SELECT coursetitle, assessmenttitle, maxmarks 
+	FROM trainee, assessment, course, 
+	WHERE trainee.fname = 'May'
+	AND trainee.lname = 'Collins'
+	AND assessment.courseid = course.courseid 
+
+
+=== iii) In addition to the above view, the director also wants to limit trainers to only viewing the data but not altering them. State the feature offered by a relational database management system to restrict the users for read only access to information (1) ===
+	REVOKE alter, update ON *.* FROM username
+	
+
+=== iv) Write an SQL query to define read-only access to May Collins to the view defined in 2.(d).ii above. (2) ===
+	REVOKE ALL ON maygrades TO maycollins 
+
+	GRANT SELECT ON maygrades TO maycollins
+
+
+==== e) Suppose that the company wants to build a Web-based application which provides functionality for trainers to enter marks online. If you were hired to design the internet security of the company’s data, software and hardware, ====
+
+==== i) Describe your design in terms of the security techniques used. (3) ====
+	A) I would not allow them to directly input queries into the database.
+	B) I would filter all the content they submit and make sure that it is the correct data type
+	C) I would add a proxy and all users will only communicate with the proxy server
+	
+
+==== ii) Explain how your design achieves its purpose. (3) ====
+	A) this way the users can't input commands which I don't want them to
+	B) This prevents users from using SQL Injection to alter the table in an unwanted way
+	C) Users do not know the internal ip addresses
+	
+	
+
+===== 3. =====
+
+==== a) Consider the following SQL query which refers to the Assessment and Submissions tables given above: ====
+SELECT A.Title
+FROM Assessment A, Submissions S
+WHERE S.AssessmentId = A. AssessmentId
+AND S.CourseId=A.CourseId
+AND A.Title=’SAP’;
+
+Using relational algebra notation, ∏ for projection, σP for selection with predicate P, × for a Cartesian product, ⋈ for a natural join, and ⋂, ⋃ for conjunction, write down three different but logically equivalent ways of expressing the above query in relational algebra. In your answers, use the given table aliases for brevity, use brackets as necessary to avoid ambiguities, and label your answers A, B and C. (5)
+
+A) Π Title (A) σ AssessmentID = AssessmentID (S x A) Λ CourseID=CourseID (A x S) Λ Title = 'SAP' (A) 
+B) Π Title (A⋈S) σ Title = 'SAP' (A) 
+C) Π Title σ (AssessmentID = AssessmentID (S x A)) ⋈ (CourseID = CourseID (A x S)) Λ Title = 'SAP' (A)
+
+==== b) In the database given above, suppose the Assessment and Submissions tables have very many rows but have no indexes. Arrange your solution (A,B,C) from part 3.(a) in order of efficiency and justify your answer. (2) ====
+	B > C > A
+	Since B uses a natural join whereas A uses many more checks and C is in the middle because it uses a natural join but also has many checks
+
+
+==== c) Consider the following transaction scenario where D i denote data items and T i denote transactions: ====
+
+=== i) Produce a wait-for-graph for the above transaction scenario. (4) ===
+	https://en.wikipedia.org/wiki/Wait-for_graph
+
+
+=== ii) Using the wait-for-graph from part (i), determine whether the transactions are in a deadlock and explain how you detected deadlock. (3) ===
+	There is because the graph is circular
+	
+=== iii) Explain how you would resolve the deadlock if it is detected in part(ii). (3) ===
+	By stopping tranaction T6 all other tranactions can complete sucessfully. Then restart T6
+
+==== d) In relational databases, ====
+
+=== i) Explain what an index is. (1) ===
+	An index is like the appendix to a book. An appendix in a book has links to specific parts of a book whereas an index in a database stores info on records.
+	
+=== ii) With the help of simple sketches show how indexing works. If required use the trainer table as an example. (2) ===
+	Indexes point to specific file segmants. Drawing should represent indexes linking to parts of the HDD
+	
+=== iii) Consider the following B+ tree. Draw the tree after a new record, with a search key field value of 13, is inserted into the tree. (5) ===
+	Same as last question in exam 2015

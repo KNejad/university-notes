@@ -38,7 +38,7 @@ Created Tuesday November 8 2016
 	conjunction (AND): Λ
 	disjunction (OR): V
 	negation (NOT): ~
-	Theta Join: {{./pasted_image.png}}
+	Natural Join: ⋈
 
 
 ==== Operations SQL Equivalent: ====

@@ -13,8 +13,8 @@ Created Thu Dec 1 2016
 	
 
 ===== Storage Engines: =====
-	MyISAM: Default for MySQL 
-	InnoDB: Transactional
+	MyISAM: Default for MySQL (does not support referential integrity)
+	InnoDB: Transactional (supports referential integrity)
 	Memory: All tables are stored in RAM
 
 A single MySQL database can have tables of different types
