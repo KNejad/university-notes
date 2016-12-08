@@ -6,7 +6,7 @@ Creation-Date: 2016-11-28T00:55:38+00:00
 Created Mon Nov 28 2016
 
 A method on an object is called
-Ruby looks through the receiving object’s instance methods. If it ever finds the method it executes it
+Ruby looks through the receiving object’s instance methods. If it finds the method it executes it
 If not found: pass request up chain to object’s class
 If not found: pass request up to classes parent class, etc, up to the Object class itself
 If not found: Go back to the object and call method ‘method_missing’ if exist

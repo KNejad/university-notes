@@ -12,7 +12,7 @@ Created Thursday 06 October 2016
 
 
 ==== (ii). no a appears without another a beside it. {a, b} ====
-	2(b*aaa*b*)*
+	(b*aaa*b*)*
 
 
 ==== (iii). has 00 or 11 as a substring. {0, 1} ====
@@ -36,6 +36,7 @@ Created Thursday 06 October 2016
 
 
 ==== (viii). contains an even number of as and an even number of bs. {a, b} ====
+	((aa)*(bb)*)*
 
 
 ==== (ix). represents a number divisible by 3. {0, 1} ====
