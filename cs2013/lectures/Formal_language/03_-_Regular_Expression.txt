@@ -5,22 +5,11 @@ Creation-Date: 2016-09-19T12:41:51+01:00
 ====== 03 - Regular Expression ======
 Created Monday 19 September 2016
 
-                   
+A regular expression is a way of defining a formal language accepted by an FSA.
+example regular expression: a(b + c) = a, followed by b or c
+
 
 ===== Deterministic: =====
 	No possible input that does not have an output
-	
+	All inputs have exactly 1 output
 
-===== Regular Expressions: =====
-	Let T be an alphabet. A regular expression over T defines a language over T as follows:
-	(i) λ denotes {λ}, φ denotes {}, t denotes {t} for t ∈ T;
-	(ii) if r and s are regular expressions denoting languages R and S, then
-		(r + s) denoting R + S,
-		(rs) denoting RS, and
-		(r*) denoting R* are regular expressions;
-	(iii) nothing else is a regular expression over T.
-	A language L (over T) is a regular language (over T) if there is a regular expression denoting it.	
-
-
-==== Example: ====
-	a* (b + c + d) = A sequence of 0 or more a, followed by b or c or d

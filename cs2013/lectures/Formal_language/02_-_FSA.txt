@@ -11,34 +11,42 @@ Created Tuesday 13 September 2016
 	The double circle is the final state
 
 
-===== Formal Definitions: =====
-	A Finite State Automaton (FSA) is a 5-tuple (Q, I, F, T, E) where:
+===== Finite State Automaton: =====
 	Q = states = a finite set;
 	I = initial states = a nonempty subset of Q;
 	F = final states = a subset of Q;
 	T = an alphabet;
 	E = edges = a subset of Q × (T + λ) × Q.
+	(The above definition of an FSA allows nondeterminism)
 
 
-The above definition of an FSA allows nondeterminism
+===== Path: =====
+	A sequence of edges where the end state of one is the first state of the next
+	A path is successful if the start state of the first edge is an initial state, and the end state of the last is a final state.
+
+A string is accepted by a FSA if it is the label of a successful path.
+
 
 ===== Non-Determinism: =====
-	1. From one state there could be a number of edges with the same label. Have to remember possible branching points as we trace out a path, and investigate all branches.
-	2. Some of the edges could be labelled with λ, the empty string. How does this affect our algorithm?
-	3. May be more than one initial state. Where do we start?
+	From one state there could be a number of edges with the same label. Have to remember possible branching points as we trace out a path, and investigate all branches.
+	Some of the edges could be labelled with λ, the empty string. How does this affect our algorithm?
+	May be more than one initial state. Where do we start?
+
 
 ===== Deterministic: =====
-	1. there are no λ-labelled edges;
-	2. for any pair of state and symbol (q,t), there is at most one edge (q,t, p)
-	3. there is only one initial state.
+	There are no λ-labelled edges;
+	For any pair of state and symbol (q,t), there is at most one edge (q,t, p)
+	There is only one initial state.
+
+
+===== Transition function: =====
+	The resulting destination in an edge when given initial state and input
+
 
 ===== Minimum Size of FSA's: =====
-	Let A = (Q,I,F,T,E). Definition: For any two strings, x, y in T*, x and y are distinguishable w.r.t. A if there is a string z ∈ T* s.t. exactly one of xz and yz are in L(A). z distinguishes x and y w.r.t. A.
-	This means that with x and y as input, A must end in different states - A has to distinguish x and y in order to give the right results for xz and yz. This is used to prove the next result:
-	
-==== Theorem: (proof omitted): ====
-Let L ⊆ T*. 
-If there is a set of n elements of T* s.t. any two of its elements are distinguishable w.r.t. A, then any FSA that recognizes L must have at least n states.
+	If x and y are in T* and we append z to both. Now if only 1 of the 2 xz or yz are in T* then x and y are different
+
+
 
 
 

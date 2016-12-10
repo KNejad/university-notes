@@ -14,7 +14,7 @@ Created Monday November 7 2016
 
 
 ===== Bayes Law: =====
-	P(A|B) = ((B|A)P(A))/P(B)
+	P(A|B) = (P(B|A)*P(A))/P(B)
 
 
 ===== Occam's Razor: =====
@@ -30,6 +30,7 @@ Created Monday November 7 2016
 ==== Decendants: ====
 	The nodes which depend on other nodes
 	
+
 ==== Non Decendants: ====
 	Nodes which don't depend on any other nodes
 	

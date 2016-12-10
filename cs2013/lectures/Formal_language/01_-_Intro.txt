@@ -12,9 +12,10 @@ Created Monday 12 September 2016
 	The empty string is the string with no symbols, denoted by λ.
 	The length of a string, w, is the number of symbols in the sequence, denoted |w|.
 	If u is a substring of w, and y above is λ, then u is a suffix of w.	If u ≠ w, then u is a proper suffix.
-	If T is an alphabet, then T* is the set of all strings over T. T + is T* without λ.
+	If T is an alphabet, then T* is the set of all strings over T. T^+ is T* without λ.
 	If "a" is a symbol, then "a^{n}" is the string of n a's
 	A language over an alphabet T is a set of strings over T. Also called a T-language, or simply a language.
+	a* is "a" any number of times in a row (Kleene Closure)
 
 
 ===== Language Operations: =====
