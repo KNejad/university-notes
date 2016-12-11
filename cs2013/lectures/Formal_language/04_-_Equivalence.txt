@@ -5,48 +5,69 @@ Creation-Date: 2016-09-26T12:49:08+01:00
 ====== 04 - Equivalence ======
 Created Monday 26 September 2016
 
-Not only are regular expressions and FSA's equivalent, there are algorithms allowing us to translate between the two.
+Regular expressions and FSA's are equivalent
 
-===== Regular Expression To FSA: =====
-	if L = L 1 + L 2 then obtain
-	A1 = (Q 1 ,{i 1 },{f 1 },T,E 1 ), L 1 = L(A 1 )
-	A2 = (Q 2 ,{i 2 },{f 2 },T,E 2 ), L 2 = L(A 2 )
-	A = (Q 1 ∪ Q 2 ∪ {i,f} ,{i},{f},T,E 1 ∪ E 2 ∪ {(i,λ,i 1 ),(i,λ,i 2 ),(f 1 ,λ,f),(f 2 ,λ,f)})
+===== Combining NDFSA: =====
+
+==== L = L1 + L2: ====
+	A = (Q1 ∪ Q2 ∪ {i,f} , {i} , {f} , T , E1 ∪ E2 ∪ {(i,λ,i 1 ),(i,λ,i 2 ),(f1 ,λ,f),(f2 ,λ,f)})
 
 
-===== FSA To Regular Expression To: =====
+==== L =L1L2: ====
+	A = (Q1 ∪ Q2 , {i1} , {f2} , T , E1 ∪ E2 ∪ {(f1,λ,i2)})
+
+
+==== L = L1*: ====
+	A = (Q1 ∪ {i,f} , {i}, {f}, T, E1 ∪ {(i,λ,i 1 ),(i,λ,f),(f1 ,λ,f),(f1 ,λ,i1)})
+
+
+===== Convert Regular Expression To NDFSA: =====
+	Deconstruct the regular expression into its base parts
+	Convert base parts into NDFSAs
+	Combine base parts 
+
+
+===== Convert NDFSA To Regular Expression: =====
 	A regular finite state automaton (RFSA) is a FSA where the edge labels may be regular expressions.
 	An edge labelled with the regular expression r indicates that we can move along that edge on input of any string included in r
 
 
-==== 1) Create unique initial state: ====
-	//might be wrong
+==== 1) Create Unique Initial State: ====
 	Input: (Q, I, F, T, E)
 	Q := Q ∪ {i} (where i ∉ Q)
-	for each q ∈ I, E:= E ∪ {(q,λ,i)}
+	for each q ∈ I, E:= E ∪ {(q,λ,i)} //might be (i,λ,q)
 	I := {i}
 	
-==== 2) Create unique final state: ====
+
+==== 2) Create Unique Final State: ====
 	Input: (Q, I, F, T, E)
 	Q := Q ∪ {f} (where f ∉ Q)
 	for each q ∈ F, E:= E ∪ {(q,λ,f)}
 	F := {f}
-	
-==== 3) Unique FSA ->Regular Expression: ====
+	C
+
+==== 3) Algorithm To Convert NDFSA to RE: ====
 	While there are states in Q\{i,f}
 	begin
-		For each state p in Q with more than one edge to itself, labelled r 1 ,r 2 ,...,r n , 
-			replace all those edges by (p,r 1 +r 2 +...+r n , p).
-		For each pair of states p,q in Q with more than one edge from p to q labelled r 1 ,r 2 ,...,r n , 
-			replace all those edges by (p,r 1 +r 2 +...+r n , q).
+		For each state p in Q with more than one edge to itself, labelled r1 ,r2 ,...,rn , 
+			replace all those edges by (p,r1+r2+...+rn,p).
+		For each pair of states p,q in Q with more than one edge from p to q labelled r1 ,r2 ,...,rn
+			replace all those edges by (p,r1+r2+...+rn ,q).
 		select a state s ∉ {i,f}
 		For each pair of states p,q (≠s) s.t. there are edges (p,r 1 ,s) and (s,r 2 ,q)
 		begin
-			if there is an edge (s,r 3 ,s)
-				add the edge (p,r 1 r 3 *r 2 ,q)
-			else add the edge (p,r 1 r 2 ,q)
+			if there is an edge (s,r3 ,s)
+				add the edge (p,r1r3*r2 ,q)
+			else 
+				add the edge (p,r1r2 ,q)
 		end
 		remove all edges to or from s
 		remove all states & edges with no path from i
 	end
 	return r, where E = (i,r,f).
+
+
+===== Regular Finite State Automaton (RFSA): =====
+	A FSA where the edge labels may be regular expressions
+	An edge labelled with a regular expression indicates that we can move along that edge on an input string included in the regular expression
+

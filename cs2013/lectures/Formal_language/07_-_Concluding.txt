@@ -5,6 +5,8 @@ Creation-Date: 2016-10-04T11:08:23+01:00
 ====== 07 - Concluding ======
 Created Tuesday 04 October 2016
 
+DFSA=NDFSA=Reg Grammar
+
 ===== Chomsky’s hierarchy: =====
 	(Turing) Decidable: Turing machine
 	Context-free: Non-deterministic pushdown automaton
@@ -14,6 +16,7 @@ Created Tuesday 04 October 2016
 ===== Turing Machines: =====
 	Turing Machines resemble FSAs, but are more powerful.
 	
+
 ==== They Can: ====
 		Write as well as read symbols
 		Move left as well as rightward along a string

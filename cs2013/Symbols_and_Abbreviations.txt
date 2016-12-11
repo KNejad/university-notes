@@ -11,6 +11,7 @@ Created Sunday 25 September 2016
 ⊆ : Subset
 ⊇ : Superset
 λ : Empty String
+φ: {} 
 T* : The set of all strings over T
 T + : T* without λ
 ∀ : For all
