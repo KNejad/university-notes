@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2016-09-24T11:55:40+01:00
-
-====== Tutorials ======
-Created Saturday 24 September 2016
-
-Tutorials are not a lesson they are just like homework that is not graded

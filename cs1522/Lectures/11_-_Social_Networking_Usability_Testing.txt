@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2016-02-25T14:02:40+00:00
-
-====== 11 - Social Networking Usability Testing ======
-Created Thursday 25 February 2016
-
