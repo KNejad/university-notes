@@ -5,6 +5,16 @@ Creation-Date: 2016-10-10T12:04:20+01:00
 ====== 01 - First Order Predicate Logic ======
 Created Monday 10 October 2016
 
+Predicate Logic is an extension of propositional logic with quantifiers.
+
+===== Quantifiers: =====
+	Quantifiers are used to say "Exists" (∃), "For All" (∀) etc. 
+
+
+===== Universe of Discourse (UD): =====
+	The values that a variable can have
+
+
 ===== First and Second Place Predicate: =====
 	1 Place Predicate: F(x)
 	2 Place Predicate: F(x,y)

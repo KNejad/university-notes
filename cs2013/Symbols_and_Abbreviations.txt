@@ -29,7 +29,7 @@ iff: If and only if
 P(A|B): the probability of A given B
 Π : https://en.wiktionary.org/wiki/%CE%A0 
 |a|: length of a
-
+⇔: Equivalence
 
 ===== FSA: =====
 	A: Usually stands for the FSA

@@ -5,4 +5,8 @@ Creation-Date: 2016-10-11T11:47:01+01:00
 ====== 02 - First Order Predicate Logic 2 ======
 Created Tuesday 11 October 2016
 
-//no new information
+===== Logically Stronger: =====
+	α is logically stronger than be if:
+	it is not possible for α to be true and β false
+	it is possible for β to be true and α false
+	
