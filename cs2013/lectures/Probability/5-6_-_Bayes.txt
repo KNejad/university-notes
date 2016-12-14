@@ -5,16 +5,8 @@ Creation-Date: 2016-11-07T12:15:32+00:00
 ====== 5-6 - Bayes ======
 Created Monday November 7 2016
 
-===== Gaussian Curve: =====
-	A Gaussian curve is like a bell curve but without the 2 small peaks
-
-
 ===== Conditional Independence: =====
 	Two events A and B are independant if P(A,B) = P(A)P(B)
-
-
-===== Bayes Law: =====
-	P(A|B) = (P(B|A)*P(A))/P(B)
 
 
 ===== Occam's Razor: =====

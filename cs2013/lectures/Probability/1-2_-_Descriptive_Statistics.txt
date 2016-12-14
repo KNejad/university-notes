@@ -5,6 +5,14 @@ Creation-Date: 2016-11-07T12:04:17+00:00
 ====== 1-2 - Descriptive Statistics ======
 Created None
 
+===== Descriptive Statistics: =====
+	Summarising sample data
+
+
+===== Inferential Statistics: =====
+	Using data to infer something
+
+
 ===== Variable types: =====
 
 ==== Qualitative: ====
@@ -17,9 +25,31 @@ Created None
 	Continuous: (double)
 
 
+===== Bins: =====
+	Bins are used to group continuous data into groups (ie 0-10, 10-20, 20-30 etc)
+
+
 ===== Ordinal data: =====
 	a1 <= a2 ... <= an
 
 P(B|R) = the probability of B given R (ie the probability of picking B after R is picked)
 
 Bins: Ranges in a field (ie probability of being between 1.6m and 1.8m)
+
+===== Mean: =====
+	The mean value is the sum of values divided by the amount of values
+
+===== Sigma: =====
+	Sum of values
+	Notation: ∑
+
+
+===== Median: =====
+	The middle value (ie in a group of 9 the middle value is the 5th item)
+
+
+===== Mode: =====
+	Sample with highest frequency
+	
+
+
