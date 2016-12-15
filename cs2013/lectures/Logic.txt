@@ -58,4 +58,14 @@ operands: subject of a mathematical expression
 	Notation: <-> 
 	
 
+===== Equivelence Laws: =====
+	Identity: p Λ T ⇔ p
+	Domination:  p Λ F ⇔ F
+	Idempotence: p V p  ⇔ p
+	Double Negation: ¬¬p ⇔ p
+	Commutativity: p V q ⇔ q V p
+	Associativity: (p V q) V a ⇔ p V (q V a)
+	Distributed: p V (q Λ r) ⇔ (p V q) Λ (p V r)
+	De Morgans Law: ¬(pΛq) ⇔ ¬p V ¬q
+	
 	
