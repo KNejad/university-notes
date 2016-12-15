@@ -37,7 +37,6 @@ Created Monday 12 September 2016
 ==== Lexical Order: ====
 	Strings are ordered by their length, with the shortest first. 
 	Within groups of strings of the same length, strings are ordered in dictionary order.
-	λ is always the first string.
 
 
 ===== Finite State Automata: =====

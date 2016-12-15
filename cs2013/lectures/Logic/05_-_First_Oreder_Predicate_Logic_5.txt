@@ -7,7 +7,7 @@ Created Monday 24 October 2016
 
 
 ===== Model: =====
-	A  model is a universe of discourse (D) and a interpritation function (I)
+	A model is a universe of discourse (D) and a interpritation function (I)
 	Universe of Discourse: D = {John, Mary} means that the u.d contains John and Mary
 	Interpretations: I(j) = John  means that j gets interprated as John
 

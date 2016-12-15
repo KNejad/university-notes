@@ -21,7 +21,6 @@ operands: subject of a mathematical expression
 	
 
 ==== Binary: ====
- 
 	2 operands
 	ie AND 
 	
@@ -56,7 +55,7 @@ operands: subject of a mathematical expression
 
 ===== Biconditional: =====
 	Both operands have the same truth value
-	Notation: <->: 
+	Notation: <-> 
 	
 
 	

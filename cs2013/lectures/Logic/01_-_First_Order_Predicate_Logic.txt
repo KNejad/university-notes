@@ -8,7 +8,7 @@ Created Monday 10 October 2016
 Predicate Logic is an extension of propositional logic with quantifiers.
 
 ===== Quantifiers: =====
-	Quantifiers are used to say "Exists" (∃), "For All" (∀) etc. 
+	Quantifiers are used to say "Exists" (∃) and "For All" (∀) 
 
 
 ===== Universe of Discourse (UD): =====
@@ -23,6 +23,6 @@ Predicate Logic is an extension of propositional logic with quantifiers.
 
 ===== Free and Bound Variables: =====
 	An expression like P(x) is said to have a free variable x (i.e., x is not “defined”).
-	A quantifier (either ∀ or ∃) binds one or more variables, to produce an expression having one or more bound variables.
+	A quantifier binds one or more variables, to produce an expression having one or more bound variables.
 
 φ (x:=a) is the result of substituting all FREE occurrences of the variable x in φ by the constant a

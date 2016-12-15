@@ -10,9 +10,6 @@ A language is a set of strings over an alphabet.
 ===== Languages serve two purposes in computing: =====
 	Communicating instructions or information
 	Defining valid communications
-	
-
-===== Generating Languages: =====
 
 
 ===== Grammar: =====
@@ -22,9 +19,8 @@ A language is a set of strings over an alphabet.
 	Terminals: Characters which cannot be substituted further (ie a, b, c)
 	Start Symbols: The initial symbol to produce the alphabet with (ie X) 
 	Productions: Available substitutions for characters to create stirngs (ie X -> aX: This means that X can be substituted by aX in our language)
-	
 
 
 ===== Context-free Grammar (CFG): =====
 	The left side of all production rules are non terminal (ie a -> b instead of X -> b)
-	CFGs produce Context-free Languages (CFL)2
+	CFGs produce Context-free Languages (CFL)

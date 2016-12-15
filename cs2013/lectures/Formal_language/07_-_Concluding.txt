@@ -20,5 +20,5 @@ DFSA=NDFSA=Reg Grammar
 ==== They Can: ====
 		Write as well as read symbols
 		Move left as well as rightward along a string
-		Have “failure” states as well as “success” states
+		Have "failure" states as well as "success" states
 

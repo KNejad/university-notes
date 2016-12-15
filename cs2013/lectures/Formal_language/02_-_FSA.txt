@@ -12,11 +12,11 @@ Created Tuesday 13 September 2016
 
 
 ===== Finite State Automaton: =====
-	Q = states = a finite set;
-	I = initial states = a nonempty subset of Q;
-	F = final states = a subset of Q;
-	T = an alphabet;
-	E = edges = a subset of Q × (T + λ) × Q.
+	Q: states = a finite set;
+	I: initial states = a nonempty subset of Q;
+	F: final states = a subset of Q;
+	T: an alphabet;
+	E: edges = a subset of Q × (T + λ) × Q.
 	(The above definition of an FSA allows nondeterminism)
 
 

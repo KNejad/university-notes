@@ -14,7 +14,7 @@ Created Tuesday 04 October 2016
 
 
 ===== Mealy Machines: =====
-	 A finite-state machine whose output values are determined both by its current state and the current inputs.
+	A finite-state machine whose output values are determined both by its current state and the current inputs.
 	6-tuple (Q,I,T,E,Γ,O)
 	Γ is the output alphabet
 	O is a set of pairs (a function : Q → Γ) defining the output corresponding to each state of the machine.
