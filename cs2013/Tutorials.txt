@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2016-09-22T15:04:22+01:00
-
-====== Tutorials ======
-Created Thursday 22 September 2016
-
-
-
