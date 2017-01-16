@@ -1,0 +1,9 @@
+{
+	"Title": "Introduction",
+	"Algorithm": {
+		"Definition": "A well defined computational procedure that takes some input (values) and produces an output (i.e. one or more values)",
+		"Correctness": "An algorithm is correct if it always returns the desired output for all legal instances of the problem."
+	},
+	"Power Set": "All subsets of a set"
+
+}
