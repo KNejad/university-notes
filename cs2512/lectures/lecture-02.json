@@ -1,0 +1,10 @@
+{
+	"Title": "Ruby on Rails - Basics",
+	"Date" :  "Thu Jan 19 09:33:08 GMT 2017",
+	"Model view controller": {
+		"Model": "Represent the data",
+		"View": "Visual display of data",
+		"Controller": "User interaction with site"
+	}
+
+}

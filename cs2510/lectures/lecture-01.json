@@ -1,0 +1,12 @@
+{
+	"Title": "Preliminaries",
+	"Date" :  "Tue Jan 17 15:00:00 GMT 2017",
+	"Recommended book": "Concepts of Programming Languages, 9th Edition,  Robert W. Sebesta, Pearson",
+	"Evaluation criteria": [
+		"Readability",
+		"Writability",
+		"Reliability",
+		"Cost"
+		],
+	"_note": "continue from slide 16"
+}

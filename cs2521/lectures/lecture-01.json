@@ -1,8 +1,19 @@
 {
 	"Title": "Introduction",
+	"Date" :  "Tue Jan 17 11:00:00 GMT 2017",
 	"Algorithm": {
 		"Definition": "A well defined computational procedure that takes some input (values) and produces an output (i.e. one or more values)",
-		"Correctness": "An algorithm is correct if it always returns the desired output for all legal instances of the problem."
+		"Correctness": "An algorithm is correct if it always returns the desired output for all legal instances of the problem.",
+		"Proving algorithm is incorrect": "Find a counter example where the algorithm would not find the correct result",
+		"Proving correctness": {
+			"Proof by induction": {
+				"Base step": "Prove that P(k) is true",
+				"Induction assumption": "Prove that for any integer k, if P(k) is true then P(k+1) is true."
+			}
+		}
+	},
+	"Loop invariant": {
+		"_note": "define this"
 	},
 	"Power Set": "All subsets of a set"
 
