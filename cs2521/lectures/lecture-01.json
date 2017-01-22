@@ -8,11 +8,12 @@
 		"Proving correctness": {
 			"Proof by induction": {
 				"Base step": "Prove that P(k) is true",
-				"Induction assumption": "Prove that for any integer k, if P(k) is true then P(k+1) is true."
+				"Induction step": "Prove that for any integer k, if P(k) is true then P(k+1) is true."
 			}
 		}
 	},
 	"Loop invariant": "A property of a program loop that is true before and after each iteration",
-	"Power Set": "All subsets of a set"
+	"Power Set": "All subsets of a set",
+	"Permutations": "An ordering of a set of items"
 
 }
