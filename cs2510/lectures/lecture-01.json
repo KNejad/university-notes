@@ -7,6 +7,43 @@
 		"Writability",
 		"Reliability",
 		"Cost"
-		],
-	"_note": "continue from slide 16"
+	],
+	"Fetch-execute-cycle": {
+		"Definition" : "The set of steps a CPU follows to execute instructions on a program",	
+		"Steps":[
+			"Fetch the instruction pointed to by the counter",
+			"Increment counter",
+			"Decode instruction",
+			"Execute instruction"
+		]
+
+	},
+	"Language categories": {
+		"Imperative":{
+			"Definition": "Functions can change the system state",
+			"Languages" : [ "C", "Java" ]
+		},
+		"Functional": {
+			"Definition": "The only effect of a function is its return value",
+			"Languages" : [ "Haskell", "LISP"]
+		},
+		"Logic": {
+			"Definition": "A set of sentences in logical form, expressing facts and rules about some problem domain",
+			"Languages": ["Prolog"] 
+		}
+	},
+	"Implementation Methods": {
+		"Compilation": "Programs are compiled into machine language",
+		"Interpretation": "Programs are interpreted by another program",
+		"Hybrid": "The source code is translated into a format which is easier to interpret"	
+	},
+	"Compilation Phases": {
+		"Lexical analysis": "Converts the source code into a sequence of tokens",
+		"Syntax analysis": "Analyses the source code, to check whether it  conforms to the rules of the language",
+		"Semantic analysis": "Gather necessary semantic information from the source code",
+		"Code generation": "Generates the machine code"
+	},
+	"Von Neumann Bottleneck" : "The connection speed between a computer’s memory and its processor throttles the speed of the computer",
+	"Just-in-time implementation systems": "A type of hybrid implementation method where the parts of the code are compiled when needed",
+	"Preprocessor macros" : "instructions which are commonly used to specify that code from another file is to be included"
 }

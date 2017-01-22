@@ -12,9 +12,7 @@
 			}
 		}
 	},
-	"Loop invariant": {
-		"_note": "define this"
-	},
+	"Loop invariant": "A property of a program loop that is true before and after each iteration",
 	"Power Set": "All subsets of a set"
 
 }
