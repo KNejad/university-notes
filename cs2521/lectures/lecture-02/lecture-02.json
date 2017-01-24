@@ -1,0 +1,29 @@
+{
+	"Title": "Algorithm Analysis",
+	"Date": "Tue Jan 24 11:04:37 GMT 2017",
+	"Algorithm efficiency": {
+		"Efficiency is measured in": [
+			"Time",
+			"Memory (space)",
+			"Network"
+		],
+		"RAM model of computation": [
+			"We usually assume a single processor computer with infinite RAM",
+			"Each operation takes 1 time step",
+			"Memory access takes 1 time step",
+			{
+				"Inaccuracies": [
+					"Some operations take longer than others",
+					"Compiler optimisation can speed things up"
+				]
+			}
+		],
+		"O-notation":  [
+			"ignores the differences between multiplication of powers (i.e. 2n^5 is the same as 3n^5)",
+			{"_note": "Understand slide 11"}
+
+		],
+		"_image": "algorithm-efficiency-table.png"
+	}
+
+}
