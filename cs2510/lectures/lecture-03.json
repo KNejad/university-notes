@@ -1,0 +1,23 @@
+{
+	"Title": "Describing Syntax and Semantics",
+	"Date": "Tue Jan 24 15:06:44 GMT 2017",
+	"Lexeme": "The lowest level syntactic unit of a language (e.g., *, def, start, etc.)",
+	"Token": "A category of Lexemes",
+	"Backus-Naur Form": {
+		"Definition": "Equivalent to context-free grammars",
+		"Symbols": {
+			"→": "Defines a rule",
+			"⇒": "Using a rule",
+			"|": "Or",
+			";": "Statement before this then statement after this"
+		},
+		"Definitions": {
+			"Non Terminals": "A finite alphabet (ie X, Y, Z)",
+			"Terminals": "Characters which cannot be substituted further (ie a, b, c)",
+			"Start Symbols": "The initial symbol to produce the alphabet with (ie X)",
+			"Productions": "Available substitutions for characters to create stirngs (ie X -> aX: This means that X can be substituted by aX in our language)"
+		}
+	}
+	"_note": "Continue from slide 19"
+
+}
