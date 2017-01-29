@@ -1,0 +1,9 @@
+function bubbleSort(A)
+	for all i ← 1 to |A| − 1 do
+		for all j from i + 1 to |A| do
+			if A[j] > A[j] then
+				swap the values of A[i] and A[j]
+			end if
+		end for
+	end for
+end function

@@ -1,0 +1,13 @@
+for i=0 to n-1
+	j= infinity
+	for all endpoints
+		pairs (s.t) from
+			distinct vertex
+			sets
+		if dist(s,t) <= f
+			s' = s, t' = t, d=dise(s,t)
+		endif
+	endfor
+	connect s',t' by an edge
+endfor
+connect remaining 2 points

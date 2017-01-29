@@ -17,7 +17,6 @@
 			"Start Symbols": "The initial symbol to produce the alphabet with (ie X)",
 			"Productions": "Available substitutions for characters to create stirngs (ie X -> aX: This means that X can be substituted by aX in our language)"
 		}
-	}
-	"_note": "Continue from slide 19"
-
+	},
+	"Backus-Naur form": "hi" 
 }
