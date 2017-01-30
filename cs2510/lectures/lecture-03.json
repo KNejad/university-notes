@@ -15,8 +15,22 @@
 			"Non Terminals": "A finite alphabet (ie X, Y, Z)",
 			"Terminals": "Characters which cannot be substituted further (ie a, b, c)",
 			"Start Symbols": "The initial symbol to produce the alphabet with (ie X)",
-			"Productions": "Available substitutions for characters to create stirngs (ie X -> aX: This means that X can be substituted by aX in our language)"
+			"Productions": "Available substitutions for characters to create strings (ie X -> aX: This means that X can be substituted by aX in our language)"
 		}
 	},
-	"Backus-Naur form": "hi" 
+	"Extended BNF": [
+		"Optional parts placed in square brackets",
+		"Alternative parts of are placed inside parentheses and separated via vertical bars",
+		"Repetitions are placed inside curly brackets"
+	],
+	"Attribute grammars": {
+		"Definition": "A context-free grammar with the addition of attributes and attribute evaluation rules. An attribute grammar can specify both semantics and syntax.",
+		"Attributes": {
+			"Definition": "Variables  associated with non-terminals or terminals of the grammar",
+			"Synthesized attributes": "The result of the attribute evaluation rules, and may also use the values of the inherited attributes.", 
+			"Inherited attributes": "Passed down from parent nodes."
+		},
+		"_note": "Continue from slide 45"
+
+	}
 }
