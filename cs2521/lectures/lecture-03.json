@@ -1,0 +1,10 @@
+{
+	"Title": "Data Structures",
+	"Date": "Mon Jan 30 13:03:47 GMT 2017",
+	"Contiguous data structure":  "Occupies a single chunk of memory.",
+	"Linked data structure": "Made up of distinct chunks of memory.",
+	"Stack": "Last object added to stack is the first out.",
+	"Queues": "First object added to queue is the first out.",
+	"_note": "Figure out slide 18"
+
+}

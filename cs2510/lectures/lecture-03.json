@@ -29,8 +29,19 @@
 			"Definition": "Variables  associated with non-terminals or terminals of the grammar",
 			"Synthesized attributes": "The result of the attribute evaluation rules, and may also use the values of the inherited attributes.", 
 			"Inherited attributes": "Passed down from parent nodes."
-		},
-		"_note": "Continue from slide 45"
+		}
+	},
+	"Axiomatic Semantics": {
+		"Definition": "An approach based on mathematical logic to proving the correctness of computer programs.",
+		"Assertions": {
+			"Definition": "Logical statements - predicates with variables, where the variables define the state of the program.",
+			"Precondition": "An assertion before a statement",
+			"Postcondition": "An assertion following a statement (The desired result of the program)",
+			"Weakest precondition": "The least restrictive precondition that will guarantee the postcondition."
 
+		},
+		"Syntax": "[equation] {[postcondition]}",
+		"Selection": "if B then S1 else S2",
+		"Loop": "while B do S end"
 	}
 }
