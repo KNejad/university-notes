@@ -1,0 +1,12 @@
+omlet(s,f){
+	if s=f{
+		return f
+	}
+	drop(s+f/2) #middle floor
+
+	if broken{
+		omlet(s, (s+f)/2 -1)
+	}
+	else{
+		omlet((s+f)/2 +1, f)
+	}

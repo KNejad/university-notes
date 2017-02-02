@@ -18,12 +18,14 @@
 				]
 			}
 		],
-		"O-notation":  [
-			"ignores the differences between multiplication of powers (i.e. 2n^5 is the same as 3n^5)",
-			{"_note": "Understand slide 11"}
-
-		],
-		"_image": "algorithm-efficiency-table.png"
+		"O-notation":  {
+			"Definition": "ignores the differences between multiplication of powers (i.e. 2n^5 is the same as 3n^5)",
+			"Dominating term": "The term in an equation which determines the approximate value (ie in 2^2 + 1^3  the 1^3 is the dominating term)",
+			"Upper bound": "The maximum time an algorithm might take (denoted by O(g(dominant term)))",
+			"Lower bound": "The minimum time an algorithm might take (denoted by Ω(g(dominant term)))",
+			"Tight bound": "Both the minimum time and maximum time an algorithm might take (notated by Θ(g(dominant term)))"
+		},
+		"_image": "lecture-02/algorithm-efficiency-table.png"
 	},
 	"Heuristic": "Tries to find a good result to a problem but (unlike an algorithm) it does not guarantee the best solution" 
 

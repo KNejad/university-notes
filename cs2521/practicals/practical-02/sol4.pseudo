@@ -1,0 +1,14 @@
+question 4 cs2521 practical
+
+bs(A,n){
+	if n==A[|A|/2]{
+		return true
+	}
+	if n<A[|A|/2]{
+		return bs(A[0...(|A|/2)-1])
+	}
+	if n>A[|A|/2]{
+		return bs(A[(|A|/2)+1], |A|)
+	}
+	return false
+}

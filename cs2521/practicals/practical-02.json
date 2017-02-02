@@ -1,0 +1,46 @@
+{
+	"Title": "Practical 2",
+	"Date": "Thu Feb  2 10:54:39 GMT 2017",
+	"1":{
+		"Task": "Show that O-notation relationships are transitive."
+	},
+	"2": {
+		"Task": {
+			"Find a simple g(n) such that f (n) = Θ(g(n)) for each of the following functions, and prove that the result holds": {
+				"a": "sum_{i=1}^n 3^i",
+				"b": "4*2^n + 4^n + 20n^5"
+			}
+		},
+		"Solution": {
+			"a": {
+				"Steps": [
+					"(3^{n+1} - 1)/2",
+					{"_note": "We got the above from wikipedia. You don't figure it out yourself."}
+				]	
+
+			},
+			"b": "g(4^n)"
+		}
+	},
+	"3": {
+		"Task": [
+			"describe the following pseudocode fragment in summations, and simplify them as far as you can. What is the complexity of this algorithm (in terms of n)?",
+			{"_file": "practical-03/3.psuedo"}
+		],
+		"Solution": {
+			"Steps": [
+				"Convert so tummations"
+			]
+		}	
+	},
+	"5": {
+		"Solution": {
+			"_file": "practical-02/sol5.pseudo"	
+		}
+	},
+	"7": {
+		"Solution": {
+
+		}
+	}
+}
