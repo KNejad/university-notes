@@ -1,3 +1,5 @@
+#Note: This is just an archive. Newer notes are available at bitbucket.org/knejad/university-notes
+
 # university-notes
 
 Here is where I place all of my university notes from my studies at The University of Aberdeen. 
