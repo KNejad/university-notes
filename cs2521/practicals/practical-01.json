@@ -4,7 +4,7 @@
 		"1":{
 			"Task": "Write pseudo-code for the closest pair heuristic.",
 			"Solution": {
-				"_file": "task1.pseudo"
+				"_file": "practical-01/task1.pseudo"
 			}
 		},
 		"2":{
@@ -40,7 +40,7 @@
 		"4": {"_note": "Not done yet. do later"},
 		"5": {
 			"Task": "Trace through the execution of the following algorithm for the list of numbers [3,1,8,6]. Prove the algorithm’s correctness.",
-			"_file": "task5.pseudo"
+			"_file": "practical-01/task5.pseudo"
 		}
 
 	}
