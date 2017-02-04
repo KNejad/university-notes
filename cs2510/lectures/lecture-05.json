@@ -9,13 +9,16 @@
 		"Lifetime",
 		"Scope"
 	],
-	"_note": "What is Explicit heap-dynamic (22)",
-	"_note": "Understand Static/Dynamic  Scoping",
-	"_note":  "Learn more about Scalar Variables",
-	"Scalar variables": [
-		"static",
-		"stack dynamic",
-		"explicit heap dynamic",
-		"implicit heap dynamic"
-	]
+	"Explicit heap-dynamic variable": "A variable bound during an explicit run-time instruction specified by the programmer.",
+	"Static scope": "Determines at compile time what we are referring to based on the static, lexical structure of the program source code. The innermost definition of a variable is used.",
+	"Dynamic scope": "There is a stack of variable definitions tracked at runtime. Which variable we write to depends on what is in scope and has been defined dynamically at runtime.",
+	"Scalar variables":{ 
+		"Definition": "Variables which hold a single value (as opposed to arrays dictionaries etc.).",
+		"Types": [
+			"static",
+			"stack dynamic",
+			"explicit heap dynamic",
+			"implicit heap dynamic"
+		]
+	}
 }
