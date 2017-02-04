@@ -14,7 +14,7 @@
 	"Binding Forms": {
 		"Definition": "Form binding allows you to bind all form fields to a ruby object (the fields must be like f.text_field instead of just text_field)",
 		"Code": "<%= form_for @article, url: {action: 'create'}, html: {class: 'nifty_form'} do |f| %>",
-		"_url": "http://guides.rubyonrails.org/v2.3.11/form_helpers.html#binding-a-form-to-an-object"
+		"_href": "http://guides.rubyonrails.org/v2.3.11/form_helpers.html#binding-a-form-to-an-object"
 	}
 
 }
