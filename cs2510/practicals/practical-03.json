@@ -1,0 +1,42 @@
+{
+	"Title": "Lexical and Syntax Analysis",
+	"Date": "Mon Feb  6 11:42:27 GMT 2017",
+
+	"1": {
+		"Task": "Define lexeme and token.",
+		"Solution": {
+			"Lexeme": "A sequence  of characters in the source code of a language which matches a token",
+			"Token": "A singular component of the source code (i.e. if, for etc.)"
+		}
+	},
+	"2": {
+		"Task": "What are state diagrams?",
+		"Solution": "A state diagram is a type of  diagram which shows how the program can move from one state to the other. In other words it describes the behaviour of a system"
+	},
+	"3": {
+		"Task": "Design a state diagram to recognise comments (in Java or C) of the form /* .... */.",
+		"Solution": ""
+	},
+	"4": {
+		"Task": {
+			"Task": "Download and run the file “front.c” (available here). You will need to use an input file “front.in” with your expression ending in EOF. A sample file is available here. You could try the on-line C compiler here if you don’t have C/C++ in your computer (it should be available in our lab machines, under Linux).",
+			"_file": "practical-03/front.c",
+			"_file": "practical-03/front.in"
+		},
+		"Solution": {
+			"_file": "practical-03/a.out"
+		}
+	},
+	"5": {
+		"Task": "Show a trace of the recursive descent parser described in our lectures and in Section 4.4.1 of the book for the strings (suggestion: copy the C code and run it online or on your computer)",
+		"Solution": ""
+	},	
+	"6": {
+		"Task": "",
+		"Solution": ""
+	},	
+	"7": {
+		"Task": "",
+		"Solution": ""
+	}	
+}
