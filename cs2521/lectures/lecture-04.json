@@ -1,6 +1,6 @@
 {
-	"Title": "Sorting",
-	"Date": "Mon Feb  6 13:08:11 GMT 2017",
+	"_title": "Sorting",
+	"_date": "Mon Feb  6 13:08:11 GMT 2017",
 	"Heap": {
 		"Definition": "A heap is a data structure that efficiently supports priority queue operations insert and find/delete-min",
 		"Structure": "The first index stores the root, index 2 stores the left hand child, 3 stores the right, etc.",

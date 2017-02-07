@@ -1,6 +1,6 @@
 {
-	"Title": "Recommender Systems: Content-based and Collaborative filtering",
-	"Date": "Tue Feb  7 16:28:52 GMT 2017",
+	"_title": "Recommender Systems: Content-based and Collaborative filtering",
+	"_date": "Tue Feb  7 16:28:52 GMT 2017",
 	"Neural networks": "Used to guess what a user may like based on what they previously liked",
 	"Collaborative Filtering": {
 		"User based": "Use other people with similar interests to predict a users future interests",

@@ -1,6 +1,6 @@
 {
-	"Title": "Working with Databases II",
-	"Date": "Thu Feb  2 09:06:43 GMT 2017",
+	"_title": "Working with Databases II",
+	"_date": "Thu Feb  2 09:06:43 GMT 2017",
 	"Create a table": "rails generate model Student name:string address:string",
 	"Add field to table": {
 		"Run in console": "rails generate migration AddAgeToStudents age:integer",

@@ -1,6 +1,6 @@
 {
-	"Title": "Rails Forms  & The Temperature Converter",
-	"Date": "Thu Jan 26 09:14:21 GMT 2017",
+	"_title": "Rails Forms  & The Temperature Converter",
+	"_date": "Thu Jan 26 09:14:21 GMT 2017",
 	"Rails forms": "Rails has it's own way of inserting forms. This is then converted into HTML forms", 
 	"Form helpers": {
 		"Form tag": "<%= form_tag('/search', method: 'get') do %>",

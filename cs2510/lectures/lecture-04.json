@@ -1,6 +1,6 @@
 {
-	"Title": "Lexical and Syntactical Analysis",
-	"Date":"Mon Jan 30 12:44:06 GMT 2017",
+	"_title": "Lexical and Syntactical Analysis",
+	"_date":"Mon Jan 30 12:44:06 GMT 2017",
 	"_note": "I missed this lecture so I had to catch up on this during the Monday practical and on my own time.",
 	"Top down parser": "Produces parse tree from the root.",
 	"Bottom up parser": "Produces parse tree from leaves.",
