@@ -6,5 +6,11 @@
 		"Structure": "The first index stores the root, index 2 stores the left hand child, 3 stores the right, etc.",
 		"min-heap": "The minimum element is on top",
 		"max-heap": "The maximum element is on top"
+	},
+	"Merge Sort": {
+		"_note": "Right this down"
+	},
+	"Quick sort": {
+		"Randomized quick sort": "Same algorithm as quick sort but it shuffles the inputs before hand for security reasons (so that malicious people can't slow down your system)"
 	}
 }

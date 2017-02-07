@@ -1,6 +1,9 @@
 {
 	"Title": "Data Types",
 	"Date": "Thu Feb  2 15:07:13 GMT 2017",
-	"_note": "Nothing very new here. Just different types of data"
-
+	"_note": "Nothing very new here. Just different types of data.",
+	"Static": "Storage is allocated before run-time.",
+	"Fixed stack-dynamic": "Allocation is done at declaration time.",
+	"Heterogeneous arrays": "Elements in the array can be different types (i.e. mixture of integers and strings).",
+	"Associative arrays": "Unordered collection of key value pairs (Like hashes in Ruby or dictionaries in Python)"
 }
