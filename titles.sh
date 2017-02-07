@@ -3,6 +3,6 @@ shopt -s globstar
 for f in **/*.json
 do
 	echo "$f"
-	jq ".Title" $f
+	jq "._title" $f
 done
 
