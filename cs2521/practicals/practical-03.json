@@ -1,0 +1,53 @@
+{
+	"_title": "Practical 3",
+	"_date": "Thu Feb  9 10:41:56 GMT 2017",
+
+	"1": {
+		"Task": "Show that the total number of P times an element is moved, when the array size is doubled whenever the array is full, is 1 + log n + sum_{i=1}^{log n} in/2^i",
+		"Solution": ""
+	},
+	"2": {
+		"Task": "Analyse the complexity of a dictionary using sorted and unsorted single and doubly linked lists.",
+		"Solution": ""
+	},
+	"3": {
+		"Task": "write the pseudocode to insert a node into a binary search tree.",
+		"Solution": ""
+	},
+	"4": {
+		"Task": "Write pseudocode for an algorithm to reverse the direction of a singly linked list. Your algorithm must take linear time.",
+		"Solution": ""
+	},
+	"5": {
+		"Task": {
+			"Description": "We have seen how dynamic arrays enable arrays to grow while still achieving constant-time amortized performance. This problem concerns extending dynamic arrays to let them both grow and shrink on demand.",
+			"a": "Consider an underflow strategy that cuts the array size in half whenever the array falls to half full. Give an example sequence of insertions and deletions where this strategy gives a bad amortized cost.",
+			"b": "Then, give a better underflow strategy than that suggested above, one that achieves constant amortized cost per deletion."
+		},
+		"Solution": ""
+	},
+	"6": {
+		"Task": "Design a dictionary data structure in which search, insertion and deletion can all be processed in worst case O(1) time. You can assume that the key elements are integers drawn from a finite set 1, 2, . . . , n and initialisation can take O(n) time.",
+		"Solution": ""
+	},
+	"7": {
+		"Task": {
+			"Description": "Suppose we are given a sequence of n values x 1 , x 2 , . . . , x n and seek to quickly answer repeated queries of the form: given i and j, find the smallest value in x i , ..., x j .",
+			"a": "Design a data structure that uses O(n 2 ) space and answers queries in O(1) time.",
+			"b": "*Design a data structure that uses O(n) space and answers queries in O(log n) time."
+		},
+		"Solution": ""
+	},
+	"8": {
+		"Task": {
+			"Description": "* Let A[1..n] be an array of real numbers. Design an algorithm to perform any sequence of the following operations",
+			"a": "Add(i,y) Add the value y to the ith number.",
+			"b":"Partial-sum(i) Return the sum of the first i numbers, i.e. sum_{j=1}^i A[j]"
+		},
+		"Solution": ""
+	},
+	"9": {
+		"Task": "A common problem for compilers and text editors is determining whether the parentheses in a string are balanced and properly nested. For example, the string ([()][]){} contains properly nested pairs of parentheses, while the strings )()(, {) and ())} do not. Give an algorithm that returns true if a string contains properly nested and balanced parentheses, and false if otherwise, and returns the position of the first offending parenthesis if the string is not properly nested and balanced.",
+		"Solution": ""
+	}
+}
