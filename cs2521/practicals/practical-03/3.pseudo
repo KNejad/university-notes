@@ -1,0 +1,14 @@
+function insert(tree, value){
+	if tree.root == null {
+		tree.root = value
+	}
+	if tree.root > value {
+		insert(tree.left, value)
+	}
+	if tree.root < value {
+		insert(tree.right, value)	
+	}
+
+
+
+}

@@ -1,0 +1,7 @@
+{
+	"_title": "Expressions and Assignment Statements",
+	"_date": "Thu Feb  9 15:01:54 GMT 2017",
+	"Side Effects": "When a function changes the value of a variable outside of its scope",
+	"Referential transparency": "Two of the same methods with the same parameter can be interchanged anywhere in the program, without affecting the program",
+	"Short circuit evaluation": "Only calculates the parts of an expression which are needed to determine the result"
+}
