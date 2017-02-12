@@ -1,0 +1,7 @@
+def reverse(dictionary) {
+	newDictionary
+	for item in dictionary {
+		newDictionary.add_to_beginning(item)
+	}
+	return newDictionary
+}

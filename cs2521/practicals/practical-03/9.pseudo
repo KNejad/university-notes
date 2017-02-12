@@ -1,0 +1,24 @@
+def validate(string){
+	openingBrackets = []
+	for character in string {
+		if character == "(" or "{" or "["  {
+			openingBrackets.push(character)	
+		}
+		if character == ")" or "}" or "]"  {
+			if openingBrackets is empty{
+				return  index_of_character
+			}
+			if character == ")" and openingBrackets[-1] != "(" {
+				return index_of_character
+			}
+			if character == "}" and openingBrackets[-1] != "{" {
+				return index_of_character
+			}
+			if character == "]" and openingBrackets[-1] != "[" {
+				return index_of_character
+			}
+			openingBrackets.pop
+		}
+
+	}	
+}
