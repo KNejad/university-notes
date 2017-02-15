@@ -2,14 +2,22 @@
 	"_title": "Practical 2",
 	"_date": "Thu Feb  2 10:54:39 GMT 2017",
 	"1":{
-		"Task": "Show that O-notation relationships are transitive."
+		"Task": "Show that O-notation relationships are transitive.",
+		"Solution": {
+			"Steps": [
+				"Show that if f(n) = O(g(n)) and g(n) = O(h(n)) then f(n) = O(h(n))",
+				"If f(n) = O(g(n)) then there is a c such that c*g(n) ≥ f(n) and there is a d such that g(n) ≤ d*h(n).",
+				"From that we can see that f(n) <= c*d*h(n) for some n ≥ max(n_1, n_2) where n_1 is the minimal n for which O(g(n)) holds and n_2 for O(h(n))"
+			]
+
+		}
 	},
 	"2": {
 		"Task": {
-			"Find a simple g(n) such that f (n) = Θ(g(n)) for each of the following functions, and prove that the result holds": {
-				"a": "sum_{i=1}^n 3^i",
-				"b": "4*2^n + 4^n + 20n^5"
-			}
+			"Description": "Find a simple g(n) such that f (n) = Θ(g(n)) for each of the following functions, and prove that the result holds",
+			"a": "sum_{i=1}^n 3^i",
+			"b": "4*2^n + 4^n + 20n^5"
+
 		},
 		"Solution": {
 			"a": {

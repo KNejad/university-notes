@@ -1,0 +1,15 @@
+{
+	"_title":"Divide and Conquer",
+	"_date": "Tue Feb 14 11:13:40 GMT 2017",
+	"Definition": "Splits a problem into smaller problems to find the solution (i.e. merge sort, binary search etc.)",
+	"Solving recurrences": [
+		"Master theorem",
+		"Recursion-tree method",
+		{
+			"Substitution method": 	[
+				"Guess the form of the solution", 
+				"Prove the solution correct"
+			]
+		}
+	]
+}
