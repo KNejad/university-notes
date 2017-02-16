@@ -3,6 +3,7 @@
 	"_date": "Thu Feb 16 20:51:31 GMT 2017",
 	"Project files":{
 		"_href": "sample_app/"
-	}
+	},
+	"_note": "If all tables fail when you add email uniqueness it is because of test/fixtures/users.yml which automatically creates 2 similar entries to the database"
 
 }
