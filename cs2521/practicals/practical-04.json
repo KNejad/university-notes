@@ -1,0 +1,85 @@
+{
+	"_title": "Practical 4",
+	"_date": "Thu Feb 16 10:11:20 GMT 2017",
+
+
+	"1": {
+		"Task": "The Grinch is given the job of partitioning 2n players into two teams of n players each. Each player has a numerical rating that measures how good he/she is at the game. He seeks to divide the players as unfairly as possible, so as to create the biggest possible talent imbalance between team A and team B. Show how the Grinch can do the job in O(n log n) time.",
+		"Solution": "Sort the players and add all in the first half to one group and all in the second half to the other group"
+	},
+	"2": {
+		"Task": "Take a sequence of 2n real numbers as input. Design an O(n log n) algorithm that partitions the numbers into n pairs, with the property that the partition minimizes the maximum sum of a pair. For example, say we are given the numbers (1,3,5,9). The possible partitions are ((1,3),(5,9)), ((1,5),(3,9)), and ((1,9),(3,5)). The pair sums for these partitions are (4,14), (6,12), and (10,8). Thus the third partition has 10 as its maximum sum, which is the minimum over the three partitions.",
+		"Solution": {"_file": "practical-4/2.pseudo"}
+	},
+
+	"3": {
+		"Task": "The mode of a set of numbers is the number that occurs most frequently in the set. The set (4, 6, 2, 4, 3, 1) has a mode of 4. Give an efficient and correct algorithm to compute the mode of a set of n numbers.",
+		"Solution": {"_file": "practical-04/3.pseudo"}
+	},
+	"4": {
+		"Task": {
+			"Description": "Outline a reasonable method of solving each of the following problems. Give the order of the worst-case complexity of your methods.",
+			"a": "You are given a pile of thousands of telephone bills and thousands of cheques sent in to pay the bills. Find out who did not pay.",
+			"b": "You are given a list containing the title, author, call number and publisher of all the books in a school library and another list of 30 publishers. Find out how many of the books in the library were published by each company.",
+			"c": "You are given all the book checkout cards used in the campus library during the past year, each of which contains the name of the person who took out the book. Determine how many distinct people checked out at least one book."
+		},
+		"Solution": {
+			"a": "Sort the checks array then for every item in bills look for that item (using binary search) in the checks array. Worst case complexity is O(n log n)",
+			"b": "Same as question 3",
+			"c": "Read through each checkout card and add them to a hash table"
+
+		}
+	},
+
+	"5": {
+		"Task": {
+			"Description": "Give an efficient algorithm to compute the union of sets A and B, where n = max(|A|, |B|). The output should be an array of distinct elements that form the union of the sets, such that they appear no more than once in the union.",
+			"a": "Assume that A and B are unsorted. Give an O(n log n) algorithm for the problem.",
+			"b": "Assume that A and B are sorted. Give an O(n) algorithm for the problem."
+		},
+		"Solution": {
+			"b": "Go through each set and add the smallest to your new set. If both are the same then discard one of them ",
+			"a": "Same as b but sort them first"
+		}
+	},
+	"6": {
+		"Task": "Devise an algorithm for finding the k smallest elements of an unsorted set of n integers in O(n+k log n).",
+		"Solution": "Create a min-heap, pick the root, remake the heap, pick the root (repeat k times)"
+	},
+	"7": {
+		"Task": {
+			"Description": "You wish to store a set of n numbers in either a max-heap or a sorted array. For each application below, state which data structure is better, or if it does not matter. Explain your answers.",
+			"a": "Want to find the maximum element quickly.",
+			"b": "Want to be able to delete an element quickly.",
+			"c": "Want to be able to form the structure quickly.",
+			"d": "Want to find the minimum element quickly."
+
+		},
+		"Solution": {
+			"a": "It doesn't matter",
+			"b": "Heap because it's faster to remake",
+			"c": "Max heap is faster to build",
+			"d": "Array. Because max heap could be in any of the leaves"
+		}
+	},
+	"8": {
+		"Task": "Prove by contradiction that the merge operation of two sorted arrays will result in a sorted array containing all elements of the smaller arrays.",
+		"Solution": ""
+	},
+	"9": {
+		"Task": "Give an algorithm to merge k sorted lists with n elements in O(nk) time. Can you find a O(n log k) time algorithm to do the same task?",
+		"Solution": "For O(nk) use merge sort"
+	},
+	"10": {
+		"Task": {
+			"Description": "Suppose you are given an array A of n sorted numbers that has been circularly shifted k positions to the right. For example, {35, 42, 5, 15, 27, 29} is a sorted array that has been circularly shifted k = 2 positions, while {27, 29, 35, 42, 5, 15} has been shifted k = 4 positions.",
+			"a": "Suppose you know what k is. Give an O(1) algorithm to find the largest number in A.",
+			"b": "Suppose you do not know what k is. Give an O(log n) algorithm to find the largest number in A."
+
+		},
+		"Solution": {
+			"a": {"_file": "practical-04/10a.pseudo",
+			"b": "Find where it converges using binary search and then do the same as above"
+		}
+	}
+}

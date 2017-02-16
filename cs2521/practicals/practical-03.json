@@ -12,7 +12,7 @@
 			"Search": {"Unsorted single linked": "O(n)", "Sorted single linked": "O(n)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(n)"},
 			"Insert":{"Unsorted single linked": "O(1)", "Sorted single linked": "O(n)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(1)"},
 			"Delete":{"Unsorted single linked": "O(n)", "Sorted single linked": "0(n)", "Unsorted double linked": "0(n)", "Sorted double linked": "O(n)"},
-			"Successor":{"Unsorted single linked": "O(n)", "Sorted single linked": "O(n)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(n)"},
+			"Successor":{"Unsorted single linked": "O(n)", "Sorted single linked": "O(1)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(n)"},
 			"Predecessor":{"Unsorted single linked": "O(n)", "Sorted single linked": "O(n)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(n)"},
 			"Minimum":{"Unsorted single linked": "O(n)", "Sorted single linked": "O(1)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(n)"},
 			"Maximum":{"Unsorted single linked": "O(n)", "Sorted single linked": "O(n)", "Unsorted double linked": "O(n)", "Sorted double linked": "O(1)"}

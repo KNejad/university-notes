@@ -1,0 +1,9 @@
+partitioner(input){
+	size = input.length - 1
+	for index in range(0, size/2){
+		output[index] = input.biggest;
+		input.biggest.remove;
+		output[index] += input.smallest;
+	}	
+	return output
+}

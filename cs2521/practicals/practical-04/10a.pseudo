@@ -1,0 +1,5 @@
+largest(a, k){
+	k = k/a.length;
+	return a[k-1];
+
+}

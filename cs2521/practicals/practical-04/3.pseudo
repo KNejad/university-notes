@@ -1,0 +1,9 @@
+mode(input){
+	dictionary;
+	for char in input{
+		 dictionary[char] = dictionary[char] ++
+	}
+	return dictionary.largestValue	
+
+
+}
