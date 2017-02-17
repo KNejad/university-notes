@@ -4,6 +4,20 @@
 	"Project files":{
 		"_href": "sample_app/"
 	},
-	"_note": "If all tables fail when you add email uniqueness it is because of test/fixtures/users.yml which automatically creates 2 similar entries to the database"
+	"Failing Tests": "If all tables fail when you add email uniqueness it is because of test/fixtures/users.yml which automatically creates 2 similar entries to the database",
+	"Produciton issues": {
+		"Description": "In production the site may not work. This is because you have to run the following 2 commands to migrate from development to production",
+		"Assets": {
+			"Commands": [
+				"RAILS_ENV=production bundle exec rake assets:precompile",
+				"Make config.serve_static_assets =  true  and config.assets.compile = true in config/environments/production.rb"
+			],
+			"_href": "http://stackoverflow.com/a/17910965/5922350"
+		},
+		"Secret key": [
+			"bundle exec rake secret",
+			"copy the output key to produciton in config/secrets.yml"
+		]
+	}
 
 }
