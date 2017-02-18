@@ -7,10 +7,10 @@
 		"min-heap": "The minimum element is on top",
 		"max-heap": "The maximum element is on top"
 	},
-	"Merge Sort": {
-		"_note": "Right this down"
-	},
+	"Merge": "Takes multiple sorted lists as input and produce a single sorted list as output,",
+	"Merge Sort": "Divide the list into the smallest unit (1 element), then recursively merge each list. Finally all the elements are sorted and merged.",
 	"Quick sort": {
 		"Randomized quick sort": "Same algorithm as quick sort but it shuffles the inputs before hand for security reasons (so that malicious people can't slow down your system)"
-	}
+	},
+	"Decision tree": "A full binary tree that represents the comparisons between elements that are performed by a sorting algorithm"
 }
