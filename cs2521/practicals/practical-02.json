@@ -24,7 +24,7 @@
 	"3": {
 		"Task": [
 			"describe the following pseudocode fragment in summations, and simplify them as far as you can. What is the complexity of this algorithm (in terms of n)?",
-			{"_file": "practical-03/3.psuedo"}
+			{"_file": "practical-02/task3.psuedo"}
 		],
 		"Solution": {}	
 	},
