@@ -11,5 +11,14 @@
 				"Prove the solution correct"
 			]
 		}
-	]
+	],
+	"Recursion trees": [
+		"A tree where each node represents the cost of solving a single subproblem.",
+		"Summing all the nodes gives the total cost of the recursion"
+	],
+	"Master method": {
+		"Definition": "Provides an approach to solving recurrences of the form T(n)=aT(n/b)+f(n). Where a ≥ 1, b > 1 and f (n) is an asymptotically positive function.",
+		"_note": "Explain the master method more in depth"
+	}
+
 }

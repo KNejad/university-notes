@@ -1,0 +1,58 @@
+{
+	"_title": "Data Types",
+	"_date":  "Mon Feb 20 11:20:16 GMT 2017",
+	"1": {
+		"Task": "What are non-primitive data types? Give an example of a non-primitive type, in a programming language of your choice.",
+		"Solution": "primitive data types are data types which cannot be decomposed further for example in Java an Array is a non-primative datatype because it can be decomposed into smaller data types"
+	},
+	"2": {
+		"Task": "What is “coercion”? How does coercion affect type checking? Give an example of type coercion affecting type checking.",
+		"Solution": "Coercion is a way of changing an entity from one data type to another. If type checking is done in languages with coercion then type checking, must be dynamic and requires the run-time system to maintain the type of the current value of such memory cells."
+	},
+	"3": {
+		"Task": "What is a “strongly typed language”? Is there any advantage in a strongly typed language? Is Java strongly typed? Explain why/why not.",
+		"Solution": "A programming language is strongly typed if type errors are always detected. Java is a strongly typed language because all variable types have to be explicitly declared before use"
+	},
+	"4": {
+		"Task": "What are the advantage(s) and disadvantage(s) of representing Boolean values as single bits in the memory?",
+		"Solution": "The main disadvantage is that a programmer can get confused by mistakingly thinking that the variable is an integer when it should be seen as a boolean. In addition to that most programming languages have built in methods for dealing with booleans (i.e changing the truth value) and this won't work on integers"
+	},
+	"5": {
+		"Task": "How do decimal values stored in a digital (two-value) memory waste space?"
+	},
+	"6": {
+		"Task": "Explain two design issues related with array types.",
+		"Solution": [
+			"Arrays do not scale. If you try to increase the size of an array you have to create a new array and store all the data from the first in it. If you try to remove an element from the middle of the array you have to move all the items after the removed item down by 1 index",
+			"Arrays can only store values of the same type"	
+		]
+	},
+	"7": {
+		"Task": {
+			"Description": "Suppose you are given a program which reads values from a file and finds the highest and lowest values among all values. The program currently reads all values, and stores them in a dynamic array, supported by the language. The performance is impressive, but as the file gets bigger, the programs slows down considerably. With this scenario in mind, answer the following questions:",
+			"a": "Can you think of a reason as to why the program’s performance could degrade with the size of the file?",
+			"b": "How would you fix this?"
+		},
+		"Solution": {
+			"a": "It is probably because the program is creating a sorted array. So every time it adds the values it has to remake a new array with the correct size and in the correct order",
+			"b": " Instead of creating a dynamic array all the program needs to do is store the smallest and largest value found in the file and output those"
+		}
+	},
+	"8": {
+		"Task": "Unions in C and C++ are separate from the records of those languages. What are the advantages and disadvantages to these two choices?"
+	},
+	"9": {
+		"Task": "Define the access functions for 3-dimension array stored via i) row major order and ii) column major order. Let the subscript ranges of the three dimensions be named min(1), min(2), min(3), max(1), max(2), and max(3). Let the sizes of the subscript ranges be size(1), size(2), and size(3). Assume the element size is 1"
+	},
+	"10": {
+		"Task": "In what way is static type checking better than dynamic type checking?"
+	},
+	"11": {
+		"Task": "Explain how coercion rules can weaken the beneficial effect of strong typing?"
+	},
+	"12": { 
+		"Task": "Find out what are the type compatibility rules of C. Using a C compiler you have access to (for instance, the online one available at https://www.codechef.com/ide) write C code which attempts to break some of these rules"
+
+	}
+
+}
