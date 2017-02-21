@@ -4,7 +4,7 @@ def directory_hash(course)
 	directory =  Dir[course + "/**/*.json"]
 	
 	tree = Hash.new
-	tree["_title"] = course + " index"
+	tree["_title"] = course.upcase + " Index"
 	directory.each do |file|
 		jsonFile = JSON.load(open(file))
 		title = jsonFile["_title"]
@@ -16,5 +16,5 @@ end
 courses = ["cs2506", "cs2510", "cs2512", "cs2521"] 
 
 courses.each do |course|
-	File.write(course +  '/index.json',directory_hash("cs2506"))
+	File.write(course +  '/index.json',directory_hash(course))
 end

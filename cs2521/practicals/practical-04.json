@@ -78,8 +78,10 @@
 
 		},
 		"Solution": {
-			"a": {"_file": "practical-04/10a.pseudo",
-			"b": "Find where it converges using binary search and then do the same as above"
+			"a": {
+				"_file": "practical-04/10a.pseudo",
+				"b": "Find where it converges using binary search and then do the same as above"
+			}
 		}
 	}
 }
