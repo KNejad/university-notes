@@ -1,7 +1,7 @@
 require "json"
 
 def directory_hash(course)  
-	directory =  Dir[course + "/**/*.json"]
+	directory =  Dir[course + "/**/*.json"].sort
 	
 	tree = Hash.new
 	tree["_title"] = course.upcase + " Index"
