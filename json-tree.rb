@@ -2,8 +2,9 @@ require "json"
 
 def directory_hash(course)  
 	directory =  Dir[course + "/**/*.json"]
-
+	
 	tree = Hash.new
+	tree["_title"] = course + " index"
 	directory.each do |file|
 		jsonFile = JSON.load(open(file))
 		title = jsonFile["_title"]
