@@ -1,21 +1,19 @@
 require "json"
-def directory_hash(path, name=nil)
-	data = {:data => (name || path)}
-	data[:children] = children = []
-	Dir.foreach(path) do |entry|
-		next if (entry == '..' || entry == '.')
-		full_path = File.join(path, entry)
-		if File.directory?(full_path) 
-			children << directory_hash(full_path, entry)
-		elsif entry.end_with? ".json"
-			children << entry
-		end
+
+def directory_hash(course)  
+	directory =  Dir[course + "/**/*.json"]
+
+	tree = Hash.new
+	directory.each do |file|
+		jsonFile = JSON.load(open(file))
+		title = jsonFile["_title"]
+		tree[title] = Hash.new
+		tree[title]["_href"] = file
 	end
-	return data
+	return tree.to_json
 end
+courses = ["cs2506", "cs2510", "cs2512", "cs2521"] 
 
-
-File.write('cs2506/index.json',directory_hash("cs2506").to_json)
-File.write('cs2510/index.json',directory_hash("cs2510").to_json)
-File.write('cs2512/index.json',directory_hash("cs2512").to_json)
-File.write('cs2521/index.json',directory_hash("cs2521").to_json)
+courses.each do |course|
+	File.write(course +  '/index.json',directory_hash("cs2506"))
+end
