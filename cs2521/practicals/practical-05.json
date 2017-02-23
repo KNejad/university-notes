@@ -1,0 +1,49 @@
+{
+	"1": {
+		"Task": "Which type of sort should Google use? Why?",
+		"Solution" : "Merge sort because it is very efficient and can take advantage of parallelisation"
+	},
+	"2": {
+		"Task": "Prove (by induction) the correctness of Radix sort.",
+		"Solution" : ""
+	},
+	"3": {
+		"Task": "Illustrate the operation of the Quicksort partition function on the array A = [13, 19, 9, 5, 12, 7, 7, 4, 21, 2, 6, 11]",
+		"Solution" : ""
+	},
+	"4": {
+		"Task": "In class, we saw that the maximum depth of the tree when partitioned given a constant split is logarithmic. Compute what the minimum depth of the tree is when the split has a ratio of α/1 − α. E.g. if α = 0.1 then then the split is 0.1/0.9=1/9, i.e. given a list n elements long, the split lists will contain n/9 elements and 8n/9 elements respectively.",
+		"Solution" : ""
+	},
+	"5": {
+		"Task": "When running randomised quicksort, how many times do we call the randomisation function in the worst case? In the best case?",
+		"Solution" : "In both cases the randomisation function is calles n-1 times"
+	},
+	"6": {
+		"Task": "We know that the worst case running time for Bucket sort is Θ(n^2). What simple change to the algorithm preserves its linear average case running time and makes its worst-case running time O(n log n)?",
+		"Solution" : ""
+	},
+	"7": {
+		"Task": "Assume that we are given n pairs of items as input, where the first item is a number and the second item is one of three colours (red, blue, or yellow). Further assume that the items are sorted by number. Give an O(n) algorithm to sort the items by colour (all reds before all blues before all yellows) such that the numbers for identical colours stay sorted. For example: (1,blue), (3,red), (4,blue), (6,yellow), (9,red) should become (3,red), (9,red), (1,blue), (4,blue), (6,yellow).",
+		"Solution" : ""
+	},
+	"8": {
+		"Task": "Why shouldn’t we always sort using a O(n) sorting algorithm? More specifically, why/when should we use (say) Mergesort or Quicksort rather than Radix sort?",
+		"Solution" : ""
+	},
+	"9": {
+		"Task": "Can you give an efficient algorithm to rearrange an array of n values so that all the negative keys precede all the non-negative keys? Your algorithm must be in-place. How fast is your algorithm?",
+		"Solution" : ""
+	},
+	"10": {
+		"Task": "Show that n positive integers in the range 1 to k can be sorted in O(n log k) time. The interesting case is when k << n.",
+		"Solution" : ""
+	},
+	"11": {
+		"Task": "Someone claims to have developed a data structure for priority queues that supports insert, maximum and extract-max in O(1) worst time. Is this possible? Why/why not?",
+		"Solution" : ""
+	},
+	"12": {
+		"Task": "Consider an n*n array A containing integer elements (positive, negative, and zero). Assume that the elements in each row of A are in strictly increasing order, and the elements of each column of A are in strictly decreasing order. (Hence there cannot be two zeroes in the same row or the same column.) Describe an efficient algorithm that counts the number of occurrences of the element 0 in A. Analyse its running time.",
+		"Solutuon": ""
+	}
