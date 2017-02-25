@@ -1,4 +1,7 @@
 {
+	"_title": "Practical 5",
+	"_date": "Thu Feb 23 13:00:00 GMT 2017",
+
 	"1": {
 		"Task": "Which type of sort should Google use? Why?",
 		"Solution" : "Merge sort because it is very efficient and can take advantage of parallelisation"
@@ -47,3 +50,4 @@
 		"Task": "Consider an n*n array A containing integer elements (positive, negative, and zero). Assume that the elements in each row of A are in strictly increasing order, and the elements of each column of A are in strictly decreasing order. (Hence there cannot be two zeroes in the same row or the same column.) Describe an efficient algorithm that counts the number of occurrences of the element 0 in A. Analyse its running time.",
 		"Solution": "We can scan down the first element of each array and only check the rows (using binary search) which have a first value lower than 0"
 	}
+}
