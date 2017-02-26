@@ -1,1 +1,46 @@
-{"_title":"CS2512 Index","Advanced Web Application Development":{"_href":"cs2512/cs2512.json"},"Introduction":{"_href":"cs2512/lectures/lecture-01.json"},"Ruby on Rails - Basics":{"_href":"cs2512/lectures/lecture-02.json"},"Routing in Rails":{"_href":"cs2512/lectures/lecture-03.json"},"Working with Databases":{"_href":"cs2512/lectures/lecture-04.json"},"Working with Databases II":{"_href":"cs2512/lectures/lecture-05.json"},"Working with Databases III":{"_href":"cs2512/lectures/lecture-06.json"},"Rails Forms  & The Temperature Converter":{"_href":"cs2512/lectures/rails-forms.json"},"From zero to deploy":{"_href":"cs2512/practicals/practical-01.json"},"A toy app":{"_href":"cs2512/practicals/practical-02.json"},"Mostly static pages":{"_href":"cs2512/practicals/practical-03.json"},"Rails-flavored Ruby":{"_href":"cs2512/practicals/practical-04.json"},"Modeling users":{"_href":"cs2512/practicals/practical-05.json"},"Basic login":{"_href":"cs2512/practicals/practical-06.json"}}
+{
+  "_title": "CS2512 Index",
+  "_date": "2017-02-26 22:32:45 +0000",
+  "Advanced Web Application Development": {
+    "_href": "cs2512/cs2512.json"
+  },
+  "Introduction": {
+    "_href": "cs2512/lectures/lecture-01.json"
+  },
+  "Ruby on Rails - Basics": {
+    "_href": "cs2512/lectures/lecture-02.json"
+  },
+  "Routing in Rails": {
+    "_href": "cs2512/lectures/lecture-03.json"
+  },
+  "Working with Databases": {
+    "_href": "cs2512/lectures/lecture-04.json"
+  },
+  "Working with Databases II": {
+    "_href": "cs2512/lectures/lecture-05.json"
+  },
+  "Working with Databases III": {
+    "_href": "cs2512/lectures/lecture-06.json"
+  },
+  "Rails Forms  & The Temperature Converter": {
+    "_href": "cs2512/lectures/rails-forms.json"
+  },
+  "From zero to deploy": {
+    "_href": "cs2512/practicals/practical-01.json"
+  },
+  "A toy app": {
+    "_href": "cs2512/practicals/practical-02.json"
+  },
+  "Mostly static pages": {
+    "_href": "cs2512/practicals/practical-03.json"
+  },
+  "Rails-flavored Ruby": {
+    "_href": "cs2512/practicals/practical-04.json"
+  },
+  "Modeling users": {
+    "_href": "cs2512/practicals/practical-05.json"
+  },
+  "Basic login": {
+    "_href": "cs2512/practicals/practical-06.json"
+  }
+}

@@ -4,13 +4,14 @@ def directory_hash(course)
 	
 	tree = Hash.new
 	tree["_title"] = course.upcase + " Index"
+	tree["_date"] =  Time.now
 	directory.each do |file|
 		jsonFile = JSON.load(open(file))
 		title = jsonFile["_title"]
 		tree[title] = Hash.new
 		tree[title]["_href"] = file
 	end
-	return tree.to_json
+	return JSON.pretty_generate(tree)
 end
 
 

@@ -1,1 +1,46 @@
-{"_title":"CS2510 Index","Modern Programming Languages":{"_href":"cs2510/cs2510.json"},"Preliminaries":{"_href":"cs2510/reading/chapter-01.json"},"Evolution of Major Programming Languages":{"_href":"cs2510/lectures/lecture-02.json"},"Describing Syntax and Semantics":{"_href":"cs2510/lectures/lecture-03.json"},"Lexical and Syntactical Analysis":{"_href":"cs2510/lectures/lecture-04.json"},"Names, Bindings and Scopes":{"_href":"cs2510/practicals/practical-04.json"},"Data Types":{"_href":"cs2510/practicals/practical-05.json"},"Expressions and Assignment Statements":{"_href":"cs2510/lectures/lecture-07.json"},"Statement-Level Control Structures":{"_href":"cs2510/lectures/lecture-08.json"},"Support for Object-Oriented Programming":{"_href":"cs2510/lectures/lecture-09.json"},"Object-Oriented Programming 2":{"_href":"cs2510/lectures/lecture-10.json"},"Practical 1":{"_href":"cs2510/practicals/practical-01.json"},"Practical 2 – Describing Syntax & Semantics":{"_href":"cs2510/practicals/practical-02.json"},"Lexical and Syntax Analysis":{"_href":"cs2510/practicals/practical-03.json"}}
+{
+  "_title": "CS2510 Index",
+  "_date": "2017-02-26 22:32:45 +0000",
+  "Modern Programming Languages": {
+    "_href": "cs2510/cs2510.json"
+  },
+  "Preliminaries": {
+    "_href": "cs2510/reading/chapter-01.json"
+  },
+  "Evolution of Major Programming Languages": {
+    "_href": "cs2510/lectures/lecture-02.json"
+  },
+  "Describing Syntax and Semantics": {
+    "_href": "cs2510/lectures/lecture-03.json"
+  },
+  "Lexical and Syntactical Analysis": {
+    "_href": "cs2510/lectures/lecture-04.json"
+  },
+  "Names, Bindings and Scopes": {
+    "_href": "cs2510/practicals/practical-04.json"
+  },
+  "Data Types": {
+    "_href": "cs2510/practicals/practical-05.json"
+  },
+  "Expressions and Assignment Statements": {
+    "_href": "cs2510/lectures/lecture-07.json"
+  },
+  "Statement-Level Control Structures": {
+    "_href": "cs2510/lectures/lecture-08.json"
+  },
+  "Support for Object-Oriented Programming": {
+    "_href": "cs2510/lectures/lecture-09.json"
+  },
+  "Object-Oriented Programming 2": {
+    "_href": "cs2510/lectures/lecture-10.json"
+  },
+  "Practical 1": {
+    "_href": "cs2510/practicals/practical-01.json"
+  },
+  "Practical 2 – Describing Syntax & Semantics": {
+    "_href": "cs2510/practicals/practical-02.json"
+  },
+  "Lexical and Syntax Analysis": {
+    "_href": "cs2510/practicals/practical-03.json"
+  }
+}
