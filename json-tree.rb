@@ -12,8 +12,13 @@ def directory_hash(course)
 	end
 	return tree.to_json
 end
+
+
+
 courses = ["cs2506", "cs2510", "cs2512", "cs2521"] 
 
 courses.each do |course|
-	File.write(course +  '/index.json',directory_hash(course))
+	file = course +  '/index.json'
+	File.delete(file) if File.exist?(file)
+	File.write(file ,directory_hash(course))
 end
