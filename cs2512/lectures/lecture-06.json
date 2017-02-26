@@ -1,4 +1,5 @@
 {
 	"_title": "Working with Databases III",
-	"_date": "Tue Feb  7 12:05:43 GMT 2017"
+	"_date": "Tue Feb  7 12:05:43 GMT 2017",
+	"Joining tables in query": "table1.joins(:table2).where('table1.column'=>'requiredValue')"
 }

@@ -1,4 +1,11 @@
 {
 	"_title": "Introduction",
-	"_date" :  "Tue Jan 17 12:00:00 GMT 2017"
+	"_date" :  "Tue Jan 17 12:00:00 GMT 2017",
+	"Book": {"_href": "https://www.railstutorial.org/"},
+	"Software": [
+		"Ruby",
+		"Sqlite3",
+		"Git",
+		"Rails"
+	]
 }

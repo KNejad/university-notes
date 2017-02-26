@@ -4,7 +4,12 @@
 	"Create a table": "rails generate model Student name:string address:string",
 	"Add field to table": {
 		"Run in console": "rails generate migration AddAgeToStudents age:integer",
-		"Add to db/schema.rb": "rails generate migration AddAgeToStudents age:integer"
-	}
+		"Add to db/schema.rb": "`t.integer 'age'` where t is the table"
+	},
+	"Migrating": {
+		"Definition": "Management of incremental, reversible changes to relational database schemas",
+		"Command": "rails db:migrate"
+	},
+	"Revert changes": "rails db:rollback"
 
 }
