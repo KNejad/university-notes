@@ -1,5 +1,5 @@
 {
-	"_title": "Abstract Data Types",
+	"_title": "Practical 06 - Abstract Data Types",
 	"_date": "Mon Feb 27 11:43:06 GMT 2017",
 	"Preliminaries": "This is a summary of the definition of the QueueOfIntegers class in Java that is provided with the practical – a queue operates in a first-in-first-out (FIFO) manner. You are provided will a complete class definition for QueueOfIntegers, plus a couple of useful exception classes and a class “UseIntegerQueue” that you can run to interact with an instance of the QueueOfIntegers class.",
 	"_file": "practical-06/preliminaries.java",

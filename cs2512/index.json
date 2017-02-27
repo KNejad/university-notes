@@ -1,6 +1,6 @@
 {
   "_title": "CS2512 Index",
-  "_date": "2017-02-26 22:32:45 +0000",
+  "_date": "2017-02-27 12:47:40 +0000",
   "Advanced Web Application Development": {
     "_href": "cs2512/cs2512.json"
   },
@@ -34,13 +34,16 @@
   "Mostly static pages": {
     "_href": "cs2512/practicals/practical-03.json"
   },
-  "Rails-flavored Ruby": {
+  "Rails-flavored Ruby and Filling in the layout": {
     "_href": "cs2512/practicals/practical-04.json"
   },
-  "Modeling users": {
+  "Modeling users and Sign up": {
     "_href": "cs2512/practicals/practical-05.json"
   },
-  "Basic login": {
+  "Basic login and Advanced login": {
     "_href": "cs2512/practicals/practical-06.json"
+  },
+  "Updating, showing, and deleting users": {
+    "_href": "cs2512/practicals/practical-07.json"
   }
 }
