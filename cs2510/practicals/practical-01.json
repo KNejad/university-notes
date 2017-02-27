@@ -1,5 +1,5 @@
 {
-	"_title": "Tutorial 1 – Preliminaries and Evolution of Programming Languages",
+	"_title": "Practical 1 – Preliminaries and Evolution of Programming Languages",
 	"1": {
 		"Task": "What’s the best programming language, in your opinion? Justify your answer",	
 		"Solution":"This is a very hard question to answer. All programming languages have their advantages and disadvantages. For example Haskell programs have far fewer bugs, but are (arguably) harder to learn. C is easier to learn but still slower to develop in once learned. C++ I would argue is an excellent language. The syntax is clear and easy to learn, it is fast, stable, popular and is compiled not interpreted."
