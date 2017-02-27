@@ -1,0 +1,17 @@
+{
+	"_title": "Graphs",
+	"_date": "Mon Feb 27 13:09:01 GMT 2017",
+	"Types of graphs": {
+		"Simple": "No multi-edges or loops",
+		"Sparse": "Only a small fraction of vertex pairs",
+		"Acyclic": "No cycles",
+		"Embedded": "Geometric position of vertices and edges have meaning",
+		"Implicit/explicit": "Graph is fully represented, or conceptual",
+		"Labelled/Unlabelled": "Each vertex is associated with a unique identifier or it has no identifier"
+	},
+	"Adjacency matrix": "A 2d array to represent a graph",
+	"Adjacency list": "A list to represent a graph",
+	"Degree": "The number of edges entering a vertex plus the number of edges leaving",
+	"Free tree": "An acyclic, connected undirected graph",
+	"Forest":  "A set of free trees"
+}

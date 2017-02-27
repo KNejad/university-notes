@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-02-27 12:47:40 +0000",
+  "_date": "2017-02-27 15:35:00 +0000",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -21,6 +21,9 @@
   },
   "Divide and Conquer": {
     "_href": "cs2521/lectures/lecture-05.json"
+  },
+  "Graphs": {
+    "_href": "cs2521/lectures/lecture-06.json"
   },
   "Practical 1": {
     "_href": "cs2521/practicals/practical-01.json"
