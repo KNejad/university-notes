@@ -1,6 +1,6 @@
 {
   "_title": "CS2512 Index",
-  "_date": "2017-02-27 15:35:00 +0000",
+  "_date": "2017-02-28 16:47:47 +0000",
   "Advanced Web Application Development": {
     "_href": "cs2512/cs2512.json"
   },
@@ -21,6 +21,9 @@
   },
   "Working with Databases III": {
     "_href": "cs2512/lectures/lecture-06.json"
+  },
+  "Test Driven Development with Ruby and Rails": {
+    "_href": "cs2512/lectures/lecture-07.json"
   },
   "Rails Forms  & The Temperature Converter": {
     "_href": "cs2512/lectures/rails-forms.json"

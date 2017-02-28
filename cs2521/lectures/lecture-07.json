@@ -1,0 +1,20 @@
+{
+	"_title": "Graph Traversal",
+	"_date": "Tue Feb 28 11:17:57 GMT 2017",
+	"Definition": "Visiting every edge and vertex in the graph in a systematic manner",
+	"Search": "Visiting vertices until some data is found",
+	"Traversal steps": [
+		"Evaluate each edge in the first node in the data structure; if we find a new node, mark it as discovered and add it to the data structure",
+		"Ignore edges that go to processed or discovered nodes",
+		"Once all edges are evaluated, mark node as processed, remove it from the data structure, and go to the next node in the structure"
+	],
+	"Node states": {
+		"Undiscovered": "Has not been encountered by the algorithm",
+		"Discovered": "Has been encountered, but some of its incident edges have not been used/explored",
+		"Processed": "Has been encountered and all edges have been used"
+	},
+	"Breadth first search": {
+		"Definition": "A way to traverse a graph"
+	}
+
+}

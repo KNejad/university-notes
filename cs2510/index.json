@@ -1,6 +1,6 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-02-27 15:35:00 +0000",
+  "_date": "2017-02-28 16:47:47 +0000",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
@@ -33,6 +33,9 @@
   },
   "Object-Oriented Programming 2": {
     "_href": "cs2510/lectures/lecture-10.json"
+  },
+  "Object-Oriented Programming 3": {
+    "_href": "cs2510/lectures/lecture-11.json"
   },
   "Practical 1 – Preliminaries and Evolution of Programming Languages": {
     "_href": "cs2510/practicals/practical-01.json"

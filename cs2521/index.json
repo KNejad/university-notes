@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-02-27 15:35:00 +0000",
+  "_date": "2017-02-28 16:47:47 +0000",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -24,6 +24,9 @@
   },
   "Graphs": {
     "_href": "cs2521/lectures/lecture-06.json"
+  },
+  "Graph Traversal": {
+    "_href": "cs2521/lectures/lecture-07.json"
   },
   "Practical 1": {
     "_href": "cs2521/practicals/practical-01.json"

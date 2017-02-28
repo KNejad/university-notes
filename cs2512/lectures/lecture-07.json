@@ -1,0 +1,10 @@
+{
+	"_title": "Test Driven Development with Ruby and Rails",
+	"_date": "Tue Feb 28 11:58:22 GMT 2017",
+	"TDD steps": [
+		"Write a test",
+		"Stub out code. Watch test fail",
+		"Get test to pass",
+		"Refractor code"
+	]
+}

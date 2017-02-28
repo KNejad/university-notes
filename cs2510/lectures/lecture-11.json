@@ -1,0 +1,12 @@
+{
+	"_title": "Object-Oriented Programming 3",
+	"_date": "Tue Feb 28 15:07:18 GMT 2017",
+	"Constructor": "A method which is called when a class is created",
+	"Destructor": "A method which is called when a class is destroyed",
+	"Access controls": {
+		"Public": "Accessible by any method",
+		"Private": "Only accessible by member methods and 'friend' classes",
+		"Protected": "Same as private but also accessible by derived classes"
+	},
+	"Virtual methods": "A method which is declared within a base class and redefined by a derived class"
+}
