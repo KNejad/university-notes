@@ -1,0 +1,19 @@
+{
+	"_title": "Behaviour Driven Development with Ruby and Rails",
+	"_date": "Thu Mar  2 09:11:31 GMT 2017",
+	"RSpec": "A testing tool for Ruby, created for behavior-driven development (BDD)",
+	"Factory Girl": "A library for setting up Ruby objects as test data. It's essentially a fixtures replacement",
+	"Cucumber": {
+		"Definition": "Writing and executing high level descriptions of your software’s functionality",
+		"Steps": {
+			"GIVEN": "Describes the pre-requisite for the test to be executed",
+			"WHEN": "Defines the trigger point for any test scenario execution",
+			"THEN": "Holds the expected result for the test to be executed",
+			"AND": "Provides the logical AND condition between any two statements",
+			"BUT": "Signifies logical OR condition between any two statements"
+		}
+	},
+	"Capybara": "Capybara is a library which simulates how a user interacts with a website"
+
+
+}

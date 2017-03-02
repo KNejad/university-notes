@@ -1,0 +1,6 @@
+{
+	"_title": "Object-Oriented Programming 4",
+	"_date": "Thu Mar  2 15:09:16 GMT 2017",
+	"Write once run anywhere (WORA)": "Sacrifices performance in favor of development speed",
+	"Static methods": "Shared between all instances of a method"
+}
