@@ -14,7 +14,9 @@
 		"Processed": "Has been encountered and all edges have been used"
 	},
 	"Breadth first search": {
-		"Definition": "A way to traverse a graph"
-	}
+		"Definition": "A way to traverse a graph",
+		"_note": "explain how this works"
+	},
+	"_note": "continue from slide 17"
 
 }
