@@ -1,0 +1,12 @@
+{
+	"_title": "Weighted Graph",
+	"_date": "Tue Mar  7 11:31:37 GMT 2017",
+	"Spanning tree": "a subset of edges forming a tree connecting all vertices",
+	"Minimum spanning tree (MST)": "A spanning tree whose sum of edge weights is minimal",
+	"Prim’s algorithm": {
+		"Description": "Finds an MST",
+		"Steps": "Selects starting vertex and repeatedly connecting it's nearest edge to the tree until a MST is found",
+		"Complexity": "O(nm)"
+
+	}
+}

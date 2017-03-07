@@ -17,6 +17,14 @@
 		"Definition": "A way to traverse a graph",
 		"_note": "explain how this works"
 	},
-	"_note": "continue from slide 17"
+	"_note": "continue from slide 17 to 30",
+	"Edge types": {
+		"Tree edge": "Points from a parent to a direct child",
+		"Forward edge": "Points forward from a parent to a non-immediate child",
+		"Back edge": "Points from a child to any tree",
+		"Cross edge": "Points to a sibling"
+	},
+	"Topological sort": "Orders a directed acyclic graph by placing all ancestors before their children",
+	"Strongly connected graph": "Graphs where you can traverse from any node to any other node"
 
 }
