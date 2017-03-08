@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-02-28 16:47:47 +0000",
+  "_date": "2017-03-08 12:19:41 +0000",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -28,6 +28,9 @@
   "Graph Traversal": {
     "_href": "cs2521/lectures/lecture-07.json"
   },
+  "Weighted Graph": {
+    "_href": "cs2521/lectures/lecture-08.json"
+  },
   "Practical 1": {
     "_href": "cs2521/practicals/practical-01.json"
   },
@@ -42,5 +45,8 @@
   },
   "Practical 5": {
     "_href": "cs2521/practicals/practical-05.json"
+  },
+  "Practical 06": {
+    "_href": "cs2521/practicals/practical-06.json"
   }
 }

@@ -1,6 +1,6 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-02-28 16:47:47 +0000",
+  "_date": "2017-03-08 12:19:41 +0000",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
@@ -29,13 +29,19 @@
     "_href": "cs2510/lectures/lecture-08.json"
   },
   "Support for Object-Oriented Programming": {
-    "_href": "cs2510/lectures/lecture-09.json"
+    "_href": "cs2510/lectures/oop/lecture-01.json"
   },
   "Object-Oriented Programming 2": {
-    "_href": "cs2510/lectures/lecture-10.json"
+    "_href": "cs2510/lectures/oop/lecture-02.json"
   },
   "Object-Oriented Programming 3": {
-    "_href": "cs2510/lectures/lecture-11.json"
+    "_href": "cs2510/lectures/oop/lecture-03.json"
+  },
+  "Object-Oriented Programming 4": {
+    "_href": "cs2510/lectures/oop/lecture-04.json"
+  },
+  "Logic Programming 1": {
+    "_href": "cs2510/lectures/prolog/lecture-01.json"
   },
   "Practical 1 – Preliminaries and Evolution of Programming Languages": {
     "_href": "cs2510/practicals/practical-01.json"
@@ -54,5 +60,8 @@
   },
   "Practical 6 - Abstract Data Types": {
     "_href": "cs2510/practicals/practical-06.json"
+  },
+  "Practical 7 – Object-Oriented Programming": {
+    "_href": "cs2510/practicals/practical-07.json"
   }
 }

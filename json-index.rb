@@ -1,3 +1,5 @@
+#!/usr/bin/ruby -w
+
 require "json"
 def directory_hash(course)  
 	directory =  Dir[course + "/**/*.json"].sort

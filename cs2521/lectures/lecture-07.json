@@ -14,10 +14,22 @@
 		"Processed": "Has been encountered and all edges have been used"
 	},
 	"Breadth first search": {
-		"Definition": "A way to traverse a graph",
-		"_note": "explain how this works"
+		"Description": "A way to traverse a graph",
+		"Steps": [
+			"Select the root or a node at random",
+			"Use its vertices to find each of its neighbours",
+			"For each neighbour found perform the above step excluding already visited nodes"
+		]
 	},
-	"_note": "continue from slide 17 to 30",
+	"Depth first search": {
+		"Description": "A way to traverse a graph",
+		"Steps": [
+			"Select the root or a node at random",
+			"Use its vertices to  find a neighbour",
+			"For that neighbour repeat the above step excluding already visited nodes",
+			"Once there are no more nodes to traverse backtrack and repeat"
+		]
+	},
 	"Edge types": {
 		"Tree edge": "Points from a parent to a direct child",
 		"Forward edge": "Points forward from a parent to a non-immediate child",
