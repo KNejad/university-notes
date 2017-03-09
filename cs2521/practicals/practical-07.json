@@ -1,0 +1,69 @@
+{
+	"_title": "Practical 7",
+	"_date": "Thu Mar  9 10:56:32 GMT 2017",
+	"1": {
+		"Task": {
+			"Description": "Describe the properties of each of the following graphs.",
+			"_image": "practical-07/graphs.png"
+		},
+		"Solution": {
+			"a": ["Simple", "Acyclic", "Unlabelled", "Sparse","Undirected", "Implicit", "Disconnected" ],
+			"b": ["Simple", "Acyclic", "Unlabelled", "Sparse","Directed", "Implicit" ],
+			"c": ["Not simple", "Cyclic", "Unlabelled", "Undirected" ],
+			"d": ["Simple", "Cyclic", "Unlabelled", "Undirected" ],
+			"e": ["Not simple", "Cyclic", "Unlabelled", "Undirected" ]
+		}	
+	},
+	"2": {
+		"Task": "How would graphs be useful in building a GPS road navigation system? A computer chess player?",
+		"Solution": {
+			"Navigation": "Use nodes as locations and weighted edges as travel time",
+			"Chess": "Map out the possible moves for each player (like in min-max)"
+		}
+	},
+	"3": {
+		"Task": {
+			"Description": "Model the following problems using graphs",
+			"a": "Imagine two groups of n people. For each member of the first group, there is a subset of people in the second that they would want to work with. Those in the second group are happy to work with anyone in the first group. Is it possible to ensure that everyone is working?",
+			"b": "Consider m machines and n different jobs. Each machine can execute a job, but different jobs take machines different amounts of time. How can we find an allocation which minimises the time spent to finish the jobs?"
+		},
+		"Solution": {
+			"a": "All people are nodes. Use directed edges from group a to group b for the people they want to work with. No it is not possible to ensure everyone is working",
+			"b": "Use weighted graphs to identify how long it takes a machine to do a task"
+		}	
+	},
+	"4": {
+		"Task": "Give an algorithm to compute the degree of a node, and describe it’s complexity for both adjacency matrices and adjacency lists. What if an array was used instead of a linked list in the latter?",
+		"Solution": {
+			"In degree": "Count the number of `true` inputs in the column for the node",
+			"Out degree": "Count the number of `true` inputs in the row for the node",
+			"Complexity": {
+				"Matrix": "O(n)",
+				"Linked list": "O(n)",
+				"Array": "O(1)"
+			}	
+		}	
+	},
+	"5": {
+		"Task": "Given a set of n vertices, how many distinct graphs can one generate?",
+		"Solution": "Assuming undirected graphs which are not connected to them self then n(n-1)/2 because each node can connect to every other node and however we divide by 2 so that we don't double count cases like 1 -> 2 and 2 -> 1 " 
+	},
+	"6": {
+		"Task": "A vertex cover of a graph G = (V, E) is a subset of vertices V 0 such that each edge in E is incident on at least one vertex of V 0 . If G is a tree, give an efficient algorithm to find a minimum size vertex cover, and prove its correctness. Finally, determine the complexity of the algorithm.",
+		"Solution": "" 
+	},
+	"7": {
+		"Task": "Adding a single directed edge to a directed graph can reduce the number of weakly connected components, but by at most how many components? What about the number of strongly connected components?",
+		"Solution": "For strongly connected components it's n" 
+	},
+	"8": {
+		"Task": {
+			"Description": "Your job is to arrange n ill-behaved children in a straight line, facing front. You are given a list of m statements of the form ”i hates j”. If i hates j, then you do not want put i somewhere behind j, because then i is capable of throwing something at j",	
+			"a": "Give an algorithm that orders the line, (or says that it is not possible) in O(m + n) time",	
+			"b": "Suppose instead you want to arrange the children in rows such that if i hates j, then i must be in a lower numbered row than j. Give an efficient algorithm to find the minimum number of rows needed, if it is possible"
+		},
+		"Solution": {
+			"a": "This is not possible if there is a cycle"
+		}	
+	}
+}

@@ -5,9 +5,11 @@
 		"Simple": "No multi-edges or loops",
 		"Sparse": "Only a small fraction of vertex pairs",
 		"Acyclic": "No cycles",
+		"Disconnected": "Not fully connected",
+		"Directed/undirected": "Edges are one way or 2 way",
 		"Embedded": "Geometric position of vertices and edges have meaning",
 		"Implicit/explicit": "Graph is fully represented, or conceptual",
-		"Labelled/Unlabelled": "Each vertex is associated with a unique identifier or it has no identifier"
+		"Labelled/unlabelled": "Each vertex is associated with a unique identifier or it has no identifier"
 	},
 	"Adjacency matrix": "A 2d array to represent a graph",
 	"Adjacency list": "A list to represent a graph",
