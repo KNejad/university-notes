@@ -1,67 +1,83 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-03-08 12:19:41 +0000",
+  "_date": "2017-03-09 21:45:25 +0000",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
-  "Preliminaries": {
-    "_href": "cs2510/reading/chapter-01.json"
+  "Lectures": {
+    "Preliminaries": {
+      "_href": "cs2510/lectures/lecture-01.json"
+    },
+    "Evolution of Major Programming Languages": {
+      "_href": "cs2510/lectures/lecture-02.json"
+    },
+    "Describing Syntax and Semantics": {
+      "_href": "cs2510/lectures/lecture-03.json"
+    },
+    "Lexical and Syntactical Analysis": {
+      "_href": "cs2510/lectures/lecture-04.json"
+    },
+    "Names, Bindings and Scopes": {
+      "_href": "cs2510/lectures/lecture-05.json"
+    },
+    "Data Types": {
+      "_href": "cs2510/lectures/lecture-06.json"
+    },
+    "Expressions and Assignment Statements": {
+      "_href": "cs2510/lectures/lecture-07.json"
+    },
+    "Statement-Level Control Structures": {
+      "_href": "cs2510/lectures/lecture-08.json"
+    },
+    "Oop": {
+      "Support for Object-Oriented Programming": {
+        "_href": "cs2510/lectures/oop/lecture-01.json"
+      },
+      "Object-Oriented Programming 2": {
+        "_href": "cs2510/lectures/oop/lecture-02.json"
+      },
+      "Object-Oriented Programming 3": {
+        "_href": "cs2510/lectures/oop/lecture-03.json"
+      },
+      "Object-Oriented Programming 4": {
+        "_href": "cs2510/lectures/oop/lecture-04.json"
+      }
+    },
+    "Prolog": {
+      "Logic Programming 1": {
+        "_href": "cs2510/lectures/prolog/lecture-01.json"
+      },
+      "Logic Programming 2": {
+        "_href": "cs2510/lectures/prolog/lecture-02.json"
+      }
+    }
   },
-  "Evolution of Major Programming Languages": {
-    "_href": "cs2510/lectures/lecture-02.json"
+  "Practicals": {
+    "Practical 1 – Preliminaries and Evolution of Programming Languages": {
+      "_href": "cs2510/practicals/practical-01.json"
+    },
+    "Practical 2 – Describing Syntax & Semantics": {
+      "_href": "cs2510/practicals/practical-02.json"
+    },
+    "Practical 3 - Lexical and Syntax Analysis": {
+      "_href": "cs2510/practicals/practical-03.json"
+    },
+    "Practical 4 - Names, Bindings and Scopes": {
+      "_href": "cs2510/practicals/practical-04.json"
+    },
+    "Practical 5 - Data Types": {
+      "_href": "cs2510/practicals/practical-05.json"
+    },
+    "Practical 6 - Abstract Data Types": {
+      "_href": "cs2510/practicals/practical-06.json"
+    },
+    "Practical 7 – Object-Oriented Programming": {
+      "_href": "cs2510/practicals/practical-07.json"
+    }
   },
-  "Describing Syntax and Semantics": {
-    "_href": "cs2510/lectures/lecture-03.json"
-  },
-  "Lexical and Syntactical Analysis": {
-    "_href": "cs2510/lectures/lecture-04.json"
-  },
-  "Names, Bindings and Scopes": {
-    "_href": "cs2510/lectures/lecture-05.json"
-  },
-  "Data Types": {
-    "_href": "cs2510/lectures/lecture-06.json"
-  },
-  "Expressions and Assignment Statements": {
-    "_href": "cs2510/lectures/lecture-07.json"
-  },
-  "Statement-Level Control Structures": {
-    "_href": "cs2510/lectures/lecture-08.json"
-  },
-  "Support for Object-Oriented Programming": {
-    "_href": "cs2510/lectures/oop/lecture-01.json"
-  },
-  "Object-Oriented Programming 2": {
-    "_href": "cs2510/lectures/oop/lecture-02.json"
-  },
-  "Object-Oriented Programming 3": {
-    "_href": "cs2510/lectures/oop/lecture-03.json"
-  },
-  "Object-Oriented Programming 4": {
-    "_href": "cs2510/lectures/oop/lecture-04.json"
-  },
-  "Logic Programming 1": {
-    "_href": "cs2510/lectures/prolog/lecture-01.json"
-  },
-  "Practical 1 – Preliminaries and Evolution of Programming Languages": {
-    "_href": "cs2510/practicals/practical-01.json"
-  },
-  "Practical 2 – Describing Syntax & Semantics": {
-    "_href": "cs2510/practicals/practical-02.json"
-  },
-  "Practical 3 - Lexical and Syntax Analysis": {
-    "_href": "cs2510/practicals/practical-03.json"
-  },
-  "Practical 4 - Names, Bindings and Scopes": {
-    "_href": "cs2510/practicals/practical-04.json"
-  },
-  "Practical 5 - Data Types": {
-    "_href": "cs2510/practicals/practical-05.json"
-  },
-  "Practical 6 - Abstract Data Types": {
-    "_href": "cs2510/practicals/practical-06.json"
-  },
-  "Practical 7 – Object-Oriented Programming": {
-    "_href": "cs2510/practicals/practical-07.json"
+  "Reading": {
+    "Preliminaries": {
+      "_href": "cs2510/reading/chapter-01.json"
+    }
   }
 }

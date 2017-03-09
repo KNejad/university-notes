@@ -1,58 +1,62 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-03-08 12:19:41 +0000",
+  "_date": "2017-03-09 21:45:25 +0000",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
   },
-  "Usability- Introduction": {
-    "_href": "cs2506/lectures/lecture-01.json"
+  "Lectures": {
+    "Usability- Introduction": {
+      "_href": "cs2506/lectures/lecture-01.json"
+    },
+    "Task Analysis": {
+      "_href": "cs2506/lectures/lecture-02.json"
+    },
+    "Contextual design": {
+      "_href": "cs2506/lectures/lecture-03.json"
+    },
+    "Query techniques and Focus Groups": {
+      "_href": "cs2506/lectures/lecture-04.json"
+    },
+    "Information Architecture": {
+      "_href": "cs2506/lectures/lecture-05.json"
+    },
+    "Information Architecture 2. Navigation": {
+      "_href": "cs2506/lectures/lecture-06.json"
+    },
+    "Conversational Interfaces": {
+      "_href": "cs2506/lectures/lecture-07.json"
+    },
+    "Prototyping": {
+      "_href": "cs2506/lectures/lecture-08.json"
+    },
+    "Analytical Usability Evaluation": {
+      "_href": "cs2506/lectures/lecture-09.json"
+    },
+    "Analytical Usability Evaluation: Cognitive walkthrough": {
+      "_href": "cs2506/lectures/lecture-10.json"
+    },
+    "Analytical Usability Evaluation: Model-based Evaluations and Analytics": {
+      "_href": "cs2506/lectures/lecture-11.json"
+    },
+    "Analytical Usability Evaluation for Safety-Critical Systems": {
+      "_href": "cs2506/lectures/lecture-12.json"
+    },
+    "User testing": {
+      "_href": "cs2506/lectures/lecture-13.json"
+    },
+    "User testing Experimental Design, Basic Statistics": {
+      "_href": "cs2506/lectures/lecture-14.json"
+    },
+    "Recommender Systems: Content-based and Collaborative filtering": {
+      "_href": "cs2506/lectures/recommender-systems.json"
+    }
   },
-  "Task Analysis": {
-    "_href": "cs2506/lectures/lecture-02.json"
-  },
-  "Contextual design": {
-    "_href": "cs2506/lectures/lecture-03.json"
-  },
-  "Query techniques and Focus Groups": {
-    "_href": "cs2506/lectures/lecture-04.json"
-  },
-  "Information Architecture": {
-    "_href": "cs2506/lectures/lecture-05.json"
-  },
-  "Information Architecture 2. Navigation": {
-    "_href": "cs2506/lectures/lecture-06.json"
-  },
-  "Conversational Interfaces": {
-    "_href": "cs2506/lectures/lecture-07.json"
-  },
-  "Prototyping": {
-    "_href": "cs2506/lectures/lecture-08.json"
-  },
-  "Analytical Usability Evaluation": {
-    "_href": "cs2506/lectures/lecture-09.json"
-  },
-  "Analytical Usability Evaluation: Cognitive walkthrough": {
-    "_href": "cs2506/lectures/lecture-10.json"
-  },
-  "Analytical Usability Evaluation: Model-based Evaluations and Analytics": {
-    "_href": "cs2506/lectures/lecture-11.json"
-  },
-  "Analytical Usability Evaluation for Safety-Critical Systems": {
-    "_href": "cs2506/lectures/lecture-12.json"
-  },
-  "User testing": {
-    "_href": "cs2506/lectures/lecture-13.json"
-  },
-  "User testing Experimental Design, Basic Statistics": {
-    "_href": "cs2506/lectures/lecture-14.json"
-  },
-  "Recommender Systems: Content-based and Collaborative filtering": {
-    "_href": "cs2506/lectures/recommender-systems.json"
-  },
-  "Practical 1": {
-    "_href": "cs2506/practicals/practical-01.json"
-  },
-  "Information Architecture and Navigation": {
-    "_href": "cs2506/practicals/practical-03.json"
+  "Practicals": {
+    "Practical 1": {
+      "_href": "cs2506/practicals/practical-01.json"
+    },
+    "Information Architecture and Navigation": {
+      "_href": "cs2506/practicals/practical-03.json"
+    }
   }
 }
