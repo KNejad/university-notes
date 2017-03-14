@@ -6,7 +6,18 @@
 	"Prim’s algorithm": {
 		"Description": "Finds an MST",
 		"Steps": "Selects starting vertex and repeatedly connecting it's nearest edge to the tree until a MST is found",
-		"Complexity": "O(nm)"
+		"Complexity": {
+			"Basic implementation": "O(nm)",
+			"Priority queue implementation": "O(n log n)"
+		}
+	},
+	"_note": "Revise slides 14-28",
+	"Kruskal’s Algorithm": {
+		"Description": "Another MST finder which is more efficient on sparse graphs"
 
-	}
+	},
+	"Dijkstra’s algorithm": "Finds the shortest path between 2 nodes. Works like breadth first search but for weighted nodes",
+	"Floyd’s algorithm": "Maps out the distances between nodes",
+	"Network flow": "Measuring the amount that can travel from one node to another. Graph weight represents the capacity through an edge",
+	"Bipartite graphs and matchings": "When vertices can be divided into 2 group and members of those groups can be paired together"
 }

@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-03-09 21:45:25 +0000",
+  "_date": "2017-03-14 16:44:56 +0000",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -31,6 +31,9 @@
     },
     "Weighted Graph": {
       "_href": "cs2521/lectures/lecture-08.json"
+    },
+    "Dynamic Programming": {
+      "_href": "cs2521/lectures/lecture-09.json"
     }
   },
   "Practicals": {

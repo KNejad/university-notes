@@ -13,12 +13,11 @@
 		"Solution": {
 			"Sorted binary search": {
 				"Single array": "log(10000) = 13.28",
-				"Two arrays": "..."
+				"Two arrays": "0.6*log(4000) + 0.4*(log(4000) + log(6000)) = 16.98"
 			},
 			"Unsorted binary search": {
 				"Single array": "10000/2 = 5000",
-				"Two arrays": "..."
-
+				"Two arrays": "0.6*(4000/2) + 0.4*(4000 + 6000/2) = 4000"
 			}	
 
 		}
@@ -29,11 +28,22 @@
 	},
 	"3": {
 		"Task": "Solve the recurrence T (n) = T (n − 1) + n through substitution.",
-		"Solution": "By solving for n=6 it seems like O(n^2) so we test if that is true"
+		"Solution": {
+			"Assumption": "O(n^2)",
+			"T(n) = T(n-1) + n": "We take the recurrence",
+			"T(n) = c(n-1)^2 + n": "Substitute the recurrence with our assumption",
+			"T(n) = c(n^2 - 2n + 1) + n": "(n-1)^2 can be expanded to n^2 - 2n + 1",
+			"T(n) = cn^2 - 2cn + c + n": "Expand the brackets by multiplying everything with c",
+			"T(n) = cn^2 + n(1 - 2c) + c": "puts 1 and -2c together in brackets multiplied by n" ,
+			"T(n) = cn^2 - n(2c -1) + c": "Swaps the signs around",
+			"Conclusion": "That is less than cn^2 when c >= 1 for n>=1"
+		}
 	},
 	"4": {
 		"Task": "Use a recursion tree to determine a good asymptotic upper bound for the recurrence T (n) = T (n/2)+n^2",
-		"Solution": "The height of the tree is log(n)..."
+		"Solution": {
+			"_image": "practical-06/recursion-tree.png"
+		}
 	},
 	"5": {
 		"Task": "This is a very difficult question. Use a recursion tree to determine a good asymptotic upper bound for the recurrence T (n) = T (n − 1) + T (bn/2c) + n. Use the substitution method to verify the answer.",
@@ -57,9 +67,9 @@
 
 		},
 		"Solution": {
-			"a": "T(n) = T(n/2) + 1) = Θ(log n)",
-			"b": "T(n) = T(n/2) + n) = Θ(n)",
-			"b": "T(n) = T(n/2) + n/2) = Θ(n)"
+			"a": "T(n) = T(n/2) + 1 = Θ(log n)",
+			"b": "T(n) = T(n/2) + n = Θ(n)",
+			"b": "T(n) = T(n/2) + n/2 = Θ(n)"
 		}
 	},
 	"9": {

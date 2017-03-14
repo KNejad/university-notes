@@ -1,6 +1,6 @@
 {
   "_title": "CS2512 Index",
-  "_date": "2017-03-09 21:45:25 +0000",
+  "_date": "2017-03-14 16:44:56 +0000",
   "Advanced Web Application Development": {
     "_href": "cs2512/cs2512.json"
   },
@@ -31,6 +31,9 @@
     },
     "BDD with Capybara": {
       "_href": "cs2512/lectures/lecture-10.json"
+    },
+    "Security and Web Applications SQL Injection": {
+      "_href": "cs2512/lectures/lecture-12.json"
     },
     "Rails Forms  & The Temperature Converter": {
       "_href": "cs2512/lectures/rails-forms.json"

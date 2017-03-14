@@ -1,6 +1,6 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-03-09 21:45:25 +0000",
+  "_date": "2017-03-14 16:44:56 +0000",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
@@ -49,6 +49,9 @@
       },
       "Logic Programming 2": {
         "_href": "cs2510/lectures/prolog/lecture-02.json"
+      },
+      "Logic Programming 3": {
+        "_href": "cs2510/lectures/prolog/lecture-03.json"
       }
     }
   },
@@ -73,6 +76,9 @@
     },
     "Practical 7 – Object-Oriented Programming": {
       "_href": "cs2510/practicals/practical-07.json"
+    },
+    "Practical 8 – Logic Programming/Prolog": {
+      "_href": "cs2510/practicals/practical-08.json"
     }
   },
   "Reading": {

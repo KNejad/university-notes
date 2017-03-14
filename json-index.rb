@@ -18,7 +18,7 @@ def directory_hash(directory)
 		if entry == "." or  entry == ".." then
 			next
 		elsif File.directory?(address) and containsJSON(address) then
-			tree[entry.capitalize] = directory_hash(directory + "/" +  entry)
+			tree[entry.capitalize] = directory_hash(address)
 		elsif entry.end_with? ".json" then
 			jsonFile = JSON.load(open(address))
 			title = jsonFile["_title"]
