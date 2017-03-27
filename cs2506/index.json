@@ -1,6 +1,6 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-03-14 16:44:56 +0000",
+  "_date": "2017-03-27 15:31:58 +0100",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
   },
@@ -49,6 +49,15 @@
     },
     "Cross-cultural design and Internationalization": {
       "_href": "cs2506/lectures/lecture-16.json"
+    },
+    "Technical Writing": {
+      "_href": "cs2506/lectures/lecture-17.json"
+    },
+    "Speech Interfaces": {
+      "_href": "cs2506/lectures/lecture-18.json"
+    },
+    "Web Credibility and Persuasive Technology": {
+      "_href": "cs2506/lectures/lecture-19.json"
     },
     "Recommender Systems: Content-based and Collaborative filtering": {
       "_href": "cs2506/lectures/recommender-systems.json"

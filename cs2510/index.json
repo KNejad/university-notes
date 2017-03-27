@@ -1,10 +1,15 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-03-14 16:44:56 +0000",
+  "_date": "2017-03-27 15:31:58 +0100",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
   "Lectures": {
+    "Haskell": {
+      "Introduction to Haskell (1)": {
+        "_href": "cs2510/lectures/haskell/lecture-01.json"
+      }
+    },
     "Preliminaries": {
       "_href": "cs2510/lectures/lecture-01.json"
     },
@@ -52,6 +57,9 @@
       },
       "Logic Programming 3": {
         "_href": "cs2510/lectures/prolog/lecture-03.json"
+      },
+      "Logic Programming 4": {
+        "_href": "cs2510/lectures/prolog/lecture-04.json"
       }
     }
   },
@@ -79,6 +87,9 @@
     },
     "Practical 8 – Logic Programming/Prolog": {
       "_href": "cs2510/practicals/practical-08.json"
+    },
+    "Practical 9 – Prolog": {
+      "_href": "cs2510/practicals/practical-09.json"
     }
   },
   "Reading": {

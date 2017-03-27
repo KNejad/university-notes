@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-03-14 16:44:56 +0000",
+  "_date": "2017-03-27 15:31:58 +0100",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -34,6 +34,9 @@
     },
     "Dynamic Programming": {
       "_href": "cs2521/lectures/lecture-09.json"
+    },
+    "Search": {
+      "_href": "cs2521/lectures/lecture-10.json"
     }
   },
   "Practicals": {
@@ -57,6 +60,12 @@
     },
     "Practical 7": {
       "_href": "cs2521/practicals/practical-07.json"
+    },
+    "Practical 8": {
+      "_href": "cs2521/practicals/practical-08.json"
+    },
+    "Practical 09": {
+      "_href": "cs2521/practicals/practical-09.json"
     }
   }
 }
