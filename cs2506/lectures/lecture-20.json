@@ -1,6 +1,7 @@
 {
 	"_title": "Research Challenges in Group Recommender Systems",
 	"_date": "Tue Mar 28 16:02:05 BST 2017",
+	"_note": "This is not in the exam",
 	"Average strategy": "Pick the recommendation with the highest average grade",
 	"Least misery startegy": "Pick the recommendation with the highest lowest grade"
 }

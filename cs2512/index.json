@@ -1,6 +1,6 @@
 {
   "_title": "CS2512 Index",
-  "_date": "2017-03-27 15:31:58 +0100",
+  "_date": "2017-03-30 15:22:01 +0100",
   "Advanced Web Application Development": {
     "_href": "cs2512/cs2512.json"
   },
@@ -40,6 +40,12 @@
     },
     "Security (3)": {
       "_href": "cs2512/lectures/lecture-14.json"
+    },
+    "Performance – Code Optimizations": {
+      "_href": "cs2512/lectures/lecture-15.json"
+    },
+    "Debugging & Logging": {
+      "_href": "cs2512/lectures/lecture-16.json"
     },
     "Rails Forms  & The Temperature Converter": {
       "_href": "cs2512/lectures/rails-forms.json"

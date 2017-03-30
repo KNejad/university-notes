@@ -1,6 +1,6 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-03-27 15:31:58 +0100",
+  "_date": "2017-03-30 15:22:01 +0100",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
@@ -8,6 +8,12 @@
     "Haskell": {
       "Introduction to Haskell (1)": {
         "_href": "cs2510/lectures/haskell/lecture-01.json"
+      },
+      "Introduction to Haskell (3)": {
+        "_href": "cs2510/lectures/haskell/lecture-03.json"
+      },
+      "Introduction to Haskell (4)": {
+        "_href": "cs2510/lectures/haskell/lecture-04.json"
       }
     },
     "Preliminaries": {

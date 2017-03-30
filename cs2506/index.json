@@ -1,6 +1,6 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-03-27 15:31:58 +0100",
+  "_date": "2017-03-30 15:22:01 +0100",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
   },
@@ -58,6 +58,9 @@
     },
     "Web Credibility and Persuasive Technology": {
       "_href": "cs2506/lectures/lecture-19.json"
+    },
+    "Research Challenges in Group Recommender Systems": {
+      "_href": "cs2506/lectures/lecture-20.json"
     },
     "Recommender Systems: Content-based and Collaborative filtering": {
       "_href": "cs2506/lectures/recommender-systems.json"

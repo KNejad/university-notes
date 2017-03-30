@@ -1,6 +1,6 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-03-27 15:31:58 +0100",
+  "_date": "2017-03-30 15:22:01 +0100",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
@@ -66,6 +66,9 @@
     },
     "Practical 09": {
       "_href": "cs2521/practicals/practical-09.json"
+    },
+    "Practical 10": {
+      "_href": "cs2521/practicals/practical-10.json"
     }
   }
 }

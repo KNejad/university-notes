@@ -1,8 +1,9 @@
 {
 	"_title": "Search",
 	"_date": "Mon Mar 27 13:11:28 BST 2017",
+	"_note": "This is not in the exam",
 	"Powerset": "All subsets of a set. Order does not matter",
-	"Monte Carlo method": "Constructs a random solution and evaluates it, stopping when a good enough solution is found or the program is terminated"
+	"Monte Carlo method": "Constructs a random solution and evaluates it, stopping when a good enough solution is found or the program is terminated",
 	"Local Search": {
 		"Description": "Makes a random solution then tweaks it to get a better one",
 		"Names": "Also known as Gradient descent or ascent",
