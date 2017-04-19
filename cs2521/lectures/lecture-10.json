@@ -7,7 +7,7 @@
 	"Local Search": {
 		"Description": "Makes a random solution then tweaks it to get a better one",
 		"Names": "Also known as Gradient descent or ascent",
-		"Simulated annealing": {"_note": "Define this"}
+		"Simulated annealing": "A technique for finding the global optimum for a function"
 	}
 
 }

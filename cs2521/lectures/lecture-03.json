@@ -16,6 +16,15 @@
 			"Node with 2 children": "Replace with the key of its immediate successor (Smallest key which is larger)."
 		}
 	},
-	"_note": "Continue recording from 20:00 (Slide 26)"
+	"Hash function": {
+		"Description": "Maps a key to an integer and stores an object at that index",
+		"Collisions": {
+			"Description": "When 2 or more keys hash to the same value",
+			"Solutions": {
+				"Chaining": "Store all values that match to the same hash in a list",
+				"Open addressing": "Store the value of a hash which has already been matched in a later position"
+			}
+		}
+	}
 
 }

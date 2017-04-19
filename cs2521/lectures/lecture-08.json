@@ -7,14 +7,13 @@
 		"Description": "Finds an MST",
 		"Steps": "Selects starting vertex and repeatedly connecting it's nearest edge to the tree until a MST is found",
 		"Complexity": {
-			"Basic implementation": "O(nm)",
+			"Basic implementation": "O(n*m)",
 			"Priority queue implementation": "O(n log n)"
 		}
 	},
-	"_note": "Revise slides 14-28",
 	"Kruskal’s Algorithm": {
-		"Description": "Another MST finder which is more efficient on sparse graphs"
-
+		"Description": "An MST finder which is more efficient on sparse graphs",
+		"Steps": "Maintain a forest of trees and at each step, combine the two trees with the lowest weight edge between them"
 	},
 	"Dijkstra’s algorithm": "Finds the shortest path between 2 nodes. Works like breadth first search but for weighted nodes",
 	"Floyd’s algorithm": "Maps out the distances between nodes",

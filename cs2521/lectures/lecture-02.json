@@ -19,7 +19,7 @@
 			}
 		],
 		"O-notation":  {
-			"Definition": "ignores the differences between multiplication of powers (i.e. 2n^5 is the same as 3n^5)",
+			"Definition": "Ignores the differences between multiplication of powers (i.e. 2n^5 is the same as 3n^5)",
 			"Dominating term": "The term in an equation which determines the approximate value (ie in 2^2 + 1^3  the 1^3 is the dominating term)",
 			"Upper bound": "The maximum time an algorithm might take (denoted by O(g(dominant term)))",
 			"Lower bound": "The minimum time an algorithm might take (denoted by Ω(g(dominant term)))",

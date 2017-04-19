@@ -2,7 +2,7 @@
 	"_title": "Introduction",
 	"_date" :  "Tue Jan 17 11:00:00 GMT 2017",
 	"Algorithm": {
-		"Definition": "A well defined computational procedure that takes some input (values) and produces an output (i.e. one or more values)",
+		"Definition": "A well defined computational procedure that takes some input and produces an output",
 		"Correctness": "An algorithm is correct if it always returns the desired output for all legal instances of the problem.",
 		"Proving algorithm is incorrect": "Find a counter example where the algorithm would not find the correct result",
 		"Proving correctness": {
@@ -14,6 +14,6 @@
 	},
 	"Loop invariant": "A property of a program loop that is true before and after each iteration",
 	"Power Set": "All subsets of a set",
-	"Permutations": "An ordering of a set of items"
+	"Permutations": "An ordering of a set"
 
 }
