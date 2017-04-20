@@ -1,0 +1,9 @@
+function Fact(n)
+	i =1
+	j =1
+	while j ≤ n do
+		i = i × j
+		j = j +1
+	end while
+	return i
+end function

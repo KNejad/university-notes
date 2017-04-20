@@ -5,7 +5,12 @@
 		"Description": "A heap is a data structure that efficiently supports priority queue operations insert, find-min or max and delete-min or max",
 		"Structure": "The first index stores the root, index 2 stores the left hand child, 3 stores the right, etc.",
 		"min-heap": "The minimum element is on top",
-		"max-heap": "The maximum element is on top"
+		"max-heap": "The maximum element is on top",
+		"Operation complexity": {
+			"Find min": "Θ(1)",
+			"Delete min": "Θ(log n)",
+			"Insert": "O(log n)"
+		}
 	},
 	"Merge": "Takes multiple sorted lists as input and produce a single sorted list as output,",
 	"Merge Sort": "Divide the list into the smallest unit (1 element), then recursively merge each list. Finally all the elements are sorted and merged.",

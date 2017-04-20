@@ -1,0 +1,7 @@
+def mode(list) 
+	values = max_heap.new default = 0
+	list.each do |i|
+		values[i]++ 
+	end
+	return values.max
+end

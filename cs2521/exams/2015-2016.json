@@ -1,0 +1,139 @@
+{
+	"_title": "Examination in CS2521 Algorithmic Problem Solving Session 2015-2016",
+	"_date": "Wed Apr 19 15:26:17 BST 2017",
+	"1": {
+		"a": {
+			"Description": "Consider the following algorithm which calculates the factorial of a number n",
+			"_file": "2015-2016/1a.pseudo",
+			"i": {
+				"Task": "What is a useful loop invariant within this algorithm?",
+				"Solution": "i = j!"
+			},
+			"ii": {
+				"Task": "Prove the correctness of the algorithm",
+				"Solution": {
+					"Termination": "The algorithm will always terminate since j increases by 1 in every iteration so eventually it will reach n",
+					"Proof by induction": {
+						"Base case": "For n=1 the algorithm holds",
+						"Induction hypothesis": "The algorithm holds for n+1",
+						"Induction step": "When the loop is entered the (n+1)th time i=n! and j=n+1. So i*(n+1) = (n+1)!. After this j=n+2. So the while condition no longer holds and the algorithm exits, returning (n+1)!. Thus it holds" 
+					}
+				}
+			}
+		},
+		"b": {
+			"Task": "Provide tight bounds (i.e., Θ) for the complexity of the function f (n) = n^3 + n log n",
+			"Solution": "Θ(n^3)"
+		},
+		"c": {
+			"Task": "Is heap-sort Ω(log(n^n)), Θ(log(n^n)) or O(log(n^n))?",
+			"Solution": "Θ(log(n n ))"
+		},
+		"d": {
+			"Description": "Consider a hash table with 12 slots, and a hash function h(x) = x mod 12. What does the hash table look like after inserting the following sequence of keys into it: 35 0 1 13 8 9 5 24 36",
+			"i": {
+				"Task": "If chaining is used?",
+				"Solution": {
+					"0": [0, 24, 36],
+					"1": [1, 13],
+					"2": [],
+					"3": [],
+					"4": [],
+					"5": [5],
+					"6": [],
+					"7": [],
+					"8": [8],
+					"9": [9],
+					"10": [],
+					"11": [35]
+				}
+			},
+			"ii": {
+				"Task": "If linear probing is used?",
+				"Solution": {
+					"0": 0,
+					"1": 1,
+					"2": 13,
+					"3": 24,
+					"4": 36,
+					"5": 5,
+					"6": null,
+					"7": null,
+					"8": 8,
+					"9": 9,
+					"10": null,
+					"11": 35
+				}
+			},	
+			"iii": {
+				"Task": "If quadratic probing is used?",
+				"Solution": {
+					"0": 0,
+					"1": 1,
+					"2": 13,
+					"3": null,
+					"4": 24,
+					"5": 5,
+					"6": null,
+					"7": null,
+					"8": 8,
+					"9": 9,
+					"10": null,
+					"11": 35,
+					"_note": "I do not know what to do with 36"
+				}
+			},
+			"iv": {
+				"Task": "Why is rehashing not a valid strategy in this case?",
+				"Solution": "Rehashing will not help with such a small hash table" 
+			}
+		},
+		"e": {
+			"Task": "A computer’s CPU must execute the highest priority jobs whenever it can. A priority queue is therefore used to store a list of jobs and their priority. What data structure should underpin such a priority queue? What is the complexity for the operations that can be run over the queue? Why is the data structure you chose the correct one for this scenario (in terms of the frequency of operations run)?",
+			"Solution": {
+				"Data structure": "max-heap",
+				"Complexity": {
+					"Find min": "Θ(1)",
+					"Delete min": "Θ(log n)",
+					"Insert": "O(log n)"
+				},
+				"Justification": "Since we are trying to retrieve the highest priority job, a max heap allows us to extract or insert jobs in O(log n)"
+			}
+		},
+		"f": {
+			"Task": "The mode of a set of numbers is the number that occurs most frequently within the set. For example, the set (4,6,2,4,3,1) has a mode of 4. Using pseudocode, provide a Θ(n log n) algorithm to compute the mode of a set of n numbers",
+			"Solution": {"_file": "2015-2016/1fsol.pseudo"}
+		},
+		"g": {
+			"Task": "What is the time complexity of the recurrence T(n) = T([n/2]) + 3?",
+			"Solution": "Θ(log n)"
+		},
+		"h": ""
+	},
+	"2": {
+		"a": {
+			"Description": "Below is a simple example of a graph",
+			"_image": "2015-2016/2a_graph.png",
+			"i": {
+				"Task": "Is this graph directed or undirected?",
+				"Solution": "Undirected"
+			},
+			"ii": {
+				"Task": "Does this graph have multi-edges?",
+				"Solution": "Yes"
+			},
+			"iii": {
+				"Task": "Does this graph have self-loops, and does it have cycles?",
+				"Solution": "It does not have self-loops. It does have cylces"
+			},
+			"iv": {
+				"Task": "How many connected components does this graph have?",
+				"Solution": "1"
+			},
+			"v": {
+				"Task": "How can you tell that this graph contains no Eulerian circuit",
+				"Solution": "There are an odd number of edges"
+			}
+		}
+	}
+}

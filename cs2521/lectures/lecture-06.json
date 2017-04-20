@@ -12,7 +12,7 @@
 		"Labelled/unlabelled": "Each vertex is associated with a unique identifier or it has no identifier"
 	},
 	"Adjacency matrix": "A 2D array to represent a graph",
-	"Adjacency list": "A list to represent a graph",
+	"Adjacency list": "A collection of lists used to represent a graph. Each list describes the set of neighbors of a vertex in the graph",
 	"Degree": "The number of edges entering a vertex plus the number of edges leaving",
 	"Free tree": "An acyclic, connected undirected graph",
 	"Forest":  "A set of free trees"

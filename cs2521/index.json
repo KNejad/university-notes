@@ -1,8 +1,13 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-03-30 15:22:01 +0100",
+  "_date": "2017-04-20 23:11:39 +0100",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
+  },
+  "Exams": {
+    "Examination in CS2521 Algorithmic Problem Solving Session 2015-2016": {
+      "_href": "cs2521/exams/2015-2016.json"
+    }
   },
   "Lectures": {
     "Admins": {
