@@ -1,0 +1,22 @@
+function search(G, s)
+	Array colour length(vert(G)) {BLACK , WHITE , GREY }
+	for all u ∈ vert(G) do
+		if u 6 = s then
+			colour[u] = WHITE
+		end if
+	end for
+	colour[s] = GREY
+	Queue Q = ∅
+	enqueue(Q, s)
+	while Q 6 = ∅ do
+		u = head(Q)
+		for all v ∈ Adj[u] do
+			if colour[v] 6 = BLACK then
+				colour[v] = GREY
+				enqueue(Q, v)
+			end if
+		end for
+		dequeue(Q)
+		colour[u] = BLACK
+	end while
+end function

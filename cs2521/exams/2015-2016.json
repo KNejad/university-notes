@@ -108,7 +108,24 @@
 			"Task": "What is the time complexity of the recurrence T(n) = T([n/2]) + 3?",
 			"Solution": "Θ(log n)"
 		},
-		"h": ""
+		"h": {
+			"Task": "By means of a recursion tree and by solving the resultant summation, show exactly how many times the randomisation function is called when running randomised quicksort, in the best case",
+			"Solution": {
+				"Recursion tree": {
+					"n": {
+						"n/2": {
+							"n/4": "...1",
+							"n/4": "...1"
+						},
+						"n/2": {
+							"n/4": "...1",
+							"n/4": "...1"
+						}
+					}
+				},
+				"Summation": "sum_{i=1}^n log n = n*log(n)"
+			}
+		}
 	},
 	"2": {
 		"a": {
@@ -133,6 +150,40 @@
 			"v": {
 				"Task": "How can you tell that this graph contains no Eulerian circuit",
 				"Solution": "There are an odd number of edges"
+			}
+		},
+		"b": {
+			"Task": {
+				"Description": "Write down an adjacency list presentation of the directed graph below",
+				"_image": "2015-2016/2b_graph.png"
+			},
+			"Solution": {
+				"0": ["2","3","1"],
+				"1": [],
+				"2": [],
+				"3": ["1"],
+				"4": ["4"]
+			}
+		},
+		"c": {
+			"Description": "Below is a search algorithm. It is intended to apply to a tree G with root s. The algorithm is written as a function that takes two arguments. The first is a tree G, given in an adjacency list presentation (as a special case of an undirected graph). The second is a vertex of that tree, s, the source of the search. The set of vertices of G is vert(G), and this has size length(vert(G)). The algorithm uses a one-dimensional array, colour, of this length. Each element of this array can be one of BLACK , WHITE or GREY . For each vertex u, the adjacency list is Adj[u]. The empty queue is written as ∅. The algorithm uses a queue Q",
+			"_file": "2015-2016/2c_code.pseudo",
+			"i": {
+				"Task": "Which famous search algorithm is this?",
+				"Solution": ""
+			},
+			"ii": {
+				"Task": "Consider the tree below. Model this by taking A = 0, B = 1, C = 2, D = 3, E = 4, F = 5. Suppose that each adjacency list is given in increasing order. Suppose also that the list of adjacency lists is given in increasing order (by the source vertex). Finally, suppose that each for-loop follows the increasing ordering. Starting with s = A = 0, list the order in which the vertices are marked BLACK by the algorithm",
+				"_image": "2015-2016/2cii_tree,png",
+				"Solution": ""
+			},
+			"iii": {
+				"Task": "Add code so that the algorithm records — in an array — the distance between each vertex and the source vertex, s.",
+				"Solution": ""
+			},
+			"iiii": {
+				"Task": "Add, or change, the code so that the algorithm will work on an undirected graph with multiple connected components. Your answer should suppose that the graph is finite and has no multi-edges. Hint: you may want to use more than one function, you can suppose that there is a function that returns a list COMPONENTS(G) of connected components of G, and a function SELECT(C) that selects some vertex of each connected component, C",
+				"Solution": ""
 			}
 		}
 	}
