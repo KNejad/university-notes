@@ -174,7 +174,7 @@
 			},
 			"ii": {
 				"Task": "Consider the tree below. Model this by taking A = 0, B = 1, C = 2, D = 3, E = 4, F = 5. Suppose that each adjacency list is given in increasing order. Suppose also that the list of adjacency lists is given in increasing order (by the source vertex). Finally, suppose that each for-loop follows the increasing ordering. Starting with s = A = 0, list the order in which the vertices are marked BLACK by the algorithm",
-				"_image": "2015-2016/2cii_tree,png",
+				"_image": "2015-2016/2cii_tree.png",
 				"Solution": ""
 			},
 			"iii": {
