@@ -1,4 +1,5 @@
-{ 	"_title": "Practical 09",
+{
+	"_title": "Practical 09",
 	"_date": "Thu Mar 23 13:19:29 GMT 2017",
 	"1": {
 		"Task": "Draw the spanning forest after every iteration of the main loop in Kruskal’s and Prim’s algorithm for the following graph.",
