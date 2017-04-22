@@ -1,21 +1,10 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-04-22 19:05:48 +0100",
+  "_date": "2017-04-22 20:03:06 +0100",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
   "Lectures": {
-    "Haskell": {
-      "Introduction to Haskell (1)": {
-        "_href": "cs2510/lectures/haskell/lecture-01.json"
-      },
-      "Introduction to Haskell (3)": {
-        "_href": "cs2510/lectures/haskell/lecture-03.json"
-      },
-      "Introduction to Haskell (4)": {
-        "_href": "cs2510/lectures/haskell/lecture-04.json"
-      }
-    },
     "Preliminaries": {
       "_href": "cs2510/lectures/lecture-01.json"
     },
@@ -40,32 +29,43 @@
     "Statement-Level Control Structures": {
       "_href": "cs2510/lectures/lecture-08.json"
     },
-    "Oop": {
+    "Section-01-oop": {
       "Support for Object-Oriented Programming": {
-        "_href": "cs2510/lectures/oop/lecture-01.json"
+        "_href": "cs2510/lectures/section-01-oop/lecture-01.json"
       },
       "Object-Oriented Programming 2": {
-        "_href": "cs2510/lectures/oop/lecture-02.json"
+        "_href": "cs2510/lectures/section-01-oop/lecture-02.json"
       },
       "Object-Oriented Programming 3": {
-        "_href": "cs2510/lectures/oop/lecture-03.json"
+        "_href": "cs2510/lectures/section-01-oop/lecture-03.json"
       },
       "Object-Oriented Programming 4": {
-        "_href": "cs2510/lectures/oop/lecture-04.json"
+        "_href": "cs2510/lectures/section-01-oop/lecture-04.json"
       }
     },
-    "Prolog": {
+    "Section-02-prolog": {
       "Logic Programming 1": {
-        "_href": "cs2510/lectures/prolog/lecture-01.json"
+        "_href": "cs2510/lectures/section-02-prolog/lecture-01.json"
       },
       "Logic Programming 2": {
-        "_href": "cs2510/lectures/prolog/lecture-02.json"
+        "_href": "cs2510/lectures/section-02-prolog/lecture-02.json"
       },
       "Logic Programming 3": {
-        "_href": "cs2510/lectures/prolog/lecture-03.json"
+        "_href": "cs2510/lectures/section-02-prolog/lecture-03.json"
       },
       "Logic Programming 4": {
-        "_href": "cs2510/lectures/prolog/lecture-04.json"
+        "_href": "cs2510/lectures/section-02-prolog/lecture-04.json"
+      }
+    },
+    "Section-03-haskell": {
+      "Introduction to Haskell (1)": {
+        "_href": "cs2510/lectures/section-03-haskell/lecture-01.json"
+      },
+      "Introduction to Haskell (3)": {
+        "_href": "cs2510/lectures/section-03-haskell/lecture-03.json"
+      },
+      "Introduction to Haskell (4)": {
+        "_href": "cs2510/lectures/section-03-haskell/lecture-04.json"
       }
     }
   },
