@@ -170,20 +170,23 @@
 			"_file": "2015-2016/2c_code.pseudo",
 			"i": {
 				"Task": "Which famous search algorithm is this?",
-				"Solution": ""
+				"Solution": "Dijkstra's algorithm"
 			},
 			"ii": {
 				"Task": "Consider the tree below. Model this by taking A = 0, B = 1, C = 2, D = 3, E = 4, F = 5. Suppose that each adjacency list is given in increasing order. Suppose also that the list of adjacency lists is given in increasing order (by the source vertex). Finally, suppose that each for-loop follows the increasing ordering. Starting with s = A = 0, list the order in which the vertices are marked BLACK by the algorithm",
 				"_image": "2015-2016/2cii_tree.png",
-				"Solution": ""
+				"Solution": ["A","E","F","D","B","C"]
 			},
 			"iii": {
 				"Task": "Add code so that the algorithm records — in an array — the distance between each vertex and the source vertex, s.",
-				"Solution": ""
+				"Solution": {"_file": "2015-2016/2ciii_sol.pseudo"}
 			},
-			"iiii": {
+			"iv": {
 				"Task": "Add, or change, the code so that the algorithm will work on an undirected graph with multiple connected components. Your answer should suppose that the graph is finite and has no multi-edges. Hint: you may want to use more than one function, you can suppose that there is a function that returns a list COMPONENTS(G) of connected components of G, and a function SELECT(C) that selects some vertex of each connected component, C",
-				"Solution": ""
+				"Solution": {
+					"_file": "2015-2016/2civ_sol.pseudo",
+					"_note": "Ask about this question because it should work anyway"
+				}
 			}
 		}
 	}

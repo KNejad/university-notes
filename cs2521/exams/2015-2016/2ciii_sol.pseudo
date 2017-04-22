@@ -3,6 +3,7 @@ function search(G, s)
 	for all u ∈ vert(G) do
 		if u != s then
 			colour[u] = WHITE
+			dist[u] = Infinity
 		end if
 	end for
 	colour[s] = GREY
@@ -13,7 +14,10 @@ function search(G, s)
 		for all v ∈ Adj[u] do
 			if colour[v] != BLACK then
 				colour[v] = GREY
-				enqueue(Q, v)	
+				enqueue(Q, v)
+				if dist[v] < dist[u] + Adj[u] then
+					dist[v] = dist[u] + Adj[u]
+				end if
 			end if
 		end for
 		dequeue(Q)
