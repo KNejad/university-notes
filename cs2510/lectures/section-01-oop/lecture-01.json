@@ -7,11 +7,7 @@
 		"Polymorphism": "Assigning a different meaning or usage to something in different contexts"
 	},
 	"Messages": "Calls to methods",
-	"Access controls": [
-		"A class can hide entities from its subclasses",
-		"A class can hide entities from its instances",
-		"A class can hide entities from its instances while allowing its subclasses to see them. "
-	],
+	"Access controls": "Restrics access to entities and subclasses",
 	"Composition": "Instead of classes inheriting from other classes, they are composed of multiple different classes",
 	"Signature": "A methods name, number and types of parameters"
 }

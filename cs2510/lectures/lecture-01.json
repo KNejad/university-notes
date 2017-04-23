@@ -39,7 +39,7 @@
 	},
 	"Compilation Phases": {
 		"Lexical analysis": "Converts the source code into a sequence of tokens",
-		"Syntax analysis": "Analyses the source code, to check whether it  conforms to the rules of the language",
+		"Syntactical analysis": "Analyses the source code, to check whether it  conforms to the rules of the language",
 		"Semantic analysis": "Gather necessary semantic information from the source code",
 		"Code generation": "Generates the machine code"
 	},

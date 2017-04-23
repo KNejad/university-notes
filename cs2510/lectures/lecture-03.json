@@ -2,21 +2,19 @@
 	"_title": "Describing Syntax and Semantics",
 	"_date": "Tue Jan 24 15:06:44 GMT 2017",
 	"Lexeme": "The lowest level syntactic unit of a language (e.g., *, def, start, etc.)",
-	"Token": "A category of Lexemes",
+	"Token": "A sequence of characters that can be treated as a single logical entity, such as identifier, keyword etc.",
 	"Backus-Naur Form": {
-		"Definition": "Equivalent to context-free grammars",
+		"Definition": "A notation for context-free grammars",
 		"Symbols": {
 			"→": "Defines a rule",
 			"⇒": "Using a rule",
 			"|": "Or",
 			";": "Statement before this then statement after this"
 		},
-		"Definitions": {
-			"Non Terminals": "A finite alphabet (ie X, Y, Z)",
-			"Terminals": "Characters which cannot be substituted further (ie a, b, c)",
-			"Start Symbols": "The initial symbol to produce the alphabet with (ie X)",
-			"Productions": "Available substitutions for characters to create strings (ie X -> aX: This means that X can be substituted by aX in our language)"
-		}
+		"Non Terminals": "A finite alphabet (ie X, Y, Z)",
+		"Terminals": "Characters which cannot be substituted further (ie a, b, c)",
+		"Start Symbols": "The initial symbol to produce the alphabet with (ie X)",
+		"Productions": "Available substitutions for characters to create strings (ie X -> aX: This means that X can be substituted by aX in our language)"
 	},
 	"Extended BNF": {
 		"Symbols": {
@@ -31,7 +29,6 @@
 			"Comment":	"(* ... *)",
 			"Special sequence":	"? ... ?",
 			"Exception": "-"
-
 		}
 	},
 	"Attribute grammars": {
@@ -49,7 +46,6 @@
 			"Precondition": "An assertion before a statement",
 			"Postcondition": "An assertion following a statement (The desired result of the program)",
 			"Weakest precondition": "The least restrictive precondition that will guarantee the postcondition."
-
 		},
 		"Syntax": "[equation] {[postcondition]}",
 		"Selection": "if B then S1 else S2",
