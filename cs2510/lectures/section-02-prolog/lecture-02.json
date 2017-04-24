@@ -2,17 +2,14 @@
 	"_title": "Logic Programming 2",
 	"_date": "Thu Mar  9 15:09:33 GMT 2017",
 	"Terms": {
-		"Atoms":"Begins with a lower case letter. Can be strings",
+		"Atoms":"Begin with a lower case letter. Can be a string",
 		"Numbers": "Integers, floats etc.",
 		"Variables": "Begin with an upper case",
 		"Compound terms": "A structure containing multiple terms"
 	},
 	"Functor": "A term describer like a signature in imperative languages",
 	"Clauses": {
-		"Facts": "Terms in a knowledge base. Must end with a full stop (.)",
+		"Facts": "Terms in a knowledge base. Must end with a full stop",
 		"Rules": "States that a predicate is true, provided that other predicates are true"
 	}
-
-
-
 }
