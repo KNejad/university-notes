@@ -1,11 +1,11 @@
 {
   "_title": "CS2521 Index",
-  "_date": "2017-04-22 20:03:06 +0100",
+  "_date": "2017-04-24 16:30:21 +0100",
   "Algorithmic Problem Solving": {
     "_href": "cs2521/cs2521.json"
   },
   "Exams": {
-    "Examination in CS2521 Algorithmic Problem Solving Session 2015-2016": {
+    "2015-2016 Exam": {
       "_href": "cs2521/exams/2015-2016.json"
     }
   },
@@ -45,28 +45,28 @@
     }
   },
   "Practicals": {
-    "Practical 1": {
+    "Practical 01": {
       "_href": "cs2521/practicals/practical-01.json"
     },
-    "Practical 2": {
+    "Practical 02": {
       "_href": "cs2521/practicals/practical-02.json"
     },
-    "Practical 3": {
+    "Practical 03": {
       "_href": "cs2521/practicals/practical-03.json"
     },
-    "Practical 4": {
+    "Practical 04": {
       "_href": "cs2521/practicals/practical-04.json"
     },
-    "Practical 5": {
+    "Practical 05": {
       "_href": "cs2521/practicals/practical-05.json"
     },
     "Practical 06": {
       "_href": "cs2521/practicals/practical-06.json"
     },
-    "Practical 7": {
+    "Practical 07": {
       "_href": "cs2521/practicals/practical-07.json"
     },
-    "Practical 8": {
+    "Practical 08": {
       "_href": "cs2521/practicals/practical-08.json"
     },
     "Practical 09": {
