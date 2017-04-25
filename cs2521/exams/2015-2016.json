@@ -72,15 +72,14 @@
 					"1": 1,
 					"2": 13,
 					"3": null,
-					"4": 24,
+					"4": null,
 					"5": 5,
-					"6": null,
-					"7": null,
+					"6": 24,
+					"7": 36,
 					"8": 8,
 					"9": 9,
 					"10": null,
-					"11": 35,
-					"_note": "I do not know what to do with 36"
+					"11": 35
 				}
 			},
 			"iv": {
@@ -170,7 +169,7 @@
 			"_file": "2015-2016/2c_code.pseudo",
 			"i": {
 				"Task": "Which famous search algorithm is this?",
-				"Solution": "Dijkstra's algorithm"
+				"Solution": "Breadth first search"
 			},
 			"ii": {
 				"Task": "Consider the tree below. Model this by taking A = 0, B = 1, C = 2, D = 3, E = 4, F = 5. Suppose that each adjacency list is given in increasing order. Suppose also that the list of adjacency lists is given in increasing order (by the source vertex). Finally, suppose that each for-loop follows the increasing ordering. Starting with s = A = 0, list the order in which the vertices are marked BLACK by the algorithm",
@@ -185,7 +184,7 @@
 				"Task": "Add, or change, the code so that the algorithm will work on an undirected graph with multiple connected components. Your answer should suppose that the graph is finite and has no multi-edges. Hint: you may want to use more than one function, you can suppose that there is a function that returns a list COMPONENTS(G) of connected components of G, and a function SELECT(C) that selects some vertex of each connected component, C",
 				"Solution": {
 					"_file": "2015-2016/2civ_sol.pseudo",
-					"_note": "Ask about this question because it should work anyway"
+					"_note": "This question wont be on the exam this year"
 				}
 			}
 		}
