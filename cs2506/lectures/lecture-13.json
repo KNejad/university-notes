@@ -1,5 +1,9 @@
 {
 	"_title": "User testing",
-	"_date": "Mon Feb 20 15:19:23 GMT 2017"
+	"_date": "Mon Feb 20 15:19:23 GMT 2017",
+	"Thinking aloud": "Have test subjects use the system while continuously thinking out loud",
+	"Co-discovery": "Have 2 users use the system and allow them to cooperate",
+	"Retrospective testing": "User discusses system after finishing with the tasks",
+	"Coaching method": "The user is provided with a coach who can answer questions"
 
 }

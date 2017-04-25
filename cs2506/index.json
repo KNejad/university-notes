@@ -1,6 +1,6 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-04-24 16:30:21 +0100",
+  "_date": "2017-04-25 21:31:59 +0100",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
   },
@@ -46,6 +46,9 @@
     },
     "User testing Experimental Design, Basic Statistics": {
       "_href": "cs2506/lectures/lecture-14.json"
+    },
+    "Universal Access": {
+      "_href": "cs2506/lectures/lecture-15.json"
     },
     "Cross-cultural design and Internationalization": {
       "_href": "cs2506/lectures/lecture-16.json"

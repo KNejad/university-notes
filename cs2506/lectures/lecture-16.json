@@ -4,5 +4,4 @@
 	"Globalization": "Removing all culturally specific features from the software",
 	"Internalization": "Same as globalization but limited to national boundaries",
 	"Localization": "Local to a specific region"
-
 }

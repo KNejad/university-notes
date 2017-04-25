@@ -1,6 +1,6 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-04-24 16:30:21 +0100",
+  "_date": "2017-04-25 21:31:59 +0100",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
   },
@@ -99,6 +99,9 @@
     },
     "Practical 9 – Prolog": {
       "_href": "cs2510/practicals/practical-09.json"
+    },
+    "Practical 10 – Functional Programming in Haskell": {
+      "_href": "cs2510/practicals/practical-10.json"
     }
   }
 }
