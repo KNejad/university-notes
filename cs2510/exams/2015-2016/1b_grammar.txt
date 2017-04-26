@@ -1,0 +1,5 @@
+<pp> -> b <stmts> e
+<stmts> -> <stm> | <stm>; <stmts>
+<stm> -> <vr> = <exp>
+<vr> -> x|y|z
+<exp> -> <vr> + <exp> | <vr> ∗ <exp> | <vr>

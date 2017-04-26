@@ -1,0 +1,131 @@
+{
+	"_title": "Exam 2015-2016",
+	"_date": "Wed Apr 26 15:36:05 BST 2017",
+	"1":{
+		"a": {
+			"Task": "Give 2 examples of lexemes of a programming language of your preference",
+			"Solution": "In Ruby 2 lexemes are 'def' and 'if'"
+		},
+		"b": {
+			"Task": {
+				"Description": "Given the grammar G below:",
+				"_file": "2015-2016/1b_grammar.txt",
+				"i": "Provide a leftmost derivation for the string “b z = y; x = x ∗ y + z e”",
+				"ii": "Draw a parse tree for the string “b z = y + y ∗ x e”",
+				"iii": "Provide a more compact equivalent EBNF (Extended Backus-Naur Form) grammar"
+			},
+			"Solution": ""
+		},
+		"c": {
+			"Task": {
+				"Description": "Given the following skeletal JavaScript program (where console.log() outputs the value of its argument on the console)",
+				"_file": "2015-2016/1c_code.js",
+				"i": "What values will be displayed in function f (via the console.log() commands) if the program is interpreted using static scoping rules?",
+				"ii": "What values will be displayed in function f (via the console.log() commands) if the program is interpreted using dynamic scoping rules?"
+			},
+			"Solution": ""
+		},
+		"d": {
+			"Task": "Explain why machine languages cannot be used to define the operational semantics of programming languages",
+			"Solution": ""
+		},
+		"e": {
+			"Task": "Using Prolog’s unification mechanism to evaluate the query ?- X = 2 + Y, Y = 2 * 4, Z is X + Y. Provide the value of all variables in the query",
+			"Solution": ""
+		},
+		"f": {
+			"Task": "Evaluate Haskell in terms of its reliability",
+			"Solution": ""
+		}
+	},
+	"2": {
+		"a": {
+			"Task": "What is the best programming language? Justify your answer",
+			"Solution": ""
+		},
+		"b": {
+			"Task": "Give two goals of parsers",
+			"Solution": ""
+		},
+		"c": {
+			"Task": "What is the likely impact of implicit variable binding on the reliability of a programming language?",
+			"Solution": ""
+		},
+		"d": {
+			"Task": {
+				"Description": "Given the grammar below for hexadecimal numbers, provide a translation function M hex to convert strings of this language onto non-negative decimal numbers, that is, M hex should compute the decimal value of the hexadecimal number",
+				"_file": "2015-2016/2d_grammar.txt"
+			},
+			"Solution": ""
+		},
+		"e": {
+			"Task": {
+				"Description": "The following Prolog program c(X,L,NoX) was written to count how many occurrences NoX of element X there are in list L. However, it does not work. Answer the items below in connection with this program",
+				"_file": "2015-2016/2e_code.pl",
+				"i": "What would the query ?- c(a,[a,b,a],N). return? Explain your answer with a trace",
+				"ii": "Change the program so that it performs what it is intended to do"
+			},
+			"Solution": ""
+		},
+		"f": {
+			"Task": {
+				"Description": "Refer to the two Java classes Person.java and Employee.java, overleaf, and answer the following questions",
+				"_file": "2015-2016/2f_person.java",
+				"_file": "2015-2016/2f_employee.java",
+				"i": "What is the relationship between the classes Person and Employee?",
+				"ii": "Describe the sequence of steps involved in the construction of these two new objects: Employee e = new Employee('Alice',20000); Person p = new Person('Bob');",
+				"iii": "Assuming that the object reference e is within scope, describe how the following method call is handled: e.toString()",
+				"iv": "Why is it wrong to define the behaviour of method toString() in the Employee class in this way? return 'Employee ' + name + ' has salary ' + salary;"
+			},
+			"Solution": ""
+		}
+	},
+	"3": {
+		"a": {
+			"Task": "What is the risk of case-sensitive programming languages? Give one example of the risk, in a language of your choice",
+			"Solution": ""
+		},
+		"b": {
+			"Task": {
+				"Description": "Consider the following skeletal C program",
+				"_file": "2015-2016/3b_code.c",
+				"i": "Is variable x visible in Point 1?",
+				"ii": "List the variables visible in Point 2 and state where they have been defined",
+				"iii": "Is variable y visible in Point 3? If so, where was it defined?"
+			},
+			"Solution": ""
+		},
+		"c": {
+			"Task": "List 3 attributes of variables in languages such as C++ and Java",
+			"Solution": ""
+		},
+		"d": {
+			"Task": "Provide 2 consequences of strings being represented as arrays, and not as a primitive type",
+			"Solution": ""
+		},
+		"e": {
+			"Task": {
+				"Description": "Given the matrix below",
+				"Matrix": {
+					"0": [2, 4, 6, 8],
+					"1": [3, 5, 7, 9],
+					"2": [12, 14, 16, 18],
+					"3": [13, 15, 17, 19]
+				},
+				"i": "How would it be stored in row major order?",
+				"ii": "How would it be stored in column major order?",
+				"iii": "Define the access function for a 2D matrix stored in row major order, where the subscript ranges for its rows are 1 to n and for its columns are 1 to m. Assume that the element size is 1",
+				"iv": "Use your definition of the previous item to obtain element [2, 2] (that is, 5)"
+			},
+			"Solution": ""
+		},
+		"f": {
+			"Task": "State the type definition of the following function and, using an example, explain what this function does. 'seriesUp n = concat [ [1..x] | x <- [1..n] ]'",
+			"Solution": ""
+		},
+		"g": {
+			"Task": "Suppose that function plus has the type signature: 'plus :: Int -> Int -> Int' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this represent?",
+			"Solution": ""
+		}
+	}
+}
