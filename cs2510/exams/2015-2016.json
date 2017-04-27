@@ -27,7 +27,12 @@
 						"b z=z; x = x * y + x e"
 					]
 				},
-				"ii": {"_image": "2015-2016/1bii_parse_tree.png"} 
+				"ii": {
+					"_image": "2015-2016/1bii_parse_tree.png"
+				},
+				"iii": {
+					"_file": "2015-2016/1biii_ebnf.txt"
+				}
 			}
 		},
 		"c": {
@@ -37,19 +42,26 @@
 				"i": "What values will be displayed in function f (via the console.log() commands) if the program is interpreted using static scoping rules?",
 				"ii": "What values will be displayed in function f (via the console.log() commands) if the program is interpreted using dynamic scoping rules?"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": [10, 7],
+				"ii": [10, 5]
+			}
 		},
 		"d": {
 			"Task": "Explain why machine languages cannot be used to define the operational semantics of programming languages",
-			"Solution": ""
+			"Solution": "Machine language is specific to a particular computer. Operational semantics should be usable on different machines with different architectures RAM etc"
 		},
 		"e": {
 			"Task": "Using Prolog’s unification mechanism to evaluate the query ?- X = 2 + Y, Y = 2 * 4, Z is X + Y. Provide the value of all variables in the query",
-			"Solution": ""
+			"Solution": {
+				"X": "2 + Y",
+				"Y": "2 * 4",
+				"Z": "18"
+			}
 		},
 		"f": {
 			"Task": "Evaluate Haskell in terms of its reliability",
-			"Solution": ""
+			"Solution": "Haskell is very reliable since functions do not alter the state beyond the returned value"
 		}
 	},
 	"2": {

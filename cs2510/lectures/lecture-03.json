@@ -31,6 +31,12 @@
 			"Exception": "-"
 		}
 	},
+	"Semantics": {
+		"Definition": "The mathematical study of the meaning of programming languages. It does so by evaluating the meaning of syntactically legal strings defined by a specific programming language, showing the computation involved",	
+		"Axiomatic semantics": "A set of axiomatic truths in a programming language",
+		"Denotational semantics": "Models programs as static mathematical objects, namely as set-theoretic functions with specific properties",
+		"Operational semantics": "A mathematical model of programming language execution. It is, in essence, an interpreter defined mathematically"
+	},
 	"Attribute grammars": {
 		"Definition": "A context-free grammar with the addition of attributes and attribute evaluation rules. An attribute grammar can specify both semantics and syntax.",
 		"Attributes": {

@@ -1,0 +1,4 @@
+<pp> -> b <stmts> e
+<stmts> -> <stm>[; <stmts]
+<vr> -> x|y|z
+<exp> -> <vr> ["+"|"*" <exp>] 
