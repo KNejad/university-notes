@@ -67,22 +67,22 @@
 	"2": {
 		"a": {
 			"Task": "What is the best programming language? Justify your answer",
-			"Solution": ""
+			"Solution": "This question is incomplete. Best programming language for what? If you want to design an operating system perhaps a good option would be C. If, however, you are designing a website, C would slow down development offering very small (if any) speed improvements to the website. The best programming language is dependent on the task you want to acomplish, the time you have to do it and the skill set of the developers at your disposal. To name a few of the concerns"
 		},
 		"b": {
 			"Task": "Give two goals of parsers",
-			"Solution": ""
+			"Solution": "Find syntax errors and produce a parse tree"
 		},
 		"c": {
 			"Task": "What is the likely impact of implicit variable binding on the reliability of a programming language?",
-			"Solution": ""
+			"Solution": "Variables may be altered or accessed which the developer intends to be from another scope"
 		},
 		"d": {
 			"Task": {
 				"Description": "Given the grammar below for hexadecimal numbers, provide a translation function M hex to convert strings of this language onto non-negative decimal numbers, that is, M hex should compute the decimal value of the hexadecimal number",
 				"_file": "2015-2016/2d_grammar.txt"
 			},
-			"Solution": ""
+			"Solution": {"_note": "Awaiting clarification of question from lecturer"}
 		},
 		"e": {
 			"Task": {
@@ -91,7 +91,15 @@
 				"i": "What would the query ?- c(a,[a,b,a],N). return? Explain your answer with a trace",
 				"ii": "Change the program so that it performs what it is intended to do"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": {
+					"Result": 0,
+					"Trace": [
+
+					]
+				},
+				"ii": {"_file": "2015-2016/2e_sol.pl"}
+			}
 		},
 		"f": {
 			"Task": {

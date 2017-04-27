@@ -1,8 +1,13 @@
 {
   "_title": "CS2510 Index",
-  "_date": "2017-04-25 21:31:59 +0100",
+  "_date": "2017-04-27 23:25:30 +0100",
   "Modern Programming Languages": {
     "_href": "cs2510/cs2510.json"
+  },
+  "Exams": {
+    "Exam 2015-2016": {
+      "_href": "cs2510/exams/2015-2016.json"
+    }
   },
   "Lectures": {
     "Preliminaries": {
