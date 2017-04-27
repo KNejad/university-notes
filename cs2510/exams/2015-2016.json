@@ -14,7 +14,21 @@
 				"ii": "Draw a parse tree for the string “b z = y + y ∗ x e”",
 				"iii": "Provide a more compact equivalent EBNF (Extended Backus-Naur Form) grammar"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": {
+					"Steps": [
+						"b <stmts> e",
+						"b <stm>; <stmts> e",
+						"b z=x; <stm> e",
+						"b <vr>=<exp>; <vr> = <exp> e",
+						"b z=<vr>; x = <vr> * <exp> e",
+						"b z=z; x = x * <vr> + <exp> e",
+						"b z=z; x = x * y + <vr> e",
+						"b z=z; x = x * y + x e"
+					]
+				},
+				"ii": {"_image": "2015-2016/1bii_parse_tree.png"} 
+			}
 		},
 		"c": {
 			"Task": {
