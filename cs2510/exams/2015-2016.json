@@ -161,15 +161,24 @@
 				"iii": "Define the access function for a 2D matrix stored in row major order, where the subscript ranges for its rows are 1 to n and for its columns are 1 to m. Assume that the element size is 1",
 				"iv": "Use your definition of the previous item to obtain element [2, 2] (that is, 5)"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": "[[2,4,6,8],[3,5,7,9],[12,14,16,18],[13,15,17,19]]",
+				"ii": "[[2,3,12,13],[4,5,14,15],[6,7,16,17],[8,9,18,19]]",
+				"iii": "f list x y =  list !! (x-1) !! (y-1)",
+				"iv": "f list 1 1"
+					
 		},
 		"f": {
 			"Task": "State the type definition of the following function and, using an example, explain what this function does. 'seriesUp n = concat [ [1..x] | x <- [1..n] ]'",
-			"Solution": ""
+			"Solution": {
+				"Type Definition": "seriesUp :: Int -> [Int]",
+				"Description": "It returns a list containing all the sequences of numbers counting up to each number before n. For example seriesUp 4 would return [1,1,2,1,2,3,1,2,3,4]"
+			}
 		},
 		"g": {
 			"Task": "Suppose that function plus has the type signature: 'plus :: Int -> Int -> Int' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this represent?",
-			"Solution": ""
+			"Solution": "It is a list of tuples",
+			"_note": "I don't know what it means by what does this represent"
 		}
 	}
 }
