@@ -139,7 +139,6 @@
 		"c": {
 			"Task": "List 3 attributes of variables in languages such as C++ and Java",
 			"Solution": [ "static", "public", "final"]
-			]
 		},
 		"d": {
 			"Task": "Provide 2 consequences of strings being represented as arrays, and not as a primitive type",
