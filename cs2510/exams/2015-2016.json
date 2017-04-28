@@ -166,19 +166,20 @@
 				"ii": "[[2,3,12,13],[4,5,14,15],[6,7,16,17],[8,9,18,19]]",
 				"iii": "f list x y =  list !! (x-1) !! (y-1)",
 				"iv": "f list 1 1"
-					
-		},
-		"f": {
-			"Task": "State the type definition of the following function and, using an example, explain what this function does. 'seriesUp n = concat [ [1..x] | x <- [1..n] ]'",
-			"Solution": {
-				"Type Definition": "seriesUp :: Int -> [Int]",
-				"Description": "It returns a list containing all the sequences of numbers counting up to each number before n. For example seriesUp 4 would return [1,1,2,1,2,3,1,2,3,4]"
+
+			},
+			"f": {
+				"Task": "State the type definition of the following function and, using an example, explain what this function does. 'seriesUp n = concat [ [1..x] | x <- [1..n] ]'",
+				"Solution": {
+					"Type Definition": "seriesUp :: Int -> [Int]",
+					"Description": "It returns a list containing all the sequences of numbers counting up to each number before n. For example seriesUp 4 would return [1,1,2,1,2,3,1,2,3,4]"
+				}
+			},
+			"g": {
+				"Task": "Suppose that function plus has the type signature: 'plus :: Int -> Int -> Int' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this represent?",
+				"Solution": "It is a list of tuples",
+				"_note": "I don't know what it means by what does this represent"
 			}
-		},
-		"g": {
-			"Task": "Suppose that function plus has the type signature: 'plus :: Int -> Int -> Int' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this represent?",
-			"Solution": "It is a list of tuples",
-			"_note": "I don't know what it means by what does this represent"
 		}
 	}
 }
