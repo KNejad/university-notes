@@ -82,7 +82,7 @@
 				"Description": "Given the grammar below for hexadecimal numbers, provide a translation function M hex to convert strings of this language onto non-negative decimal numbers, that is, M hex should compute the decimal value of the hexadecimal number",
 				"_file": "2015-2016/2d_grammar.txt"
 			},
-			"Solution": {"_note": "Awaiting clarification of question from lecturer"}
+			"Solution": {"_file": "2015-2016/2d_sol.hs"}
 		},
 		"e": {
 			"Task": {
@@ -92,12 +92,7 @@
 				"ii": "Change the program so that it performs what it is intended to do"
 			},
 			"Solution": {
-				"i": {
-					"Result": 0,
-					"Trace": [
-
-					]
-				},
+				"i": "0",
 				"ii": {"_file": "2015-2016/2e_sol.pl"}
 			}
 		},
@@ -111,13 +106,21 @@
 				"iii": "Assuming that the object reference e is within scope, describe how the following method call is handled: e.toString()",
 				"iv": "Why is it wrong to define the behaviour of method toString() in the Employee class in this way? return 'Employee ' + name + ' has salary ' + salary;"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": "The employee class inherits from the person class",
+				"ii": "A new employee instance is created passing in the variables 'Alice' and 20000. The employee class passes 'Alice' to its parent classs and asigns 20000 as the employee salary. The parent class of Employee which is Person sets the name variable of the class to 'Alice'. For the second object, a new instance of the Person object is created passing the string 'Bob' as a parameter. The person class then assigns 'Bob' as the objects name",
+				"iii": "The Employee class is checked to see if there is a toString() method in it. If there is, it executes the method and returns the result. If there is no toString() method in the Employee class the parent of the Employee class will be checked for that method (The Person class)",
+				"iv": "Because the Employee class does not have access to the name variable. Only the Person class does"
+			}
 		}
 	},
 	"3": {
 		"a": {
 			"Task": "What is the risk of case-sensitive programming languages? Give one example of the risk, in a language of your choice",
-			"Solution": ""
+			"Solution": {
+				"Reason": "The risk is that a method or variable may be defined twice once in each case and the programmer could make a mistake and call the wrong method or access the wrong variable",
+				"_file": "2015-2016/3a_sol.rb"
+			}
 		},
 		"b": {
 			"Task": {
@@ -127,15 +130,23 @@
 				"ii": "List the variables visible in Point 2 and state where they have been defined",
 				"iii": "Is variable y visible in Point 3? If so, where was it defined?"
 			},
-			"Solution": ""
+			"Solution": {
+				"i": "Yes",
+				"ii": "x defined at 1 and y,z defined at 2",
+				"iii": "Yes it was defined at point 1"
+			}
 		},
 		"c": {
 			"Task": "List 3 attributes of variables in languages such as C++ and Java",
-			"Solution": ""
+			"Solution": [ "static", "public", "final"]
+			]
 		},
 		"d": {
 			"Task": "Provide 2 consequences of strings being represented as arrays, and not as a primitive type",
-			"Solution": ""
+			"Solution": [
+				"Harder for the programmer to program using Arrays",
+				"Less abstraction allows more finite control to the programmer and provides a better understanding"
+			]
 		},
 		"e": {
 			"Task": {
