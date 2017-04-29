@@ -1,8 +1,13 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-04-27 23:25:30 +0100",
+  "_date": "2017-04-29 16:13:10 +0100",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
+  },
+  "Exams": {
+    "2015-2016 exam": {
+      "_href": "cs2506/exams/2015-2016.json"
+    }
   },
   "Lectures": {
     "Usability- Introduction": {

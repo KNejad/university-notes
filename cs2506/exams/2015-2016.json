@@ -5,15 +5,18 @@
 		"Description": "An educational company called Animals-We-Like is developing a tablet app to teach 10-year olds about animals. The app will contain information on about 80 animals. For each animal, the app will contain: 1. a video showing the animal going about its normal life 2. a story with basic facts about the animal (for example, how big it is, how fast it is) plus a test of knowledge gained 3. a story about what the animal eats plus a test of knowledge gained 4. a story about the environment the animal lives in plus a test of knowledge gained. 5. the option for the users to rate how much they have enjoyed learning about that animal, after they have studied all the information about the animal. The company wants to sell the tablet app to schools for use by individual children in a class room (for schools that are already using tablets in their teaching). The company also wants to sell the tablet app to parents for use by children at home",
 		"a": {
 			"Task": "Describe a persona and a scenario for this app",
-			"Solution": ""
+			"Solution": {
+				"Persona": "Jack is a 10 year old who is in a school which uses tablet computers on a daily basis. He does not like learning about nature but he really enjoys video games and cartoons. Neither Jack, nor his parents own a tablet computer, however, his mum does own a smartphone which he is allowed to use",
+				"Scenario": "Jack's school has started using Animals-We-Like on their tablets. They have decided to teach kids about 1 animal for each letter of the alphabet (i.e. teach Ant for A, Bee for B etc.) What they want is for the kids to decide each day which animal they want to learn about (on day 1 with A day 2 with B etc.)"
+			}
 		},
 		"b": {
 			"Task": "Provide a hierarchical task model for this app",
-			"Solution": ""
+			"Solution": {"_file": "2015-2016/1b_model.png"}
 		},
 		"c": {
 			"Task": "Animals-We-Like would like to sell versions of the app in multiple countries: China, Saudi Arabia and the UK. Explain the importance of cross-cultural design for this system, and provide examples of the issues to consider for this particular app",
-			"Solution": ""
+			"Solution": "When dealing with products that can be sold in multiple regions it is important to consider other cultures views on different things. For example, in this application the video may say something like 'The Dog is man's best friend' whilst this may seem normal for somebody living in a western culture it could potentially be seen as weird for other cultures since dogs aren't common pets. Another example could be if the video is showing a girl walking her dog. If the girl is wearing a short skirt it is acceptable in many cultures, but in some (such as Saudi Arabia) it could be seen as inapropriate"
 		},
 		"d": {
 			"Task": {
@@ -21,7 +24,10 @@
 				"i": "Using an example from this app, explain how content-based filtering works",
 				"ii": "Critically evaluate the advantages and disadvantages of using content-based filtering for this app."
 			},
-			"Solution": ""
+			"Solution": {
+				"i": "Content based filtering is when contents such as products on Amazon or animals on this app are devided into groups which are alike. For example in this app all sea creatures could be put together in one group. So if a child rates a specific type of fish very highly there is a high chance he will like other fish as well",
+				"ii": "An advantage of using content based filtering is that many children are very happy to repeat similar things and stay within their comfort zone. So if a child likes a video about Lions they are also likely to like videos about Tigers. The down side to using content based filtering is that the parents may want the children to gain a broad knowledge of different animals (some birds, some fish etc). By filtering to the animals which the users like it is possible that many animals will be excluded"
+			}
 		}
 	},
 	"2": {
@@ -29,37 +35,55 @@
 
 		"a": {
 			"Task": "Discuss how card sorting could help you decide on groupings for the app’s information architecture",
-			"Solution": ""
+			"Solution": "By writing each animal on a card we can then divide the cards into separate groups to experiment on different group sizes and have a visual feel for how the groups look"
 		},
 		"b": {
 			"Task": "If you wanted to run focus groups to obtain feedback on possible designs for this app, what sorts of people would you recruit?",
-			"Solution": ""
+			"Solution": "My first thought would be to recruit the users. However, the main users of this system are children, this could raise some ethical issues. Further more, children have much lower attention spans so it would be hard to get their opinions on many matters. The last problem with children is that they themselves do not always know what they want. Because of these reasons perhaps the best option is to recruit the parents and teachers instead and ask them to prepare by seeing what their children are most interested in"
 		},
 		"c": {
 			"Task": "Give examples of a global, local, and contextual navigation system for the app",
-			"Solution": ""
+			"Solution": {
+				"Global": "A navigation bar on the top which allows the users to go to the home page or the animal page, settings etc.",
+				"Local": "The animals page can have buttons to view all mammals or reptiles etc.",
+				"Contextual": "On the Dog page it may say 'dogs chase cats' the cats can be a link to the cats page"
+			}
 		},
 		"d": {
 			"Task": "Write a plan for carrying out a user test for the app once it has been developed",
-			"Solution": ""
+			"Solution": "Since the main audience are children it would not be realistic to give them complicated instructions and see if they can follow them. The best option therefore, would be to give them the tablet containing the app we are testing and some other games and let them explore the product whilst taking note of what they are doing and seeing where and when they give up on the app and decide to play the other games. Once in a while we could remind them of features of the app and see if they can manage to find then and use them. It is important however, that we do not give them step by step instructions on how to get to those features as this would ruin the experiment. Another option is to use a co-discovery since children are much more likely to talk and say what is on their minds when they are with other children"
 		}
 	},
 	"3": {
-		"Desciption": "The BearWorld Company is designing a website to sell bear toys via the internet. See the Annex at the end of the exam paper for screenshots of this website and a table showing what happens if you click on buttons on the interface, so showing navigation between screens",
+		"Description": "The BearWorld Company is designing a website to sell bear toys via the internet. See the Annex at the end of the exam paper for screenshots of this website and a table showing what happens if you click on buttons on the interface, so showing navigation between screens",
 		"a": {
-			"Task": "Explain to BearWorld why usability is important for this website"
+			"Task": "Explain to BearWorld why usability is important for this website",
+			"Solution": "There are many places online to buy bear toys. Such as amazon ebay etc. If the users cannot learn how to use your website within a few seconds they will go to one of the sites that they are more familiar with. Supporting a website which is easy to use is much easier. It could be legally required"
 		},
 		"b": {
 			"Task": "BearWorld wants to design its website for universal access. What do they need to be aware of when designing this website for people with visual impairments?",
-			"Solution": ""
+			"Solution": "All images should have text associated with them so that the users do not miss out. Any links which are on images should be described properlly. The option to select a color for the bear should say what color it is rather than just showing the bear"
 		},
 		"c": {
 			"Task": "Perform a heuristic evaluation of this website, using Nielsen’s heuristics. For each problem identified, also give a short description of a possible improvement. If a heuristic does not provide a mistake, explain what you were looking for",
-			"Solution": ""
+			"Solution": [
+				"There is no global navigation system which makes it difficult for users to know where they are and how to get to other places",
+				"There should not be an option for a color in which the bear is not available in (error prevention)",
+				"There is no help button anywhere",
+				"The design is very minimal. This is a good thing",
+				"I was looking to see if the system matches the real world and it does",
+				"There is no indication of any keyboard shortcuts or faster ways for experienced users to interact with the system"
+			]
 		}, 
 		"c": {
 			"Task": "Write a questionnaire with five questions for assessing the usability of the website once an improved version of it has been developed",
-			"Solution": ""
+			"Solution": [
+				"How do you expect to get to the home page from any screen?",
+				"Do you expect to always complete the entire shop within one visit to the store?",
+				"Do you find it easy to contact us via the websit?",
+				"Did you have any difficulty fulfilling an order?",
+				"Did any part of the system confuse you?"
+			]
 		}
 	}
 }
