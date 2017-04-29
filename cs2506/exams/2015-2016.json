@@ -1,0 +1,65 @@
+{
+	"_title": "2015-2016 exam",
+	"_date": "Sat Apr 29 14:15:09 BST 2017",
+	"1": {
+		"Description": "An educational company called Animals-We-Like is developing a tablet app to teach 10-year olds about animals. The app will contain information on about 80 animals. For each animal, the app will contain: 1. a video showing the animal going about its normal life 2. a story with basic facts about the animal (for example, how big it is, how fast it is) plus a test of knowledge gained 3. a story about what the animal eats plus a test of knowledge gained 4. a story about the environment the animal lives in plus a test of knowledge gained. 5. the option for the users to rate how much they have enjoyed learning about that animal, after they have studied all the information about the animal. The company wants to sell the tablet app to schools for use by individual children in a class room (for schools that are already using tablets in their teaching). The company also wants to sell the tablet app to parents for use by children at home",
+		"a": {
+			"Task": "Describe a persona and a scenario for this app",
+			"Solution": ""
+		},
+		"b": {
+			"Task": "Provide a hierarchical task model for this app",
+			"Solution": ""
+		},
+		"c": {
+			"Task": "Animals-We-Like would like to sell versions of the app in multiple countries: China, Saudi Arabia and the UK. Explain the importance of cross-cultural design for this system, and provide examples of the issues to consider for this particular app",
+			"Solution": ""
+		},
+		"d": {
+			"Task": {
+				"Description": "Animals-We-Like would like to incorporate a recommender system in its app, to recommend to a particular child what animals they may want to look at next (using the ratings provided)",
+				"i": "Using an example from this app, explain how content-based filtering works",
+				"ii": "Critically evaluate the advantages and disadvantages of using content-based filtering for this app."
+			},
+			"Solution": ""
+		}
+	},
+	"2": {
+		"Preliminaries": "Consider the Animals-We-Like app described in Question 1.",
+
+		"a": {
+			"Task": "Discuss how card sorting could help you decide on groupings for the app’s information architecture",
+			"Solution": ""
+		},
+		"b": {
+			"Task": "If you wanted to run focus groups to obtain feedback on possible designs for this app, what sorts of people would you recruit?",
+			"Solution": ""
+		},
+		"c": {
+			"Task": "Give examples of a global, local, and contextual navigation system for the app",
+			"Solution": ""
+		},
+		"d": {
+			"Task": "Write a plan for carrying out a user test for the app once it has been developed",
+			"Solution": ""
+		}
+	},
+	"3": {
+		"Desciption": "The BearWorld Company is designing a website to sell bear toys via the internet. See the Annex at the end of the exam paper for screenshots of this website and a table showing what happens if you click on buttons on the interface, so showing navigation between screens",
+		"a": {
+			"Task": "Explain to BearWorld why usability is important for this website"
+		},
+		"b": {
+			"Task": "BearWorld wants to design its website for universal access. What do they need to be aware of when designing this website for people with visual impairments?",
+			"Solution": ""
+		},
+		"c": {
+			"Task": "Perform a heuristic evaluation of this website, using Nielsen’s heuristics. For each problem identified, also give a short description of a possible improvement. If a heuristic does not provide a mistake, explain what you were looking for",
+			"Solution": ""
+		}, 
+		"c": {
+			"Task": "Write a questionnaire with five questions for assessing the usability of the website once an improved version of it has been developed",
+			"Solution": ""
+		}
+	}
+}
