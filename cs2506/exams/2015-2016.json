@@ -12,7 +12,7 @@
 		},
 		"b": {
 			"Task": "Provide a hierarchical task model for this app",
-			"Solution": {"_file": "2015-2016/1b_model.png"}
+			"Solution": {"_image": "2015-2016/1b_model.png"}
 		},
 		"c": {
 			"Task": "Animals-We-Like would like to sell versions of the app in multiple countries: China, Saudi Arabia and the UK. Explain the importance of cross-cultural design for this system, and provide examples of the issues to consider for this particular app",
