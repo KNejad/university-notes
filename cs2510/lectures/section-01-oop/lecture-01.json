@@ -9,5 +9,5 @@
 	"Messages": "Calls to methods",
 	"Access controls": "Restrics access to entities and subclasses",
 	"Composition": "Instead of classes inheriting from other classes, they are composed of multiple different classes",
-	"Signature": "A methods name, number and types of parameters"
+	"Signature": "A methods name and its parameter types"
 }

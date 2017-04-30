@@ -1,24 +1,17 @@
 {
 	"_title": "Names, Bindings and Scopes",
 	"_date": "Tue Jan 31 15:01:16 GMT 2017",
-	"Variables attributes": [
-		"Name",
-		"Address",
-		"Value",
-		"Type",
-		"Lifetime",
-		"Scope"
-	],
-	"Explicit heap-dynamic variable": "A variable bound during an explicit run-time instruction specified by the programmer.",
-	"Static scope": "Determines at compile time what we are referring to based on the static, lexical structure of the program source code. The innermost definition of a variable is used.",
-	"Dynamic scope": "There is a stack of variable definitions tracked at runtime. Which variable we write to depends on what is in scope and has been defined dynamically at runtime.",
+	"Variables attributes": [ "Name", "Address", "Value", "Type", "Lifetime", "Scope" ],
+	"Explicit heap-dynamic variable": "A variable bound during an explicit run-time instruction specified by the programmer",
+	"Static scope": "Determines at compile time what we are referring to based on the static, lexical structure of the program source code. The innermost definition of a variable is used",
+	"Dynamic scope": "There is a stack of variable definitions tracked at runtime. Which variable we write to depends on what is in scope and has been defined dynamically at runtime",
 	"Scalar variables":{ 
-		"Definition": "Variables which hold a single value (as opposed to arrays dictionaries etc.).",
+		"Definition": "Variables which hold a single value (as opposed to arrays dictionaries etc.)",
 		"Types": [
-			"static",
-			"stack dynamic",
-			"explicit heap dynamic",
-			"implicit heap dynamic"
+			"Static",
+			"Stack dynamic",
+			"Explicit heap dynamic",
+			"Implicit heap dynamic"
 		]
 	}
 }

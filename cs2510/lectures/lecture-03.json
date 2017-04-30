@@ -32,26 +32,26 @@
 		}
 	},
 	"Semantics": {
-		"Definition": "The mathematical study of the meaning of programming languages. It does so by evaluating the meaning of syntactically legal strings defined by a specific programming language, showing the computation involved",	
+		"Definition": "The mathematical study of the meaning of programming languages. Done by evaluating the meaning of syntactically legal strings defined by a specific programming language, showing the computation involved",	
 		"Axiomatic semantics": "A set of axiomatic truths in a programming language",
 		"Denotational semantics": "Models programs as static mathematical objects, namely as set-theoretic functions with specific properties",
 		"Operational semantics": "A mathematical model of programming language execution. It is, in essence, an interpreter defined mathematically"
 	},
 	"Attribute grammars": {
-		"Definition": "A context-free grammar with the addition of attributes and attribute evaluation rules. An attribute grammar can specify both semantics and syntax.",
+		"Definition": "A context-free grammar with the addition of attributes and attribute evaluation rules. An attribute grammar can specify both semantics and syntax",
 		"Attributes": {
 			"Definition": "Variables  associated with non-terminals or terminals of the grammar",
-			"Synthesized attributes": "The result of the attribute evaluation rules, and may also use the values of the inherited attributes.", 
-			"Inherited attributes": "Passed down from parent nodes."
+			"Synthesized attributes": "The result of the attribute evaluation rules, and may also use the values of the inherited attributes", 
+			"Inherited attributes": "Passed down from parent nodes"
 		}
 	},
 	"Axiomatic Semantics": {
-		"Definition": "An approach based on mathematical logic to proving the correctness of computer programs.",
+		"Definition": "An approach based on mathematical logic to proving the correctness of computer programs",
 		"Assertions": {
-			"Definition": "Logical statements - predicates with variables, where the variables define the state of the program.",
+			"Definition": "Logical statements - predicates with variables, where the variables define the state of the program",
 			"Precondition": "An assertion before a statement",
 			"Postcondition": "An assertion following a statement (The desired result of the program)",
-			"Weakest precondition": "The least restrictive precondition that will guarantee the postcondition."
+			"Weakest precondition": "The least restrictive precondition that will guarantee the postcondition"
 		},
 		"Syntax": "[equation] {[postcondition]}",
 		"Selection": "if B then S1 else S2",
