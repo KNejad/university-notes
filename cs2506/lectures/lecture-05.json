@@ -4,8 +4,8 @@
 	"Definition":"Organisation of content and design of navigation systems",
 	"Organisation structures": [
 		"Hierarchies",
-		"Databases",
 		"Linear",
+		"Databases",
 		"Hypertext",
 		"Hybrids"
 	],
@@ -15,7 +15,7 @@
 		"Hybrid": "A mix between the two"
 	},
 	"Card sorting": {
-		"Definition": "A technique used to gain an understanding of the user’s concept of how information should be organised",
+		"Description": "Using cards with names of items on them and sorting them into piles of categories",
 		"Open card sorting procedure": "User is given a stack of cards and is told to organise them into categories",
 		"Closed card sorting procedure": "User is given a stack of cards and is told to organise them into specific categories"
 	}

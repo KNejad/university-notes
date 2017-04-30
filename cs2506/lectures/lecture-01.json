@@ -4,11 +4,10 @@
 	"Legal requirements": "There are laws which require products to be usable by disabled individuals",
 	"User classes": "Different types of users",
 	"Usability purpose": [
-		"Expensive to support a bad user interface",
+		"Cheaper to support",
 		"Reduce human error",
-		"Possibly required by law",
+		"Required by law",
 		"Increases number of users",
 		"Increases user satisfaction"
 	]
-
 }

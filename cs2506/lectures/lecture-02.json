@@ -2,8 +2,8 @@
 	"_title": "Task Analysis",
 	"_date" :  "Tue Jan 17 16:00:00 GMT 2017",
 	"Core tasks": "The main tasks which a user wants to accomplish on a system",
-	"Persona": "A character who has certain traits. We use this persona to guess how that type of person would use a product",
-	"Hierarchical Task Analysis (HTA)": "Text and diagrams to show hierarchy of tasks in plan",
+	"Persona": "A character who has certain traits. Used to guess how that type of person would use a product",
+	"Hierarchical Task Analysis (HTA)": "Text and diagrams to show hierarchy of tasks to achieve a goal",
 	"Plans": {
 		"Definition": "A plan for the order and how to execute steps in HTA",
 		"Types": [
@@ -16,5 +16,4 @@
 			"Mixtures"
 		]
 	}
-
 }
