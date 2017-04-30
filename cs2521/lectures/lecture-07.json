@@ -38,5 +38,4 @@
 	},
 	"Topological sort": "Orders a directed acyclic graph by placing all ancestors before their children",
 	"Strongly connected graph": "Graphs where you can traverse from any node to any other node"
-
 }

@@ -1,19 +1,19 @@
 {
 	"_title": "Data Structures",
 	"_date": "Mon Jan 30 13:03:47 GMT 2017",
-	"Contiguous data structure":  "Occupies a single chunk of memory.",
-	"Linked data structure": "Made up of distinct chunks of memory.",
-	"Stack": "Last object added to stack is the first out.",
-	"Queues": "First object added to queue is the first out.",
+	"Contiguous data structure":  "Occupies a single chunk of memory",
+	"Linked data structure": "Made up of distinct chunks of memory",
+	"Stack": "Last object added to stack is the first out",
+	"Queues": "First object added to queue is the first out",
 	"Binary Trees": {
-		"Definition": "A way of storing a large amount of data so that it can easily be accessed.",
-		"_href": "/cs2015/Lectures/19_-_B_Trees.html.",
-		"Rooted Binary Tree": "Can either be empty or have another left and right rooted binary tree (which also follow the same rule).",
-		"Leaf node": "The last node (at the bottom of the tree).",
+		"Definition": "A way of storing a large amount of data so that it can easily be accessed",
+		"_href": "/cs2015/Lectures/19_-_B_Trees.html",
+		"Rooted Binary Tree": "Can either be empty or have another left and right rooted binary tree (which also follow the same rule)",
+		"Leaf node": "The last node (at the bottom of the tree)",
 		"Deletion": {
-			"Leaf node": "set node to empty.",	
-			"Node with 1 child": "Replace it with its child.",
-			"Node with 2 children": "Replace with the key of its immediate successor (Smallest key which is larger)."
+			"Leaf node": "set node to empty",	
+			"Node with 1 child": "Replace it with its child",
+			"Node with 2 children": "Replace with the key of its immediate successor (Smallest key which is larger)"
 		}
 	},
 	"Hash function": {
@@ -26,5 +26,4 @@
 			}
 		}
 	}
-
 }
