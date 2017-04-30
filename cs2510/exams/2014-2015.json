@@ -1,0 +1,96 @@
+{
+	"_title": "2014-2015 Exam",
+	"_date": "Sun Apr 30 17:45:09 BST 2017",
+	"1": {
+		"a": {
+			"Task": {
+				"i": "Give a feature of C, C++, or Java that illustrates orthogonality",
+				"ii": "Give a feature of the language you choose to illustrate non-orthogonality"
+			},
+			"Solution": ""	
+		},
+		"b": {
+			"Task": {
+				"Description": "Write EBNF descriptions for the following",
+				"I": "A Java class definition header statement",
+				"II": "A C switch statement"
+			},
+			"Solution": ""
+		},
+		"c": {
+			"Task": "Define static, stack-dynamic, explicit heap-dynamic, and implicit heap-dynamic variables",
+			"Solution": ""
+		},
+		"d": {
+			"Task": {
+				"Description": "Assume the following JavaScript program is interpreted using static-scoping rules",
+				"i": "What is the value of x displayed in the function sub1?",
+				"ii": "Under dynamic-scoping rules, what is the value of x displayed in the function sub1?",
+				"_file": "2014-2015/1d_code.js"
+			},
+			"Solution": ""
+		}
+	},
+	"2": {
+		"a": {
+			"Task": {
+				"i": "Name at least two programming languages, which use pre-processor directives, and some, which don’t",
+				"ii": "What are the advantages and disadvantages of pre-processor directives?"
+			},
+			"Solution": ""
+		},
+		"b": {
+			"Task": {
+				"Description": "Write a Prolog program that succeeds if the intersection of two given list parameters is empty",
+				"Example": {
+					"Input": {
+						"List1": "10->15->4->20",
+						"List2": "8->4->2->10"
+					},
+					"Output": {
+						"Intersection List": "4->10",
+						"Union List": "2->8->20->4->15->10 )"
+					}
+				}
+			},
+			"Solution": ""
+		},
+		"c": {
+			"Task": {
+				"Description": "Consider the following program in C. For each of the following parameter-passing methods, what would be the values of the array list after execution?",
+				"_file": "2014-2015/2c_code.c",
+				"I": "Passed by value",
+				"II": "Passed by reference",
+				"III": "Passed by value-result"
+			},
+			"Solution": ""
+		},
+		"d": {
+			"Task": "Write a Haskell function to determine whether a given positive integer number is prime",
+			"Solution": ""
+		}
+	},
+	"3": {
+		"a": {
+			"Task": {
+				"Description": "Consider the following ADA procedure. Note that the copy-in-copy-out parameter mechanism is used here (since Integer is a primitive type). Suppose that i contain 2 and that j contains 3. With this scenario in mind answer the following",
+				"_file": "2014-2015/3a_code.ada",
+				"I": "Show what is written by the procedure calls multiply(i, j) and multiply(i, i);",
+				"II": "Now suppose that the variable parameter mechanism is used instead. Show what would be written by each of the above procedure calls. Explain any difference"
+			},
+			"Solution": ""
+		},
+		"b": {
+			"Task": "Write a Prolog program that finds the maximum value in a list of numbers",
+			"Solution": ""
+		},
+		"c": {
+			"Task": "Write a definition of the following function in Haskell which returns how many of its three arguments are equal,, howManyEqua1 :: Int -> Int -> Int -> Int",
+			"Solution": ""
+		},
+		"d": {
+			"Task": "Which three extensions are common to most EBNFs?",
+			"Solution": ""
+		}
+	}
+}
