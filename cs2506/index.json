@@ -1,10 +1,13 @@
 {
   "_title": "CS2506 Index",
-  "_date": "2017-05-01 01:14:56 +0100",
+  "_date": "2017-05-01 21:27:03 +0100",
   "Human Computer Interaction": {
     "_href": "cs2506/cs2506.json"
   },
   "Exams": {
+    "2014-2015 Exam": {
+      "_href": "cs2506/exams/2014-2015.json"
+    },
     "2015-2016 exam": {
       "_href": "cs2506/exams/2015-2016.json"
     }
