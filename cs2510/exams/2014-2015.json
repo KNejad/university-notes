@@ -105,19 +105,33 @@
 				"I": "Show what is written by the procedure calls multiply(i, j) and multiply(i, i);",
 				"II": "Now suppose that the variable parameter mechanism is used instead. Show what would be written by each of the above procedure calls. Explain any difference"
 			},
-			"Solution": ""
+			"Solution": {
+				"I": {
+					"multiply(i, j)": "6 3",
+					"multiply(i, i)": "4 2"
+				},
+				"I": {
+					"multiply(i, j)": "6 3",
+					"multiply(i, i)": "4 4",
+					"Readon": "This is because both parameters are altering/accessing the same memory cell"
+				}
+			}
 		},
 		"b": {
 			"Task": "Write a Prolog program that finds the maximum value in a list of numbers",
-			"Solution": ""
+			"Solution": {"_file": "2014-2015/3b_sol.pl"}
 		},
 		"c": {
 			"Task": "Write a definition of the following function in Haskell which returns how many of its three arguments are equal,, howManyEqua1 :: Int -> Int -> Int -> Int",
-			"Solution": ""
+			"Solution": {"_file": "2014-2015/3c_sol.hs"	}
 		},
 		"d": {
 			"Task": "Which three extensions are common to most EBNFs?",
-			"Solution": ""
+			"Solution": {
+				"Optional": "[...]",
+				"Repetition": "{...}",
+				"Or": "|"
+			}
 		}
 	}
 }
