@@ -1,0 +1,28 @@
+{
+	"_title": "2014-2015 Exam",
+	"_date": "Mon May  1 17:19:53 BST 2017",
+	"1": {
+		"Description": "The HappyTrain company is planning a system that allows train passengers to order food and drinks from their seats using their own mobile phone. This will replace the train trolley (person with little wagon selling foods and drinks) that currently goes through the train. Passengers will have to tell the system which coach and seat they are in, and will have to pay by cash on delivery",
+		"a": { 
+			"Task":  "Explain to HappyTrain why usability is important for this system",
+			"Solution": "Currently using train trolleys provides a system which is natural and easy to communicate with (since they are talking with a person). If this system were to be replaced with anything of a lower standard of usability the customers would undoubtedly be disappointed. Furthermore, if the train riders can not easily use the system they will remember to bring their own food on the train and will not purchase from HappyTrain. It may also be legally required of you to provide a system which is accessible to everybody"
+		},
+		"b": { 
+			"Task":  "Describe a persona and a scenario for this system",
+			"Solution": {
+				"Persona": "Jacob works for a retail store an hour away from his home. He must therefore take the train to work each day. Some days, if he is in a rush he eats breakfast on the train",
+				"Scenario": "Jacob is late so he did not have enough time to prepare breakfast this morning. He has decided to purchase food on the train. Since this is the first time the app is being used he starts downloading the app which takes a long time to download. Then he opens it to order his food. As he knows what the menu holds he has decided in advance what he would like to eat. So he clicks on the items he wants and orders them"
+		},
+		"c": { 
+			"Task":  "Provide a hierarchical task model for the task of ordering hot drinks",
+			"Solution": {"_image": "2014-2015/1c_sol.png"}
+		},
+		"d": { 
+			"Task":  "Discuss how card sorting could help you decide on groupings for the system’s information architecture",
+			"Solution": "By writing each food/drink item on a card we can then divide the cards into separate groups to experiment on different group sizes and have a visual feel for how the groups look. This could also be used to see how passengers naturally think food items should be split into groups"
+		},
+		"e": { 
+			"Task":  "Explain the difference between exact and inexact information schemes with examples from this system",
+			"Solution": ""
+		}
+	}
