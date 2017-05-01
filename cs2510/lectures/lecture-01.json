@@ -8,6 +8,7 @@
 		"Reliability",
 		"Cost"
 	],
+	"Orthogonality": "A small set of primitive constructs can be combined in every possible way",
 	"Fetch-execute-cycle": {
 		"Definition" : "The set of steps a CPU follows to execute instructions on a program",	
 		"Steps":[
@@ -45,5 +46,5 @@
 	},
 	"Von Neumann Bottleneck" : "The connection speed between a computer’s memory and its processor throttles the speed of the computer",
 	"Just-in-time implementation systems": "A type of hybrid implementation method where the parts of the code are compiled when needed",
-	"Preprocessor macros" : "instructions which are commonly used to specify that code from another file is to be included"
+	"Preprocessor macros" : "Instructions executed before compilation which are commonly used to specify that code from another file is to be included"
 }

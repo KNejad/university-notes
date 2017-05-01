@@ -7,11 +7,11 @@
 	"Dynamic scope": "There is a stack of variable definitions tracked at runtime. Which variable we write to depends on what is in scope and has been defined dynamically at runtime",
 	"Scalar variables":{ 
 		"Definition": "Variables which hold a single value (as opposed to arrays dictionaries etc.)",
-		"Types": [
-			"Static",
-			"Stack dynamic",
-			"Explicit heap dynamic",
-			"Implicit heap dynamic"
-		]
+		"Types": {
+				"Static": "A variable shared between multiple instances of a method",
+				"Stack Dynamic":  "Variables which come into existence when you call a function and disappear when they go out of scope",
+				"Explicit heap-dynamic": "Variables which are nameless memory cells that are allocated and deallocated by explicit run-time instructions",
+				"Implicit heap-dynamic": "Variables bound to heap storage only when they are assigned values"
+		}
 	}
 }
