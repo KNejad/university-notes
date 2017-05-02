@@ -10,7 +10,7 @@
 		"b": { 
 			"Task":  "Describe a persona and a scenario for this system",
 			"Solution": {
-				"Persona": "Jacob works for a retail store an hour away from his home. He must therefore take the train to work each day. Some days, if he is in a rush he eats breakfast on the train",
+				"Persona": "Jacob works for a retail store an hour away from his home. He must therefore take the train to work each day. Some days, if he is in a rush he eats breakfast on the train. He is alergic to nuts",
 				"Scenario": "Jacob is late so he did not have enough time to prepare breakfast this morning. He has decided to purchase food on the train. Since this is the first time the app is being used he starts downloading the app which takes a long time to download. Then he opens it to order his food. As he knows what the menu holds he has decided in advance what he would like to eat. So he clicks on the items he wants and orders them"
 			}
 		},
@@ -30,7 +30,7 @@
 	"2": {
 		"Description": "Consider the HappyTrain system described in Question 1",
 		"a": { 
-			"Task":  "You are asked to carry out a contextual inquiry to generate requirements for this system. Describe what you might do and what sorts of results you might get (providing explicit examples for this system)", 
+			"Task": "You are asked to carry out a contextual inquiry to generate requirements for this system. Describe what you might do and what sorts of results you might get (providing explicit examples for this system)", 
 			"Solution": "I would follow the trolley person around for a day and see what kind of questions she asks and gets asked whilst asking them to explain to me what is going on. From this I would hope to gather enough information to be able to put on the app and get an ordering on the app for people browse the system" 
 		},
 		"b": { 
