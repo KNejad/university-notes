@@ -61,7 +61,7 @@
 		},
 		"f": {
 			"Task": "Evaluate Haskell in terms of its reliability",
-			"Solution": "Haskell is very reliable since functions do not alter the state beyond the returned value"
+			"Solution": "Haskell is very reliable since functions do not alter the state beyond the returned value. It offeres full referential transparency. (Except for the I/O operations)"
 		}
 	},
 	"2": {
@@ -82,7 +82,10 @@
 				"Description": "Given the grammar below for hexadecimal numbers, provide a translation function M hex to convert strings of this language onto non-negative decimal numbers, that is, M hex should compute the decimal value of the hexadecimal number",
 				"_file": "2015-2016/2d_grammar.txt"
 			},
-			"Solution": {"_file": "2015-2016/2d_sol.hs"}
+			"Solution": {
+				"Description": "This solution takes an input string which is back-to-front",
+				"_file": "2015-2016/2d_sol.hs"
+			}
 		},
 		"e": {
 			"Task": {
@@ -138,7 +141,7 @@
 		},
 		"c": {
 			"Task": "List 3 attributes of variables in languages such as C++ and Java",
-			"Solution": [ "static", "public", "final"]
+			"Solution": [ "name", "memory address", "type"]
 		},
 		"d": {
 			"Task": "Provide 2 consequences of strings being represented as arrays, and not as a primitive type",
@@ -177,8 +180,7 @@
 			},
 			"g": {
 				"Task": "Suppose that function plus has the type signature: 'plus :: Int -> Int -> Int' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this represent?",
-				"Solution": "It is a list of tuples",
-				"_note": "I don't know what it means by what does this represent"
+				"_note": "I do not know the answer to this"
 			}
 		}
 	}

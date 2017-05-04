@@ -4,4 +4,6 @@
 	"Side Effects": "When a function changes the value of a variable outside of its scope",
 	"Referential transparency": "Two of the same methods with the same parameter can be interchanged anywhere in the program, without affecting the program",
 	"Short circuit evaluation": "Only calculates the parts of an expression which are needed to determine the result"
+	"Narrowing conversion": "Converts a value to a type that does not have all values of the original type (i.e. float to int)",
+	"Widening conversion": "Converts a value to a type that has at least all the values of the original type (i.e. int to float)"
 }

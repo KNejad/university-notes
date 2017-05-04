@@ -130,7 +130,7 @@
 			"Solution": {
 				"Optional": "[...]",
 				"Repetition": "{...}",
-				"Or": "|"
+				"Grouping": "(...)"
 			}
 		}
 	}
