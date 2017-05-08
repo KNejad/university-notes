@@ -1,0 +1,24 @@
+def succ(t)
+	return t.right_child
+end
+
+def pred(t)
+	return t.left_child
+end
+
+def search(t, i)
+	if t.left_child == i then
+		return t.left_child
+	end
+	if t.right_child == i then
+		return t.right_child
+	end
+	if t.left_child > i then 
+		return search(t.left_child, i)
+	end
+	if t.right_child > i then 
+		return search(t.right_child, i)
+	end
+end
+
+#cannot be bothered to continue other 2 operations

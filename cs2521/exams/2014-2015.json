@@ -100,5 +100,33 @@
 			"Task": "Describe an O(n log n) algorithm for finding the median number in a sequence of numbers (the median is the number for which half of the elements in the array lie below it, and half above)",
 			"Solution": "Sort the sequence and then pick the middle number"
 		}
+	},
+	"2": {
+		"a": {
+			"Task": "Prove by induction that sum_{i=0}^{n-1} a^i = (1-a^n)/(1-a)",
+			"Solution": {
+				"Base case": "n=1 : a^0 = (1-a^1)/(1-a) => 1 + a = (1-a)/(1-a) => 1 = 1",
+				"Induction hypothesis": "Assume that it holds for a value n",
+				"Induction step": "sum_{i=0}^{n} + a^n = (1-a^{n})/(1-a) + a^n = (1-a^{n+1})/(1-a)",
+				"_note": "I am not sure this solution is complete (or correct)"
+			}
+		},
+		"b": {
+			"Task": "Describe how to modify any balanced tree data structure so that search, insert, delete, minimum, and maximum each take O(log n) time, but successor and predecessor now each take O(1) time. Which operations must be modified to support this? Provide the pseudocode for these modified operations",
+			"Solution": {
+				"Description": "Have the immediate successor on the right and predecessor on the left",
+				"_file": "2014-2015/2b_sol.pseudo"
+			}
+		},
+		"c": {
+			"Task": "Can the recurrence T (n) = T (n/2) + 3 be solved via the Master method? If so, solve it, if not, show why not",
+			"Solution": "It can. Θ(log n)"
+		},
+		"d": {
+			"Task": "The mode of a set of numbers is the number that occurs most frequently in the set. The set (4, 6, 2, 4, 3, 1) has a mode of 4. Give an efficient and correct algorithm to compute the mode of a set of n numbers",
+			"Solution": {"_file": "2014-2015/2dsol.pseudo"}
+		}
 	}
+
+
 }
