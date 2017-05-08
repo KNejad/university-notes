@@ -27,5 +27,4 @@
 		}
 	},
 	"Heuristic": "Tries to find a good result to a problem but (unlike an algorithm) it does not guarantee the best solution" 
-
 }

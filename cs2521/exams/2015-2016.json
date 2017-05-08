@@ -27,7 +27,7 @@
 		},
 		"c": {
 			"Task": "Is heap-sort Ω(log(n^n)), Θ(log(n^n)) or O(log(n^n))?",
-			"Solution": "Θ(log(n n ))"
+			"Solution": "Θ(log(n^n))"
 		},
 		"d": {
 			"Description": "Consider a hash table with 12 slots, and a hash function h(x) = x mod 12. What does the hash table look like after inserting the following sequence of keys into it: 35 0 1 13 8 9 5 24 36",
@@ -104,7 +104,7 @@
 			"Solution": {"_file": "2015-2016/1fsol.pseudo"}
 		},
 		"g": {
-			"Task": "What is the time complexity of the recurrence T(n) = T([n/2]) + 3?",
+			"Task": "What is the time complexity of the recurrence T(n) = T(⌊n/2⌋) + 3?",
 			"Solution": "Θ(log n)"
 		},
 		"h": {
@@ -148,7 +148,7 @@
 			},
 			"v": {
 				"Task": "How can you tell that this graph contains no Eulerian circuit",
-				"Solution": "There are an odd number of edges"
+				"Solution": "If any vertex has an odd degree there cannot be a Eulerian circuit"
 			}
 		},
 		"b": {

@@ -8,7 +8,7 @@
 	"Binary Trees": {
 		"Definition": "A way of storing a large amount of data so that it can easily be accessed",
 		"_href": "/cs2015/Lectures/19_-_B_Trees.html",
-		"Rooted Binary Tree": "Can either be empty or have another left and right rooted binary tree (which also follow the same rule)",
+		"Rooted Binary Tree": "Can either be empty or have another left and right rooted binary tree",
 		"Leaf node": "The last node (at the bottom of the tree)",
 		"Deletion": {
 			"Leaf node": "set node to empty",	

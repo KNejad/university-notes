@@ -20,7 +20,7 @@
 			"Reorder the array so that all elements with values less than the pivot come before the pivot, and all larger after the pivot (equal values can go either way)",
 			"Recursively apply the above steps to the sub-arrays"
 		],
-		"Randomized quick sort": "Same algorithm as quick sort but it shuffles the inputs before hand for security reasons (so that malicious people can't slow down your system)"
+		"Randomized quick sort": "Same algorithm as quick sort but it shuffles the inputs first in order to reduce chances of a bad pivot being picked"
 	},
 	"Decision tree": "A full binary tree that represents the comparisons between elements that are performed by a sorting algorithm"
 }

@@ -30,6 +30,8 @@
 			"Once there are no more nodes to traverse backtrack and repeat"
 		]
 	},
+	"Articulation vertices": "A node which if removed disconnects the graph",
+	"Bridge edge": "An edge whose removal disconnects components",
 	"Edge types": {
 		"Tree edge": "Points from a parent to a direct child",
 		"Forward edge": "Points forward from a parent to a non-immediate child",
