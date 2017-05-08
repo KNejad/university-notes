@@ -1,0 +1,9 @@
+function square(k)
+	i =0
+	t =0
+	while i < k do
+		t = t + k
+		i = i +1
+	end while
+	return t
+end function
