@@ -4,7 +4,7 @@
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://www.bitbucket.org/KNejad/university-notes
+	url = git@bitbucket.org:Knejad/university-notes.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = all
@@ -14,4 +14,4 @@
 	fetch = +refs/heads/*:refs/remotes/github/*
 [remote "all"]
 	url = git@github.com:KNejad/university-notes.git
-	url = https://www.bitbucket.org/KNejad/university-notes
+	url = git@bitbucket.org:Knejad/university-notes.git
