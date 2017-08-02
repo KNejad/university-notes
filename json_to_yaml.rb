@@ -19,8 +19,8 @@ def convert_files(directory)
 			convert_files(address)
 		elsif entry.end_with? ".json" then
 			file_content = JSON.load(open(address))
-	    File.delete(entry)
-      File.write("#{File.dirname(entry)}/#{File.basename(entry,'.*')}.yaml" ,file_content.to_yaml)
+	    File.delete(address)
+      File.write("#{File.dirname(address)}/#{File.basename(address,'.*')}.yaml" ,file_content.to_yaml)
 		end
 	end
 end
