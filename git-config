@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://www.bitbucket.org/KNejad/university-notes
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = all
+	merge = refs/heads/master
+[remote "github"]
+	url = git@github.com:KNejad/university-notes.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+[remote "all"]
+	url = git@github.com:KNejad/university-notes.git
+	url = https://www.bitbucket.org/KNejad/university-notes
