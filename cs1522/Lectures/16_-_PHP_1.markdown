@@ -1,0 +1,50 @@
+# 16 - PHP 1
+Created Thursday 10 March 2016
+
+What is PHP:
+------------
+Recursive Acronym PHP Hypertext Preprocessor
+A widely-used Open Source, general-purpose, server-side scripting language that is especially suited for Web development and can be embedded into HTML
+	
+
+PHP Uses/Advantages:
+--------------------
+Dynamic – can create HTML based on external changing information
+Easy to use – Standard syntax based on C
+Open Source – available for free download and is well supported by the open source software community
+Multiple Platform – PHP can be installed on UNIX and Windows based machines, and, therefore, projects can be ported from one environment to another with ease
+Language Support For Databases – Support for a wide variety of database systems e.g. MySQL/MariaDB
+PHP can generate HTML programmatically
+
+
+Embedding PHP in HTML:
+----------------------
+PHP is in "blocks" mixed in with regular HTML
+A PHP block is marked by <?php to begin it, and ?> to end it.
+The document must be saved with extension .php
+
+
+Basic PHP:
+----------
+Each statement ends with a ;
+echo and print: Create text (HTML) that is sent back to the client
+include: Inserts the contents of another file or web page. If including a PHP page that code is executed.
+Variables denoted by use of $ 
+
+
+Operations:
+-----------
+Math operators: + - * /
+String operators: dot (.) To join string together
+Comparison operators: > , < , <= , >= , == ,!=
+Logical Operators: && (AND), || (OR)
+
+
+foreach:
+--------
+Prints the value/key associated with the key/value
+foreach ($array as $key => $value) {
+echo "$key: $value";
+}
+
+
