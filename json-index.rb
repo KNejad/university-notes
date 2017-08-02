@@ -1,7 +1,5 @@
 #!/usr/bin/ruby -w
 
-
-
 require "json"
 
 def containsJSON(directory) 
