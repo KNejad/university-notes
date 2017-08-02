@@ -1,9 +1,9 @@
 #!/usr/bin/ruby -w
 
-require "json"
+require "yaml"
 
-def containsJSON(directory) 
-	return !(Dir[directory + "/**/*.json"].empty?)
+def contains_yaml(directory) 
+	return !(Dir[directory + "/**/*.yaml"].empty?)
 end
 
 def directory_hash(directory) 
@@ -15,11 +15,11 @@ def directory_hash(directory)
 		address = directory + "/" + entry
 		if entry == "." or  entry == ".." then
 			next
-		elsif File.directory?(address) and containsJSON(address) then
+		elsif File.directory?(address) and contains_yaml(address) then
 			tree[entry.capitalize] = directory_hash(address)
-		elsif entry.end_with? ".json" then
-			jsonFile = JSON.load(open(address))
-			title = jsonFile["_title"]
+		elsif entry.end_with? ".yaml" then
+			yaml_file = YAML::load_file(address)
+			title = yaml_file["_title"]
 			tree[title] = Hash.new
 			tree[title]["_href"] = address
 		end
@@ -32,12 +32,12 @@ end
 courses = ["cs2506", "cs2510", "cs2512", "cs2521"] 
 
 courses.each do |course|
-	file = course +  '/index.json'
+	file = course +  '/index.yaml'
 	File.delete(file) if File.exist?(file)
-	courseTree = Hash.new
-	courseTree["_title"] = course.upcase + " Index"
-	courseTree["_date"] =  Time.now
-	courseTree.merge!(directory_hash(course))
+	course_tree = Hash.new
+	course_tree["_title"] = course.upcase + " Index"
+	course_tree["_date"] =  Time.now
+	course_tree.merge!(directory_hash(course))
 
-	File.write(file ,JSON.pretty_generate(courseTree))
+  File.write(file ,course_tree.to_yaml)
 end
