@@ -1,0 +1,106 @@
+---
+_title: Practical 06
+_date: Thu Mar  2 09:31:36 GMT 2017
+'1':
+  Task:
+    Description: A company database consists of 10,000 sorted names, 40% of whom are
+      known as good customers. Searches typically query these good customers, and
+      such searches account for 60% of the accesses to the database. There are two
+      data structure options to consider for representing the database
+    a: Put all the names in a single array and use binary search
+    b: Put the good customers in one array and the rest of them in a second array.
+      Only if we do not find the query name on a binary search of the first array
+      do we do a binary search of the second array.
+    Task: Demonstrate which option gives better expected performance. Does this change
+      if linear search on an unsorted array is used instead of binary search for both
+      options?
+  Solution:
+    Sorted binary search:
+      Single array: log(10000) = 13.28
+      Two arrays: 0.6*log(4000) + 0.4*(log(4000) + log(6000)) = 16.98
+    Unsorted binary search:
+      Single array: 10000/2 = 5000
+      Two arrays: 0.6*(4000/2) + 0.4*(4000 + 6000/2) = 4000
+'2':
+  Task: Consider the numerical 20 questions game. Here, Player 1 thinks of a number
+    between 1 and n, and player 2 has to figure out this number by asking the fewest
+    number of true/false questions. No one is allowed to cheat. What is an optimal
+    strategy if n is known? What should you do if n is not known?
+  Solution: If we know n then binary search is best otherwise we can do a single sided
+    binary search
+'3':
+  Task: Solve the recurrence T (n) = T (n − 1) + n through substitution.
+  Solution:
+    Assumption: O(n^2)
+    T(n) = T(n-1) + n: We take the recurrence
+    T(n) = c(n-1)^2 + n: Substitute the recurrence with our assumption
+    T(n) = c(n^2 - 2n + 1) + n: "(n-1)^2 can be expanded to n^2 - 2n + 1"
+    T(n) = cn^2 - 2cn + c + n: Expand the brackets by multiplying everything with
+      c
+    T(n) = cn^2 + n(1 - 2c) + c: puts 1 and -2c together in brackets multiplied by
+      n
+    T(n) = cn^2 - n(2c -1) + c: Swaps the signs around
+    Conclusion: That is less than cn^2 when c >= 1 for n>=1
+'4':
+  Task: Use a recursion tree to determine a good asymptotic upper bound for the recurrence
+    T (n) = T (n/2)+n^2
+  Solution:
+    _image: practical-06/recursion-tree.png
+'5':
+  Task: This is a very difficult question. Use a recursion tree to determine a good
+    asymptotic upper bound for the recurrence T (n) = T (n − 1) + T (bn/2c) + n. Use
+    the substitution method to verify the answer.
+  Solution: ''
+'6':
+  Task: Use the master method to find the solution to the recurrence T (n) = T (n/2)
+    + Θ(1).
+  Solution: ''
+'7':
+  Task: Can the master method be applied to the recurrence T (n) = 4T (n/2) + n 2
+    log n? Why/why not?
+  Solution: No it can not because n^2 log n does not fit any of the master method
+    options
+'8':
+  Task:
+    Description: 'We have typically assumed that parameter passing during function
+      calls takes constant time, even if an N element array is being passed. This
+      is typically valid as a pointer to the array is passed rather than the array
+      itself. Essentially, three parameter passing strategies are possible:'
+    a: Pass an array via a pointer. Time=Θ(1)
+    b: Pass an array by copying. Time=Θ(N ) where N is the size of the array.
+    c: Pass an array by copying only the subrange that might be accessed by the called
+      procedure. Time=Θ(q − p + 1) if a subarray A[p . . . q] is passed.
+    Task: Write down the recurrences for binary search for each of these three parameter
+      passing procedures, and provide an upper bound on the solutions of the recurrences.
+      Assume that N is the size of the original problem, and n is the size of a subproblem
+  Solution:
+    a: T(n) = T(n/2) + 1 = Θ(log n)
+    b: T(n) = T(n/2) + n/2 = Θ(n)
+'9':
+  Task:
+    Description: 'This is a very difficult question. Assume you have to test n chips,
+      some of which are good, and others of which are bad. You have a testing rig
+      which allows 2 chips to test each other, and report of the other chip is bad.
+      The possible outcomes of two chips is therefore as follows:'
+    Table:
+      '1':
+        Chip A says: B is good
+        Chip B says: A is good
+        Conclusion: Both are good or both are bad
+      '2':
+        Chip A says: B is good
+        Chip B says: A is bad
+        Conclusion: at least one is bad
+      '3':
+        Chip A says: B is bad
+        Chip B says: A is good
+        Conclusion: at least one is bad
+      '4':
+        Chip A says: B is bad
+        Chip B says: A is bad
+        Conclusion: at least one is bad
+    a: Describe an algorithm which can be used to find a good chip from among n chips,
+      assuming more than n/2 of the chips are good
+    b: Describe the running time of this algorithm using a recurrence, and solve the
+      recurrence to com- pute how many tests would be needed to find a good chip
+  Solution: ''

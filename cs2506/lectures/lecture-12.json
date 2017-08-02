@@ -1,9 +1,0 @@
-{
-	"_title": "Analytical Usability Evaluation for Safety-Critical Systems",
-	"_date": "Tue Feb 28 16:05:01 GMT 2017",
-	"Hazard analysis":  {
-		"Definition": "Determine what hazards are possible and how to prevent them",
-		"Hazard and Operability Analysis (HAZOP)": "A bottom up method to analysing hazards",
-		"Predictive Human Error Analysis (PHEA)": "Human focussed form of HAZOP"
-	}
-}

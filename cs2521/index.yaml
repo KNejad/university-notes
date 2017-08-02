@@ -1,0 +1,54 @@
+---
+_title: CS2521 Index
+_date: '2017-05-08 18:23:28 +0100'
+Algorithmic Problem Solving:
+  _href: cs2521/cs2521.json
+Exams:
+  2014-2015 Exam:
+    _href: cs2521/exams/2014-2015.json
+  2015-2016 Exam:
+    _href: cs2521/exams/2015-2016.json
+Lectures:
+  Admins:
+    _href: cs2521/lectures/lecture-00.json
+  Introduction:
+    _href: cs2521/lectures/lecture-01.json
+  Algorithm Analysis:
+    _href: cs2521/lectures/lecture-02.json
+  Data Structures:
+    _href: cs2521/lectures/lecture-03.json
+  Sorting:
+    _href: cs2521/lectures/lecture-04.json
+  Divide and Conquer:
+    _href: cs2521/lectures/lecture-05.json
+  Graphs:
+    _href: cs2521/lectures/lecture-06.json
+  Graph Traversal:
+    _href: cs2521/lectures/lecture-07.json
+  Weighted Graph:
+    _href: cs2521/lectures/lecture-08.json
+  Dynamic Programming:
+    _href: cs2521/lectures/lecture-09.json
+  Search:
+    _href: cs2521/lectures/lecture-10.json
+Practicals:
+  Practical 01:
+    _href: cs2521/practicals/practical-01.json
+  Practical 02:
+    _href: cs2521/practicals/practical-02.json
+  Practical 03:
+    _href: cs2521/practicals/practical-03.json
+  Practical 04:
+    _href: cs2521/practicals/practical-04.json
+  Practical 05:
+    _href: cs2521/practicals/practical-05.json
+  Practical 06:
+    _href: cs2521/practicals/practical-06.json
+  Practical 07:
+    _href: cs2521/practicals/practical-07.json
+  Practical 08:
+    _href: cs2521/practicals/practical-08.json
+  Practical 09:
+    _href: cs2521/practicals/practical-09.json
+  Practical 10:
+    _href: cs2521/practicals/practical-10.json

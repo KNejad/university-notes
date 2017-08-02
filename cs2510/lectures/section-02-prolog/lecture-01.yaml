@@ -1,0 +1,6 @@
+---
+_title: Logic Programming 1
+_date: Tue Mar  7 15:30:32 GMT 2017
+Prolog: Uses first order predicate logic to assess a statement
+Horn clause: A clause with at most one positive literal
+Computing in logic: Recursively checks all rules which could yield a match to an assertion

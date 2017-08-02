@@ -1,8 +1,0 @@
-{
-	"_title": "Working with Databases",
-	"_date": "Tue Jan 31 12:32:48 GMT 2017",
-	"Database": "An organised collection of data",
-	"SQL": "Structured Query Language",
-	"Object-relational mapping": "Maps tables to objects in an object oriented language",
-	"Active Record": "An ORM"
-}

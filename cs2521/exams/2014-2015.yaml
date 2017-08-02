@@ -1,0 +1,127 @@
+---
+_title: 2014-2015 Exam
+_date: Mon May  8 17:12:05 BST 2017
+'1':
+  a:
+    Task:
+      Description: Prove the correctness of the following algorithm to square a number
+      _file: 2014-2015/1a_code.pseudo
+    Solution:
+      Termination: The algorithm will always terminate since i increases by 1 in every
+        iteration so eventually it will reach k
+      Proof by contradiction: Assume that the algorithm does not hold for some n.
+        That would mean that n^2 != n_1 + n_2 ... n_n = n*n. n*n = n! so the algorithm
+        must hold
+  b:
+    Task:
+      Description: Describe the following pseudocode fragment using summations, and
+        simplify them as far as you can. Give an exact upper and lower bound to the
+        complexity of this algorithm (in terms of n)
+      _file: 2014-2015/1b_code.pseudo
+    Solution:
+      Sumation: sum_{i=1}^{n*n} sum_{j=i}^{2*i} 1
+      Complexity: Θ(n*n*2) = Θ(n^2)
+  c:
+    Task: Is merge-sort Ω(log(n^n)), Θ(log(n^n)) or O(log(n^n))? Explain your answer
+    Solution: Θ(log(n^n)) Because both upper and lower bound are log(n^n)
+  d:
+    Task:
+      Description: 'Consider an initially empty hash table with ten slots, and a hash
+        function h(x) = xmod10. What does the hash table look like after inserting
+        the following sequence of keys into it: 35, 2, 18, 6, 3, 10, 8, 5'
+      i: If chaining is used?
+      ii: If linear probing is used?
+    Solution:
+      i:
+        '0':
+        - 10
+        '1': []
+        '2':
+        - 2
+        '3':
+        - 3
+        '4': []
+        '5':
+        - 35
+        - 5
+        '6':
+        - 6
+        '7': []
+        '8':
+        - 18
+        - 8
+        '9': []
+        '10': []
+      ii:
+        '0': 10
+        '1': 
+        '2': 2
+        '3': 3
+        '4': 
+        '5': 35
+        '6': 6
+        '7': 5
+        '8': 18
+        '9': 8
+        '10': 
+  e:
+    Task: A computer’s CPU must execute the highest priority jobs whenever it can.
+      A priority queue is used by the scheduler to store a list of jobs, and their
+      priority. What data structure should underpin such a priority queue, what is
+      the complexity for the various operations on such a queue, and why should this
+      data structure be used?
+    Solution:
+      Data structure: max-heap
+      Complexity:
+        Find min: Θ(1)
+        Delete min: Θ(log n)
+        Insert: O(log n)
+      Justification: Since we are trying to retrieve the highest priority job, a max
+        heap allows us to extract or insert jobs in O(log n)
+  f:
+    Task: What is the worst case complexity of randomised quick-sort, and when would
+      it occur?
+    Solution: O(n!) This will occur when the pivot is constantly the highest or smallest
+      number
+  g:
+    Task: Explain, by means of a recursion tree and a summation, how many times the
+      randomisation function is called when running randomised quicksort, in the best
+      case
+    Solution:
+      Recursion tree:
+        n:
+          n/2:
+            n/4: "...1"
+      Summation: sum_{i=1}^n log n = n*log(n)
+  h:
+    Task: Describe an O(n log n) algorithm for finding the median number in a sequence
+      of numbers (the median is the number for which half of the elements in the array
+      lie below it, and half above)
+    Solution: Sort the sequence and then pick the middle number
+'2':
+  a:
+    Task: Prove by induction that sum_{i=0}^{n-1} a^i = (1-a^n)/(1-a)
+    Solution:
+      Base case: 'n=1 : a^0 = (1-a^1)/(1-a) => 1 + a = (1-a)/(1-a) => 1 = 1'
+      Induction hypothesis: Assume that it holds for a value n
+      Induction step: sum_{i=0}^{n} + a^n = (1-a^{n})/(1-a) + a^n = (1-a^{n+1})/(1-a)
+      _note: I am not sure this solution is complete (or correct)
+  b:
+    Task: Describe how to modify any balanced tree data structure so that search,
+      insert, delete, minimum, and maximum each take O(log n) time, but successor
+      and predecessor now each take O(1) time. Which operations must be modified to
+      support this? Provide the pseudocode for these modified operations
+    Solution:
+      Description: Have the immediate successor on the right and predecessor on the
+        left
+      _file: 2014-2015/2b_sol.pseudo
+  c:
+    Task: Can the recurrence T (n) = T (n/2) + 3 be solved via the Master method?
+      If so, solve it, if not, show why not
+    Solution: It can. Θ(log n)
+  d:
+    Task: The mode of a set of numbers is the number that occurs most frequently in
+      the set. The set (4, 6, 2, 4, 3, 1) has a mode of 4. Give an efficient and correct
+      algorithm to compute the mode of a set of n numbers
+    Solution:
+      _file: 2014-2015/2dsol.pseudo

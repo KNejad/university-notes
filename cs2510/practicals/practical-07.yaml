@@ -1,0 +1,57 @@
+---
+_title: Practical 7 – Object-Oriented Programming
+_date: Mon Mar  6 11:16:31 GMT 2017
+Description: 'In this practical we will explore the use of abstract classes, inheritance
+  and interfaces. Again, we will use Java as the programming language. You are provided
+  with a number of classes that define two threads interacting with a queue (from
+  last week’s practical), one placing tasks on the queue and one polling the queue
+  and executing any tasks it finds. The file Task.java contains an abstract class
+  – no instances can be made of an abstract class (and hence no constructor is defined),
+  but it can provide us with default behaviour and default state. There are two subclasses
+  of Task: SumTask and StringTask. Instances can be made of these and they both override
+  the default behaviour of the execute() method.'
+'1':
+  Task: Download and compile the code. Run the example to get an understanding of
+    how it works. (Note that both threads write to the standard output, and so there
+    is some mixing up of the two conceptual streams, but this is an interface issue,
+    not of concern in this course.)
+  Solution: javac RunTasks.java
+'2':
+  Task: Explore the classes SumTask and StringTask as well as the abstract class Task.
+  Solution: SumTask adds a bunch of numbers together and StringTask prints the string
+    5 times
+'3':
+  Task: Modify StringTask.java so that it also writes out “Executing a StringTask
+    task” when the execute() method is called.
+  Solution:
+    _file: practical-07/StringTask.java
+'4':
+  Task: 'Create a new subclass of Task called ProdTask that prints out the product
+    of a small array of int. (You will have to add another option in TaskGenerationThread.java
+    to allow the user to generate a ProdTask for the queue.) Note: you might notice
+    strange behaviour with a naïve implementation of this and an array of int that
+    is larger than 7 items with numbers varying between 0 (inclusive) and 20 (exclusive);
+    see ProdTask.java in the answer for a discussion.'
+  Solution:
+    _file: practical-07/ProdTask.java
+'5':
+  Task: Play with the behaviour of the processing thread so that it polls more frequently
+    and a larger number of times, but “pop()”s off only the first task in the queue
+    and executes it.
+  Solution:
+    _file: practical-07/TaskProcessingThread.java
+'6':
+  Task: 'Remove the “taskType” member variable definition from the abstract Task class.
+    Then add statements such as the following to the SumTask class definition: private
+    static final String taskType = ''SumTask''; Investigate what “static” and “final”
+    mean.'
+  Solution:
+    _file: practical-07/SumTask.java
+    Task: Also do the same for the StringTask and ProdTask classes
+'7':
+  Task:
+    Description: 'More challenging: write an interface and modify the SumTask, StringTask
+      and ProdTask classes so that they implement this interface. Here’s an example
+      interface:'
+    _file: practical-07/7.pseudo
+  Solution: I dont understand the question or the answer

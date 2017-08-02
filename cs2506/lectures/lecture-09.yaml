@@ -1,0 +1,30 @@
+---
+_title: Analytical Usability Evaluation
+_date: Mon Feb 13 15:07:48 GMT 2017
+Heuristic evaluation: Usability experts judge whether each element of a user interface
+  follows established usability principles
+Nielsen’s Heuristics:
+  Definition: A set of heuristics for determining usability of a system
+  Heuristics:
+    Visibility of system status: The system should always keep users informed about
+      what is going on
+    Recognition rather than recall: Minimize the user's memory load by making objects,
+      actions, and options visible
+    Consistency and standards: Users should not have to wonder whether different words,
+      situations, or actions mean the same thing
+    Aesthetic and minimalist design: Dialogues should not contain information which
+      is irrelevant or rarely needed
+    Match the real world: The system should speak the user's language, with words,
+      phrases and concepts familiar to the user
+    User control: Users often choose system functions by mistake and will need a clearly
+      marked 'emergency exit' to leave the unwanted state
+    Flexibility and efficiency of use: Accelerators may speed up the interaction for
+      the expert user such that the system can cater to both inexperienced and experienced
+      users
+    Error prevention: Even better than good error messages is a careful design which
+      prevents a problem from occurring in the first place
+    Helpful errors: Error messages should precisely indicate the problem, and constructively
+      suggest a solution
+    Help and documentation: It may be necessary to provide help and documentation.
+      Any such information should be easy to search and list concrete steps to be
+      carried out

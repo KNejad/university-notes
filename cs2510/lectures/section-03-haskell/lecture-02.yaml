@@ -1,0 +1,9 @@
+---
+_title: Introduction to Haskell (2)
+_date: Mon Apr 24 14:15:48 BST 2017
+List: A collection of ordered values of the same type
+Polymorphic types: Functions can take in different types as parameters
+Monomorphic types: Functions which take a specific type as its parameter
+Currying: The process of transforming a function that takes multiple arguments into
+  a function that takes 1 argument and returns another function if any arguments are
+  still needed

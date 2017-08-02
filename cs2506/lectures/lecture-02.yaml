@@ -1,0 +1,19 @@
+---
+_title: Task Analysis
+_date: Tue Jan 17 16:00:00 GMT 2017
+Core tasks: The main tasks which a user wants to accomplish on a system
+Persona: A character who has certain traits. Used to guess how that type of person
+  would use a product
+Scenario: A story for a persona and how they will use the system
+Hierarchical Task Analysis (HTA): Text and diagrams to show hierarchy of tasks to
+  achieve a goal
+Plans:
+  Definition: A plan for the order and how to execute steps in HTA
+  Types:
+  - Fixed sequence
+  - Optional tasks
+  - Waiting for events
+  - Cycles
+  - Time-sharing
+  - Discretionary
+  - Mixtures

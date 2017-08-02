@@ -1,0 +1,11 @@
+---
+_title: BDD with Capybara
+_date: Tue Mar  7 12:18:21 GMT 2017
+Acceptance test: Test if portions of the site work as expected
+Capybara:
+  Description: Browser autimation library
+  Rack::Test: Capybaray’s default driver. Rack::Test driver interacts directly with
+    Rack Interfaces
+  Selenium-webdriver: Real browser autimation using the web browser
+  Capybara-webkit: Headless testing with javascript support
+Cucumber: Maps english descriptions to real code for non-technical people to understand

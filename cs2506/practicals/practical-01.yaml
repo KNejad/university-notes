@@ -1,0 +1,54 @@
+---
+_title: Practical 1
+Preliminaries: Assume you are working for a railway company that wants a new system
+  that sells train tickets. The system will be positioned in the railway hall. They
+  want to completely close the current ticket offices.
+Usability:
+  '1':
+    Task: Why is usability important for this particular system? (5 min)
+    Solution: To avoid busy queues in the line to buy tickets. Because if people have
+      trouble using it then they will be there for longer and the queue will grow
+Users:
+  '1':
+    Task: What kinds of people would use this system? What are the user characteristics?
+      (10 min)
+    Solution: People who want to travel far but not far enough to use a plane. Also
+      people who don't want to use a car
+  '2':
+    Task: Can user classes be distinguished? If so, what are the characteristics for
+      each user class?
+    Solution:
+      Teenagers: Teenagers don't have access to cars so they would either use buses
+        or trains
+      Environmentalists: They don't want to use cars when not necessary so they would
+        use trains
+      Workers: People who travel for their work
+      Tourists: Trains are a cheap way for them to get around
+  '3':
+    Tasks: Develop at least two personas. (10 min)
+    Solution:
+      Trevor Phillips: He is very angry at everything so if he had to use the system
+        and it did not work he would get mad which would cause disturbances in the
+        station
+      'Philip J Fry ': Fry worked as a delivery man so if he ever had to travel he
+        would probably go by train. He is stupid which means that using a computer
+        system may be hard for him. At the same time he plays video games so he might
+        be familiar with these kind of systems
+      Sheldon Cooper: Travels by train just because he enjoys it. He hates people
+        so using a computer system to get his tickets would be easier for him
+  '4':
+    Task: Join another group. Discuss your results on the previous questions. Come
+      to an agreement on user classes and characteristics, and a set of personas.
+      (10 min). Please keep the user characteristics and personas, as you will need
+      them in future practicals.
+    Solution: NO!
+Tasks:
+  '1':
+    Task: What is your users' main task? Write at least two scenarios. (10 min)
+    Solution:
+    - Travelling to their destination
+    - Purchasing train tickets
+  '2':
+    Task: Make a hierarchical task model for your main task. (10 min)
+    Solution: This is the most boring thing I have done in my entire life. So I'm
+      not doing it!!!!

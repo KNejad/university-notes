@@ -1,0 +1,28 @@
+---
+_title: Algorithm Analysis
+_date: Tue Jan 24 11:04:37 GMT 2017
+Algorithm efficiency:
+  Efficiency is measured in:
+  - Time
+  - Memory (space)
+  - Network
+  RAM model of computation:
+  - We usually assume a single processor computer with infinite RAM
+  - Each operation takes 1 time step
+  - Memory access takes 1 time step
+  - Inaccuracies:
+    - Some operations take longer than others
+    - Compiler optimisation can speed things up
+  O-notation:
+    Definition: Ignores the differences between multiplication of powers (i.e. 2n^5
+      is the same as 3n^5)
+    Dominating term: The term in an equation which determines the approximate value
+      (i.e. in n^2 + n^3 the n^3 is the dominating term)
+    Upper bound: The maximum time an algorithm might take. Denoted by O(g(dominant
+      term))
+    Lower bound: The minimum time an algorithm might take. Denoted by Ω(g(dominant
+      term))
+    Tight bound: Both the minimum time and maximum time an algorithm might take (notated
+      by Θ(g(dominant term)))
+Heuristic: Tries to find a good result to a problem but (unlike an algorithm) it does
+  not guarantee the best solution

@@ -1,0 +1,53 @@
+---
+_title: Practical 01
+_date: Thu Jan  26 10:54:39 GMT 2017
+'2':
+  '1':
+    Task: Write pseudo-code for the closest pair heuristic.
+    Solution:
+      _file: practical-01/task1.pseudo
+  '2':
+    Task: A friend claims that given a road network, the shortest route will always
+      be the one with the fewest turns. How would you model the problem to check whether
+      he is right or wrong? Is he correct?
+    Solution:
+      What to do: Find a counter example to prove he is wrong
+      Counter example network:
+        A:
+          B: 1
+          C: 20
+        B:
+          A: 50
+          D: 1
+        C:
+          A: 100
+          D: 1
+        D:
+          A: 2
+          C: 1
+  '3':
+    Task: 'The knapsack problem is defined as follows: Given a set of integers {s
+      1 , s 2 , . . . s n } and a target integer T , find a subset of S which adds
+      up to T . Find counterexamples to the following algorithms:'
+    a:
+      Task: Start with the smallest element of S, then the second smallest etc.
+      Solution:
+        Target: 10
+        Subset:
+        - 9
+        - 10
+        - 11
+    b:
+      Task: Start with the largest element of S, then the second largest etc.
+      Solution:
+        Target: 10
+        Subset:
+        - 9
+        - 10
+        - 11
+  '4':
+    _note: Not done yet. do later
+  '5':
+    Task: Trace through the execution of the following algorithm for the list of numbers
+      [3,1,8,6]. Prove the algorithm’s correctness.
+    _file: practical-01/task5.pseudo

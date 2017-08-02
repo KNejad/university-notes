@@ -1,0 +1,75 @@
+---
+_title: CS2510 Index
+_date: '2017-05-08 18:23:28 +0100'
+Modern Programming Languages:
+  _href: cs2510/cs2510.json
+Exams:
+  2014-2015 Exam:
+    _href: cs2510/exams/2014-2015.json
+  2015-2016 Exam:
+    _href: cs2510/exams/2015-2016.json
+Lectures:
+  Preliminaries:
+    _href: cs2510/lectures/lecture-01.json
+  Evolution of Major Programming Languages:
+    _href: cs2510/lectures/lecture-02.json
+  Describing Syntax and Semantics:
+    _href: cs2510/lectures/lecture-03.json
+  Lexical and Syntactical Analysis:
+    _href: cs2510/lectures/lecture-04.json
+  Names, Bindings and Scopes:
+    _href: cs2510/lectures/lecture-05.json
+  Data Types:
+    _href: cs2510/lectures/lecture-06.json
+  Expressions and Assignment Statements:
+    _href: cs2510/lectures/lecture-07.json
+  Statement-Level Control Structures:
+    _href: cs2510/lectures/lecture-08.json
+  Section-01-oop:
+    Support for Object-Oriented Programming:
+      _href: cs2510/lectures/section-01-oop/lecture-01.json
+    Object-Oriented Programming 2:
+      _href: cs2510/lectures/section-01-oop/lecture-02.json
+    Object-Oriented Programming 3:
+      _href: cs2510/lectures/section-01-oop/lecture-03.json
+    Object-Oriented Programming 4:
+      _href: cs2510/lectures/section-01-oop/lecture-04.json
+  Section-02-prolog:
+    Logic Programming 1:
+      _href: cs2510/lectures/section-02-prolog/lecture-01.json
+    Logic Programming 2:
+      _href: cs2510/lectures/section-02-prolog/lecture-02.json
+    Logic Programming 3:
+      _href: cs2510/lectures/section-02-prolog/lecture-03.json
+    Logic Programming 4:
+      _href: cs2510/lectures/section-02-prolog/lecture-04.json
+  Section-03-haskell:
+    Introduction to Haskell (1):
+      _href: cs2510/lectures/section-03-haskell/lecture-01.json
+    Introduction to Haskell (2):
+      _href: cs2510/lectures/section-03-haskell/lecture-02.json
+    Introduction to Haskell (3):
+      _href: cs2510/lectures/section-03-haskell/lecture-03.json
+    Introduction to Haskell (4):
+      _href: cs2510/lectures/section-03-haskell/lecture-04.json
+Practicals:
+  Practical 1 – Preliminaries and Evolution of Programming Languages:
+    _href: cs2510/practicals/practical-01.json
+  Practical 2 – Describing Syntax & Semantics:
+    _href: cs2510/practicals/practical-02.json
+  Practical 3 - Lexical and Syntax Analysis:
+    _href: cs2510/practicals/practical-03.json
+  Practical 4 - Names, Bindings and Scopes:
+    _href: cs2510/practicals/practical-04.json
+  Practical 5 - Data Types:
+    _href: cs2510/practicals/practical-05.json
+  Practical 6 - Abstract Data Types:
+    _href: cs2510/practicals/practical-06.json
+  Practical 7 – Object-Oriented Programming:
+    _href: cs2510/practicals/practical-07.json
+  Practical 8 – Logic Programming/Prolog:
+    _href: cs2510/practicals/practical-08.json
+  Practical 9 – Prolog:
+    _href: cs2510/practicals/practical-09.json
+  Practical 10 – Functional Programming in Haskell:
+    _href: cs2510/practicals/practical-10.json

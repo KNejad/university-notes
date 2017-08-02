@@ -1,0 +1,72 @@
+---
+_title: Practical 1 – Preliminaries and Evolution of Programming Languages
+'1':
+  Task: What’s the best programming language, in your opinion? Justify your answer
+  Solution: This is a very hard question to answer. All programming languages have
+    their advantages and disadvantages. For example Haskell programs have far fewer
+    bugs, but are (arguably) harder to learn. C is easier to learn but still slower
+    to develop in once learned. C++ I would argue is an excellent language. The syntax
+    is clear and easy to learn, it is fast, stable, popular and is compiled not interpreted.
+'2':
+  Task: Suppose you are part of a team of developers about to start programming a
+    Web-based cinema ticket booking system (to be used over the Internet). What programming
+    language would you suggest for this? Give 2 reasons to support your suggestion.
+  Solution: I would suggest PHP because it is stable. Built for the web. And has many
+    built in functions without the need for plugins (unlike ruby)
+'3':
+  Task: How can you measure the efficiency of a program? Is efficiency the most important
+    feature of a program? Justify your answer.
+  Solution: You can measure the efficiency of a program by how fast the program runs
+    and whether or not it does unnecessary tasks. Efficiency is important but, depending
+    on the project the developers time can be considered more important. Thus, spending
+    extra time to increase the efficiency of a program may not be worth the cost
+'4':
+  Task: Assess the programming language Java in terms of its cost, including two positive
+    and two negative aspects.
+  Solution:
+    Positive:
+    - 'Java is a very well known language so it would not be difficult to find programmers
+      who are already familiar with the it. Java '
+    - Java runs on almost all systems including (but not limited to) MacOS, Linux
+      and Windows. This means the code only has to be developed once to target multiple
+      platforms
+    Negative:
+    - Java requires JRE to run programs. This means if people don't have JRE installed
+      they won't be able to run your software
+    - Since Java is constantly evolving, it is very likely that code will require
+      a lot of maintenance
+'5':
+  Task: How are the operating system UNIX/Linux and the C programming language related?
+  Solution: UNIX/Linux systems are written primarily in C
+'6':
+  Task: Do you agree with the statement “Fortran is a dead programming language”?
+    Justify your answer.
+  Solution: No I do not. Fortran is still used in  numerical computing, particularly
+    by scientists and engineers in physics, meteorology and other number-intensive
+    fields.
+'7':
+  Task: What was the “millennium bug” and how did it create a sudden and very high
+    demand for COBOL programmers?
+  Solution: 'The millennium bug is a set of problems which arose in the year 2000
+    because programmers would encode years with only the last 2 digits of the year
+    (i.e. 95 instead of 1995) This causes many issues because legacy programs for
+    example may mistakenly think its 1917 instead of 2017. '
+'8':
+  Task: Java is a very popular programming language. What was it originally designed
+    for and what was the main feature that made it popular?
+  Solution: Java was originally intended to be used for electronics like washing machines,
+    cars etc. It is popular because you can write code once and run it on multiple
+    platforms
+'9':
+  Task: 'Which one is the “best”: Java or LUA? Justify your answer.'
+  Solution: There is no best. Each language has it's advantages and disadvantages.
+    For example Java is not a scripting language meaning it needs to be compiled.
+    Java works on more platforms than LUA
+'10':
+  Task:
+    Task 1: Edit the program to count the number of values (instead of their summation)
+    Task 2: Edit the program so that it asks for exactly 5 values and perform their
+      summation
+  Solution:
+    Task 1:
+      _file: practical-01/task1.f90

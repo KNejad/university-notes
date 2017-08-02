@@ -1,0 +1,8 @@
+---
+_title: Dynamic Programming
+_date: Tue Mar 14 11:43:32 GMT 2017
+Definition: Solving a complex problem by breaking it down into a collection of simpler
+  subproblems, solving each of those just once, and storing their solution
+Caching: By using caching we can use more memory in order to decrease computational
+  usage
+Binomial coefficient: The number of ways of picking unordered outcomes from possibilities

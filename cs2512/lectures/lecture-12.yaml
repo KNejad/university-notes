@@ -1,0 +1,5 @@
+---
+_title: Security and Web Applications SQL Injection
+_date: Tue Mar 14 12:08:36 GMT 2017
+1=1 injection: 'SQL injection with 1=1 returns true for every input. So: `select *
+  from user=1 or 1=1` will return everything'

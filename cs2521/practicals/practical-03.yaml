@@ -1,0 +1,113 @@
+---
+_title: Practical 03
+_date: Thu Feb  9 10:41:56 GMT 2017
+N.B: Questions marked with a * are particularly tricky.
+'1':
+  Task: Show that the total number of times an element is moved, when the array size
+    is doubled whenever the array is full, is 1 + log n + sum_{i=1}^{log n} in/2^i
+  Solution: ''
+'2':
+  Task: Analyse the complexity of a dictionary using sorted and unsorted single and
+    doubly linked lists.
+  Solution:
+    Search:
+      Unsorted single linked: O(n)
+      Sorted single linked: O(n)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(n)
+    Insert:
+      Unsorted single linked: O(1)
+      Sorted single linked: O(n)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(1)
+    Delete:
+      Unsorted single linked: O(n)
+      Sorted single linked: 0(n)
+      Unsorted double linked: 0(n)
+      Sorted double linked: O(n)
+    Successor:
+      Unsorted single linked: O(n)
+      Sorted single linked: O(1)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(n)
+    Predecessor:
+      Unsorted single linked: O(n)
+      Sorted single linked: O(n)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(n)
+    Minimum:
+      Unsorted single linked: O(n)
+      Sorted single linked: O(1)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(n)
+    Maximum:
+      Unsorted single linked: O(n)
+      Sorted single linked: O(n)
+      Unsorted double linked: O(n)
+      Sorted double linked: O(1)
+'3':
+  Task: write the pseudocode to insert a node into a binary search tree.
+  Solution:
+    _file: practical-03/3.pseudo
+'4':
+  Task: Write pseudocode for an algorithm to reverse the direction of a singly linked
+    list. Your algorithm must take linear time.
+  Solution:
+    _file: practical-03/4.pseudo
+'5':
+  Task:
+    Description: We have seen how dynamic arrays enable arrays to grow while still
+      achieving constant-time amortized performance. This problem concerns extending
+      dynamic arrays to let them both grow and shrink on demand.
+    a: Consider an underflow strategy that cuts the array size in half whenever the
+      array falls to half full. Give an example sequence of insertions and deletions
+      where this strategy gives a bad amortized cost.
+    b: Then, give a better underflow strategy than that suggested above, one that
+      achieves constant amortized cost per deletion.
+  Solution:
+    a: Assuming the array is of size 20 with 11 items a sequence which insert and
+      deletes on repeat will give a bad amortized cost
+    b: If we cut the array in half when it's a quarter full it will achieve a constant
+      amortized cost per deletion and insertion
+'6':
+  Task: Design a dictionary data structure in which search, insertion and deletion
+    can all be processed in worst case O(1) time. You can assume that the key elements
+    are integers drawn from a finite set 1, 2, . . . , n and initialisation can take
+    O(n) time.
+  Solution: Initialize an array of size n and insert into the index which equals the
+    value (this assumes no duplicate data)
+'7':
+  Task:
+    Description: 'Suppose we are given a sequence of n values x_1 , x_2 , . . . ,
+      x_n and seek to quickly answer repeated queries of the form: given i and j,
+      find the smallest value in x_i , ..., x_j .'
+    a: Design a data structure that uses O(n^2) space and answers queries in O(1)
+      time.
+    b: "*Design a data structure that uses O(n) space and answers queries in O(log
+      n) time."
+  Solution:
+    a: Create a grid (2d array) where data[i][j] will point to a value which is the
+      smallest in the range i j
+    b: Create a tree with all the leaves being the values. The value of the parent
+      node should be the value of the smallest of its 2 children
+'8':
+  Task:
+    Description: "* Let A[1..n] be an array of real numbers. Design an algorithm to
+      perform any sequence of the following operations"
+    a: Add(i,y) Add the value y to the i^{th} number.
+    b: Partial-sum(i) Return the sum of the first i numbers, i.e. sum_{j=1}^i A[j]
+    N.B: There are no insertions or deletions; the only change is to the values of
+      the numbers. Each operation should take O(log n) steps. Your algorithm should
+      use no more than O(n) space.
+  Solution:
+    _note: I don't understand how this is difficult so I assume I don't understand
+      the question correctly
+'9':
+  Task: A common problem for compilers and text editors is determining whether the
+    parentheses in a string are balanced and properly nested. For example, the string
+    ([()][]){} contains properly nested pairs of parentheses, while the strings )()(,
+    {) and ())} do not. Give an algorithm that returns true if a string contains properly
+    nested and balanced parentheses, and false if otherwise, and returns the position
+    of the first offending parenthesis if the string is not properly nested and balanced.
+  Solution:
+    _file: practical-03/9.pseudo

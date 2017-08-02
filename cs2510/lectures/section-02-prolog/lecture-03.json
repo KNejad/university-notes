@@ -1,6 +1,0 @@
-{
-	"_title": "Logic Programming 3",
-	"_date": "Tue Mar 14 15:09:58 GMT 2017",
-	"Monotonic": "Once you prove something is true, it is true forever",
-	"Non-monotony in Prolog": "Prolog is non-monotonic because the facts can change whilst the program is running"
-}

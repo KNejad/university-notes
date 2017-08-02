@@ -1,9 +1,0 @@
-{
-	"_title": "Statement-Level Control Structures",
-	"_date": "Tue Feb 14 15:06:43 GMT 2017",
-	"Control structure": {
-		"Definition": "A block of code which analyzes variables and chooses a direction in which to go based on given parameters",
-		"Selection statements": "Provides a way to pick between multiple paths of execution (if statement)",
-		"Iterative statements": "Provides a way to execute the same code multiple times (loops)"
-	}
-}

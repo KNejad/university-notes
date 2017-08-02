@@ -1,0 +1,211 @@
+---
+_title: 2015-2016 Exam
+_date: Wed Apr 26 15:36:05 BST 2017
+'1':
+  a:
+    Task: Give 2 examples of lexemes of a programming language of your preference
+    Solution: In Ruby 2 lexemes are 'def' and 'if'
+  b:
+    Task:
+      Description: 'Given the grammar G below:'
+      _file: 2015-2016/1b_grammar.txt
+      i: Provide a leftmost derivation for the string “b z = y; x = x ∗ y + z e”
+      ii: Draw a parse tree for the string “b z = y + y ∗ x e”
+      iii: Provide a more compact equivalent EBNF (Extended Backus-Naur Form) grammar
+    Solution:
+      i:
+        Steps:
+        - b <stmts> e
+        - b <stm>; <stmts> e
+        - b z=x; <stm> e
+        - b <vr>=<exp>; <vr> = <exp> e
+        - b z=<vr>; x = <vr> * <exp> e
+        - b z=z; x = x * <vr> + <exp> e
+        - b z=z; x = x * y + <vr> e
+        - b z=z; x = x * y + x e
+      ii:
+        _image: 2015-2016/1bii_parse_tree.png
+      iii:
+        _file: 2015-2016/1biii_ebnf.txt
+  c:
+    Task:
+      Description: Given the following skeletal JavaScript program (where console.log()
+        outputs the value of its argument on the console)
+      _file: 2015-2016/1c_code.js
+      i: What values will be displayed in function f (via the console.log() commands)
+        if the program is interpreted using static scoping rules?
+      ii: What values will be displayed in function f (via the console.log() commands)
+        if the program is interpreted using dynamic scoping rules?
+    Solution:
+      i:
+      - 10
+      - 7
+      ii:
+      - 10
+      - 5
+  d:
+    Task: Explain why machine languages cannot be used to define the operational semantics
+      of programming languages
+    Solution: Machine language is specific to a particular computer. Operational semantics
+      should be usable on different machines with different architectures RAM etc
+  e:
+    Task: Using Prolog’s unification mechanism to evaluate the query ?- X = 2 + Y,
+      Y = 2 * 4, Z is X + Y. Provide the value of all variables in the query
+    Solution:
+      X: 2 + Y
+      Y: 2 * 4
+      Z: '18'
+  f:
+    Task: Evaluate Haskell in terms of its reliability
+    Solution: Haskell is very reliable since functions do not alter the state beyond
+      the returned value. It offeres full referential transparency. (Except for the
+      I/O operations)
+'2':
+  a:
+    Task: What is the best programming language? Justify your answer
+    Solution: This question is incomplete. Best programming language for what? If
+      you want to design an operating system perhaps a good option would be C. If,
+      however, you are designing a website, C would slow down development offering
+      very small (if any) speed improvements to the website. The best programming
+      language is dependent on the task you want to acomplish, the time you have to
+      do it and the skill set of the developers at your disposal. To name a few of
+      the concerns
+  b:
+    Task: Give two goals of parsers
+    Solution: Find syntax errors and produce a parse tree
+  c:
+    Task: What is the likely impact of implicit variable binding on the reliability
+      of a programming language?
+    Solution: Variables may be altered or accessed which the developer intends to
+      be from another scope
+  d:
+    Task:
+      Description: Given the grammar below for hexadecimal numbers, provide a translation
+        function M hex to convert strings of this language onto non-negative decimal
+        numbers, that is, M hex should compute the decimal value of the hexadecimal
+        number
+      _file: 2015-2016/2d_grammar.txt
+    Solution:
+      Description: This solution takes an input string which is back-to-front
+      _file: 2015-2016/2d_sol.hs
+  e:
+    Task:
+      Description: The following Prolog program c(X,L,NoX) was written to count how
+        many occurrences NoX of element X there are in list L. However, it does not
+        work. Answer the items below in connection with this program
+      _file: 2015-2016/2e_code.pl
+      i: What would the query ?- c(a,[a,b,a],N). return? Explain your answer with
+        a trace
+      ii: Change the program so that it performs what it is intended to do
+    Solution:
+      i: '0'
+      ii:
+        _file: 2015-2016/2e_sol.pl
+  f:
+    Task:
+      Description: Refer to the two Java classes Person.java and Employee.java, overleaf,
+        and answer the following questions
+      _file: 2015-2016/2f_employee.java
+      i: What is the relationship between the classes Person and Employee?
+      ii: 'Describe the sequence of steps involved in the construction of these two
+        new objects: Employee e = new Employee(''Alice'',20000); Person p = new Person(''Bob'');'
+      iii: 'Assuming that the object reference e is within scope, describe how the
+        following method call is handled: e.toString()'
+      iv: Why is it wrong to define the behaviour of method toString() in the Employee
+        class in this way? return 'Employee ' + name + ' has salary ' + salary;
+    Solution:
+      i: The employee class inherits from the person class
+      ii: A new employee instance is created passing in the variables 'Alice' and
+        20000. The employee class passes 'Alice' to its parent classs and asigns 20000
+        as the employee salary. The parent class of Employee which is Person sets
+        the name variable of the class to 'Alice'. For the second object, a new instance
+        of the Person object is created passing the string 'Bob' as a parameter. The
+        person class then assigns 'Bob' as the objects name
+      iii: The Employee class is checked to see if there is a toString() method in
+        it. If there is, it executes the method and returns the result. If there is
+        no toString() method in the Employee class the parent of the Employee class
+        will be checked for that method (The Person class)
+      iv: Because the Employee class does not have access to the name variable. Only
+        the Person class does
+'3':
+  a:
+    Task: What is the risk of case-sensitive programming languages? Give one example
+      of the risk, in a language of your choice
+    Solution:
+      Reason: The risk is that a method or variable may be defined twice once in each
+        case and the programmer could make a mistake and call the wrong method or
+        access the wrong variable
+      _file: 2015-2016/3a_sol.rb
+  b:
+    Task:
+      Description: Consider the following skeletal C program
+      _file: 2015-2016/3b_code.c
+      i: Is variable x visible in Point 1?
+      ii: List the variables visible in Point 2 and state where they have been defined
+      iii: Is variable y visible in Point 3? If so, where was it defined?
+    Solution:
+      i: 'Yes'
+      ii: x defined at 1 and y,z defined at 2
+      iii: Yes it was defined at point 1
+  c:
+    Task: List 3 attributes of variables in languages such as C++ and Java
+    Solution:
+    - name
+    - memory address
+    - type
+  d:
+    Task: Provide 2 consequences of strings being represented as arrays, and not as
+      a primitive type
+    Solution:
+    - Harder for the programmer to program using Arrays
+    - Less abstraction allows more finite control to the programmer and provides a
+      better understanding
+  e:
+    Task:
+      Description: Given the matrix below
+      Matrix:
+        '0':
+        - 2
+        - 4
+        - 6
+        - 8
+        '1':
+        - 3
+        - 5
+        - 7
+        - 9
+        '2':
+        - 12
+        - 14
+        - 16
+        - 18
+        '3':
+        - 13
+        - 15
+        - 17
+        - 19
+      i: How would it be stored in row major order?
+      ii: How would it be stored in column major order?
+      iii: Define the access function for a 2D matrix stored in row major order, where
+        the subscript ranges for its rows are 1 to n and for its columns are 1 to
+        m. Assume that the element size is 1
+      iv: Use your definition of the previous item to obtain element [2, 2] (that
+        is, 5)
+    Solution:
+      i: "[[2,4,6,8],[3,5,7,9],[12,14,16,18],[13,15,17,19]]"
+      ii: "[[2,3,12,13],[4,5,14,15],[6,7,16,17],[8,9,18,19]]"
+      iii: f list x y =  list !! (x-1) !! (y-1)
+      iv: f list 1 1
+    f:
+      Task: State the type definition of the following function and, using an example,
+        explain what this function does. 'seriesUp n = concat [ [1..x] | x <- [1..n]
+        ]'
+      Solution:
+        Type Definition: 'seriesUp :: Int -> [Int]'
+        Description: It returns a list containing all the sequences of numbers counting
+          up to each number before n. For example seriesUp 4 would return [1,1,2,1,2,3,1,2,3,4]
+    g:
+      Task: 'Suppose that function plus has the type signature: ''plus :: Int -> Int
+        -> Int'' What is the type of [(plus 2),(plus 3),(plus 4)] and what does this
+        represent?'
+      _note: I do not know the answer to this

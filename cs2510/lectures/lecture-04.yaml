@@ -1,0 +1,23 @@
+---
+_title: Lexical and Syntactical Analysis
+_date: Mon Jan 30 12:44:06 GMT 2017
+Parse trees: Represent the syntactic structure of a program
+Top down parser: Produces parse tree from the root
+Bottom up parser: Produces parse tree from leaves
+Recursive descent parser:
+  Definition: A top-down parser which picks a RHS and goes down that tree until complete
+  LL parser: A type of recursive descent parser which always selects the left most
+    option from the right hand side. This can get stuck in an infinite loop
+  Sentential form: Any string derivable from the start symbol
+  Shift-reduce parser:
+    Definition: A bottom up parser with a shift step and a reduce step
+    Shift step: The next input symbol is shifted onto the top of the parse stack
+    Reduce step: Replaces a set of grammar symbols on the top of the stack with the
+      LHS of a production rule
+    LR parser:
+      Definition: Similar to LL parser but picks the rightmost option from the right
+        hand side in reverse
+      LR configuration: Stores the state of an LR parser
+      Tables:
+        Action: Specifies the action of the parser
+        Goto: Specifies which state to put on top of the parse stack after a reduction

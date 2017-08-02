@@ -1,0 +1,98 @@
+---
+_title: Practical 10
+_date: Thu Mar 30 13:09:40 BST 2017
+'1':
+  Task:
+    Description: 'Suppose you are given three strings of characters: X, Y , and Z,
+      where |X| = n, |Y | = m, and |Z| = n + m. Z is said to be a shuffle of X and
+      Y iff Z can be formed by interleaving the characters from X and Y in a way that
+      maintains the left-to-right ordering of the characters from each string'
+    a: Show that cchocohilaptes is a shuffle of chocolate and chips, but chocochilatspe
+      is not
+    b: Give a recursive algorithm, and an efficient dynamic-programming algorithm
+      that determines whether Z is a shuffle of X and Y . Note that rather than containing
+      integers, you should use a boolean array to solve this problem.
+  Solution:
+    a: Since the 's' must come before the 'p' but in both of our examples there is
+      no 's' before a 'p' it is not possible
+    b:
+      _file: practical-10/shuffle.pseudo
+'2':
+  Task:
+    Description: The longest common substring (not subsequence) of two strings X and
+      Y is the longest string that appears as a run of consecutive letters in both
+      strings. For example, the longest common substring of photograph and tomography
+      is ograph
+    a: Let n = |X| and m = |Y |. Give a Θ(nm) dynamic programming algorithm for longest
+      common substring based on the longest common subsequence/edit distance algorithm
+    b: Give a simpler Θ(nm) algorithm that does not rely on dynamic programming
+  Solution:
+    a:
+      Disk size: 10
+      Programs:
+      - 1
+      - 2
+      - 10
+    b:
+      Disk size: 10
+      Programs:
+      - 8
+      - 10
+'3':
+  Task:
+    Description: Let P 1 , P 2 , . . . , P n be n programs to be stored on a disk
+      with capacity P D megabytes. Program P i n requires s i megabytes of storage.
+      We cannot store them all because D < i=1 s i
+    a: Does a greedy algorithm that selects programs in order of nondecreasing s i
+      maximise the number of programs held on the disk? Prove or give a counter- example
+    b: Does a greedy algorithm that selects programs in order of non-increasing order
+      s i use as much of the capacity of the disk as possible? Prove or give a counter-
+      example.
+  Solution: ''
+'4':
+  Task: 'The knapsack problem is as follows: given a set of integers S = {s 1 , s
+    2 , . . . , s n }, and a given target number T , find a subset of S that adds
+    up exactly to T . For example, within S = {1, 2, 5, 9, 10} there is a subset that
+    adds up to T = 22 but not T = 23. Give a correct programming algorithm for knapsack
+    that runs in O(nT ) time.'
+  Solution: ''
+'5':
+  Task: Consider the following data compression technique. We have a table of m text
+    strings, each at most k in length. We want to encode a data string D of length
+    n using as few text strings as possible. For example, if our table contains (a,
+    ba, abab, b) and the data string is bababbaababa, the best way to encode it is
+    (b, abab, ba, abab, a) — a total of five code words. Give an O(nmk) algorithm
+    to find the length of the best encoding. You may assume that every string has
+    at least one encoding in terms of the table.
+  Solution: ''
+'6':
+  Task:
+    Description: The traditional world chess championship is a match of 24 games.
+      The current champion retains the title in case the match is a tie. Each game
+      ends in a win, loss, or draw (tie) where wins count as 1, losses as 0, and draws
+      as 1/2. The players take turns playing white and black. White has an advantage,
+      because they move first. The champion plays white in the first game. They have
+      probabilities w w , w d , and w l of winning, drawing, and losing playing white,
+      and probabilities b w , b d , and b l of winning, drawing, and losing playing
+      black
+    a: Write a recurrence for the probability that the champion retains the title.
+      Assume that there are g games left to play in the match and that the champion
+      needs to win i games (which may end in a 1/2)
+    b: Based on your recurrence, give a dynamic programming to calculate the champion?s
+      probability of retaining the title
+    c: Analyze its running time for an n game match
+  Solution: ''
+'7':
+  Task:
+    Description: Consider a city whose streets are defined by an X × Y grid. We are
+      interested in walking from the upper left-hand corner of the grid to the lower
+      right-hand corner. Unfortunately, the city has bad neighborhoods, whose intersections
+      we do not want to walk in. We are given an X × Y matrix BAD, where BAD[i, j]
+      = ?yes? if and only if the intersection between streets i and j is in a neighborhood
+      to avoid
+    a: Give an example of the contents of BAD such that there is no path across the
+      grid avoiding bad neighborhoods
+    b: Give an O(XY ) algorithm to find a path across the grid that avoids bad neighborhoods
+    c: Give an O(XY ) algorithm to find the shortest path across the grid that avoids
+      bad neighborhoods. You may assume that all blocks are of equal length
+  Solution: ''

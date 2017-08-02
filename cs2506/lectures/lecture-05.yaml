@@ -1,0 +1,21 @@
+---
+_title: Information Architecture
+_date: Mon Jan 30 15:07:07 GMT 2017
+Definition: Organisation of content and design of navigation systems
+Organisation structures:
+- Hierarchies
+- Linear
+- Databases
+- Hypertext
+- Hybrids
+Organisation schemes:
+  Exact: Everything fits exactly into its category (i.e. alphabetical)
+  Inexact: Not everything fits perfectly into its category (i.e. movie categories)
+  Hybrid: A mix between the two
+Card sorting:
+  Description: Using cards with names of items on them and sorting them into piles
+    of categories
+  Open card sorting procedure: User is given a stack of cards and is told to organise
+    them into categories
+  Closed card sorting procedure: User is given a stack of cards and is told to organise
+    them into specific categories

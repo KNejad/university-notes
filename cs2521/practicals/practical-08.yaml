@@ -1,0 +1,113 @@
+---
+_title: Practical 08
+_date: Thu Mar 16 11:17:25 GMT 2017
+'1':
+  Task: Prove by induction that there is a unique path between any pair of vertices
+    in a tree.
+  Solution:
+    Base case: A tree with 1 root and one node has a unique path between the 2
+    Induction Hypothesis: Assume it works for a tree T
+    Inductive Case: T+1 node. Since to get to the new node we have to get to the node
+      it is connected to (which has a unique path) and then traverse the new edge,
+      we have a unique path
+'2':
+  Task: The chromatic number of a graph is the smallest number of colours needed to
+    colour its vertices so that no two adjacent vertices share the same colour. Give
+    a linear algorithm to compute the chromatic number of a graph, assuming that each
+    vertex has degree at most 2. Must such graphs be bipartite?
+  Solution: ''
+'3':
+  Task:
+    Task: Describe the order in which vertices are encountered for a depth first and
+      breadth first search for the following graphs; break all ties by picking vertices
+      in alphabetical order.
+    _image: practical-08/t3-graph.png
+  Solution:
+    Deapth first search:
+    - A
+    - B
+    - C
+    - E
+    - D
+    - G
+    - H
+    - F
+    - J
+    - I
+    Breadth first search:
+    - A
+    - B
+    - D
+    - I
+    - C
+    - E
+    - G
+    - J
+    - F
+    - H
+'4':
+  Task:
+    Task: Do a topological sort of the following graph
+    _image: practical-08/t4-graph.png
+  Solution:
+  - A
+  - B
+  - D
+  - E
+  - C
+  - F
+  - H
+  - G
+  - I
+  - J
+'5':
+  Task: Suppose an arithmetic expression is given as a tree. Each leaf is an integer
+    and each internal node is one of the standard arithmetical operations (+,-,*,/).
+    Give an O(n) algorithm for evaluating such an expression, where there are n nodes
+    in the tree.
+  Solution: Traverse (Deapth first) the graph and calculate from the bottom up
+'6':
+  Task: Suppose an arithmetic expression is given as a DAG (directed acyclic graph)
+    with common subexpressions removed. Each leaf is an integer and each internal
+    node is one of the standard arithmetical operations (+,-,*,/). For example, the
+    expression 2 + 3 * 4 + (3 * 4)/5 is represented by the DAG in the figure below.
+    Give an O(n + m) algorithm for evaluating such a DAG, where there are n nodes
+    and m edges in the DAG.
+  Solution: Use the exact same algorithm as above
+'7':
+  Task: Consider a set of movies M1,M2...,Mk. There is a set of customers each one
+    of which indicates two movies they would like to see this weekend. Movies are
+    shown on Saturday eveneing and Sunday evening. Multiple movies may be screened
+    at the same time. You must decide which movies should be televised on Saturday
+    and which on Sunday, so that every customer gets to see the two movies they desire.
+    Is there a schedule where each movie is shown at most once? Design an efficient
+    algorithm to find such a schedule if one exists.
+  Solution: The nodes should be the movies. The edges are a customer and the 2 movies
+    he wants to watch. Do a chromatic coloring to find the minimum number of days
+    needed to watch all the movies
+'8':
+  Task: An arborescence of a directed graph G is a rooted tree such that there is
+    a directed path from the root to every other vertex in the graph. Give an efficient
+    and correct algorithm to test whether G contains an arborescence and its time
+    complexity.
+  Solution: Do a deapth first search for each node. If all of them traverse the entire
+    graph then it is an arborescence
+'9':
+  Task:
+    Description: A mother vertex in a directed graph G = (V, E) is a vertex v such
+      that all other vertices G can be reached by a directed path from v
+    a: Give an O(n + m) algorithm to test whether a given vertex v is a mother of
+      G, where n = |V | and m = |E|
+    b: Give an O(n + m) algorithm to test whether graph G contains a mother vertex.
+  Solution:
+    a: Traverse the graph starting from the node. If the entire graph is traversed
+      then it is a mother vertex
+    b: Traverse the graph starting from a random node. If the entire graph is traversed
+      it is a mother vertex. If not visit an unviseted node and repeat
+'10':
+  Task: An articulation vertex of a graph G is a vertex whose deletion disconnects
+    G. Let G be a graph with n vertices and m edges. Give a simple O(n + m) algorithm
+    for finding a vertex of G that is not an articulation vertex?i.e. , whose deletion
+    does not disconnect G.
+  Solution: Use an algorithm to find the articulation nodes. The rest are obviously
+    not articulation nodes
