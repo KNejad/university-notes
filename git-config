@@ -3,9 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[remote "origin"]
+[remote "bitbucket"]
 	url = git@bitbucket.org:Knejad/university-notes.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = +refs/heads/*:refs/remotes/bitbucket/*
 [branch "master"]
 	remote = all
 	merge = refs/heads/master
