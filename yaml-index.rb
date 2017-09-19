@@ -29,7 +29,7 @@ end
 
 
 
-courses = ["cs2506", "cs2510", "cs2512", "cs2521"] 
+courses = ["cs2506", "cs2510", "cs2512", "cs2521", "cs3027"] 
 
 courses.each do |course|
 	file = course +  '/index.yaml'

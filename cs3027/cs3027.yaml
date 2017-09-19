@@ -1,0 +1,5 @@
+---
+_title: Robotics
+_date: Tue 19 Sep 22:32:10 BST 2017
+Description: This course surveys many of the core problems of robotics, and their solutions. By the end of the course, a student should be able to program robots that move in predictable ways, overcoming environmental uncertainties; that can interpret their surroundings; and that can plan their motion in order to achieve goals. Topics covered include robot motion; image processing and computer vision; localisation methods and computer based search and planning. Apart from using programming skills to implement robot algorithms, the students will learn how to mathematically model robots in order to understand why robot algorithms are designed as they are.
+
