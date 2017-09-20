@@ -5,3 +5,4 @@ ros concepts:
   nodes: Running single purpose programs
   topics: Channels Nodes publish messages to or receive from by subscribing
   ros master: lists what services, nodes topics etc. are available
+differential drive robot: A robot whose movement is based on two separately driven wheels placed on either side of the robot body
