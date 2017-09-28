@@ -1,54 +1,54 @@
 ---
 _title: CS2521 Index
-_date: '2017-05-08 18:23:28 +0100'
+_date: 2017-09-28 22:41:09.600535497 +01:00
 Algorithmic Problem Solving:
-  _href: cs2521/cs2521.json
+  _href: cs2521/cs2521.yaml
 Exams:
   2014-2015 Exam:
-    _href: cs2521/exams/2014-2015.json
+    _href: cs2521/exams/2014-2015.yaml
   2015-2016 Exam:
-    _href: cs2521/exams/2015-2016.json
+    _href: cs2521/exams/2015-2016.yaml
 Lectures:
   Admins:
-    _href: cs2521/lectures/lecture-00.json
+    _href: cs2521/lectures/lecture-00.yaml
   Introduction:
-    _href: cs2521/lectures/lecture-01.json
+    _href: cs2521/lectures/lecture-01.yaml
   Algorithm Analysis:
-    _href: cs2521/lectures/lecture-02.json
+    _href: cs2521/lectures/lecture-02.yaml
   Data Structures:
-    _href: cs2521/lectures/lecture-03.json
+    _href: cs2521/lectures/lecture-03.yaml
   Sorting:
-    _href: cs2521/lectures/lecture-04.json
+    _href: cs2521/lectures/lecture-04.yaml
   Divide and Conquer:
-    _href: cs2521/lectures/lecture-05.json
+    _href: cs2521/lectures/lecture-05.yaml
   Graphs:
-    _href: cs2521/lectures/lecture-06.json
+    _href: cs2521/lectures/lecture-06.yaml
   Graph Traversal:
-    _href: cs2521/lectures/lecture-07.json
+    _href: cs2521/lectures/lecture-07.yaml
   Weighted Graph:
-    _href: cs2521/lectures/lecture-08.json
+    _href: cs2521/lectures/lecture-08.yaml
   Dynamic Programming:
-    _href: cs2521/lectures/lecture-09.json
+    _href: cs2521/lectures/lecture-09.yaml
   Search:
-    _href: cs2521/lectures/lecture-10.json
+    _href: cs2521/lectures/lecture-10.yaml
 Practicals:
   Practical 01:
-    _href: cs2521/practicals/practical-01.json
+    _href: cs2521/practicals/practical-01.yaml
   Practical 02:
-    _href: cs2521/practicals/practical-02.json
+    _href: cs2521/practicals/practical-02.yaml
   Practical 03:
-    _href: cs2521/practicals/practical-03.json
+    _href: cs2521/practicals/practical-03.yaml
   Practical 04:
-    _href: cs2521/practicals/practical-04.json
+    _href: cs2521/practicals/practical-04.yaml
   Practical 05:
-    _href: cs2521/practicals/practical-05.json
+    _href: cs2521/practicals/practical-05.yaml
   Practical 06:
-    _href: cs2521/practicals/practical-06.json
+    _href: cs2521/practicals/practical-06.yaml
   Practical 07:
-    _href: cs2521/practicals/practical-07.json
+    _href: cs2521/practicals/practical-07.yaml
   Practical 08:
-    _href: cs2521/practicals/practical-08.json
+    _href: cs2521/practicals/practical-08.yaml
   Practical 09:
-    _href: cs2521/practicals/practical-09.json
+    _href: cs2521/practicals/practical-09.yaml
   Practical 10:
-    _href: cs2521/practicals/practical-10.json
+    _href: cs2521/practicals/practical-10.yaml

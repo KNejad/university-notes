@@ -1,0 +1,12 @@
+---
+_title: CS3028 Index
+_date: 2017-09-28 22:25:42.694580275 +01:00
+Principles of Software Engineering:
+  _href: cs3028/cs3028.yaml
+Lectures:
+  Course presentation & organisation:
+    _href: cs3028/lectures/lecture-00.yaml
+  'Software development: from art to engineering':
+    _href: cs3028/lectures/lecture-01.yaml
+  Introducing inception:
+    _href: cs3028/lectures/lecture-02.yaml

@@ -1,51 +1,51 @@
 ---
 _title: CS2512 Index
-_date: '2017-05-08 18:23:28 +0100'
+_date: 2017-09-28 22:41:09.588763519 +01:00
 Advanced Web Application Development:
-  _href: cs2512/cs2512.json
+  _href: cs2512/cs2512.yaml
 Lectures:
   Introduction:
-    _href: cs2512/lectures/lecture-01.json
+    _href: cs2512/lectures/lecture-01.yaml
   Ruby on Rails - Basics:
-    _href: cs2512/lectures/lecture-02.json
+    _href: cs2512/lectures/lecture-02.yaml
   Routing in Rails:
-    _href: cs2512/lectures/lecture-03.json
+    _href: cs2512/lectures/lecture-03.yaml
   Working with Databases:
-    _href: cs2512/lectures/lecture-04.json
+    _href: cs2512/lectures/lecture-04.yaml
   Working with Databases II:
-    _href: cs2512/lectures/lecture-05.json
+    _href: cs2512/lectures/lecture-05.yaml
   Working with Databases III:
-    _href: cs2512/lectures/lecture-06.json
+    _href: cs2512/lectures/lecture-06.yaml
   Test Driven Development with Ruby and Rails:
-    _href: cs2512/lectures/lecture-07.json
+    _href: cs2512/lectures/lecture-07.yaml
   Behaviour Driven Development with Ruby and Rails:
-    _href: cs2512/lectures/lecture-08.json
+    _href: cs2512/lectures/lecture-08.yaml
   BDD with Capybara:
-    _href: cs2512/lectures/lecture-10.json
+    _href: cs2512/lectures/lecture-10.yaml
   Security and Web Applications SQL Injection:
-    _href: cs2512/lectures/lecture-12.json
+    _href: cs2512/lectures/lecture-12.yaml
   Security - Sessions:
-    _href: cs2512/lectures/lecture-13.json
+    _href: cs2512/lectures/lecture-13.yaml
   Security (3):
-    _href: cs2512/lectures/lecture-14.json
+    _href: cs2512/lectures/lecture-14.yaml
   Performance – Code Optimizations:
-    _href: cs2512/lectures/lecture-15.json
+    _href: cs2512/lectures/lecture-15.yaml
   Debugging & Logging:
-    _href: cs2512/lectures/lecture-16.json
+    _href: cs2512/lectures/lecture-16.yaml
   Rails Forms  & The Temperature Converter:
-    _href: cs2512/lectures/rails-forms.json
+    _href: cs2512/lectures/rails-forms.yaml
 Practicals:
   From zero to deploy:
-    _href: cs2512/practicals/practical-01.json
+    _href: cs2512/practicals/practical-01.yaml
   A toy app:
-    _href: cs2512/practicals/practical-02.json
+    _href: cs2512/practicals/practical-02.yaml
   Mostly static pages:
-    _href: cs2512/practicals/practical-03.json
+    _href: cs2512/practicals/practical-03.yaml
   Rails-flavored Ruby and Filling in the layout:
-    _href: cs2512/practicals/practical-04.json
+    _href: cs2512/practicals/practical-04.yaml
   Modeling users and Sign up:
-    _href: cs2512/practicals/practical-05.json
+    _href: cs2512/practicals/practical-05.yaml
   Basic login and Advanced login:
-    _href: cs2512/practicals/practical-06.json
+    _href: cs2512/practicals/practical-06.yaml
   Updating, showing, and deleting users:
-    _href: cs2512/practicals/practical-07.json
+    _href: cs2512/practicals/practical-07.yaml

@@ -1,58 +1,58 @@
 ---
 _title: CS2506 Index
-_date: '2017-05-08 18:23:28 +0100'
+_date: 2017-09-28 22:41:09.568299710 +01:00
 Human Computer Interaction:
-  _href: cs2506/cs2506.json
+  _href: cs2506/cs2506.yaml
 Exams:
   2014-2015 Exam:
-    _href: cs2506/exams/2014-2015.json
+    _href: cs2506/exams/2014-2015.yaml
   2015-2016 exam:
-    _href: cs2506/exams/2015-2016.json
+    _href: cs2506/exams/2015-2016.yaml
 Lectures:
   Usability- Introduction:
-    _href: cs2506/lectures/lecture-01.json
+    _href: cs2506/lectures/lecture-01.yaml
   Task Analysis:
-    _href: cs2506/lectures/lecture-02.json
+    _href: cs2506/lectures/lecture-02.yaml
   Contextual design:
-    _href: cs2506/lectures/lecture-03.json
+    _href: cs2506/lectures/lecture-03.yaml
   Query techniques and Focus Groups:
-    _href: cs2506/lectures/lecture-04.json
+    _href: cs2506/lectures/lecture-04.yaml
   Information Architecture:
-    _href: cs2506/lectures/lecture-05.json
+    _href: cs2506/lectures/lecture-05.yaml
   Information Architecture 2. Navigation:
-    _href: cs2506/lectures/lecture-06.json
+    _href: cs2506/lectures/lecture-06.yaml
   Conversational Interfaces:
-    _href: cs2506/lectures/lecture-07.json
+    _href: cs2506/lectures/lecture-07.yaml
   Prototyping:
-    _href: cs2506/lectures/lecture-08.json
+    _href: cs2506/lectures/lecture-08.yaml
   Analytical Usability Evaluation:
-    _href: cs2506/lectures/lecture-09.json
+    _href: cs2506/lectures/lecture-09.yaml
   'Analytical Usability Evaluation: Cognitive walkthrough':
-    _href: cs2506/lectures/lecture-10.json
+    _href: cs2506/lectures/lecture-10.yaml
   'Analytical Usability Evaluation: Model-based Evaluations and Analytics':
-    _href: cs2506/lectures/lecture-11.json
+    _href: cs2506/lectures/lecture-11.yaml
   Analytical Usability Evaluation for Safety-Critical Systems:
-    _href: cs2506/lectures/lecture-12.json
+    _href: cs2506/lectures/lecture-12.yaml
   User testing:
-    _href: cs2506/lectures/lecture-13.json
+    _href: cs2506/lectures/lecture-13.yaml
   User testing Experimental Design, Basic Statistics:
-    _href: cs2506/lectures/lecture-14.json
+    _href: cs2506/lectures/lecture-14.yaml
   Universal Access:
-    _href: cs2506/lectures/lecture-15.json
+    _href: cs2506/lectures/lecture-15.yaml
   Cross-cultural design and Internationalization:
-    _href: cs2506/lectures/lecture-16.json
+    _href: cs2506/lectures/lecture-16.yaml
   Technical Writing:
-    _href: cs2506/lectures/lecture-17.json
+    _href: cs2506/lectures/lecture-17.yaml
   Speech Interfaces:
-    _href: cs2506/lectures/lecture-18.json
+    _href: cs2506/lectures/lecture-18.yaml
   Web Credibility and Persuasive Technology:
-    _href: cs2506/lectures/lecture-19.json
+    _href: cs2506/lectures/lecture-19.yaml
   Research Challenges in Group Recommender Systems:
-    _href: cs2506/lectures/lecture-20.json
+    _href: cs2506/lectures/lecture-20.yaml
   'Recommender Systems: Content-based and Collaborative filtering':
-    _href: cs2506/lectures/recommender-systems.json
+    _href: cs2506/lectures/recommender-systems.yaml
 Practicals:
   Practical 1:
-    _href: cs2506/practicals/practical-01.json
+    _href: cs2506/practicals/practical-01.yaml
   Information Architecture and Navigation:
-    _href: cs2506/practicals/practical-03.json
+    _href: cs2506/practicals/practical-03.yaml
