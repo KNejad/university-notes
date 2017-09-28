@@ -1,0 +1,18 @@
+_title: "Software development: from art to engineering"
+_date: Thu 28 Sep 2017 15:52:48 BST
+Paradigms:
+  Waterfall: Slow large releases
+  Spiral:
+    Steps:
+      - Plan
+      - Analyse risk
+      - Engineer
+      - Customer evaluation
+  Unified process:
+    Steps:
+      - Inception
+      - Elaboration
+      - Construction
+      - Transition (deploy)
+  Agile: Fast small releases
+
