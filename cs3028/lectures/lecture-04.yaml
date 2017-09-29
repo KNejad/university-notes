@@ -1,0 +1,6 @@
+_title: Design during inception
+_date: Fri 29 Sep 2017 11:52:43 BST
+Three tier layered architectural pattern:
+  - Presentation
+  - Application
+  - Storage
