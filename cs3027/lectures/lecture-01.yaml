@@ -6,3 +6,15 @@ ros concepts:
   topics: Channels Nodes publish messages to or receive from by subscribing
   ros master: lists what services, nodes topics etc. are available
 differential drive robot: A robot whose movement is based on two separately driven wheels placed on either side of the robot body
+Instantaneous centre of rotation:
+  Description: The point where the body is moving around (i.e. if it continues at its current velocity it will draw a circle around that point)
+  Steps to calculate:
+    - Get the direction any point is moving and draw a line at a 90 degree angle
+    - Do this for another point (not parallel to the first point)
+    - Where the points intersect is the ICR
+Synchro drive robot: All wheels turn together
+Admissible velocity space: The independent motions a robot has (i.e. turning in place, moving forward) notated by δ_m
+Differential degrees of freedom: The number of independent motions
+Holonomic system: When all the degrees of freedom are controllable
+Open loop control: The system does not get feedback on the effects of its actions
+Proportional integral derivative controller: A control loop feedback mechanism which takes the error value into consideration
