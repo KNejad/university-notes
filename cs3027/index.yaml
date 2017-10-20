@@ -1,8 +1,12 @@
 ---
 _title: CS3027 Index
-_date: 2017-09-28 22:25:42.693806913 +01:00
+_date: 2017-10-20 21:58:47.534682986 +01:00
 Robotics:
   _href: cs3027/cs3027.yaml
 Lectures:
   Introduction:
     _href: cs3027/lectures/lecture-01.yaml
+  Planning and Navigation:
+    _href: cs3027/lectures/lecture-04.yaml
+  Neoclassical Planning Planning Graphs and SAT:
+    _href: cs3027/lectures/symbolic_planning_2.yaml
