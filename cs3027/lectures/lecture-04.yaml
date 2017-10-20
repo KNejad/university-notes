@@ -1,17 +1,32 @@
 _title: Planning and Navigation
 _date: Wed 11 Oct 20:34:47 BST 2017
 Avoiding obstacles: Instead of taking the entire robot body into consideration, only take a central spot and inflate all obstacles by the amount needed for the robot to not collide
-Path planning:
-  Potential planning field:
-    Description: Like a hill climbing heuristic. Grade each point and go to the immediately better point. This will not find the shortest path
+Potential planning field:
+  Description: Like a hill climbing heuristic. Grade each point and go to the immediately better point. This will not find the shortest path
+  Steps:
+    - The points on the map are marked with a number which represents the distance from the objective increasing exponentially the further away from the objective
+    - Add to each point a number depending on how close it is to an obstacle and how close it is to the goal (less the closer to the goal)
+    - The robot goes to the point next to it with the lowest grade at a speed proportional to the difference from the original point to the new point
+    - Eventually the robot will smoothly stop at its destination
+Graph search:
+  Description: Using a connectivity graph and a path finding algorithm. This will always find the shortest path
+  Steps:
+    - From the start point create another node at the edge of each visible obstacle/end point and an edge connecting the 2 with a value equal to the distance
+    - Repeat for each connected node
+    - Use a path finding algorithm to find the best way from start to finish
+Circumventing obstacles:
+  Bug 1: Explore the entire obstacle then return to the point which was closest to the goal
+  Bug 2: 
+    - Draw a straight line from start to finish.
+    - Follow the line until you encounter an obstacle
+    - When you encounter an obstacle go around it until you return to the line at a closer point
+  Tangent bug:
+    Description: An obstacle avoidance method which works better when our sensors have range
+    Definitions:
+      d_followed: Shortest distance ever detected to goal 
+      d_reach: Closest to target point that robot can detect any given time. 
     Steps:
-      - The points on the map are marked with a number which represents the distance from the objective increasing exponentially the further away from the objective
-      - Add to each point a number depending on how close it is to an obstacle and how close it is to the goal (less the closer to the goal)
-      - The robot goes to the point next to it with the lowest grade at a speed proportional to the difference from the original point to the new point
-      - Eventually the robot will smoothly stop at its destination
-  Graph search:
-    Description: Using a connectivity graph and a path finding algorithm. This will always find the shortest path
-    Steps:
-      - From the start point create another node at the edge of each visible obstacle/end point and an edge connecting the 2 with a value equal to the distance
-      - Repeat for each connected node
-      - Use a path finding algorithm to find the best way from start to finish
+      - Go towards the goal
+      - If an object is detected which blocks the path go the closest point with no obstacle to the goal
+      - If the robots reaches a local minimum, follow the obstacle until d_reach < d_followed
+      - Repeat from the beginning
