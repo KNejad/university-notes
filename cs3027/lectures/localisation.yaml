@@ -1,0 +1,4 @@
+_title: Localisation
+_date: Sat 21 Oct 14:18:26 BST 2017
+Odometry: Measure distance travelled by counting wheel rotations
+Dead reckoning: Calculating the position based on the direction, distance travelled and initial position
