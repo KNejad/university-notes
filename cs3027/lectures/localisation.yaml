@@ -2,3 +2,17 @@ _title: Localisation
 _date: Sat 21 Oct 14:18:26 BST 2017
 Odometry: Measure distance travelled by counting wheel rotations
 Dead reckoning: Calculating the position based on the direction, distance travelled and initial position
+Covariance: The degree at which to variables increase/decrease together. A negative covariance means the numbers move in opposite direction
+Problems:
+  - Some objects move
+  - Sensors may be inaccurate
+  - Open spaces make localisation difficult
+  - Errors accumulate so the more the robot moves the further away it can be from where it thinks it is
+Continuous representation: Scan continuously and decide where the robot is based on the surroundings
+Topological representation: Map is represented as a graph
+Occupancy grid:
+  - Environment is a grid
+  - Each cell is empty or filled
+  - Cell values increment when something is detected in them
+  - Cell values decrease if the robot goes through them
+  - Cell past a threshold are marked as filled
