@@ -6,3 +6,11 @@ Euler angles: Similar to quaternions but easier to read and vulnerable to gimbal
 Useful resources:
   Intro to Quaternion Rotations (in Unity 2017):
     _href: https://www.youtube.com/watch?v=kYOtk5a6_x4 
+  Tool for visualising quaternions and Euler angles:
+    _href: http://quaternions.online/
+Interpolation:
+  Description:  The process of moving from 1 orientation to another
+  Methods for quaternions:
+    Spherical Linear Interpolation (slurp): Move x% closer to the target on each step
+    _todo: Expand on the above
+Quaternions dot product: Given 2 quaternions it will return how similar they are (with 1 being identical and -1 facing the opposite direction)
