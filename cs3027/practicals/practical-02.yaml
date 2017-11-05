@@ -1,0 +1,8 @@
+_title: Practical 2
+_date: Sun  5 Nov 20:29:11 GMT 2017
+Gimbal locks: When 2 axis of rotation turn into 1 which causes the loss of a degree of freedom
+Quaternions: A way of describing the orientation of an object and transforming the orientation
+Euler angles: Similar to quaternions but easier to read and vulnerable to gimbal locks
+Useful resources:
+  Intro to Quaternion Rotations (in Unity 2017):
+    _href: https://www.youtube.com/watch?v=kYOtk5a6_x4 
