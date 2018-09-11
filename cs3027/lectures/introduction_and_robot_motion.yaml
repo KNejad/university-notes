@@ -1,11 +1,10 @@
----
-_title: Introduction
+_title: Introduction And Robot Motion
 _date: Tue 19 Sep 22:36:23 BST 2017
-ros concepts:
-  nodes: Running single purpose programs
-  topics: Channels Nodes publish messages to or receive from by subscribing
-  ros master: lists what services, nodes topics etc. are available
-differential drive robot: A robot whose movement is based on two separately driven wheels placed on either side of the robot body
+ROS concepts:
+  Nodes: Running single purpose programs
+  Topics: Channels Nodes publish messages to or receive from by subscribing
+  Ros master: lists what services, nodes topics etc. are available
+Differential drive robot: A robot whose movement is based on two separately driven wheels placed on either side of the robot body
 Instantaneous centre of rotation:
   Description: The point where the body is moving around (i.e. if it continues at its current velocity it will draw a circle around that point)
   Steps to calculate:
