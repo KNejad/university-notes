@@ -1,5 +1,16 @@
 _title: Requirements during inception
 _date: Fri 29 Sep 2017 11:38:40 BST
-Return on investment: The percentage of returns (profit - costs)/cost
+Before starting determine:
+  - Product vision
+  - Initial business case
+  - Specification of functions and properties
+  - Business value
+  - Feasibility
+White paper: A document which explains all the aspects of a product to the potential buyer
+Return on investment: (profit - costs)/costs
+Feasibility analysis:
+  Economical: Will we make a profit?
+  Technical: Can we do it?
+  Organisational: How will we do it?
 Functional requirements: Processes a system must perform
-Non-functional requirements: Behavioural properties (speed, usability)
+Non-functional requirements: Behavioural properties (speed, usability, UI)
