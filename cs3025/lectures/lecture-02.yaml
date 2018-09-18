@@ -1,0 +1,5 @@
+_title: Standard languages for semantic web
+_date: Tue 18 Sep 14:07:27 BST 2018
+Resource description framework:
+  Description: A standard model for data interchange on the web
+  Format: A triple of values (A, B, C) which specify the relation (B) between the first (A) and the last (C)
