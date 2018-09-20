@@ -1,0 +1,5 @@
+_title: Processes
+_date: Thu 20 Sep 11:07:46 BST 2018
+Processes: A program in execution
+Process control block: Contains all the information needed to stop and start processes
+Dispatcher: Starts the processes on the queue
