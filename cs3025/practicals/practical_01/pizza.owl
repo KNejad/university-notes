@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasTopping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeadRat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeadRat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeepPan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeepPan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ThinAndCrispy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DomainConcept">
+        <rdfs:comment>This is a comment becuase the old ass tutorial told me to</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ParmesanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TomatoTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ParmesanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ParmesanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DomainConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#RealItalianPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#RealItalianPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ThinAndCrispy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TrashCanPizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Rotten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Rotten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ThinAndCrispy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ThinAndCrispy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TrashCanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TrashCanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Rotten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeadRat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetarianPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetarianPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeadRat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#DeepPan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Rotten"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#ThinAndCrispy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#RealItalianPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#TrashCanPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeyan/ontologies/2018/8/untitled-ontology-7#VegetarianPizza"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
