@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6edb/fast"
+make: Warning: File 'Makefile' has modification time 0.82 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_d6edb.dir/build.make CMakeFiles/cmTC_d6edb.dir/build
+make[1]: Entering directory '/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_d6edb.dir/flags.make' has modification time 0.82 s in the future
+Building C object CMakeFiles/cmTC_d6edb.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d6edb.dir/CheckSymbolExists.c.o   -c /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d6edb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6edb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d6edb.dir/CheckSymbolExists.c.o  -o cmTC_d6edb 
+CMakeFiles/cmTC_d6edb.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d6edb.dir/build.make:97: recipe for target 'cmTC_d6edb' failed
+make[1]: *** [cmTC_d6edb] Error 1
+make[1]: Leaving directory '/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d6edb/fast' failed
+make: *** [cmTC_d6edb/fast] Error 2
+
+File /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8bf60/fast"
+make: Warning: File 'Makefile' has modification time 0.82 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_8bf60.dir/build.make CMakeFiles/cmTC_8bf60.dir/build
+make[1]: Entering directory '/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_8bf60.dir/flags.make' has modification time 0.81 s in the future
+Building C object CMakeFiles/cmTC_8bf60.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8bf60.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8bf60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bf60.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8bf60.dir/CheckFunctionExists.c.o  -o cmTC_8bf60 -lpthreads 
+/usr/bin/x86_64-linux-gnu-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8bf60.dir/build.make:97: recipe for target 'cmTC_8bf60' failed
+make[1]: *** [cmTC_8bf60] Error 1
+make[1]: Leaving directory '/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8bf60/fast' failed
+make: *** [cmTC_8bf60/fast] Error 2
+
+

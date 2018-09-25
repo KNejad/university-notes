@@ -1,0 +1,2 @@
+hello:practical_01_05
+-DCATKIN_DEVEL_PREFIX=/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/install -G Unix Makefiles
