@@ -124,6 +124,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/gtest/cmake_install.cmake")
   include("/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/hello/cmake_install.cmake")
   include("/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_01_05/cmake_install.cmake")
+  include("/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/cmake_install.cmake")
 
 endif()
 

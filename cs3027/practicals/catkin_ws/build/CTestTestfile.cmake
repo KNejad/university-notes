@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("hello")
 subdirs("practical_01_05")
+subdirs("practical_02_02")

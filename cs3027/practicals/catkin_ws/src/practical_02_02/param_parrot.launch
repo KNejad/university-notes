@@ -1,0 +1,9 @@
+<launch>
+  <param name="parrot_phrase" value="HELLO!" />
+  <node
+    pkg="practical_02_02"
+    type="param_parrot.py"
+    name="practical_02_02"
+    launch-prefix="xterm -e"
+    />
+</launch>

@@ -17,11 +17,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "hello/catkin_generated/package.cmake"
   "practical_01_05/catkin_generated/ordered_paths.cmake"
   "practical_01_05/catkin_generated/package.cmake"
+  "practical_02_02/catkin_generated/ordered_paths.cmake"
+  "practical_02_02/catkin_generated/package.cmake"
   "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/CMakeLists.txt"
   "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/hello/CMakeLists.txt"
   "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/hello/package.xml"
   "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/practical_01_05/CMakeLists.txt"
   "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/practical_01_05/package.xml"
+  "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/practical_02_02/CMakeLists.txt"
+  "/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/src/practical_02_02/package.xml"
   "/opt/ros/melodic/share/catkin/cmake/../package.xml"
   "/opt/ros/melodic/share/catkin/cmake/all.cmake"
   "/opt/ros/melodic/share/catkin/cmake/assert.cmake"
@@ -163,6 +167,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "hello/CMakeFiles/CMakeDirectoryInformation.cmake"
   "practical_01_05/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "practical_02_02/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

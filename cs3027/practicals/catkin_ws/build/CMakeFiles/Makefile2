@@ -935,6 +935,24 @@ practical_01_05/preinstall:
 .PHONY : practical_01_05/preinstall
 
 #=============================================================================
+# Directory level rules for directory practical_02_02
+
+# Convenience name for "all" pass in the directory.
+practical_02_02/all:
+
+.PHONY : practical_02_02/all
+
+# Convenience name for "clean" pass in the directory.
+practical_02_02/clean:
+
+.PHONY : practical_02_02/clean
+
+# Convenience name for "preinstall" pass in the directory.
+practical_02_02/preinstall:
+
+.PHONY : practical_02_02/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

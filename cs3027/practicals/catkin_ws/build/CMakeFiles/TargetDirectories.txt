@@ -64,3 +64,10 @@
 /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_01_05/CMakeFiles/install/local.dir
 /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_01_05/CMakeFiles/rebuild_cache.dir
 /media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_01_05/CMakeFiles/install.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/install/strip.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/edit_cache.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/list_install_components.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/test.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/install/local.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/rebuild_cache.dir
+/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/build/practical_02_02/CMakeFiles/install.dir
