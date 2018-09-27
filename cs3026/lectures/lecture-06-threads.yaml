@@ -1,0 +1,12 @@
+_title: Threads
+_date: Thu 27 Sep 11:12:18 BST 2018
+User level threads:
+  - Can only use a single core
+  - Light thread switching because kernel mode switch is not necessary
+  - We can implement our own thread scheduling
+  - Blocking one thread blocks all
+Kernel level threads:
+  - Can take advantage of multiple cores/cpus
+  - Needs to switch kernel mode which is expensive
+Hybrid user kernel level threads: Can take advantage of the benefits of each of both user and kernel level threads
+join(): Wait for all threads to finish and then join to a single thread
