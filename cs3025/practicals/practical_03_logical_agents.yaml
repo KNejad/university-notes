@@ -1,0 +1,113 @@
+_title: Logical Agents
+_date: Thu  4 Oct 13:16:16 BST 2018
+1:
+  Observable: No because we only have a local perception of the environment
+  Deterministic: Yes because we know exactly what will happen if we fall in a pit, or what a breeze means etc.
+  Episodic: No it's sequential because each action changes the world state
+  Static: Yes because the environment doesn't change
+  Discrete: Yes because there are only a finite set of states
+  Single-agent: Yes we only have a single agent which we can control
+2:
+  -
+    "1,3": OK
+    "2,2": OK
+    "3,1": OK
+    Possible: No
+    A2: Yes
+  -
+    "1,3": OK
+    "2,2": OK
+    "3,1": Pit
+    Possible: No
+    A2: Yes
+  -
+    "1,3": OK
+    "2,2": OK
+    "3,1": Wumpus
+    Possible: No
+    A2: Yes
+  -
+    "1,3": OK
+    "2,2": Pit
+    "3,1": OK
+    Possible: No
+  -
+    "1,3": OK
+    "2,2": Wumpus
+    "3,1": OK
+    Possible: No
+    A2: Yes
+  -
+    "1,3": OK
+    "2,2": Wumpus
+    "3,1": Pit
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Pit
+    "2,2": OK
+    "3,1": OK
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Pit
+    "2,2": OK
+    "3,1": Pit
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Pit
+    "2,2": OK
+    "3,1": Wumpus
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Pit
+    "2,2": Pit
+    "3,1": OK
+    Possible: No
+  -
+    "1,3": Pit
+    "2,2": Pit
+    "3,1": Pit
+    Possible: No
+  -
+    "1,3": Pit
+    "2,2": Pit
+    "3,1": Wumpus
+    Possible: No
+  -
+    "1,3": Pit
+    "2,2": Wumpus
+    "3,1": OK
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Pit
+    "2,2": Wumpus
+    "3,1": Pit
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Wumpus
+    "2,2": OK
+    "3,1": OK
+    Possible: No
+    A2: Yes
+  -
+    "1,3": Wumpus
+    "2,2": OK
+    "3,1": Pit
+    Possible: Yes
+    A2: Yes
+    A3: Yes
+  -
+    "1,3": Wumpus
+    "2,2": Pit
+    "3,1": OK
+    Possible: No
+  -
+    "1,3": Wumpus
+    "2,2": Pit
+    "3,1": OK
+    Possible: No
