@@ -1,0 +1,5 @@
+_title: User stories and requirements
+_date: Thu  4 Oct 10:13:41 BST 2018
+How to write a good user story:
+  - Be very specific to avoid ambiguity (So instead of "run fast" it should be "run in under 100 milliseconds")
+  - Only 1 thing per story (e.g. don't say specify and alter. Make them 2)
