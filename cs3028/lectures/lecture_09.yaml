@@ -1,0 +1,7 @@
+_title: Requirements analysis model
+_date: Mon  8 Oct 11:08:48 BST 2018
+Object model: Focuses on the domain concepts and their relationships represented in UML
+Aggregation: The relationship between classes
+Composite aggregation: A belongs-to relationship between 2 classes
+Generalisation: A relationship deriving a more general class from a more specific one
+Specialisation: A relationship deriving a more specific class from a more general one
