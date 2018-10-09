@@ -4,3 +4,5 @@ Program memory address location: A programs memory location is offset relative t
 Internal fragmentation: If a partition is larger than the memory contained some memory will be wasted
 External fragmentation: If a partition is too small for any memory to fit inside it memory will be wasted
 Buddy system: Solves the problem of memory waste due to fragmentation by splitting the partitions into halfs until the partition size is very close to the required memory
+Translation lookaside buffer: A hardware cache to improve memory lookup speeds
+Pricinciple of locality: References to memory locations within a program tend to cluster
