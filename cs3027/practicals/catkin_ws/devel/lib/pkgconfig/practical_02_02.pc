@@ -1,8 +1,0 @@
-prefix=/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/devel
-
-Name: practical_02_02
-Description: Description of practical_02_02
-Version: 0.0.0
-Cflags: 
-Libs: -L/media/sf_host_home/projects/university_notes/cs3027/practicals/catkin_ws/devel/lib 
-Requires: 
