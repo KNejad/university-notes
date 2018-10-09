@@ -31,3 +31,10 @@ Circumventing obstacles:
       - If an object is detected which blocks the path go the closest point with no obstacle to the goal
       - If the robots reaches a local minimum, follow the obstacle until d_reach < d_followed
       - Repeat from the beginning
+Decomposition:
+  Description: Deciding which order of priority to put each module
+  Temporal Decomposition: Makes the decision based on the time demands of the modules
+  Control Decomposition:
+    Description: Determine the order of the modules based on their inputs and outputs
+    Serial Decomposition: Each module is in order
+    Parallel Decomposition: Multiple modules can use the output of a previous module. So they run in parallel
