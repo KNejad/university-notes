@@ -1,0 +1,10 @@
+_title: Fuzzy sets
+_date: Thu 11 Oct 14:45:48 BST 2018
+_note: Most solutions are in the practical folder and generated with python
+2:
+  c:
+    20:
+      young: 1
+    37:
+      young: 0.15
+      middle-aged: 0.93
