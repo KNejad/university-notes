@@ -1,2 +1,7 @@
 _title: Fuzzy logic
 _date: Tue  9 Oct 14:35:12 BST 2018
+Membership function terminology:
+  Core: 1.0 certainty of being a member
+  Crossover points: Less than 1.0 but more that 0.5
+  Alpha cut: Over a certain threshold that has been set
+  Support: Under the Alpha cut
