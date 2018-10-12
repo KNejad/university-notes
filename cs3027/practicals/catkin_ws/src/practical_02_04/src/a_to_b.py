@@ -11,8 +11,6 @@ from geometry_msgs.msg import Point
 from geometry_msgs.msg import Pose
 from nav_msgs.msg import Odometry
 
-from laser_scanner import LaserScanner
-
 class AToB:
     def __init__(self):
         rospy.init_node("a_to_b", anonymous=True)
