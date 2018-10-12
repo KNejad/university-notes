@@ -12,16 +12,23 @@ from geometry_msgs.msg import Pose
 from nav_msgs.msg import Odometry
 
 class AToB:
+    yaw = 0
+    pose = Pose()
+
     def __init__(self):
         rospy.init_node("a_to_b", anonymous=True)
         rate = rospy.Rate(5)
         self.velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 
-        self.pose = Pose()
         rospy.Subscriber('/base_pose_ground_truth', Odometry, self.odometry_callback)
 
     def odometry_callback(self, odometry_info):
         self.pose = odometry_info.pose.pose
+
+        co = self.pose.orientation
+        (roll, pitch, yaw) = tf.transformations.euler_from_quaternion([co.x,co.y,co.z,co.w])
+
+        self.yaw = yaw
 
     def euclidean_distance(self, goal_point):
         current_point = self.pose.position
@@ -30,9 +37,7 @@ class AToB:
 
     def angular_velocity(self, goal_point):
         current_point = self.pose.position
-        co = self.pose.orientation
-        (roll, pitch, yaw) = tf.transformations.euler_from_quaternion([co.x,co.y,co.z,co.w])
-        return math.atan2(goal_point.y - current_point.y, goal_point.x - current_point.x) - yaw
+        return math.atan2(goal_point.y - current_point.y, goal_point.x - current_point.x) - self.yaw
 
     def go_to(self, destination):
         rate = rospy.Rate(5)
@@ -41,7 +46,6 @@ class AToB:
             vel_msg = Twist()
             vel_msg.angular.z = self.angular_velocity(destination.point) * 2
             vel_msg.linear.x = self.euclidean_distance(destination.point) * 1.5
-
             self.velocity_publisher.publish(vel_msg)
 
             rate.sleep()
