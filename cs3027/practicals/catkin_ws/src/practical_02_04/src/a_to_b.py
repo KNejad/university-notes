@@ -32,25 +32,8 @@ class AToB:
 
 
 
-    def turn_towards_goal(self):
-        vel_msg = Twist()
-        turn_amount = math.atan2(self.destination_in_local_frame.point.y, self.destination_in_local_frame.point.x)
-        vel_msg.linear.x = 0
-        vel_msg.linear.y = 0
-        vel_msg.linear.z = 0
-
-        vel_msg.angular.x = 0
-        vel_msg.angular.y = 0
-        vel_msg.angular.z = turn_amount
-
-        return vel_msg
-
-    def robot_is_pointing_towards_goal(self):
-        turn_amount = math.atan2(self.destination_in_local_frame.point.y, self.destination_in_local_frame.point.x)
-        if abs(turn_amount) < 0.05:
-            return True
-        else:
-            return False
+    def angular_velocity(self):
+        return math.atan2(self.destination_in_local_frame.point.y, self.destination_in_local_frame.point.x) * 2
 
     def go_to(self, destination):
         rate = rospy.Rate(5)
@@ -66,8 +49,7 @@ class AToB:
             except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
                 continue
 
-            if not self.robot_is_pointing_towards_goal():
-                vel_msg = self.turn_towards_goal()
+            vel_msg.angular.z = self.angular_velocity()
 
             vel_msg.linear.x = self.euclidean_distance(destination.point) * 1.5
 
