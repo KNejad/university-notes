@@ -30,27 +30,18 @@ class AToB:
 
         return math.sqrt(pow(goal_point.x - current_point.x, 2) + pow(goal_point.y - current_point.y, 2))
 
-
-
-    def angular_velocity(self):
-        return math.atan2(self.destination_in_local_frame.point.y, self.destination_in_local_frame.point.x) * 2
+    def angular_velocity(self, goal_point):
+        current_point = self.pose.position
+        co = self.pose.orientation
+        (roll, pitch, yaw) = tf.transformations.euler_from_quaternion([co.x,co.y,co.z,co.w])
+        return math.atan2(goal_point.y - current_point.y, goal_point.x - current_point.x) - yaw
 
     def go_to(self, destination):
         rate = rospy.Rate(5)
 
-        listener = tf.TransformListener()
-
-
         while self.euclidean_distance(destination.point) > 0.05:
             vel_msg = Twist()
-
-            try:
-                self.destination_in_local_frame = listener.transformPoint("/base_link", destination)
-            except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
-                continue
-
-            vel_msg.angular.z = self.angular_velocity()
-
+            vel_msg.angular.z = self.angular_velocity(destination.point) * 2
             vel_msg.linear.x = self.euclidean_distance(destination.point) * 1.5
 
             self.velocity_publisher.publish(vel_msg)
@@ -60,5 +51,5 @@ class AToB:
 if __name__ == "__main__":
     robot = AToB()
 
-    destination = PointStamped(header=Header(stamp=rospy.Time.now(),frame_id="/odom"), point=Point(-12.9481, 22.9615,0.0))
+    destination = PointStamped(header=Header(stamp=rospy.Time.now(),frame_id="/base_pose_ground_truth"), point=Point(-12.9481, 22.9615,0.0))
     robot.go_to(destination)
