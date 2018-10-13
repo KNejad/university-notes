@@ -17,7 +17,7 @@ class AToB:
 
     def __init__(self):
         rospy.init_node("a_to_b", anonymous=True)
-        rate = rospy.Rate(5)
+        self.rate = rospy.Rate(10)
         self.velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 
         rospy.Subscriber('/base_pose_ground_truth', Odometry, self.odometry_callback)
@@ -32,26 +32,32 @@ class AToB:
 
     def euclidean_distance(self, goal_point):
         current_point = self.pose.position
-
         return math.sqrt(pow(goal_point.x - current_point.x, 2) + pow(goal_point.y - current_point.y, 2))
 
-    def angular_velocity(self, goal_point):
-        current_point = self.pose.position
-        return math.atan2(goal_point.y - current_point.y, goal_point.x - current_point.x) - self.yaw
+    def angular_velocity(self, local_frame_goal):
+        return math.atan2(local_frame_goal.point.y, local_frame_goal.point.x)
 
     def go_to(self, destination):
-        rate = rospy.Rate(5)
-
+        tf_listener = tf.TransformListener()
         while self.euclidean_distance(destination.point) > 0.05:
             vel_msg = Twist()
-            vel_msg.angular.z = self.angular_velocity(destination.point) * 2
+
+            try:
+                local_frame_goal = tf_listener.transformPoint("/base_link", destination)
+            except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
+                continue
+
             vel_msg.linear.x = self.euclidean_distance(destination.point) * 1.5
+            vel_msg.angular.z = self.angular_velocity(local_frame_goal) * 2
+
             self.velocity_publisher.publish(vel_msg)
 
-            rate.sleep()
+            self.rate.sleep()
 
 if __name__ == "__main__":
-    robot = AToB()
-
-    destination = PointStamped(header=Header(stamp=rospy.Time.now(),frame_id="/base_pose_ground_truth"), point=Point(-12.9481, 22.9615,0.0))
-    robot.go_to(destination)
+    try:
+        robot = AToB()
+        destination = PointStamped(header=Header(stamp=rospy.Time.now(),frame_id="/odom"), point=Point(-12.9481, 22.9615,0.0))
+        robot.go_to(destination)
+    except rospy.ROSInterruptException:
+        pass
