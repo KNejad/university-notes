@@ -32,8 +32,8 @@ class AToB:
             local_frame_goal = self.convert_to_local_frame(destination).point
 
             vel_msg = Twist()
-            vel_msg.linear.x = self.euclidean_distance(local_frame_goal) * 1.5
-            vel_msg.angular.z = self.angular_velocity(local_frame_goal) * 2
+            vel_msg.linear.x = self.euclidean_distance(local_frame_goal)
+            vel_msg.angular.z = self.angular_velocity(local_frame_goal)
             self.velocity_publisher.publish(vel_msg)
 
             self.rate.sleep()
