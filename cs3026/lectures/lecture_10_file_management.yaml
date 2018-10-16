@@ -1,0 +1,4 @@
+_title: File management
+_date: Tue 16 Oct 11:08:42 BST 2018
+i-nodes: An index which holds attributes of a file (owner, permissions etc.) as well as the blocks which the file is on
+Indirect block: With an indirect block, the block which the i-node points to is also an index of multiple files and it doesn't contain the data
