@@ -52,6 +52,16 @@ class FollowWall:
         else:
             return False
 
+    def turn_parallel_to(self, point):
+        closest_obstacle = self.closest_obstacle()
+        while not 0 < closest_obstacle.point.x < 0.5:
+            closest_obstacle = self.closest_obstacle()
+            vel_msg = Twist()
+            vel_msg.angular.z = 1
+
+            self.velocity_publisher.publish(vel_msg)
+            self.rate.sleep()
+
     def forward_till_wall(self):
         closest_obstacle = self.closest_obstacle()
         while closest_obstacle == False or self.euclidean_distance(closest_obstacle.point) > 2:
@@ -62,10 +72,14 @@ class FollowWall:
             self.velocity_publisher.publish(vel_msg)
             self.rate.sleep()
 
+    def follow_wall(self):
+        self.turn_parallel_to(self.closest_obstacle().point)
+
 
 if __name__ == "__main__":
     try:
         robot = FollowWall()
         robot.forward_till_wall()
+        robot.follow_wall()
     except rospy.ROSInterruptException:
         pass
