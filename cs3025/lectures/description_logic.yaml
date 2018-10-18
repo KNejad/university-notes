@@ -1,3 +1,4 @@
+_title: A Formal Introduction to Description Logic
 _date: Tue 16 Oct 14:12:17 BST 2018
 Open world assumption: The model may have some missing data (for example we may not know about course cs3025)
 Closed world asssumption: The model has all data required (so if course cs3025 is not in our KB then it doesn't exist)
