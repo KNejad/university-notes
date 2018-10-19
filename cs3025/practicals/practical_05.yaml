@@ -1,0 +1,10 @@
+_title: Ontology building in Protégé OWL (II)
+_date: Thu 18 Oct 13:34:43 BST 2018
+1:
+  Class(Animal partial): A [_ T
+  Class(Plant partial): P [_ T
+  DisjointClasses(Animal Plant): A [_ ¬ P
+  ObjectProperty(eats domain(Animal)): >= 1eats [_ Animal
+  Class(Herbivore complete restriction(eats allValuesFrom(Plant))): H ≡ ∀.eats P
+  Class(Carnivore complete restriction(eats allValuesFrom(Animal))): C ≡ ∀.eats A
+  Class(CarnivorousPlant complete intersectionOf(Plant Carnivore)): CP ≡  P ∩ C
