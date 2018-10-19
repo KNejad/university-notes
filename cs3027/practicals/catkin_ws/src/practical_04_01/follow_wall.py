@@ -13,6 +13,7 @@ from std_msgs.msg import Header
 
 class FollowWall:
     latest_scan_obstacles = []
+    obstacle_positions = { "right": True, "ahead": True }
 
     def __init__(self):
         rospy.init_node("follow_wall", anonymous=True)
@@ -27,14 +28,23 @@ class FollowWall:
 
     def laser_scanner_callback(self, laser_scan):
         new_obstacles = []
+        new_positions = { "right": False, "ahead": False }
         current_angle = laser_scan.angle_min
         for laser_range in laser_scan.ranges:
             if laser_scan.range_min < laser_range < laser_scan.range_max:
                 obstacle = self.convert_laser_range_to_point(laser_range, current_angle)
                 new_obstacles.append(obstacle)
+
+                if  0 < obstacle.point.x < 3 and 0.5 < obstacle.point.y < 1:
+                    new_positions["ahead"] = True
+
+                if  obstacle.point.y < 3:
+                    new_positions["right"] = True
+
             current_angle += laser_scan.angle_increment;
 
         self.latest_scan_obstacles = new_obstacles
+        self.obstacle_positions = new_positions
 
     def convert_laser_range_to_point(self, laser_range, current_angle):
         x = laser_range*math.cos(current_angle)
@@ -52,16 +62,6 @@ class FollowWall:
         else:
             return False
 
-    def turn_parallel_to(self, point):
-        closest_obstacle = self.closest_obstacle()
-        while not 0 < closest_obstacle.point.x < 0.5:
-            closest_obstacle = self.closest_obstacle()
-            vel_msg = Twist()
-            vel_msg.angular.z = 1
-
-            self.velocity_publisher.publish(vel_msg)
-            self.rate.sleep()
-
     def forward_till_wall(self):
         closest_obstacle = self.closest_obstacle()
         while closest_obstacle == False or self.euclidean_distance(closest_obstacle.point) > 2:
@@ -73,7 +73,29 @@ class FollowWall:
             self.rate.sleep()
 
     def follow_wall(self):
-        self.turn_parallel_to(self.closest_obstacle().point)
+        while True:
+            vel_msg = Twist()
+
+            if self.obstacle_positions["right"]:
+                rospy.loginfo("Go forwards")
+                # Go forwards
+                vel_msg.linear.x = 1
+                vel_msg.angular.z = 0
+            else:
+                rospy.loginfo("Turn right and forwards")
+                # Turn right and forwards
+                vel_msg.linear.x = 1
+                vel_msg.angular.z = 0.5
+
+            if self.obstacle_positions["ahead"]:
+                rospy.loginfo("Turn left")
+                # Turn left
+                vel_msg.linear.x = 0
+                vel_msg.angular.z = -1
+
+
+            self.velocity_publisher.publish(vel_msg)
+            self.rate.sleep()
 
 
 if __name__ == "__main__":
