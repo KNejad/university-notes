@@ -22,22 +22,24 @@ class FollowWall:
 
         self.tf_listener = tf.TransformListener()
 
-        self.obstacle_positions = { "left": math.inf, "ahead": math.inf }
+        self.obstacle_positions = { "left": math.inf, "ahead": math.inf, "all": math.inf }
 
         self.rate = rospy.Rate(5)
 
     def laser_scanner_callback(self, laser_scan):
-        new_positions = { "left": laser_scan.range_max, "ahead": laser_scan.range_max }
+        new_positions = { "left": math.inf, "ahead": math.inf, "all": math.inf }
         current_angle = laser_scan.angle_min
         for laser_range in laser_scan.ranges:
             if laser_scan.range_min < laser_range < laser_scan.range_max:
                 obstacle = self.convert_laser_range_to_point(laser_range, current_angle)
                 obstacle_distance = self.euclidean_distance(obstacle.point)
 
-                if  -1 < obstacle.point.y < 1:
+                new_positions["all"] = min(new_positions["all"], obstacle_distance)
+
+                if -0.5 < current_angle < 0.5:
                     new_positions["ahead"] = min(new_positions["ahead"], obstacle_distance)
 
-                if obstacle.point.x < 0:
+                if 1 < current_angle < 1.5:
                     new_positions["left"] = min(new_positions["left"], obstacle_distance)
 
             current_angle += laser_scan.angle_increment;
@@ -55,7 +57,7 @@ class FollowWall:
         return math.sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2))
 
     def forward_till_wall(self):
-        while self.obstacle_positions["ahead"] > 3:
+        while self.obstacle_positions["all"] > 3:
             vel_msg = Twist()
             vel_msg.linear.x = 1
             self.velocity_publisher.publish(vel_msg)
@@ -64,17 +66,14 @@ class FollowWall:
     def follow_wall(self):
         while True:
             vel_msg = Twist()
+            vel_msg.linear.x = self.obstacle_positions["all"]
 
-            if self.obstacle_positions["left"] < 3:
-                # Go forwards
-                vel_msg.linear.x = 1
+            if self.obstacle_positions["left"] < 1.5:
                 vel_msg.angular.z = 0
             else:
-                # Turn left and forwards
-                vel_msg.linear.x = 1
                 vel_msg.angular.z = 0.5
 
-            if self.obstacle_positions["ahead"] < 3:
+            if self.obstacle_positions["ahead"] < 1.5:
                 # Turn right
                 vel_msg.linear.x = 0
                 vel_msg.angular.z = -1
