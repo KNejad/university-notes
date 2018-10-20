@@ -71,7 +71,7 @@ class FollowWall:
             if self.obstacle_positions["left"] < 1.5:
                 vel_msg.angular.z = 0
             else:
-                vel_msg.angular.z = 0.5
+                vel_msg.angular.z = 1
 
             if self.obstacle_positions["ahead"] < 1.5:
                 # Turn right
