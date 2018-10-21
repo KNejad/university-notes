@@ -51,7 +51,7 @@ class FollowWall:
         self.obstacles = new_obstacles
 
     def forward_till_wall(self):
-        while euclidean_distance(self.obstacles["all"]) > 3:
+        while euclidean_distance(self.obstacles["all"]) > 1:
             vel_msg = Twist()
             vel_msg.linear.x = 1
             self.velocity_publisher.publish(vel_msg)
