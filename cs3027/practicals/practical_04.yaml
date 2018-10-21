@@ -1,0 +1,13 @@
+_date: Sun 21 Oct 17:16:46 BST 2018
+Arch Linux issues:
+  fake_localization:
+    problem: The fake localization package does not exist and cannot be installed.
+    solution:
+      1: Clone the navigation repository and compile it (in a catkin workspace)
+      2: source the workspace and run "rosrun fake_localization fake_localization"
+2:
+  K: To get the map to display run fake_localization and a map server. Then add the map topic in rviz as well as the marker publisher from the src files
+
+Questions/Help:
+  - Why is the location of the robot slightly incorrect in Rviz?
+  - The robot wobbles a bit with my implementation because it turns too much towards the safe distance.
