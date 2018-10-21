@@ -61,14 +61,10 @@ class FollowWall:
         while True:
             vel_msg = Twist()
             vel_msg.linear.x = euclidean_distance(self.obstacles["all"])
+            vel_msg.angular.z = euclidean_distance(self.obstacles["left"]) - 1
 
-            if euclidean_distance(self.obstacles["left"]) < 1:
-                vel_msg.angular.z = 0
-            else:
-                vel_msg.angular.z = 1
-
+            # If there is an obstacle, stop and turn right
             if euclidean_distance(self.obstacles["ahead"]) < 1:
-                # Turn right
                 vel_msg.linear.x = 0
                 vel_msg.angular.z = -1
 
