@@ -9,11 +9,15 @@ rospy.init_node("add_marker", anonymous=True)
 pub = rospy.Publisher("/marker_maker", MarkerArray, queue_size=200)
 rate = rospy.Rate(5)
 
-def add(x,y,r,g,b,frame):
+
+markers = ["blue", "brown"]
+
+def add(x,y,r,g,b,frame, id_name):
     mr=Marker()
     mr.header.frame_id=frame
     mr.ns="basic"
     mr.type=mr.SPHERE
+    mr.id=markers.index(id_name)
     mr.action=mr.ADD
     mr.pose.position.x=x
     mr.pose.position.y=y
@@ -30,6 +34,8 @@ def add(x,y,r,g,b,frame):
     ma.markers.append(mr)
     pub.publish(ma)
 
+
 while not rospy.is_shutdown():
-    add(0,0,0.1,0.6,0.9,"/base_link")
+    add(1,1,0.1,0.6,0.9,"/base_link","blue")
+    add(4,4,0.4,0.2,0.1,"/base_link","brown")
     rate.sleep()
