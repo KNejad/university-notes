@@ -59,8 +59,7 @@ class FollowWall:
 
     def odometry_callback(self, odometry_data):
         pose = odometry_data.pose.pose
-        self.add_marker(pose, 0.1,0.6,0.9, "/base_link","current_location")
-
+        self.add_marker(pose, 0.1,0.6,0.9, "/map","current_location")
 
     def forward_till_wall(self):
         while euclidean_distance(self.obstacles["all"]) > 1:
@@ -91,9 +90,9 @@ class FollowWall:
         mr.id=self.markers.index(id_name)
         mr.action=mr.ADD
         mr.pose=pose
-        mr.scale.x=10
-        mr.scale.y=1
-        mr.scale.z=1
+        mr.scale.x=0.6
+        mr.scale.y=0.2
+        mr.scale.z=0.2
         mr.color.r=r
         mr.color.g=g
         mr.color.b=b
