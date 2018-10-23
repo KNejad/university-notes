@@ -1,0 +1,5 @@
+_title: Scheduling
+_date: Tue 23 Oct 11:10:33 BST 2018
+Pre-emptive scheduling: A running process can be interrupted by the OS to give CPU time to another process
+Time quantum: The amount of time a process has per execution cycle
+Non-preemptive scheduling: The process gives up control voluntarily
