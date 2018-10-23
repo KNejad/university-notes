@@ -8,6 +8,7 @@ Arch Linux issues:
 2:
   K: To get the map to display run fake_localization and a map server. Then add the map topic in rviz as well as the marker publisher from the src files
 
+Incorrect location on RVIZ: The robot's initial position is specified in the map.yaml file for the map server
+
 Questions/Help:
-  - Why is the location of the robot slightly incorrect in Rviz?
   - The robot wobbles a bit with my implementation because it turns too much towards the safe distance.
