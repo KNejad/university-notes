@@ -1,0 +1,4 @@
+_title: Realtime Scheduling
+_date: Tue 30 Oct 11:13:06 GMT 2018
+Off-line scheduling decision: The schedule is generate for an entire batch before starting
+On-line scheduling decision: The schedule is re-generate each time a new process is added
