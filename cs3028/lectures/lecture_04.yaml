@@ -1,5 +1,6 @@
 _title: Design during inception
 _date: Fri 29 Sep 2017 11:52:43 BST
+Analysis: Figure out the business needs
 Three tier layered architectural pattern:
   - Presentation
   - Application
