@@ -1,3 +1,4 @@
 _title: "Project management during inception; Agile & XP approaches"
 _date: Sat  7 Oct 17:52:48 BST 2017
 Story points: Calculate a unit of time for the most basic task and call that "1 story point". Measure all other tasks in multiples of the "story points"
+Velocity: The number of story points the team can get through in one iteration
