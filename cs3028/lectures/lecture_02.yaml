@@ -1,9 +1,18 @@
 _title: Introducing inception
 _date: Thu 28 Sep 2017 16:26:35 BST
 Inception: The first step in software development where you find out the requirements and create teams
+Inception steps:
+  Business model: A model of the business aspects (e.g. classes, relations, attributes etc.)
+  Requirements: A vision for the system, its business value and the initial requirements
+  Design: A basic architecture of the system with the layers and their subsystems
+  Implementation: A list of off the shelf libraries, an evaluation of the competing alternatives and some exploratory coding
+  Project management: The initial project plan with deadlines, developer roles, risk assessment and contingency plans
+  Environment: Decide on which IDE/editor and plugins the team will use (this is stupid, don't do it in the real world. Forget this after the exam) as well as version control etc.
 Outcome from inception:
+  - Vision document
   - Features and constraints
   - Use case
   - Architecture
   - Risks
   - Initial plan
+Business level UML class diagram: A UML diagram which specifies the relation between objects and their attributes. Unrelated to how anything will be in the final software
