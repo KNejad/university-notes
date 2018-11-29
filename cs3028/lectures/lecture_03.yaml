@@ -14,3 +14,5 @@ Feasibility analysis:
   Organisational: How will we do it?
 Functional requirements: Processes a system must perform
 Non-functional requirements: Behavioural properties (speed, usability, UI)
+User stories: Single sentence examples of a systems usage (e.g. User can buy a ticket on a certain date to travel from point A to point B)
+Use case: A more elaborate example of a system usage involving branching and options
