@@ -1,3 +1,12 @@
 _title: Introducing Use Cases
 _date: Mon  9 Oct 21:42:48 BST 2017
-Use cases: Like user stories but more complicated and longer (roughly 1 page)
+Use cases:
+  Description: Like user stories but more complicated and longer (roughly 1 page)
+  Parts:
+    - Name
+    - Actors
+    - Preconditions
+    - Postconditions
+    - Expected flow of events
+    - Unexpected flow of events
+UML use case diagram: Shows the users and how they interact with the system
