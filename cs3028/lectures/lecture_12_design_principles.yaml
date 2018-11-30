@@ -1,0 +1,15 @@
+_title: Design principles
+_date: Fri 30 Nov 00:10:04 GMT 2018
+Modularity principles:
+  - Small
+  - As few dependencies on other modules as possible (low coupling)
+  - Only do one thing (high cohesion)
+  - Given the least privilege necessary
+  - Encapsulation
+Design outcome:
+  - Modularity decisions
+  - System states
+  - Responsibilities for each module
+  - Interfaces and communication protocols
+  - Non functional requirements met by each unit
+  - Dependencies
