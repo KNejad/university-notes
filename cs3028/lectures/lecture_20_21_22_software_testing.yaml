@@ -1,0 +1,12 @@
+_title: Software Testing
+_date: Sat  1 Dec 14:28:39 GMT 2018
+Black box: Ignores the internals of the system and treats it like a black box, only checking that the output is correct for certain inputs
+White box: Focuses on the internal structure of the system and tests every piece of code
+Unit testing: Testing individual units like packages, classes, methods etc.
+Integration testing: Tests how different units work together
+Equivalence partitioning: Split the possible inputs into logical groups. For example something which accepts any integer can be split into positive integers and negative integers
+Boundary values: The edge inputs for a function. For example if something accepts a positive integer then 1 and the maximum possible integer are boundaries
+Flow graphs: A method can have multiple different branches based on the inputs. A flow graph represents all of these possible branches
+Cyclomatic complexity: Refers to the number of independent paths in a graph
+Regression testing: Testing old features
+Validation testing: Testing that the requirements are met
