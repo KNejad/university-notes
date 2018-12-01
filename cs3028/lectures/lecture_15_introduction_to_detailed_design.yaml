@@ -1,0 +1,15 @@
+_title: Introduction to detailed design
+_date: Sat  1 Dec 00:10:48 GMT 2018
+Levels of coupling (best to worst):
+  None: No coupling
+  Data: The data from a method is to perform the action
+  Stamp: Only some of the information passed is needed
+  Control: The data returned controls the execution of the caller
+  Global: Method refers to global data
+  Content: Refers to a hidden part of another object
+Levels of cohesion (from best to worst):
+  Functional: A method performs one single function
+  Sequential: A method performs two functions, where the output from the 1st one is used as the input to the 2nd one
+  Communication: The method combines two functions that use the same attributes
+  Procedural: The method supports multiple weakly related functions
+  Coincidental: no correlation between method functions
