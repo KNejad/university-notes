@@ -1,5 +1,3 @@
-_title: Software Testing
-_date: Sat  1 Dec 14:28:39 GMT 2018
 Black box: Ignores the internals of the system and treats it like a black box, only checking that the output is correct for certain inputs
 White box: Focuses on the internal structure of the system and tests every piece of code
 Unit testing: Testing individual units like packages, classes, methods etc.

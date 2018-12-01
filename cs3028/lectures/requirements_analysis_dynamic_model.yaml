@@ -1,5 +1,3 @@
-_title: Requirements analysis dynamic model
-_date: Tue  9 Oct 10:04:39 BST 2018
 System sequence diagram: Shows the interaction between the user and the system as a black box for a single use case
 UML sequence diagram: Shows the interaction between multiple objects in the system
 UML state machine diagram: Shows the changes in a single objects state due to an input

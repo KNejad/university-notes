@@ -1,5 +1,3 @@
-_title: Architectural patterns
-_date: Mon 22 Oct 10:55:00 BST 2018
 Architectures:
   Layered:
     Description: The system is divided into layers representing different levels of abstraction

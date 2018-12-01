@@ -1,5 +1,3 @@
-_title: Design principles
-_date: Fri 30 Nov 00:10:04 GMT 2018
 Modularity principles:
   - Small
   - As few dependencies on other modules as possible (low coupling)
