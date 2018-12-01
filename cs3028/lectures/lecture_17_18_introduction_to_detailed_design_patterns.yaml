@@ -1,0 +1,16 @@
+_title: Introduction To Detailed Design Patterns
+_date: Sat  1 Dec 13:25:10 GMT 2018
+Patterns:
+  Creator: Responsible for creating another object
+  Information expert: Responsible for a set of tasks and has all the information about them. This can allow other objects to use this one without knowing the details of the domain
+  Controller: Gathers the data sent to the user interface layer
+  Pure fabrication: An object which does not represent anything in the business domain and solves a set of cohesive problems
+  Indirection: Helps 2 other objects communicate
+  Protected variations: If something returns unstable results this method can be used to stabilise them first
+  Adapter: If 2 or more objects have an incompatible interface this can create a bridge between them
+  Factory: Creates many other objects of a different type when there can be variations in the way they are made
+  Singleton: An object that can only have a single instance of itself
+  Strategy: Create multiple polymorphic objects which can handle a situation, then another object is responsible for deciding which method is best used for each scenario
+  Composite: With a group of different objects that need to be accessed, they should inherit from a common ancestor so that they have a common interface
+  Facade: A single point of contact for a subsystem with a common interface so that other objects don't have to interface directly with each object in the subsystem
+  Observer: Subscribers which get notified when publishers publish a message
