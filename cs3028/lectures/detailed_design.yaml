@@ -1,4 +1,4 @@
-_title: Introduction to detailed design
+_title: Detailed design
 _date: Sat  1 Dec 00:10:48 GMT 2018
 Levels of coupling (best to worst):
   None: No coupling
