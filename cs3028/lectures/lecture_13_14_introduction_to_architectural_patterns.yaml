@@ -1,0 +1,19 @@
+_title: Introduction to architectural patterns
+_date: Mon 22 Oct 10:55:00 BST 2018
+Architectures:
+  Layered:
+    Description: The system is divided into layers representing different levels of abstraction
+    Open layer: Each layer can call any layer below it
+    Closed layer: Each layer can only call the layer directly below it
+  Hexagonal:
+    Description: The business logic is in the centre and anything else that needs to connect uses an adapter which is surrounding the business layer
+    Ports:
+      Active: Trigger events and initiate interaction with the core
+      Passive: Only collaborate with the system when the system needs it
+  Pipe and filter: Like the Unix model. Each part takes input from the previous and does something to the data which is output and taken from the next part
+  Shared data:
+    Description: All units share data and only communicate through that data
+    Blackboard: Accessors are notified of changes
+    Repository: Accessors are not notified and have to fetch data when required
+  Event driven: A dispatcher receives event notifications and notifies the subscribed component
+  Model view controller: A system split between models (such as Vehicle), views (what a user sees) and controllers which process user input and act on it
