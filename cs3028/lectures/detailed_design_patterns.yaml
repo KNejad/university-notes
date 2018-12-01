@@ -4,7 +4,7 @@ Patterns:
   Controller: Gathers the data sent to the user interface layer
   Pure fabrication: An object which does not represent anything in the business domain and solves a set of cohesive problems
   Indirection: Helps 2 other objects communicate
-  Protected variations: If something returns unstable results this method can be used to stabilise them first
+  Protected variations: If something returns unstable results, this method can be used to stabilise them first
   Adapter: If 2 or more objects have an incompatible interface this can create a bridge between them
   Factory: Creates many other objects of a different type when there can be variations in the way they are made
   Singleton: An object that can only have a single instance of itself
