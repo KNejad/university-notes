@@ -1,6 +1,6 @@
 Architectures:
   Layered:
-    Description: The system is divided into layers representing different levels of abstraction
+    Description: The system is divided into layers representing different levels of abstraction. The most common being 3-tier presentaton, application, storage
     Open layer: Each layer can call any layer below it
     Closed layer: Each layer can only call the layer directly below it
   Hexagonal:
