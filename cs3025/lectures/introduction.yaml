@@ -1,2 +1,4 @@
 Semantic network: A knowledge base that represents semantic relations between concepts in a network
-Frame: Knowledge about a narrow domain
+Frames:
+  Description: Knowledge about a narrow domain
+  Procedures: Triggered when certain events happen (also known as demons)
