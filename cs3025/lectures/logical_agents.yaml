@@ -1,5 +1,3 @@
-_title: Logical Agents
-_date: Tue  2 Oct 14:11:54 BST 2018
 Logical Agent: A system which uses knowledge about the world to make decisions
 Fuzzy logic: Logic where things aren't boolean and instead can have a degree of truth. (For example somebody with £1M is rich and somebody with £0.9M is still rich but less so)
 Forward chaining: Start from the facts and draw any possible conclusions
