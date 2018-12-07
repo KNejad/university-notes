@@ -7,3 +7,10 @@ Ontologies:
   Consistent: An ontology is consistent if there is at least 1 interpretation which satisfies it
   Satisfiable: A class is satisfiable if there is at least 1 interpretation of the ontology where the class is not empty
   Entailment: An ontology entails an axiom if all interpretations of the ontology satisfy the axiom (|=)
+Tableaux algorithm:
+  Description: An algorithm for expressive ontology consistency checking
+  Steps:
+    - Initialize the tableau with individual axioms
+    - Apply any expansion rules
+    - If the tableau satisfies all axioms return that the ontology is consistent
+    - If the tableau does not satisfy all axioms return that it is inconsistent
