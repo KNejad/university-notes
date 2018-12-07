@@ -1,9 +1,11 @@
 Resource description framework:
   Description: A standard model for data interchange on the web
   Format: A triple of values (A, B, C) which specify the relation (B) between the first (A) and the last (C)
-  Notation 3 syntax: "[Subject property value .]"
 OWL: The W3C web ontology language
 Existing reasoning approaches:
   Tableau: Slow but very expressive
   Tractable/Horn-domain-languages: Fast but not expressive
   Approximate reasoning: Fast but just a heuristic
+Syntax examples:
+  Notation 3: "[Dog has tail .]"
+  OWL: Class(Cat partial Animal)
