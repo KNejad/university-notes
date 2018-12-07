@@ -12,5 +12,5 @@ Tableaux algorithm:
   Steps:
     - Initialize the tableau with individual axioms
     - Apply any expansion rules
-    - If the tableau satisfies all axioms return that the ontology is consistent
-    - If the tableau does not satisfy all axioms return that it is inconsistent
+    - If the tableau satisfies all axioms, return that the ontology is consistent
+    - If the tableau does not satisfy all axioms, return that it is inconsistent
