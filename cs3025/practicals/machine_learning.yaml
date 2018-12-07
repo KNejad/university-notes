@@ -1,0 +1,5 @@
+1: machine_learning/solution_1.svg
+2:
+  - machine_learning/solution_2.svg
+  - It cannot be simplified
+3: This cannot be answered because it hasn't been stated what is required for us to pass. If we assume green means pass and red means don't pass then its pretty easy. But there could be more exceptions like, if there is a pedestrian, if there is a car crossing etc.
