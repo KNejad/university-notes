@@ -1,2 +1,9 @@
-Open world assumption: The model may have some missing data (for example we may not know about course cs3025)
-Closed world asssumption: The model has all data required (so if course cs3025 is not in our KB then it doesn't exist)
+Open world assumption: The model may have some missing data (for example we may not know about course CS3025)
+Closed world assumption: The model has all data required (so if course CS3025 is not in our KB then it doesn't exist)
+Property axioms:
+  Functional: A property that can have only one value per individual (e.g. A person has only 1 spouse)
+  Transitive: If 'a' implies 'b' and 'b' implies 'c' then 'a' implies 'c'
+Ontologies:
+  Consistent: An ontology is consistent if there is at least 1 interpretation which satisfies it
+  Satisfiable: A class is satisfiable if there is at least 1 interpretation of the ontology where the class is not empty
+  Entailment: An ontology entails an axiom if all interpretations of the ontology satisfy the axiom (|=)
