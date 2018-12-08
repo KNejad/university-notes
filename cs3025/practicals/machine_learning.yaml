@@ -23,3 +23,14 @@
     GINI Index: (5/20)*0.48 + (7/20)*0.4898 + (4/20)*0.5 + (4/20)*0.5 = 0.4914
   f: Car type has the most predictive power
   g: Since each new member will get a new ID it cannot hold any predictive power
+7:
+  Table 1:
+    - Version space: { size: big, colour: red, shape: circle }
+    - We get the correct result so the version space does not change
+    - Version space: { size: ?, colour: red, shape: circle }
+    - We get the correct result so the version space does not change
+  Table 2:
+    - Version space: { size: big, colour: red, shape: circle }
+    - We get the correct result so the version space does not change
+    - Version space: { size: ?, colour: red, shape: circle }
+    - We get the correct result so the version space does not change
