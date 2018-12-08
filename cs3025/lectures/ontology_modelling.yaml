@@ -1,3 +1,7 @@
 Properties:
   Object: Represent relations between 2 individuals
   Datatype: Represent relations between individuals and a data values
+Competency questions:
+  Description: Questions which an ontology should be able to answer
+  Feature: The backbone of the question (e.g. which, has, what etc.)
+  Element: Objects in the question (e.g. pizza, person, hat etc.)
