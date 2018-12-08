@@ -7,8 +7,9 @@ Decision tree:
     Formula for each attribute: 1 -  (count(option_a)/count(all_options))^2 - (count(option_b)/count(all_options))^2...
 Incremental learning:
   Description: Learns incrementally by new examples. Does not need to retrain the entire model when new examples are added
+  Version space: The model used for classifying an item
   Steps:
-    - Start off with our first positive example being what we need for a "true" result
+    - Start off with our first positive example being the version space
     - If a new example gives the expected output then do nothing
-    - Otherwise add/adjust information to fit the new pattern by either generalising or specialising items in the domain
+    - Otherwise add/adjust information in the version space to fit the new pattern
   Candidate elimination algorithm: Maintains the most general and specialising case and adjusts one of them on each new input until both are identical
