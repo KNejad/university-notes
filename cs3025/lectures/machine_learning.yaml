@@ -1,0 +1,14 @@
+Inductive learning: Learning by examples (supervised learning)
+Decision tree:
+  Description: Contains all attributes required to make a decision. By answering each attribute you get to a final decision (e.g. is it raining?)
+  Discriminating attributes: The attributes which provides the most input as to what the final decision will be (e.g. one option could have all options leading to a "yes" decision)
+  GINI index:
+    Description: Can be used to find the most discriminating attribute
+    Formula for each attribute: 1 -  (count(option_a)/count(all_options))^2 - (count(option_b)/count(all_options))^2...
+Incremental learning:
+  Description: Learns incrementally by new examples. Does not need to retrain the entire model when new examples are added
+  Steps:
+    - Start off with our first positive example being what we need for a "true" result
+    - If a new example gives the expected output then do nothing
+    - Otherwise add/adjust information to fit the new pattern by either generalising or specialising items in the domain
+  Candidate elimination algorithm: Maintains the most general and specialising case and adjusts one of them on each new input until both are identical
