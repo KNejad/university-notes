@@ -2,3 +2,4 @@ Semantic network: A knowledge base that represents semantic relations between co
 Frames:
   Description: Knowledge about a narrow domain
   Procedures: Triggered when certain events happen (also known as demons)
+  Default knowledge: Frames can have default knowledge which can be changed by child frames
