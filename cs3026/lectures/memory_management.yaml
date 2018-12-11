@@ -1,11 +1,24 @@
 Program memory address location: A programs memory location is offset relative to its start location. This allows easy relocation of the program in memory
-Internal fragmentation: If a partition is larger than the memory contained some memory will be wasted
-External fragmentation: If a partition is too small for any memory to fit inside it memory will be wasted
-Buddy system: Solves the problem of memory waste due to fragmentation by splitting the partitions into halfs until the partition size is very close to the required memory
-Translation lookaside buffer: A hardware cache to improve memory lookup speeds
-Pricinciple of locality: References to memory locations within a program tend to cluster
+Internal fragmentation: If a partition is larger than the memory contained, some memory will be wasted
+External fragmentation: If a partition is too small for any memory to fit inside it, memory will be wasted
+Buddy system: Solves the problem of memory waste due to fragmentation by splitting the partitions into halves until the partition size is very close to the required memory
+Translation look-aside buffer: A hardware cache to improve memory lookup speeds
+Principle of locality: References to memory locations within a program tend to cluster
 Page: A fixed sized chunk of memory. This can be moved in and out of RAM as a single unit
+Frame: Physical memory is divided into frames
 Page fault: When a page which is required it not in memory so it has to be fetched from the HDD
 Resident set: The set of pages that can be in main memory per process at a specific time
 Thrashing: When a process is repeatedly page faulting
 Localities: A set of pages which are often required together
+Page replacement:
+  Description: When no physical frames are free, a frame needs to be removed to make space for a new one
+  Policies:
+    - Optimal policy: Not possible without looking into the future. Used as a benchmark for the best policy
+    - Least recently used: Replace the page which has not been referenced for the longest amount of time. Whilst this returns good results it can be quite slow
+    - First-in-first-out: Replace the oldest page
+    - Second chance: Similar to FIFO but if a frame has been recently used it is moved to the end of the replacement queue
+    - Clock algorithm:
+        Description: A faster implementation of the Second change policy.
+        Process:
+          - To allocate a new page check each frame in a list starting from the frame after the last checked frame. If the "use" bit is 1 then set it to 0 and check the next frame. If the "use" bit is 0 then use that frame.
+          - When a frame is used we set the "use" bit to 1.
