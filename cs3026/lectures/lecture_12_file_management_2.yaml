@@ -1,6 +1,0 @@
-Block Indirection levels:
-  First 10 blocks: Direct
-  11th block: Single indirect
-  12th block: Double indirect
-  13th block: Triple indirect
-Journaling file system: A record of changes is kept which can be repeated in case of a system crash
