@@ -1,0 +1,18 @@
+Interrupts:
+  Hardware interrupt: A signal from another hardware component to the processor (i.e. a keyboard)
+  Software interrupt:
+    Exception: Originates from the CPU when it receives an exception (i.e. div by 0)
+    System call:
+      Description: Originates by the program when it needs to something from the system. The OS then switchers to CPU kernel mode
+      Categories:
+        - Process management
+        - Memory management
+        - File management
+        - Device management
+        - Communication
+Kernel:
+  Types:
+    - Monolithic
+    - Layered
+    - Microkernel
+    - Modular

@@ -1,6 +1,0 @@
-Interupts:
-  Hardware interrupt: A signal from another hardware component to the processor (i.e. a keyboard)
-  Software interrupt:
-    Exception: Originates from the CPU when it receives an exception (i.e. div by 0)
-    Trap: Originates by the program when for example it needs to write to a disk (must switch to CPU kernel mode)
-
