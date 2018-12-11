@@ -1,3 +1,6 @@
+Simple batch processing:
+  Description: Simple automatic execution of jobs in older computers
+  Resident monitor: A rudimentary OS which controls the execution of jobs and context switching
 Virtual processing: Splitting the CPU into multiple virtual CPUs by switching between execution of different programs (context switching)
-Resident monitor: A rudimentary OS which controls the execution of jobs and context switching
-Preemtion: Jobs are interrupted in their execution
+Preemption: Jobs are interrupted in their execution
+Time-sharing: When a system can be used by multiple users simultaneously
