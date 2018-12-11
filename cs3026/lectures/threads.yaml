@@ -1,10 +1,13 @@
+Thread: An entity within a process which runs instructions in a shared memory space
+Multithreading: Allows a single process to run multiple threads in parallel
 User level threads:
   - Can only use a single core
   - Light thread switching because kernel mode switch is not necessary
   - We can implement our own thread scheduling
   - Blocking one thread blocks all
 Kernel level threads:
-  - Can take advantage of multiple cores/cpus
+  - Can take advantage of multiple cores/CPUs
   - Needs to switch kernel mode which is expensive
-Hybrid user kernel level threads: Can take advantage of the benefits of each of both user and kernel level threads
-join(): Wait for all threads to finish and then join to a single thread
+Hybrid user kernel level threads: Can take advantage of the benefits of both user and kernel level threads
+C functions for threads:
+  join(): Wait for all threads to finish and then join to a single thread

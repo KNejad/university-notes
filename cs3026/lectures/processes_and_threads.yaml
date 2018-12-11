@@ -1,3 +1,0 @@
-fork(): Forking creates a clone of the parent process
-exec(): Replaces the contents of the new forked process
-Threads vs Processes: Threads have much less overhead but still allow for parallel tasks

@@ -1,3 +1,22 @@
-Processes: A program in execution
+Processes: A program which runs inside its own virutalized system
+Dispatcher:
+  Description: Manages processes on a queue and switches the CPU from one process to another
+  Context switching:
+    Description: When the dispatcher switches from one process to another
+    Context switch events:
+      - Clock interrupt: When the process has executed for a period of time, and it is the turn of another process
+      - I/O interrupt: When an I/O action has occurred
+      - Memory fault/page fault: When memory which is needed is not available. An I/O request is issued for that memory. Whilst loading the page, a new process can use the CPU
+Five state process execution model:
+  - New
+  - Ready
+  - Running
+  - Blocked
+  - Exit
 Process control block: Contains all the information needed to stop and start processes
-Dispatcher: Starts the processes on the queue
+Process creation:
+  Description: In UNIX systems all processes are part of a hierarchy and new processes must be children of the process which created them
+  C functions:
+    fork(): Forking creates a clone of the parent process
+    exec(): Replaces the contents of the new forked process with a new program
+  Distinguishing child process from parent process: The only way to disinguish a child process from a parent process is the return value of fork(). The child process will return 0 whilst the parent will return the child processes ID.
