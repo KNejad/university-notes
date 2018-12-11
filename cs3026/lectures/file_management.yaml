@@ -1,8 +1,11 @@
-i-nodes: An index which holds attributes of a file (owner, permissions etc.) as well as the blocks which the file is on
-Indirect block: With an indirect block, the block which the i-node points to is also an index of multiple files and it doesn't contain the data
-Block Indirection levels:
-  First 10 blocks: Direct
-  11th block: Single indirect
-  12th block: Double indirect
-  13th block: Triple indirect
-Journaling file system: A record of changes is kept which can be repeated in case of a system crash
+Chained allocation: Blocks have pointers to the beginning of the next block
+Indexed allocation:
+  Description: There is an index which keeps track of where everything on the storage system is located
+  i-nodes: An index which holds attributes of a file (owner, permissions etc.) as well as the blocks which the file is on
+  Indirect block: With an indirect block, the block which the i-node points to is also an index of multiple files and it doesn't contain the data
+  Block Indirection levels:
+    - First 10 blocks: Direct
+    - 11th block: Single indirect
+    - 12th block: Double indirect
+    - 13th block: Triple indirect
+Journalling file system: A record of changes is kept which can be repeated in case of a system crash
