@@ -1,5 +1,3 @@
-_title: Memory management 4
-_date: Thu 11 Oct 11:15:35 BST 2018
 Page: A fixed sized chunk of memory. This can be moved in and out of RAM as a single unit
 Page fault: When a page which is required it not in memory so it has to be fetched from the HDD
 Resident set: The set of pages that can be in main memory per process at a specific time

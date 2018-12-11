@@ -1,5 +1,3 @@
-_title: Processes and threads
-_date: Tue 25 Sep 11:07:39 BST 2018
 fork(): Forking creates a clone of the parent process
 exec(): Replaces the contents of the new forked process
 Threads vs Processes: Threads have much less overhead but still allow for parallel tasks

@@ -1,5 +1,3 @@
-_title: File management
-_date: Thu 18 Oct 11:08:51 BST 2018
 Block Indirection levels:
   First 10 blocks: Direct
   11th block: Single indirect

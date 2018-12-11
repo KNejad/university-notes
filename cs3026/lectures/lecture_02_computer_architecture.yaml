@@ -1,5 +1,3 @@
-_title: Computer architecture
-_date: Thu 13 Sep 11:16:31 BST 2018
 Interupts:
   Hardware interrupt: A signal from another hardware component to the processor (i.e. a keyboard)
   Software interrupt:
