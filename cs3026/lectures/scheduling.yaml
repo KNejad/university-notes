@@ -2,10 +2,10 @@ Preemptive scheduling: A running process can be interrupted by the OS to give CP
 Non-preemptive scheduling: The process gives up control voluntarily
 Time quantum: The amount of time a process has per execution cycle
 Scheduling metrics:
-  Turnaround time: The time it takes to execute one process to its completion
-  Throughput: Number of processes that complete their execution per time unit
-  Waiting time: Total time a process has been waiting in the ready queue
-  Processor utilization: How busy the CPU is kept. This should be maximized so the CPU isn't "waisted"
+  - Turnaround time: The time it takes to execute one process to its completion
+  - Throughput: Number of processes that complete their execution per time unit
+  - Waiting time: Total time a process has been waiting in the ready queue
+  - Processor utilization: How busy the CPU is kept. This should be maximized so the CPU isn't "wasted"
 Scheduling algorithms:
   - First come first serve: When a process arrives it is added to the end of the queue and once it starts it won't stop until it completes
   - Round robin: After a process time quantum is over the next process in the queue is started. Each process gets the same time quantum and is fairly added to the queue.
@@ -18,8 +18,8 @@ Scheduling algorithms:
         - Lottery scheduling: Give each process "lottery tickets" according to their priority and the winning process is picked randomly. Processes can exchange tickets if they want (preemptive)
         - Fair share scheduling: Fair share of resources is given to users processes. So each user gets the same system resources (preemptive)
       Multilevel queue scheduling: There can be multiple queues which each use a different scheduling algorithm (e.g. background and foreground processes)
-Real-time systems:
-  Description: Systems where it is critical that processes finish before their deadlines
+Real-time scheduling:
+  Description: Used in systems where it is critical that processes finish before their deadlines
   Scheduling types:
     Static: Scheduling is done before any process runs
     Dynamic: Continuously analyse and reschedule process execution

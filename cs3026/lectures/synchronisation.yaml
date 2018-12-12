@@ -7,14 +7,14 @@ Synchronisation concerns:
         - Hold and wait: Process can hold resources whilst waiting to gain access to other resources
         - No preemption: Process cannot be forced to free a resource
         - Circular wait: When a loop is formed of multiple processes waiting on resources acquired by other processes
-      Solution:
+      Solutions:
         - Require all processes to specify all resources they will require. Then order the processes in a way that no deadlocks will occur
         - Allow deadlocks to happen but detect them when they do, rollback and release the resources and try again
   - Starvation: When a process waits forever to enter its critical section because it is of low priority
 Critical section:
   Description: The part of the code which accesses shared resources
   Critical section problem:
-    Description: Preventing multiple processes from accessing the critical section at the same time
+    Description: How to effectively prevent multiple processes from accessing the critical section at the same time
     Concepts:
       Strict alternation: There is a common variable "turn" and a process can only enter its critical section when the variable is set to its process ID. Once it finishes its critical section the process sets the turn variable to another process ID
       Flags: An array of flags where each process will set its own flag to true when it intends to enter its critical section and false when it no longer intends to be in its critical section

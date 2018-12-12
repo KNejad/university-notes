@@ -1,4 +1,4 @@
-Processes: A program which runs inside its own virutalized system
+Processes: The instance of a computer program that is being executed. It has its own virtualized memory and CPU
 Dispatcher:
   Description: Manages processes on a queue and switches the CPU from one process to another
   Context switching:
@@ -17,6 +17,6 @@ Process control block: Contains all the information needed to stop and start pro
 Process creation:
   Description: In UNIX systems all processes are part of a hierarchy and new processes must be children of the process which created them
   C functions:
-    fork(): Forking creates a clone of the parent process
+    fork(): Creates a clone of the parent process
     exec(): Replaces the contents of the new forked process with a new program
   Distinguishing child process from parent process: The only way to disinguish a child process from a parent process is the return value of fork(). The child process will return 0 whilst the parent will return the child processes ID.
