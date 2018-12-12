@@ -1,8 +1,16 @@
 Synchronisation concerns:
   - Race conditions: Concurrent access to shared resources (e.g. variables, disk etc.) can lead to unexpected behaviour
-  - Deadlocks: When multiple processes are waiting on each other for a shared resource, causing all threads to wait forever
+  - Deadlocks:
+      Description: When multiple processes are waiting on each other for a shared resource, causing all threads to wait forever
+      Conditions causing deadlocks:
+        - Mutual exclusion: Preventing a thread from entering its critical section at the same time as another thread
+        - Hold and wait: Process can hold resources whilst waiting to gain access to other resources
+        - No preemption: Process cannot be forced to free a resource
+        - Circular wait: When a loop is formed of multiple processes waiting on resources acquired by other processes
+      Solution:
+        - Require all processes to specify all resources they will require. Then order the processes in a way that no deadlocks will occur
+        - Allow deadlocks to happen but detect them when they do, rollback and release the resources and try again
   - Starvation: When a process waits forever to enter its critical section because it is of low priority
-Mutual exclusion: Preventing a thread from entering its critical section at the same time as another thread
 Critical section:
   Description: The part of the code which accesses shared resources
   Critical section problem:
