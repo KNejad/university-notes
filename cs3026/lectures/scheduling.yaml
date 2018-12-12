@@ -14,7 +14,7 @@ Scheduling algorithms:
       Policies:
         - Shortest job first: The job size is predicted with heuristics based on past CPU bursts and the process with the shortest predicted time runs first (non-preemptive)
         - Shortest remaining time: Same as SJF but a new process can replace the current running process if its remaining time is greater than the new process
-        - Highest response ratio first: Based on the ratio between the processes waiting time and expected service time (non-preemptive)
+        - Highest response ratio next: Based on the ratio between the processes waiting time and expected remaining time (non-preemptive)
         - Lottery scheduling: Give each process "lottery tickets" according to their priority and the winning process is picked randomly. Processes can exchange tickets if they want (preemptive)
         - Fair share scheduling: Fair share of resources is given to users processes. So each user gets the same system resources (preemptive)
       Multilevel queue scheduling: There can be multiple queues which each use a different scheduling algorithm (e.g. background and foreground processes)
