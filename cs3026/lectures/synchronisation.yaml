@@ -1,0 +1,17 @@
+Synchronisation concerns:
+  - Race conditions: Concurrent access to shared resources (e.g. variables, disk etc.) can lead to unexpected behaviour
+  - Deadlocks: When multiple processes are waiting on each other for a shared resource, causing all threads to wait forever
+  - Starvation: When a process waits forever to enter its critical section because it is of low priority
+Mutual exclusion: Preventing a thread from entering its critical section at the same time as another thread
+Critical section:
+  Description: The part of the code which accesses shared resources
+  Critical section problem:
+    Description: Preventing multiple processes from accessing the critical section at the same time
+    Concepts:
+      Strict alternation: There is a common variable "turn" and a process can only enter its critical section when the variable is set to its process ID. Once it finishes its critical section the process sets the turn variable to another process ID
+      Flags: An array of flags where each process will set its own flag to true when it intends to enter its critical section and false when it no longer intends to be in its critical section
+    Solutions:
+      - Dekker's algorithm: Tries to go first and announces its intention. If however it notices the other process has also announced its intention it waits until they revoke it. If they don't revoke their intention and it becomes their turn it revokes its own intention and waits until it is no longer their turn before announcing its intention again
+      - Peterson's algorithm: Uses similar concepts to Dekker's but in a slightly different way. Offers the other process to go first and if they are ready it waits, otherwise it goes ahead first
+      - Test set lock: All processes share a lock. There is an atomic hardware action which can set the lock if it wasn't already set. If the atomic TSL action returns false then the process can enter its critical section. Otherwise it must try again. Once it exits its critical section it must release the lock
+      - Compare and swap lock: Similar to TSL but instead the hardware action swaps the values in a private variable with the global lock which can be used to determine whether to continue waiting or proceed to critical section
