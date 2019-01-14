@@ -1,0 +1,5 @@
+Baud rate: The number of signal changes that occur per second
+Slot: The bauds that carry a byte of data
+Asynchronous communication:
+  Start bit: This signals the start of a new message (byte)
+  End bits: There are 2 end bits. This is to prevent any mistiming between the receiver and transmitter which could cause the receiver to read a byte from the next message
