@@ -1,0 +1,7 @@
+Receiver hysteresis: When reading a voltage input as 0 or 1, have a no-go zone which is read as neither high nor low
+Parity bit: A final bit used to ensure the integrity of the message. This is done by setting the parity bit to a value which would make there be an even number of 0s
+GPD Data Format:
+  Frame:
+    Description: A single message starting with "$GP" and ending with "*"
+    Format: "$GP[message_type][data]*"
+    Variac: Variale autotransformer. 2 coils which depending on how much they overlap more power is passed through
