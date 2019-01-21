@@ -1,3 +1,6 @@
+Finite state automata: A language interpreter which has no idea of the state it has been in. Each state says which other states you can transition into given an input
 Transition graph: Shows the states in an FSA and how you an transition from one state to another given a character of the alphabet
 Accepting state: After going through an input string the system should be able to determine whether the input is accepted or rejected based on the state the system is in
 Regular language: A language is regular if there is an FSA which recognizes it
+Classes of sets: A set of sets (i.e. All sets with 10 elements)
+Pumping lemma: A way of proving that a language in Non-regular
