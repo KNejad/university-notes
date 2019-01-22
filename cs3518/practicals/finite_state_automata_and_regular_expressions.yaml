@@ -1,0 +1,38 @@
+1:
+  a:
+    Set: A set is a collection of distinct objects where the order does not matter
+    Set operation: Is an operation on a number of sets which results in a new set
+  b:
+    Sequence: An enumerated collection of elements (possibly infinite) where repetition is allowed
+    Tuple: A finite ordered list of elements
+  c:
+    Functions: A transition function specifies how an FSA will transition from one state to another given an input
+    Relations: Some property between 2 elements of a set which may or may not hold. For example the relation "2 < 4"
+  d:
+    Graphs: In FSAs a graph shows the states of a system and how given an input one state can transition to another
+2:
+  a:
+    Definition: An alphabet is a set of characters which can be interpreted by a certain FSA
+    Examples:
+      - Boolean: [0, 1]
+      - Latin: [a, b, c, d...]
+  b:
+    Definition: A sequence of elements from an alphabet
+    Examples:
+      Boolean: [01,000, 111]
+      Latin: [Hello,World]
+  c: This is false because the single symbol can be repeated as many times as you want. So a string in the alphabet [a] could be "a", "aa", "aaa", etc...
+  d:
+    i: The number of elements in a string
+    ii: A string with a length of 0
+    iii: A substring L2 is a substring of L1 if L1 satisfies the regular expression "Σ*L2Σ*"
+    iv: Concatination is when 2 strings are joined together in order to create a new string
+    v: Lexigographical order is a standard order for strings of the latin alphabet
+  e: Yes it's true because that satisfies the definition given above of a substring
+3:
+  M1:
+    Q: [q1,q2,q3,q4,q5]
+    Σ: [a,b]
+    δ: [[q1,a,q2],[q1,b,q2],[q2,a,q3],[q2,b,q3],[q3,a,q4],[q4,a,q5],[q4,b,q5],[q5,a,q5],[q5,b,q5]]
+    q0: q1
+    F: [q1,q2,q3,q4]
