@@ -11,6 +11,16 @@ rmishoutclean:
 	cd cs3524/examples/rmishout; \
 	rm $(RM_FLAGS) *.class *~; \
 	cd $(cs3524_HOME)
+
+tasks:
+	javac cs3524/examples/tasks/ExecutionService.java; \
+	javac cs3524/examples/tasks/TaskServerMainline.java; \
+	javac cs3524/examples/tasks/TaskClient.java
+
+tasksclean:
+	cd cs3524/examples/tasks; \
+	rm $(RM_FLAGS) *.class *~; \
+	cd $(cs3524_HOME)
 ###########################################################
 ## The Scissors, Paper, Stone example and solution
 ##
