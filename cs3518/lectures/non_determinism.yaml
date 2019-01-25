@@ -1,1 +1,2 @@
 Non Deterministic finite state automaton: An FSA which can have multiple transition paths given a certain string
+Power set: All possible sub sets of a set
