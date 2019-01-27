@@ -30,9 +30,30 @@
     v: Lexigographical order is a standard order for strings of the latin alphabet
   e: Yes it's true because that satisfies the definition given above of a substring
 3:
-  M1:
-    Q: [q1,q2,q3,q4,q5]
-    Σ: [a,b]
-    δ: [[q1,a,q2],[q1,b,q2],[q2,a,q3],[q2,b,q3],[q3,a,q4],[q4,a,q5],[q4,b,q5],[q5,a,q5],[q5,b,q5]]
-    q0: q1
-    F: [q1,q2,q3,q4]
+  a:
+    M1:
+      Q: [q1,q2,q3,q4,q5]
+      Σ: [a,b]
+      δ: [[q1,a,q2],[q1,b,q2],[q2,a,q3],[q2,b,q3],[q3,a,q4],[q4,a,q5],[q4,b,q5],[q5,a,q5],[q5,b,q5]]
+      q0: q1
+      F: [q1,q2,q3,q4]
+  c:
+    abab: True
+    aaa: True
+  d:
+    A ∪ B: [dog, cat, fish, large, small, medium]
+    A ◦ B: [largedog, mediumdog, smalldog, largecat, mediumcat, smallcat, largefish, mediumfish, smallfish]
+    B*: [large, largelarge, ..., medium, mediummedium, ... small, smallsmall, ..., smalllarge, smallmidiumlarge, ... ]
+  e:
+    δ: [[q0,0,q1],[q1,1,q2],[q2,0,q1],[q2,1,q3],[q0,1,q3],[q3,0,q4],[q4,1,q3]]
+    F: [q0,q2,q4]
+  f: |
+    state = M.q0
+    for char in w
+      state = M.getTransition(state, char)
+    return M.hasFinalState(state)
+4:
+  i:
+    - "ε" is a RE, "0" is a RE and "1" is a RE
+    - "RE◦RE" is a RE thus "ε◦0" is a RE
+    - "RE ∪  RE" is a regular expression thus the entire thing is a RE
