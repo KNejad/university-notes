@@ -1,0 +1,10 @@
+Context free grammar: Given a start variable, it recursivly replaces all occureences of a variable with other variables and/or characters to produce any number of strings
+Pushdown automata: Recognises CFG strings and determines if they are valid
+Terminals: These characters are final and not replaced
+Format: Multiple "LHS -> RHS" rules where each LHS is replaced with RHS
+Parse trees: Visual representation of the expansion rules which have been used to generate a string
+4-tuple representation:
+  V: Variables
+  Σ: Terminals
+  R: Rules
+  S: Start variable ∈ V
