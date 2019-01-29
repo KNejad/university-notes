@@ -1,0 +1,14 @@
+a:
+  Binary: 0100011 (least signifant bit was first)
+  Decimal: 1 + 2 + 32 = 35
+  ASCII: "#"
+  Parity: Even parity bit
+b:
+  Binary: 01001011 (least significant bit was first)
+  Hexadecimal: 0x4B
+  ASCII: K
+c:
+  Binary: 01101010
+  Sequence: __-_-_--_--
+  Time required: 11/4800 seconds
+  Bandwidth: (assuming first harmonic) Baudrate = 2 * bandwidth * log2(1) => baudrate/2 = bandwidth => 4800/2 = 2.4Khz
