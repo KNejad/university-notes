@@ -22,8 +22,6 @@ public class AuctioneerImpl
   implements AuctioneerInterface
 {
   String _item;
-  int _numBidsRequired = 3;
-  int _numBidsReceived = 0;
   float _maxBid = -1;
 
   BidderInterface _winner = null;
@@ -36,10 +34,23 @@ public class AuctioneerImpl
 
    * @param item The item for sale at auction.
    */
-  public AuctioneerImpl( String item )
+  public AuctioneerImpl( String item, int auctionTime )
     throws RemoteException
   {
     _item = item;
+
+    Thread thread = new Thread() {
+      public void run(){
+        try {
+          Thread.currentThread().sleep(auctionTime);
+        } catch (InterruptedException e) {
+          System.out.println("Stop interrupting me");
+        }
+        callbackToBidders();
+      }
+    };
+
+    thread.start();
   }
 
   /**
@@ -66,8 +77,6 @@ public class AuctioneerImpl
       float price )
     throws RemoteException
   {
-    _numBidsReceived += 1;
-
     System.out.println( "New bid received = " + price );
 
     // If the new bid is equal to the current maximum bid, there
@@ -99,10 +108,6 @@ public class AuctioneerImpl
 
       _loosers.add( bidder );
     }
-    // Once we have received sufficient bids, call back to the
-    // bidders with the result of the auction.
-    if (_numBidsReceived >= _numBidsRequired)
-      callbackToBidders();
   }
 
   /**
@@ -127,15 +132,13 @@ public class AuctioneerImpl
           b.lost( _item, msg );
       }
       System.out.println( "Clearing up references to bidders and resetting the auction..." );
-      _numBidsReceived = 0;
       _maxBid = 0;
       _winner = null;
       _loosers.removeAllElements();
       System.out.println( "...done.  Please wait while the Java VM garbage collects.\n" +
           "Once this is done, the bidders should shut down.\n" +
           "Of course, you can force shutdown using ^C.\n" +
-          "---------------------------------------------------------\n" +
-          "Now, three new bidders can be run. " );
+          "---------------------------------------------------------");
     }
     catch (RemoteException re) {
       System.err.println( "Failure to contact callback remote object." );

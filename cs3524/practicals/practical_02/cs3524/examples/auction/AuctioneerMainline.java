@@ -26,8 +26,8 @@ public class AuctioneerMainline
 {
   public static void main(String args[])
   {
-    if (args.length < 3) {
-      System.err.println( "Usage:\njava AuctioneerMainline <registryport> <serverport> <item-for-sale>" ) ;
+    if (args.length < 4) {
+      System.err.println( "Usage:\njava AuctioneerMainline <registryport> <serverport> <item-for-sale> <duration>" ) ;
       return;
     }
 
@@ -41,8 +41,10 @@ public class AuctioneerMainline
 
       // Get the item for sale from the command-line arguments.
       String item = args[2];
+      int auctionTime = Integer.parseInt(args[3]);
 
-      AuctioneerImpl serv = new AuctioneerImpl( item );
+
+      AuctioneerImpl serv = new AuctioneerImpl(item, auctionTime);
       AuctioneerInterface stub = (AuctioneerInterface)UnicastRemoteObject.exportObject( serv, serverport );
       Naming.rebind( "rmi://" + hostname + ":" + registryport + "/Auctioneer", stub );
     }
