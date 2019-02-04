@@ -1,0 +1,10 @@
+Description: Like an NDFSA but there is a stack which we can add/remove symbols to
+Tuple representation:
+  Q: States
+  Σ: Alphabet
+  Γ: Stack characters
+  δ: State/stack transition table
+  q1: Starting state
+  F: Final states
+Stack: An character is removed from a stack if the transition requires that specific symbol
+Transition format: input_string, char_to_read_from_stack/char_to_write_to_stack
