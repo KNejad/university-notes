@@ -1,0 +1,16 @@
+Slot transmission:
+  a:
+    wire 1: -_-_-_____--
+    wire 2: _-_-_-----__
+    Explanation: Start with a high signal then go low to signal the beginning of the byte. The least significant bit comes first. Finally end with 2 high signals which are the stop baud periods. The wire 2 is just the reverse to help with signal integrity
+  b:
+    Standard:
+      1 baud: 1/250000 =  4μS
+      1 slot: 8 data bits plus 3 framing bits = 44μS
+      1 frame duration: synch+number_of_slots*slot_duration= synch + 0.104+513*44μS = 22.67mS
+      Max frame rate: 1/frame_duration = 1/22.67mS
+    With 52B:
+      1 frame duration: synch+number_of_slots*slot_duration= synch + 0.104+53*44μS = 23.32mS
+      Max frame rate: 1/frame_duration = 1/23.32mS
+  c: Essentially I should have shown that given a baud starting at certain time, if the receiver samples at a time 2% greater than the centre of the baud it would still receive the signal. However for 10% it would detect a different signal
+  d: Stop bits prevents accumulative error from causing a sampling to happen at the next or previous baud instead of the current baud. This is because after each character is sent the systems starts sampling from the centre again rather than from the offset caused by any previous errors
