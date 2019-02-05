@@ -1,0 +1,5 @@
+ACID principles:
+  Atomicity: Each action is atomic, meaning there can be no partial commits
+  Consistency: A transaction must tranform the system from one consistent state to another
+  Isolation: An incomplete transaction should not reveal its intermidiate state until it's complete
+  Durability: Once a transaction is commited it must persist on the system
