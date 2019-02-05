@@ -1,0 +1,38 @@
+1:
+  a:
+    V: [X]
+    Σ: [a,b]
+    R: [ X: [bba, bbXa]]
+    S: X
+  b:
+    V: [COMMAND, ASSIGN, IF, COMMANDS, EXPRESSION]
+    Σ: [if, a, then, e, else, and, or, ;]
+    R:
+      - COMMANDS: [<COMMAND>, <COMMAND><COMMANDS>]
+      - COMMAND: [<ASSIGN>;, <IF>;]
+      - ASSIGN: [a]
+      - IF: [if <EXPRESSION> then <COMMAND> else <IF>, if <EXPRESSION> then]
+      - EXPRESSION: [e and <EXPRESSION>, e or <EXPRESSION>, e]
+    S: COMMANDS
+  c:
+    V: [X]
+    Σ: [0,1]
+    R:
+      - X: [
+        001, <X>001, 0<X>01, 00<X>1, 001<X>,
+        100, <X>100, 1<X>00, 10<X>0, 100<X>,
+        010, <X>010, 0<X>10, 01<X>0, 010<X>
+      ]
+    S: X
+  d:
+    V: [START, 01STAR, 11STAR]
+    Σ: [0,1]
+    R:
+      - START: [<01STAR>000, <11STAR>000]
+      - 01STAR: [01<01STAR>, ε]
+      - 11STAR: [11<11STAR>, ε]
+    S: START
+2:
+  a: Any string of 'a' and 'b' enging in 'aaa'
+  b: Any strings of 'a' and 'b'  with an even number of 'a'
+  c: A palindrome of '0' and '1'
