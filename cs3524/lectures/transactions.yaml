@@ -1,5 +1,9 @@
 ACID principles:
   Atomicity: Each action is atomic, meaning there can be no partial commits
-  Consistency: A transaction must tranform the system from one consistent state to another
-  Isolation: An incomplete transaction should not reveal its intermidiate state until it's complete
-  Durability: Once a transaction is commited it must persist on the system
+  Consistency: A transaction must transform the system from one consistent state to another
+  Isolation: An incomplete transaction should not reveal its intermediate state until it's complete
+  Durability: Once a transaction is committed it must persist on the system
+Two-phase locking: All lock operations must occur before all unlock operations
+Strict two-phase locking: All locks are released at the very end of the transaction
+Shared read locks: Multiple transactions can set read locks on a single object if there are no write locks on it
+Read lock promotion: If only one transaction has a read lock on a resource then it can promote it to a write lock
