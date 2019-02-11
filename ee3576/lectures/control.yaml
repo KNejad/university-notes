@@ -1,0 +1,2 @@
+Silicon controlled rectifier: Controls current between anode and cathode. When the gate is triggered then current can flow through even once the gate current drops below the threshold
+AC TRIAC: Uses 2 SCRs in order to quickly flicker between the on and off states. This allows for brightness control
