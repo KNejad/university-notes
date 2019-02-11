@@ -1,0 +1,10 @@
+Description: Similar to CFLs but the left hand side of a rule can include patterns with terminals and non terminal symbols
+Linear-bounded automata: An automata which can check if strings belong to context sensitive languages. Like a PDA but instead of a stack there is a finite tape where we can access elements without removing the top element
+Tuple definition:
+  Q: Set of states
+  Σ: Input alphabet
+  Γ: Tape alphabet which is Σ ∪ { →, ←, ␣ }
+  δ: Transition function
+  q0: Initial state
+  F: Final state
+
