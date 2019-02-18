@@ -1,0 +1,11 @@
+Tuple definition:
+  Q: Set of states
+  Σ: Alphabet without "␣"
+  Γ: Tape alphabet
+  δ: Transition function of the form "Q x Γ → Q x Γ x {L,R}". As in, given a state and a letter on the tape, transition to another state, write a character from Γ to the tape and then move either 1 position to the left or right
+  q0: Start state
+  qaccept: Single accept state
+  qreject: Single reject state
+Tape: The tape of a turing machine is infinite, however it does have a start. If it is told to go left of the start it will ignore the input
+Representation of current state: "<tape_element>*<current_state><tape_element>*". The tape position will be the character to the right of <current_state>
+Turing decidable language: Any language where all inputs will cause a turing machine to accept or reject (not enter a loop)
