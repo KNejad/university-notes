@@ -1,0 +1,5 @@
+c: ../laboratories/dmx_triac_power_control/
+Additional thoughts:
+  i: "returni" signals to the microcontroller to return from the interrupt
+  ii: Yes I can. "gDmxState" is used to store the state
+  iii: Because we are changing gDmxState but we don't want to lose track of what state we are currently in during this interrupt
