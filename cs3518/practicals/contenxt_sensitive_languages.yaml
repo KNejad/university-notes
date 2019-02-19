@@ -4,3 +4,9 @@
   - ws ws S U U bs bs -> ws ws ws wf bs U U bs bs (Rule 2 of S)
   - ws ws ws wf bs U U bs bs -> ws ws ws wf U U bs bs bs (Apply bsU 2 times)
   - ws ws ws wf U U bs bs bs -> ws ws ws wf wf wf bs bs bs (Apply wfU 2 times)
+6:
+  a: True because LBA are more expressive than PDA
+  b: True because PDAs are more expressive than NFAs, so there could be a PDA which is just as expressive
+  c: False for example the grammar required in question 2 is not possible
+  d: False because the PDA always consumes an input so after each step the string remaining is smaller
+  e: True because it will enter the exact same state twice in a row
