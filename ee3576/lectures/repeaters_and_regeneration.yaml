@@ -1,0 +1,5 @@
+Splitter/regenerator: Regenerates and duplicates a signal over multiple cables
+Merger: Given a DMX signal over an Ethernet cable it can split the signal and send it over multiple cable segments. This also allows more than 512 slots since the merger will split the signal
+Using multiple controllers:
+  Description: Using multiple controllers allows for redundancy in case there is an error
+  Highest takes precedence: This method uses the highest value on each slot as the output signal
