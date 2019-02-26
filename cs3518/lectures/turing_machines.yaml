@@ -6,6 +6,7 @@ Tuple definition:
   q0: Start state
   qaccept: Single accept state
   qreject: Single reject state
-Tape: The tape of a turing machine is infinite, however it does have a start. If it is told to go left of the start it will ignore the input
+Tape: The tape of a Turing machine is infinite, however it does have a start. If it is told to go left of the start it will ignore the input
 Representation of current state: "<tape_element>*<current_state><tape_element>*". The tape position will be the character to the right of <current_state>
-Turing decidable language: Any language where all inputs will cause a turing machine to accept or reject (not enter a loop)
+Turing recognisable language: Any language which can be recognised by a Turing machine but will not necessarily terminate (can enter a loop)
+Turing decidable language: Any language where all inputs will cause a Turing machine to accept or reject (not enter a loop)
