@@ -1,0 +1,5 @@
+Description: An accounting of all of the gains and losses from the transmitter to the receiver
+Free space path loss: The loss of signal between two antennas in a given range
+Isotropic antenna: Signal radiates equally in all directions of both planes
+Omni-directional antenna: Signal radiates equally all directions of one plane
+Directional antenna: Signal radiates more in a specific direction
