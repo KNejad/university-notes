@@ -1,0 +1,2 @@
+Passive replication: The replicas only keep track of the data sent to the master but do not activly reply to queries
+Active replication: The servers can all reply to queries and make decisions as a group
