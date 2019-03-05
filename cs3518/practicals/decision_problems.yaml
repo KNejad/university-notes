@@ -1,0 +1,19 @@
+1:
+  a: False because aFSA needs 2 parameters not just one
+  b: False because following the FSA with the input does not lead to a final state
+  c: True because following the FSA with the input does lead to a final state
+  d: False because M is not a regular expression
+  e: True because at least 1 string is accepted by M
+  f: Null Cannot answer this because M' is not a DFSA
+2:
+  a: L(U)≠ niversal set
+  b: U will not be able to decide when passed as input a turing machine which never terminates
+3:
+  a: True
+  b: True
+  c: True
+  d: False
+  e: <U,<U,<U,<U,M>>>>
+4:
+  a: A set is countable if it is no bigger than the set of natural numbers. Since even natural numbers is a subset it cannot be bigger. Thus it is countable
+  b: I need to create a way to list all pairs in a certain order. This can be done by listing all the sets which sum to 0, followed by all that sum to 1...
