@@ -3,3 +3,14 @@ Free space path loss: The loss of signal between two antennas in a given range
 Isotropic antenna: Signal radiates equally in all directions of both planes
 Omni-directional antenna: Signal radiates equally all directions of one plane
 Directional antenna: Signal radiates more in a specific direction
+Link budget calculation:
+  Formula: Prx = Ptx + Gtx - Ltx -Lfs -Lm + Grx - Lrx
+  Key variables:
+    Prx: Received power (dBm)
+    Ptx: Transmitter output power (dBm)
+    Gtx: Transmitter antenna gain (dBi)
+    Ltx: Transmitter cable (dB/m x distance) (dB)
+    Lfs: Free space loss or path loss (dB)
+    Lm: Fade margin (dB)
+    Grx: Receiver antenna gain (dBi)
+    Lrx: Receiver cable (dB/m x distance) (dB)
