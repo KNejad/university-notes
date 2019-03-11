@@ -1,0 +1,2 @@
+Polynomial algorithm: An algorithm which solves a problem in O(n^k) time (where k is some positive number)
+Non deterministic polynomial algorithm: An algorithm which solves a problem in polynomial time with non deterministic behaviour
