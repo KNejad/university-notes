@@ -1,0 +1,16 @@
+Half duplex: Only 1 device can communicate with the other at a time
+Discovering devices:
+  Description: Essentially do a binary tree search on the UID range to find the devices. This is because if there are multiple responses there will be noise
+  Pseudocode: |
+    discover_devices(range = all) {
+      mute_all_devices
+      devices = send_signal_to(range)
+      if (devices.length == 1) {
+        add_device_to_list
+      }
+
+      if (devices.length > 1) {
+        discover_devices(first_half_of_range)
+        discover_devices(second_half_of_range)
+      }
+    }
