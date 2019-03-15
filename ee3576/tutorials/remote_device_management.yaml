@@ -1,0 +1,8 @@
+a:
+  - The line driver needs to support transit and receive
+  - Any repeaters need to support half duplex
+  - The bus needs to be terminated on both ends
+b:
+  - The controller initiates communication with a remote device and then switches to "receive" mode
+  - The remote device recognises the signal and if it was addressed then it enables its own transmitter
+  - Once data has been sent the remote device switches back to receive mode and the controller resumes operation
