@@ -1,0 +1,4 @@
+Reduction: Converting one expression into another
+Bound variable: Variables which first appear on the left hand side of a lambda term (before the dot) are bounded
+α-equivalence: Multiple lambda expressions are α-equivalent when they always produce the same result with the same binding variables
+≡: For an expression "x ≡ y" it denotes that x is identical to y
