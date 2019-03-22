@@ -1,0 +1,4 @@
+a: CAN devices communicate with each other rather than simply with a central controller unit
+b:
+  Problem: Since CAN devices estimate the clock based on previous inputs, if there are many bits of the same value, then over time the clock will lose accuracy
+  Solution: In order to prevent the clock from losing accuracy, after every 5 bits sent with the same value, one bit is "stuffed" after in order for the clocks to re-synchronise.
