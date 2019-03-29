@@ -3,3 +3,4 @@ Bound variable: Variables which first appear on the left hand side of a lambda t
 α-equivalence: Multiple lambda expressions are α-equivalent when they always produce the same result with the same binding variables
 ≡: For an expression "x ≡ y" it denotes that x is identical to y
 β-reduction: When applying a lambda function to an argument, we can do a single reduction on it by replacing all occurences of the variable on the right hand side with the argument. For example, applying "y" to "λx.xyz" would result in "yyz"
+Normal form: A term is in its normal form if it cannot be reduced any further
