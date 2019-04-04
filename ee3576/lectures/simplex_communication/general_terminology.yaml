@@ -1,0 +1,3 @@
+Parity bit: A final bit used to ensure the integrity of a message. This is done by setting the parity bit to a value which would make there be an even number of 0s
+Baud: Each signal change on the cable (low or high)
+Receiver hysteresis: When reading a voltage input as 0 or 1, have a no-go zone which is read as neither high nor low

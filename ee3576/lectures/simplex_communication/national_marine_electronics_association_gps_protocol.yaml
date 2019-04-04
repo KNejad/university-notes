@@ -1,0 +1,4 @@
+Frame:
+  Description: A single message starting with "$GP" and ending with "*"
+  Format: "$GP[message_type][data]*"
+  Variac: Variale autotransformer. 2 coils which depending on how much they overlap more power is passed through
