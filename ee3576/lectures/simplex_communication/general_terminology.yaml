@@ -2,3 +2,4 @@ Parity bit: A final bit used to ensure the integrity of a message. This is done 
 Baud: Each signal change on the cable (low or high)
 Receiver hysteresis: When reading a voltage input as 0 or 1, have a no-go zone which is read as neither high nor low
 Variac: Variale autotransformer. 2 coils which depending on how much they overlap more power is passed through
+Differential transmission: 2 twisted cables which send opposite signals. Any noise will affect both cables and will cancel each other out

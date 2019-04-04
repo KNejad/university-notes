@@ -1,0 +1,5 @@
+Ideal channel bandwidth: An ideal channel can have an infinite bandwidth
+Harmonics: Each harmonic allows for an extra signal which can be sent over the cable (e.g. up to 3rd harmonic at 500Hz is a bandwidth of 1500Hz)
+Shannon capacity:
+  Decription: The maximum capacity which a transmission line can handle given its frequency
+  Formula: C = Hz * log2(1 + signal_to_noise_ratio)
