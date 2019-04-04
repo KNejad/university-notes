@@ -1,0 +1,18 @@
+Baud:
+  Description: Each signal change on the cable (low or high)
+  Baud rate: The number of signal changes that occur per second
+Slot:
+  Description: The set of bauds that carry a byte of data
+  Format:
+    - Arbitrary idle gap (mark high)
+    - 1 start baud: Signals the start of a new message
+    - Data: Least significant bit first
+    - 2 stop bauds: Prevents mistiming between the receiver and transmitter which could cause the receiver to read a byte from the next message
+Benefits:
+  - Common standard
+  - Only needs two wires
+  - Simple UART implementation, no clock recovery, no DPLL
+Drawbacks:
+  - Lower efficiency
+  - Poor error detection
+  - Rate limited by clock stability, cable quality, distance, etc.
