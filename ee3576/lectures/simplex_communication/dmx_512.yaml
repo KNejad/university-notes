@@ -7,4 +7,8 @@ Format:
   - Mark after break
   - Start slot
   - 512 data slots (44μS each)
-# TODO: Continue from dmx addressing and receivers
+DMX receiver steps:
+  - Wait for break
+  - If following start byte is correct continue. Else go to start
+  - Skip bytes until start address received
+  - Read allocated data
