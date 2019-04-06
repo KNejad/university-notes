@@ -1,10 +1,16 @@
 Context free grammar: Given a start variable, it recursivly replaces all occureences of a variable with other variables and/or characters to produce any number of strings
-Pushdown automata: Recognises CFG strings and determines if they are valid
+Ambiguous CFGs: When there are multiple ways of generating the same string
 Terminals: These characters are final and not replaced
-Format: Multiple "LHS -> RHS" rules where each LHS is replaced with RHS
+Format: Multiple "LHS → RHS" rules where each LHS is replaced with RHS
 Parse trees: Visual representation of the expansion rules which have been used to generate a string
 4-tuple representation:
   V: Variables
   Σ: Terminals
   R: Rules
   S: Start variable ∈ V
+Chomsky Normal Form:
+  Description: A form of CFGs which restricts the number of rules
+  Allowed rules:
+    - Only the start variable can have the start variable on the RHS
+    - Only the start variable can have "ε" transitions
+    - Each RHS has either 2 non terminals or only terminals
