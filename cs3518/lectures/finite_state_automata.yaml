@@ -9,3 +9,7 @@ Classes of sets: A set of sets (i.e. All sets with 10 elements)
   T: Transition states
   q0: Starting state
   F: Final state
+Power set: All possible sub sets of a set
+Non Deterministic finite state automaton:
+  Description: An FSA which can have multiple transition paths given a certain string
+  Computing: Each possible branch must be assessed. If there is at least 1 path which results in an accepting state then accept. Else reject
