@@ -1,0 +1,8 @@
+Regular Expression components:
+  - Any symbol a ∈ Σ
+  - ε (the empty string)
+  - ∅ (the empty set)
+  - (R1 ∪ R2 ), where R1 and R2 are REs (union)
+  - (R1 ◦ R2 ), where R1 and R2 are REs (concatenation)
+  - (R1∗), where R1 is an RE (star operation)
+Pumping lemma: A way of proving that a language in Non-regular

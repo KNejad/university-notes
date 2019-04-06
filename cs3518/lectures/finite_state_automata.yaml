@@ -3,7 +3,6 @@ Transition graph: Shows the states in an FSA and how you an transition from one 
 Accepting state: After going through an input string the system should be able to determine whether the input is accepted or rejected based on the state the system is in
 Regular language: A language is regular if there is an FSA which recognizes it
 Classes of sets: A set of sets (i.e. All sets with 10 elements)
-Pumping lemma: A way of proving that a language in Non-regular
 5-tuple definition of a FSA:
   Q: States
   Σ: Alphabet
