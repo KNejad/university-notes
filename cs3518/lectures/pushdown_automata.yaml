@@ -1,4 +1,4 @@
-Description: Like an NDFSA but there is a stack which we can add/remove symbols to
+Description: Like an NDFSA but there is a stack which we can add/remove symbols to. It recognises CFGs
 Tuple representation:
   Q: States
   Σ: Alphabet
@@ -6,5 +6,5 @@ Tuple representation:
   δ: State/stack transition table
   q1: Starting state
   F: Final states
-Stack: An character is removed from a stack if the transition requires that specific symbol
+Stack: PAs use a stack to keep track of the state. Symbols can be added to or removed from the top of the stack
 Transition format: input_string, char_to_read_from_stack/char_to_write_to_stack

@@ -1,3 +1,4 @@
+Context Sensitive Languages: Similar to CFGs but multiple terminals/non-terminals are allowed on the LHS
 Linear-bounded automata:
   Description: An automata which can check if strings belong to context sensitive languages. Like a PDA but instead of a stack there is a finite tape where we can access elements without removing the top element
   Tuple definition:
@@ -8,4 +9,4 @@ Linear-bounded automata:
     q0: Initial state
     F: Final state
   Final state difference from PDAs: As soon as an LBA reaches a final state it stops
-  Non-contracting: ???
+  Non-contracting: A grammar where all production rules have a smaller LHS than RHS
