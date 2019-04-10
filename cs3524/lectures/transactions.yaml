@@ -9,3 +9,14 @@ Strict two-phase locking: All locks are released at the very end of the transact
 Shared read locks: Multiple transactions can set read locks on a single object if there are no write locks on it
 Read lock promotion: If only one transaction has a read lock on a resource then it can promote it to a write lock
 Serial equivalence: When multiple transactions produce the same result as they would if they operated in a serialised order
+Concurrency control protocols:
+  Optimistic: Transactions are restarted if a conflict is detected. When the transaction finishes it checks if there are conflicts with other transactions and aborts if there are
+  Pessimistic: Transactions wait to avoid conflicts
+Two version locking:
+  Description: There are 2 versions of the same object. Write transactions work on the new version and read objects read from the original
+  Lock types:
+    Read: Multiple read locks which read from the original copy
+    Write: Only one transaction can hold a shared write lock
+    Commit: An exclusive lock which commits the transaction
+Forward validation: Checks that other transactions will not write/read in an inconsistent method
+Backward validation: Checks that other transactions have not already written/read data which could cause an inconsistency
