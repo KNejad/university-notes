@@ -1,0 +1,7 @@
+Marshalling: The process of serialisation of arguments so that they can be passed from one server to another
+RMI registry: Registers remote objects so that they can be called by clients
+Dynamic code loading: Java RMI allows a client to indirectly send trusted code to a server to execute. The code is retrieved via a known web server
+Parameter passing:
+  By value: Sends a copy of the object to the other server. All methods are called on separate objects
+  By reference:  Sends a reference of the object to the other server. All methods are called on the same object
+Activation Service: Automatically generates remote objects and restarts them if they crash
