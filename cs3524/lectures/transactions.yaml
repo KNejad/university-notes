@@ -20,3 +20,12 @@ Two version locking:
     Commit: An exclusive lock which commits the transaction
 Forward validation: Checks that other transactions will not write/read in an inconsistent method
 Backward validation: Checks that other transactions have not already written/read data which could cause an inconsistency
+Distributed transactions:
+  Two-phase commit protocol:
+    Description: A coordinator tells participants to perform an action. Each server replies whether it can commit. If any cannot, the whole process is aborted
+    Failure situations:
+      - Participant crashes before sending commit message: There will be a timeout so everything aborts
+      - Participant crashes after sending commit message: Once the participant recovers it will ask the server what to do
+      - Coordinator crashes before sending final commit: Participants ask others if they received a final order, act accordingly then elect a new coordinator
+      - Both coordinator and one participant crash: Other participants must wait for the crashed participant to recover
+  Three-phase commit protocol: Similar to the two-phase protocol but participants acknowledge that they are ready to commit
