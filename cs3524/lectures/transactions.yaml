@@ -3,7 +3,9 @@ ACID principles:
   Consistency: A transaction must transform the system from one consistent state to another
   Isolation: An incomplete transaction should not reveal its intermediate state until it's complete
   Durability: Once a transaction is committed it must persist on the system
+Simple exclusive lock: If a transaction wants to read or write objects, it establishes locks for these objects
 Two-phase locking: All lock operations must occur before all unlock operations
 Strict two-phase locking: All locks are released at the very end of the transaction
 Shared read locks: Multiple transactions can set read locks on a single object if there are no write locks on it
 Read lock promotion: If only one transaction has a read lock on a resource then it can promote it to a write lock
+Serial equivalence: When multiple transactions produce the same result as they would if they operated in a serialised order

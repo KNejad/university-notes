@@ -1,0 +1,2 @@
+Transmission Control Protocol: Establishes a connection between 2 endpoints. Guarantees packet order
+User Datagram Protocol: Exchanges information between 2 endpoints without establishing a connection. Does not guarantee packet order
