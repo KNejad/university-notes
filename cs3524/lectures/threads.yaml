@@ -1,0 +1,9 @@
+Thread methods:
+  run(): implements the code to be executed by the thread
+  start(): starts a thread
+  join(): Synchronize execution between threads, one thread will wait for another thread to terminate before continuing execution
+  yield(): Cause the thread to give up the processor and allow other threads to execute
+  wait(): Wait to enter a critical section
+  notify(): Notify other threads that this one has exited the critical section
+Priority: Threads have an integer priority value which lets the VM know how to schedule the threads
+Monitor: The Java monitor coordinates and synchronises thread activity
