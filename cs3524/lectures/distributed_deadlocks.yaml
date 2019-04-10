@@ -1,0 +1,3 @@
+Centralised detection: A central server detects deadlocks by receiving information from all the other servers
+Phantom deadlock: A false positive deadlock detection
+Edge chasing: Servers send "probes" to other servers in order to detect deadlocks. These probes follow the edges looking for a loop
