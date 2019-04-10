@@ -1,2 +1,3 @@
-Passive replication: The replicas only keep track of the data sent to the master but do not activly reply to queries
+Passive replication: The replicas only keep track of the data sent to the master but do not actively reply to queries
 Active replication: The servers can all reply to queries and make decisions as a group
+Byzantine failure: When a server may fail and other servers have imperfect information on the status of the failed server
