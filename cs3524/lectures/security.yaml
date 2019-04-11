@@ -1,1 +1,43 @@
 Threat tree: A tree representing the goals of an attacker where the leaf nodes represent possible ways to achieve the sub goal
+Substitution ciphers: replace plain text symbols with corresponding cipher-text symbols
+Transposition ciphers:
+  Description: reorder plain text symbols within the cipher-text
+  Types:
+    Columnar transposition: Create a column for each letter of the secret. Reorder the columns alphabetically then serialise the text column wise
+    Mono-alphabetic substitution:
+      Description: Each symbol is substituted by another symbol (always the same) in ciphertext (e.g. "x" always becomes "y")
+      Types:
+        Caesar Cipher: Each character is substituted by the character N letters to the right of it, where N is the key
+        Polygrams: Instead of substituting single characters substitutes multiple together
+        Homophonic: Letters map to more than one symbol
+      Frequency analysis: By analysing the frequency that certain characters occur it is possible to decipher the text
+    Poly-alphabetic substitution: Use multiple mono-alphabetic ciphers
+  One time pad: A key which can only be used once
+Block ciphers: Encode the plain text in a block-wise fashion
+Stream ciphers: Encode the plain text in a bit-wise fashion
+Diffie-Hellman Key Exchange:
+  Description: A method for two parties to securely exchange keys
+  Steps:
+    - Both parties agree on a public large prime number and small integer
+    - Each party generates a large secret integer
+    - Each party performs a calculation with the above data. The result is the public key
+    - Using the public key and the secret integer, each party can calculate the same private key
+Avalanche effect: The slightest change in a message should completely change the ciphertext
+Shannon's principles of confusion and diffusion:
+  Confusion: The relationship between key and ciphertext should be complex
+  Diffusion: The relationship between plaintext and ciphertext should be complex
+Feistel network:
+  Description: A complex encryption algorithm which follows Shannon's principles
+  Steps:
+    - Apply a function to the right half of the input block
+    - XOR the result with the left side
+    - Swap the left side with the right side
+    - Repeat everything N times, each with a different key
+Digital Encryption Standard: Uses similar processes to Feistel network but also undoes some of the work done in the beginning
+Relative prime: Two integers are relatively prime, if their greatest common divisor is 1
+RSA:
+  Description: Asymmetric encryption algorithm
+  Private key: Two large prime numbers
+  Public key: The product of the two primes (n); Also a relative prime number to (prime_a-1)(prime_b-1) (e)
+  Encryption: M^e mod n
+  Decryption: C^d mod n
