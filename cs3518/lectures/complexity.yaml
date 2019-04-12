@@ -1,2 +1,8 @@
-Polynomial algorithm: An algorithm which solves a problem in O(n^k) time (where k is some positive number)
-Non deterministic polynomial algorithm: An algorithm which solves a problem in polynomial time with non deterministic behaviour
+Polynomial algorithm: Solves a problem in O(n^k) time (where k is some positive number)
+Exponential algorithm: Solves a problem in O(2^n^k) time (where k is some positive number)
+Non-deterministic polynomial problems: A problem which can be solved in polynomial time with non deterministic behaviour
+NP-hard: The set of problems which are at least as hard as the hardest problems in NP
+NP-complete: The set of problems which are in NP and for which every other problem in NP can be transformed into it in polynomial time
+TIME(<complexity>): The set of all languages which are decidable by an O(<complexity>) single tape, deterministic Turing machine
+NTIME(<complexity>): The set of all languages which are decidable by an O(<complexity>), non-deterministic Turing machine
+Verifier: Given a string (w) and a certificate (c) as input, it verifies that the certificate is a valid solution for a problem
