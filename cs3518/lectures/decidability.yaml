@@ -1,0 +1,4 @@
+Decision problem: A question which given inputs has a definitive "yes" or "no" answer
+Decidable algorithm: An algorithm which will always return the correct solution to a decision problem
+Semi-decidable algorithm: Will always output "yes" if the answer is "yes" but may not always terminate if the answer is "no"
+Language of a machine: The set of strings which it accepts
