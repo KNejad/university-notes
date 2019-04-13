@@ -1,0 +1,13 @@
+Characteristics:
+  - Bus for communication
+  - Differential twisted pair
+  - Clock synchronises itself by the changes in signal being sent
+Bit stuffing: To prevent the clock from losing accuracy, after every 5 bits sent with the same value, one bit of the opposite value is added
+Data transmission:
+  - All devices can initiate communication with other devices arbitrarily
+  - Sending a signal of 1 is recessive which means it will be overpowered by a signal of 0
+  - If a device receives a signal of 0 when it sent a signal of 1, then there are other devices sending data so it "drops out"
+  - Eventually only 1 device will remain which is sending data
+Checksum calculation: To calculate the checksum, the modulo operation is used on the data
+CAN Formats: By changing the start code we can signal to newer devices to use a different format.
+CAN Flexible data: In CAN-FD format more data to be sent in a single frame
