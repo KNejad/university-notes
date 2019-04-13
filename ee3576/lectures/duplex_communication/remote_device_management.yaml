@@ -1,3 +1,9 @@
+Remote device management: Uses half duplex communication with a master-slave pattern to allow devices to communicate with each other
+Packet structure:
+  - Start code (0xCC)
+  - Header (24 slots)
+  - Data (variable)
+  - Checksum: 16-bit sum of all slot values
 Half duplex: Only 1 device can communicate with the other at a time
 Discovering devices:
   Description: Essentially do a binary tree search on the UID range to find the devices. This is because if there are multiple responses there will be noise
