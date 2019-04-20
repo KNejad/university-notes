@@ -1,0 +1,39 @@
+5:
+  b:
+    - "v : Nat, w : Nat → Bool |- (λx: Nat.wx)v : Bool"
+    - "v : Nat, w : Nat → Bool |- λx : Nat.wx : Nat → Bool v_is_nat"
+    - v_is_nat:
+      - "v: Nat, w: Nat → Bool |- v : Nat"
+      - "v : Nat ∈ {v: Nat, w: Nat → Bool}"
+    - "v : Nat, w : Nat → Bool, x : Nat |- wx : Bool"
+    - w_is_nat_bool:
+      - "v : Nat, w: Nat → Bool, x : Nat |- w: Nat → Bool"
+      - "w : Nat → Bool ∈ {v : Nat, w : Nat → Bool, x : Nat}"
+    - x_is_nat:
+      - "v : Nat, w : Nat → Bool, x : Nat |- x : Nat"
+      - "x : Nat ∈ {v : Nat, w : Nat → Bool, x : Nat}"
+  c:
+    - "y : Nat, w : Nat → Bool |- ((λx : Nat.λv : Nat → Bool.vx)y)(λz : Nat.wz) : Bool"
+    - "(λz : Nat.wz) : Bool":
+      - "y : Nat, w : Nat → Bool |- λz : Nat.wz : Nat → Bool"
+      - "y : Nat, w : Nat → Bool, z : Nat |- wz : Bool"
+      - "w : Nat → Bool":
+        - "y : Nat, w : Nat → Bool, z : Nat ` w : Nat → Bool"
+        - "w : Nat → Bool ∈ {y : Nat, w : Nat → Bool, z : Nat}"
+      - "z : Nat":
+        - "y : Nat, w : Nat → Bool z : Nat |- z : Nat"
+        - "z : Nat ∈ {y : Nat, w : Nat → Bool z : Nat }"
+    - "(λx : Nat.λv : Nat → Bool.vx)y : (Nat → Bool) → Bool":
+      - "y : Nat, w : Nat → Bool |- λx : Nat.λv : Nat → Bool.vx)y"
+      - "y : Nat":
+        - "y: Nat, w : Nat → Bool |- y : Nat"
+        - "y : Nat ∈ {y : Nat, w : Nat → Bool}"
+      - "y : Nat, w : Nat → Bool |- λx : Nat.λv : Nat → Bool.vx : Nat → ((Nat → Bool) → Bool)"
+      - "y : Nat, w : Nat → Bool, x: Nat |- λv : Nat → Bool.vx : Nat → ((Nat → Bool) → Bool)"
+      - "y : Nat, w : Nat → Bool, x: Nat, v: Nat → Bool |- vx : Bool)"
+      - "x : Nat":
+        - "y : Nat, w : Nat → Bool, x : Nat, v : Nat → Bool |- x : Nat"
+        - "x : Nat ∈ {y : Nat, w : Nat → Bool, x : Nat, v : Nat → Bool}"
+      - "v : Nat → Bool":
+        - "y : Nat, w : Nat → Bool, x : Nat, v : Nat → Bool ` v : Nat → Bool"
+        - "v : Nat → Bool ∈ {y : Nat, w : Nat → Bool, x : Nat, v : Nat → Bool}"
