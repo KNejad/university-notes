@@ -7,6 +7,6 @@ Linear-bounded automata:
     Γ: Tape alphabet which is Σ ∪ { →, ←, ␣ }
     δ: Transition function
     q0: Initial state
-    F: Final state
+    F: Final states
   Final state difference from PDAs: As soon as an LBA reaches a final state it stops
   Non-contracting: A grammar where all production rules have a smaller LHS than RHS
