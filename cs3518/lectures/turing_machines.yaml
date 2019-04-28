@@ -10,3 +10,4 @@ Tape: The tape of a Turing machine is infinite, however it does have a start. If
 Representation of current state: "<tape_element>*<current_state><tape_element>*". The tape position will be the character to the right of <current_state>
 Turing recognisable language: Any language which can be recognised by a Turing machine but will not necessarily terminate (can enter a loop)
 Turing decidable language: Any language where all inputs will cause a Turing machine to accept or reject (not enter a loop)
+Church-Turing thesis: All algorithmically solvable problems can be solved by a Turing machine

@@ -1,0 +1,8 @@
+Simply typed lambda calculus: Introduces types to lambda calculus
+Context: Set variables to certain types (e.g. "Γ |- M : τ" sets the term M to type τ in context Γ)
+Well typed: A term is well typed within a context if it is derivable from that context
+Type safety:
+  Progress: A well-typed term will not get stuck
+  Preservation: If a well-typed term takes a step of evaluation, then the resulting term is also well typed
+Strongly normalizing: A term which can be converted to its normal form in a finite number of steps
+Church-Rosser theorem: The order of reductions does not matter. All different reductions will end in the same lambda term (confluance)
