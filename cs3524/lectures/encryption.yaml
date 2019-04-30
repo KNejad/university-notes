@@ -37,7 +37,7 @@ Digital Encryption Standard: Uses similar processes to Feistel network but also 
 Relative prime: Two integers are relatively prime, if their greatest common divisor is 1
 RSA:
   Description: Asymmetric encryption algorithm
-  Private key: Two large prime numbers
+  Private key: d = (1 mod (prime_a-1)(prime_b-1))/e
   Public key: The product of the two primes (n); Also a relative prime number to (prime_a-1)(prime_b-1) (e)
   Encryption: M^e mod n
   Decryption: C^d mod n
