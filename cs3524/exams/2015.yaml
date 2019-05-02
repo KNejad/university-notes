@@ -10,11 +10,11 @@
       No lock exists: [ read lock, write lock, commit lock ]
       Read lock exists: [ read lock, write lock, wait for commit lock ]
       Write lock exists: [ read lock, wait for write lock, no commit lock ]
-      Commit lock exists: [ wait for read lock, wait for write lock, wait for commit lock]
+      Commit lock exists: [ wait for read lock, wait for write lock, no commit lock]
   c:
     i: In 2PC an organiser server asks the participants if they can commit to a certain transaction. The servers will then have nested transactions which they need to check if they can commit to. If the nested transactions can commit (or if the server decides those transactions are not important) it will reply to the organiser that it can commit. At which point if all participants have committed, the organiser can tell them to go ahead with the transactions. The organiser can also abort the transaction and all participants will abort and notify the sub-transactions to also abort
     ii: If both the organiser and a participant crash at the same time the living participants must wait for the participant to recover. This is because the organiser may have notified the dead participant to go ahead with the transaction. So when it revives it will do so. The remaining participants thus can't abort safely and keep the system consistent as required by the ACID principles
-  d: We must calculate how likely each server is to fail and what level of fault tolerance we are content with. For example if each server has a 20% failure rate for a given day and we want 99% up time, we would need 3 servers since 0.2 * 0.2 * 0.2 = 0.008 which is less than 1% down time
+  d: We need at least 5 servers in order to protect against a Byzantine failure like this. This is because we need a majority of servers to be functioning correctly in order to be able to "outvote" the failing servers. For example if two servers return an incorrect result the 3 remaining servers can outvote them and establish a correct result
 2:
   a:
     i: Java provides a way to enforce mutual exclusion in any part of a Java program through the use of a Monitor
