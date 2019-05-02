@@ -56,7 +56,3 @@
       - Each party applies the function "2^p mod 5" where "p" is their private number. This results in 3 and 1.
       - Each participant sends those numbers publicly to the other.
       - Each participant applies the function "r^p mod 5" where "r" is the received number. This results in 3^3 mod 5 = 3 and  3^1 mod 5 = 3 which is the same number which only the two of them have
-  d: A digital signature is a hash of a message encrypted with a users private key which is sent along with the message to verify the authenticity of it. Anybody can then decrypt it with the senders public key which would then confirm it was encrypted with their private key. After this the receiver simply hashes the message received and compares the 2 hashes. If they are the same it must have been sent by the owner of the private key with which it was encrypted
-  e: A message digest is simply a one way function applied to a message which generates a constant size string as the output which would be completely different if even a single character of the original message changed
-  f: Question is missing from exam paper
-  g: Alice can make a request to KDC to speak to Bob. The KDC will reply with a ticket which can only be decrypted by Bob as well as a key to encrypt the nonce with. Alice will then send both to Bob. Since only Bob can decrypt the ticket which contains the key for them to communicate, the reply to the message must have originated from him if it contained the nonce which was generated earlier by the KDC
