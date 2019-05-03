@@ -7,3 +7,5 @@ Thread methods:
   notify(): Notify other threads that this one has exited the critical section
 Priority: Threads have an integer priority value which lets the VM know how to schedule the threads
 Monitor: The Java monitor coordinates and synchronises thread activity
+Deadlocks:
+  _file: ../../cs3026/lectures/synchronisation.yaml
