@@ -1,0 +1,8 @@
+RS-232 transceiver: A physical 9-pin tranceiver which uses the EIA-232 protocol
+Voltage levels:
+  Low: +12 volts
+  High: -12 volts
+Range:
+  - 15 meters at 20kbps
+  - 150 meters at 9600 bps
+Detecting signals: The signal can be detected even if not at ±12 volts. For a 1 it can between -3V and -15V. For 0 it can be between 3V and 15V

@@ -1,0 +1,11 @@
+Universal asynchronous receiver transmitter: A hardware device for asynchronous serial communication with configurable data transmission formats
+Transmission modes:
+  - Simplex
+  - Half duplex
+  - Full duplex
+Format:
+  - Idle signal (high)
+  - Start bit (low)
+  - Data
+  - Optional parity bit
+  - One or more stop bits (high)
