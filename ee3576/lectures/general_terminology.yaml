@@ -1,0 +1,9 @@
+Baud: Each signal change on the cable (low or high)
+Differential transmission: 2 twisted cables which send opposite signals. Any noise will affect both cables and will cancel each other out
+Hamming distance: The minimum number of random errors which must occur in order to go undetected by the check sum
+Parity bit: A final bit used to ensure the integrity of a message. This is done by setting the parity bit to a value which would make there be an even number of 0s
+Receiver hysteresis: When reading a voltage input as 0 or 1, have a no-go zone which is read as neither high nor low
+Stub: A diversion of the main cable. If reflected then this can cause 2 signals which interfere
+Termination: A plug at the end of a cable with a resistor connecting to ground in order to reduce noise by preventing the signal from reflecting
+Variac: Variable autotransformer. 2 coils which depending on how much they overlap more power is passed through
+Watchdog: An ISR which keeps track of the program and restarts it if it fails

@@ -2,6 +2,8 @@ Characteristics:
   - Bus for communication
   - Differential twisted pair
   - Clock synchronises itself by the changes in signal being sent
+  - Signal of 1 sets both cables to 2.5 volts
+  - Signal of 0 sets 1 cable to 1.5 volts and the other to 3.5 volts
 Bit stuffing: To prevent the clock from losing accuracy, after every 5 bits sent with the same value, one bit of the opposite value is added
 Data transmission:
   - All devices can initiate communication with other devices arbitrarily
@@ -9,5 +11,14 @@ Data transmission:
   - If a device receives a signal of 0 when it sent a signal of 1, then there are other devices sending data so it "drops out"
   - Eventually only 1 device will remain which is sending data
 Checksum calculation: To calculate the checksum, the modulo operation is used on the data
+Frame format:
+  - Start of Frame (1b) = 0
+  - Message ID (11b for CAN 2.0A)
+  - Control fields (3b)
+  - Data Length (4b)
+  - Data (0-64b)
+  - CRC (15b)
+  - ACK fields (3b)
+  - End of Frame Delimiter (7b)
 CAN Formats: By changing the start code we can signal to newer devices to use a different format.
 CAN Flexible data: In CAN-FD format more data to be sent in a single frame
