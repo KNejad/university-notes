@@ -1,3 +1,5 @@
 Frame:
   Description: A single message starting with "$GP" and ending with "*"
+  Interface: RS-232 up to 15 meters
   Format: "$GP[message_type][data]*"
+  Longitudinal parity: Cumulative XOR of all bytes from "$" to the end of the frame

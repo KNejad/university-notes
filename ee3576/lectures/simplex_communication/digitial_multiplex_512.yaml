@@ -2,9 +2,10 @@ Cable used: Differential twisted pair
 Frames:
   Description: A DMX frame is a collection of slots starting with a "start" slot
   Slots: There are 512 slots in a frame
+  Rate: 44 frames per second
 Format:
   - Break: A series of 0s that exceeds the size of a character (92μS long)
-  - Mark after break
+  - Mark after break (12μs)
   - Start slot
   - 512 data slots (44μS each)
 DMX receiver steps:
