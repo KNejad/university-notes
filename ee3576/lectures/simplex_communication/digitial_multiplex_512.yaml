@@ -1,4 +1,11 @@
 Cable used: Differential twisted pair
+Slot:
+  Description: The set of bauds that carry a byte of data
+  Format:
+    - Arbitrary idle gap (mark high)
+    - 1 start baud: Signals the start of a new message (low)
+    - Data: Least significant bit first
+    - 2 stop bauds: Prevents mistiming which can cause the receiver to read a byte from the next message (high)
 Frames:
   Description: A DMX frame is a collection of slots starting with a "start" slot
   Slots: There are 512 slots in a frame

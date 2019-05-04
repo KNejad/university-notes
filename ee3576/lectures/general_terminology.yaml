@@ -7,3 +7,4 @@ Stub: A diversion of the main cable. If reflected then this can cause 2 signals 
 Termination: A plug at the end of a cable with a resistor connecting to ground in order to reduce noise by preventing the signal from reflecting
 Variac: Variable autotransformer. 2 coils which depending on how much they overlap more power is passed through
 Watchdog: An ISR which keeps track of the program and restarts it if it fails
+Ground loops: when two points of a circuit both intended to be at ground reference potential have a potential between them 

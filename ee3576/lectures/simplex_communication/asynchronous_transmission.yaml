@@ -1,10 +1,3 @@
-Slot:
-  Description: The set of bauds that carry a byte of data
-  Format:
-    - Arbitrary idle gap (mark high)
-    - 1 start baud: Signals the start of a new message (low)
-    - Data: Least significant bit first
-    - 2 stop bauds: Prevents mistiming between the receiver and transmitter which can cause the receiver to read a byte from the next message (high)
 Benefits:
   - Common standard
   - Only needs two wires

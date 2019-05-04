@@ -1,0 +1,52 @@
+1:
+  a: --______--
+  b:
+    Differences: Asynchronous transmission allows data to be transmitted from multiple devices out of order without strict synchronisation and timing allowing a time delay between each byte. Synchronous transmission on the other hand requires all data to be sent in a specific order one after the other
+    Asynchronous examples: DMX, NMEA
+    Synchronous examples: CAN, USB
+  c: 10/19200 of a second
+  d: The less noise the more harmonics can be taken advantage of and the less voltage is required for the signal to be unaffected. So less noise would result in a higher data rate
+  e: Each device can have two ground levels. One to mains ground for electrical safety and another for the communication circuit
+2:
+  a: A break character is a signal of 0 much longer than a single character. In practice this is usually 92μS long. The break character is used to signify the end of the frame so that the receiver knows to wait for the next frame
+  b: The receiver can lose synchronisation with the clock and read a bit twice or skip a bit resulting in a corrupt message
+  c: By using a check sum it would be able to detect errors in the transmission and discard data. A potential check sum could be a final slot (or multiple slots) containing the sum of all slot values. The receiver would compare the sum it received with the expected sum. If they are different it would discard the slot
+  d: |
+    waiting_for_base_address_b = False
+    base_address_reached = False
+    address = 0
+
+    void run_single_input_byte(input, base_address_a, base_address_b) {
+      if (base_address_reached) {
+        address++
+        read_data_input(input)
+
+        if (address == last_address) {
+          address = 0
+          base_address_reached = False
+        }
+      }
+      if (input == base_address_a) {
+        waiting_for_base_address_b = True
+      }
+      if (waiting_for_base_address_b && input == base_address_b) {
+        base_address_reached = True
+          waiting_for_base_address_b = False
+      }
+
+      if (waiting_for_base_address_b && input != base_address_b) {
+        base_address_reached = False
+      }
+    }
+3:
+  a: Each line would be effected the same way by a noise in the signal. So by reading the difference between the two lines no noise will be present since they will cancel each other out
+  b: Same as the line. 120 ohms and 5 V (I'm pretty sure this is wrong but I can't find how to do it)
+  c: The slew rate is important because the higher the slew rate the more important it is to read the signal at the center of the wave. Thus a line driver with enough accuracy is needed
+  d:
+    - Wireless signals: If there is a clean line of sight between the devices we can use a wireless antenna in order to avoid having to install cables
+    - DMX over Ethernet: By using a pre existing Ethernet cable no more networks will have to be installed
+    - Repeaters: Depending on the number of devices we are controlling, we can add repeaters every 100 or so meters to allow the signal to transfer
+  e: In order for a half duplex circuit to work the devices need a way to determine if there is another device trying to send a signal. In order to do this a bias network is used which will pull the signal up or down to a certain value (0 or 1). Now a device can detect when another device is transmitting on the dominant value. If it detects that it can back out and let the other device continue communicating
+4:
+  a: It sets all devices in a range to mute then un-mutes half and sends a signal to them. If a single reply is received then it knows the ID of that device. If no devices reply then there are no devices in that range. If there are multiple replies there will be noise and it can split the range in half and repeat the process for each half of the range until there is only 1 reply left from a given range. This way it will learn about all the devices in the network assuming there are no errors or missed commands sent to the devices
+  b: New devices could send a disruptive signal for a short period of time. Other devices on the network would then know to go silent for a short period and the master controller will listen out for the new ID which the new device will send
