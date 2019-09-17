@@ -1,0 +1,20 @@
+1: A single neuron will do the trick here with a bias of 0.7 and a weight of -0.3
+2:
+  a: 0.1*0.5 + 0.5*0.2 + 0.3*0.1 = 0.18 which is below 0.5 so the neuron does not fire
+  b: (1 + Math::E**-0.18)**-1 = 0.5448788923735801
+3: Neither. The first will have a weight of 0 and the second will be 1. Both of which are below 1.5
+4:
+  a: 1.6 so it will fire
+  b: If the inputs dropped a little it would not fire at all causing a drastic change. By using a sigmoid function it will still fire but to a lesser extent.
+5:
+  a: A single neuron can only classify a linear function (which can be represented with a single straight line). The XOR function divides the output space into 2 areas which cannot be represented like this.
+  b: |
+    def xor(a, b)
+      n1_1 =  a*0.5 + b*0.5 >= 1 ? 1 : 0
+      n1_2 = a*1 + b*0 >= 1 ? 1 : 0
+      n1_3 = a*0 + b*1 >= 1 ? 1 : 0
+
+      n2 = n1_1*-10 + n1_2*1 + n1_3*1 >= 1 ? 1 : 0
+
+      return n2
+    end
