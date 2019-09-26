@@ -1,0 +1,40 @@
+1:
+  Explanation: |
+    Each character is converted to the character k spaces ahead.
+    If however there aren't k spaces ahead it is encrypted as the character at the remaining of k places ahead.
+    This can be expressed in mathematics using the modulo operation
+  Encryption formula: N + k % 25
+  Decryption formula: (25 + N - k) % 25
+2:
+  Original: TEBK FKQE BZLR OPBL CERJ XKBS BKQP
+  Shift size: 3
+  Output: WHEN IN THE COURSE OF HUMAN EVENTS
+  Explanation: The shift size was discovered by looking at the most commonly repeating character and assuming that was an  'E'
+3:
+  Original: ODQSOCL OW GIU BOEE QRROHOCS QV GIUR KIA QF Q DQC QSLR WIR ICL IW CQFQF EIYQE YIDJUVLR FGFVLDF GIU SLV OCVI GIUR IWWOYL IC VXQV DICPQG DIRCOCS VI WOCP VXL JXICLF ROCSOCS LHLRG YQEELR OF Q POFVRQUSXV YICWU FLP CQFQ BIRMLR QCP LHLRG YQEELR QFFURLF GIU VXQV XOF IR XLR WOEL IR QYYIUCVOCS RLYIRP IR RLFLQRYX JRIK LYV LHLRG ICL IW BXOYX OF DOFFOCS WRID VXL YIDJUVLR FGFVLD OF QAFIEUVLEG HOVQE
+  Keys:
+    Q: a
+    E: l
+    V: t
+    X: h
+    H: v
+    L: e
+    R: r
+    I: o
+    G: y
+    U: u
+    F: s
+    O: i
+    C: n
+    A: b
+    D: m
+    S: g
+    W: f
+    Y: c
+    J: p
+    B: w
+    M: k
+    P: d
+    K: j
+  Decryption: imagine if you will arriving at your job as a man ager for one of nasas local computer systems you get into your office on that monday morning to find the phones ringing every caller is a distraught confu sed nasa worker and every caller assures you that his or her file or accounting record or research proj ect every one of which is missing from the computer system is absolutely vital
+  How it was solved: Just a lot of trial and error until it worked
