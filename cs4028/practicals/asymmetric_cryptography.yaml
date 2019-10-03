@@ -1,0 +1,11 @@
+1: Ensuring that only a specific user can decrypt messages and verifying the integrity and authenticity of messages
+2: It is not as computationally efficient as symmetric cryptography
+3:
+  e: A prime number
+  P: A large prime number
+  q: A large prime number
+  φ(n): (p-1)(q-1)
+  d: (1 % φ(n))/e
+  Encryption: message^e % n
+  Decryption: cipher_text^d % n
+4: Because d is calculated by dividing with e. This means that d will be larger with a smaller e. It could be an advantage if the server encrypts a lot of data and clients decrypt. This is because a client can handle decrypting a single message with a large e
