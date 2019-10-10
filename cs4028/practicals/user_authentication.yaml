@@ -1,0 +1,47 @@
+1:
+  1:
+    - Something you have (e.g. a key)
+    - Something you know (e.g. password)
+    - Something you are (e.g. iris scan)
+  2:
+    a: false
+    b: true
+    c: false
+    d: true
+    e: false
+    f: true
+  3: If you authenticate all the users and log their activity you can make sure nobody attempts to do things they are not allowed to do or access info which they shouldn't
+  4: Session Timeout
+  5: We were sent an email to our private address with a sign up page where we could select a password
+  6: Users started writing down their passwords in plain text in order to remember them, people would forget their passwords more often and people would use very similar passwords for each service
+2:
+  1: No
+  2:
+    a:
+      6: 128^6
+      8: 128^8
+      10: 128^10
+      12: 128^12
+    b:
+      How many easily accessible characters are there?: 26 + 26 + 10 + 30 = 92
+      How many passwords of length 8-12 with those characters?: 92^8 + 92^8 + 92^10 + 92^11 + 92^12
+    c: No
+  3: Real users wouldn't pick random words. They could pick something like "potato apple orange" which are three related and common words instead of "agriculture excavate heliocentric"
+  4:
+    a:
+      pros:
+        - Users only need to remember one password
+        - Users are less likely to reuse similar passwords
+        - Users wont accidentally enter their password on the wrong service or let it leak
+      cons:
+        - If the single password leaks, hackers will have access to all services
+        - It is harder to implement
+    b:
+      pros:
+        - Easier to implement
+      cons:
+        - More tedious
+        - Users are more likely to let their computer remember their passwords
+  5: Default passwords are easier to implement and ship but custom passwords mean that an attacker wont know the password of a new unit
+  6: When you use HTTPS this assumption can hold otherwise it shouldn't
+  7: Because hashes exist and that can prevent leaks
