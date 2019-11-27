@@ -1,9 +1,0 @@
-Description: AutoML applied to deep learning
-AutoML: Automatic Machine Learning is a system which finds the best machine learning techniques to solve a problem
-Main NAS paradigms:
-  - Evolutionary / Population-based: Each iteration the best performing candidate models are cloned with minor changes
-  - Reinforcement Learning: There is a controller which 'rewards' the machine learning algorithms when they does better
-  - Surrogate function learning: Learn how good certain models are in order to make better decisions when generating the models
-  - Gradient-based learning: Similar to basic gradient decent algorithms
-  - Network morphism: Transforms networks without altering their outputs
-  - One-shot training: Train a single giant network and sample certain outputs to find one with the best output
