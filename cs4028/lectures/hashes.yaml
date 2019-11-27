@@ -1,0 +1,14 @@
+Pre-image: The source of a hash function
+Pre-image resistant: It's hard to find what input produced a certain hash
+2nd pre-image resistant: It's hard to find another input to produce the same hash given a value and its hash
+Collision resistant: It should be hard to find any two inputs which produce the same hash
+One way hash functions:
+  Properties:
+    - Pre-image resistant
+    - Fast to compute
+  Applications:
+    - Integrity check
+    - Authentication
+Avalanche effect: A small change in the input should produce a hash which is on average 50% different than the original hash
+Iterated hash functions: Split the input and hash each block along with the output of the previous blocks hash
+Keyed hash function: A hash function which also requires a secret key which is concatenated to the hash

@@ -1,0 +1,25 @@
+Cipher: An algorithm combined with a key to encrypt data
+Block cipher:
+  Description: Encrypt block by block
+  Modern block ciphers:
+    - DES
+    - AES
+    - IDEA
+Stream cipher: Encrypt as a stream
+Frequency attack: Decipher an encrypted message by analysing which characters appear most often in the cipher text
+Ciphers:
+  - Mono alphabetic substitution cipher
+  - Polyalphabetic stream cipher
+Shannon's principles of confusion and diffusion:
+  Confusion: The relationship between key and ciphertext should be complex
+  Diffusion: The relationship between plaintext and ciphertext should be complex
+One time pad: Use a key which is at least as long as the message so there is no repetitions. This way no frequency attacks can happen
+Trapdoor function: A function for which the inverse can be computing only with a secret key
+Discrete logarithm problem: A computationally hard problem which is the foundation of many encryptions. Namely, it is hard to compute x given g^x
+Diffie-Hellman Key Exchange:
+  Description: A method for two parties to securely exchange keys
+  Steps:
+    - Both parties agree on a public large prime number and small integer (p, g)
+    - Each party generates a large secret integer (a,b)
+    - Each party performs a calculation with the above data. The result is the public key (A = g^a mod p) (same for B)
+    - Using the public key and the secret integer, each party can calculate the same private key (k = A^b mod p)

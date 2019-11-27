@@ -1,0 +1,5 @@
+Threat sources:
+  - Adversaries: Attackers
+  - Misaligned non-adversaries: Not intending to cause harm, but expose risk
+  - Accidents: Simple mistakes which can be combated with reliability engineering
+Advanced Persistent Threats: Threats which develop new exploits and use the state-of-the-art disclosed by others

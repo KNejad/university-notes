@@ -1,0 +1,6 @@
+Identity federation: Using credentials from another organisation to gain access (e.g. sign in with Google feature)
+Discretionary access control: Define an owner for each resource. Control is at the discretion of the owner
+Mandatory access control: A system wide policy grants access
+Implementations of access control:
+  - Capabilities: For each subject, keep a list of its access rights
+  - Access control lists: For each object, keep a list of the access rights to it
