@@ -1,0 +1,24 @@
+IP layers:
+  - Application
+  - Transport
+  - Internet
+  - Link
+  - Physical
+IPSec:
+  Transport mode: Information inside the packet is encrypted
+  Tunnel mode: The entire packet is encrypted and the firewall can decrypt it
+Firewall:
+  Ingress filtering: Control what traffic enters
+  Egress filtering: Control what traffic leaves
+Permissive policies: Everything which isn't forbidden is permitted
+Restrictive policies: Everything which isn't permitted is forbidden
+Screening router: Determines whether a packet should be forwarded to their destination
+Packet filters: Filters packets based on source/destination IP address and port
+Stateful packet filters: Can also keep history and route more intelligently
+Proxies: Reroutes traffic
+Bastions: A system which is on the outside of a firewall and protects against attacks
+Misuse detection: Looks for common attack signatures
+Intrusion detection systems:
+  - Host based
+  - Network based
+Intrusion prevention systems: Drops connections which it deems as insecure

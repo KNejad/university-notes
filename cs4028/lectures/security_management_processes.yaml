@@ -1,0 +1,31 @@
+Coordination required for good security:
+  - People
+  - Processes
+  - Technology
+Countermeasures:
+  - Physical
+  - Technical
+  - Operations
+Penetration testing:
+  Blue team: Tries to defend a system
+  Red team: Tries to break into a system
+Impact of attacks:
+  - Functional
+  - Informational breach
+  - Recovery
+National institute of standards technology types of plans:
+  - Business continuity plan
+  - Disaster recovery plan
+  - Cyber incident response plan
+Downtime measures:
+  - Maximum tolerable downtime
+  - Recovery time objective
+Backup strategies:
+  - Full: A single complete backup
+  - Incremental: Periodically adds changes to the backup
+  - Differential: Sometimes do a full backup and in between make changes
+Alternative sites:
+  - Cold sites
+  - Warm sites
+  - Hot sites
+Forensic investigations: An investigation for legal purposes
