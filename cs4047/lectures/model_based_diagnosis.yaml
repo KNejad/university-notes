@@ -1,0 +1,25 @@
+Diagnostic tasks:
+  - Fault detection
+  - Fault isolation
+  - Fault identification
+  - Fault explanation
+  - Fault remediation
+Diagnostic strategies:
+  - Iterative search
+  - Dependency recording
+Assumption-based truth maintenance system:
+  Description: A system where truths are known about the world and assumptions are made in order to deduce more possible facts
+  Node:
+    Attributes:
+      - Premises: Facts about the world
+      - Assumptions: We make assumptions about the world so we can infer more information
+      - Justifications: Justifications about the conclusions we have just made
+  Error diagnosis steps:
+    - Given that something is wrong, create a set of what things cannot possibly all be working together
+    - From that you can work out what sets of items could possibly be broken
+DUNAMIS:
+  Steps:
+    - Assumes everything is working
+    - When something is broken it divides into groups of what must be working for a certain component to function as well as  the groups of things which could be broken for a certain component to not work
+    - Work out what things must be broken by removing things from the blame set (if they are things on the set which can work)
+    - What remains is likely what's causing the problem

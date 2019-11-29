@@ -1,0 +1,12 @@
+Genotype operations:
+  - Recombination:
+      Description: Combine 2 parent genotypes into a new offspring
+      Methods of recombination:
+        1-point crossover: Choose a random point and take the genes from parent 'a' up to that point and the genes for parent 'b' from after that point
+        Uniform crossover: Randomly pick each gene point from a parent
+        Order 1 crossover: Pick a part from the first parent and then continue filling in the gaps from the next point in the second parents genes which aren't yet in the child
+  - Mutation: Randomly alter the genes
+Selection schemes:
+  - Stochastic sampling: Pick N items with likeliness based on their performance
+  - Stochastic universal sampling: Similar to Stochastic sampling. Slightly different selection process
+  - Tournament selection: Compare 2 random samples and pick the best

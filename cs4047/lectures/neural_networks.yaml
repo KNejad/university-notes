@@ -1,0 +1,32 @@
+Biological neural networks:
+  Nerve cells: Basic component of a neural network
+  Synapses: Sends signals across neurons
+Artificial neural network elements:
+  - Inputs
+  - Weights
+  - Bias
+  - Activation function
+  - Output
+Gradient descent:
+  Description: A method of minimizing error in a network and finding a local minima
+  Steps:
+    - Define an objective error function
+    - Pick initial set of weights randomly
+    - Evaluate  errors
+    - Update all the weights as w_new = w_old - learning_rate * gradient_vector
+Benefits of each layer:
+  1st layer: Draws linear boundaries
+  2nd layer: Combines the boundaries
+  3rd layer: Can generate arbitrarily complex boundary shapes
+Backpropagation:
+  Description: Allows updating the weights for neurons on each layer
+  Credit assignment problem: How do we blame/credit certain neurons for the result we get
+  Phases:
+    Forward pass:
+      Description: Compute the output for all the nodes
+    Backward pass:
+      Description: Compute the error and propagate the error backwards through the network
+      Steps:
+        - Calculate the difference between the real result and expected result
+        - Multiply that with the result given by each output of the previous layer (this is the delta)
+        - Update each weight as w_i = learning_rate * delta

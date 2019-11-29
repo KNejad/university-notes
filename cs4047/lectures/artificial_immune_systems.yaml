@@ -1,0 +1,19 @@
+Applications:
+  - Clustering
+  - Anomaly detection
+  - Computer security
+  - Optimisation
+Affinity:
+  Description: Essentially a distance measure
+  Types:
+    - Hamming: Count the number of changes required (e.g. "coal" is 1 distance from "goal")
+    - Euclidean
+    - Manhattan
+Algorithms:
+  - Bone marrow models
+  - Clonal selection:
+    Steps:
+      - Create a random population
+      - For each pattern
+  - Positive selection
+  - Negative selection

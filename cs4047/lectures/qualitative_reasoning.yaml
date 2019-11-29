@@ -1,0 +1,34 @@
+Attributes:
+  - Symbolic, with no numbers
+  - Structural though incomplete
+Problems with rule based reasoning:
+  - Reasoning from first principals
+  - Dangers with nearest approximation
+Model: A set of knowledges which are fed into an inference engine in order to make predictions
+Scales of measurement:
+  - Nominal
+  - Ordinal
+  - Interval
+  - Ratio
+Components:
+  - Ontology
+  - Variables
+  - Quantity space: Values variables take
+  - Relations
+Continuous:
+  - No gaps
+  - No jump
+Discontinuous/discrete:
+  - Finite number of gaps
+  - Jumps can occur
+Envisionment:
+  Description: Results of inference
+  Types:
+    - Total: All possible behaviours known for all possible inputs
+    - Complete: All possible behaviours known for a specific inputs
+    - Attainable: All behaviours for a specific initial value and input with a fixed quantity space are known
+    - Partial: All behaviour from a specified initial value and input with landmark generation are known
+  Behaviour: A single path through an environment
+  History: behaviour of a single variable outside of the context of the envisionment
+Intermediate value theorem: States that for a continuous system values moving from positive to negative (and the reverse) must pass through 0
+Cascaded Systems: A system using derivatives to map the rate of flow from one container to another
