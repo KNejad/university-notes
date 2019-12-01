@@ -29,5 +29,5 @@ Backpropagation:
         - Calculate the error between the true output and the expected output as Δ_i (where i is the output number). This is real_output - expected_output
         - Calculate the output from the previous layer as z_i
         - Calculate the error of the previous layer as δ_i. This is the sum of all the Δ from the previous layer multiplied by the weight
-        - For each synapse update its weight to be current_weight + learning_rate * Δ_i * z_i + previous_weight. Do this for the bias weights as well
-        - This can be repeated for each layer, except that instead of using the Δ to calculate the updates the δ from the previous layer will be used
+        - For each synapse update its weight to be current_weight + learning_rate * Δ_i * z_i. Do this for the bias weights as well
+        - This can be repeated for each layer, except that instead of using the Δ to calculate the updates, the δ from the previous layer will be used

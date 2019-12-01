@@ -20,6 +20,6 @@ Assumption-based truth maintenance system:
 DUNAMIS:
   Steps:
     - Assumes everything is working
-    - When something is broken it divides into groups of what must be working for a certain component to function as well as  the groups of things which could be broken for a certain component to not work
+    - When something is broken it divides into groups of what must be working for a certain component to function as well as the groups of things which could be broken for a certain component to not work
     - Work out what things must be broken by removing things from the blame set (if they are things on the set which can work)
     - What remains is likely what's causing the problem
