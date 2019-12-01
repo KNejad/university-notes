@@ -11,7 +11,7 @@ Assumption-based truth maintenance system:
   Description: A system where truths are known about the world and assumptions are made in order to deduce more possible facts
   Node:
     Attributes:
-      - Premises: Facts about the world
+      - Datum: Facts about the world
       - Assumptions: We make assumptions about the world so we can infer more information
       - Justifications: Justifications about the conclusions we have just made
   Error diagnosis steps:

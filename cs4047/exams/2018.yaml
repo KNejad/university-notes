@@ -1,0 +1,28 @@
+1: Removed from course, so won't be on the exams
+2:
+  a:
+    - Fault detection: Detects faults in systems in order to prevent further damage
+    - Fault isolation: Determining exactly where the fault occurred
+    - Fault identification: Determining how big the fault is and how much damage it can cause
+    - Fault explanation: Even if the fault has been detected and identified it could still not be clear to users what went wrong. The purpose of this step is to explain what happened
+    - Fault remediation: After all the above steps it is now possible to fix the fault so that no further damage is caused
+  b:
+    Description: An Assumption-based Truth Maintenance System starts with the facts about a world and by adding assumptions to the system to create new models of the world. The less models the system produces, the better, since it means the system does not need to make as many assumptions
+    Example: If we have a system where P implies Q , we can make an assumption of ¬Q, which would lead to an updated model so that ¬P
+  c:
+    - Create node X as output of M1. <X=6, {{M1}}, {(A=3 & B=2 & M1 => X=6)}}>
+    - Create node Y as output of M2. <Y=6, {{M2}}, {(B=2 & C=3 & M2 => Y=6)}}>
+    - Create node Z as output of M3. <Y=6, {{M2}}, {(D=2 & E=3 & M2 => Z=6)}}>
+    - Create node A1O as output of A1. <A10=12, {{A1}}, {(X=6 & Y=6 & A1 => A10=12)}}>
+    - Create node G as output of A2. <G=12, {{A2}}, {(Y=6 & Z=6 & A2 => G=12)}}>
+    - Create node F as output of A3. <F=18, {{A3}}, {(A1O=12 & X=6 & A3 => F=18)}}>
+    - We have a contradiction since predicted F=18 whilst true F=16
+    - Generate conflict sets, which are sets of components which can't all be working correctly:
+      - [M1, M2, A1, A3]
+      - [M1, M3, A1, A2, A3]
+    - Generate candidate set:
+      - [M1]
+      - [A3]
+      - [A1]
+      - [M2, M3]
+      - [A2, M2]
