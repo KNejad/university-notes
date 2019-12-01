@@ -22,11 +22,12 @@ Backpropagation:
   Description: Allows updating the weights for neurons on each layer
   Credit assignment problem: How do we blame/credit certain neurons for the result we get
   Phases:
-    Forward pass:
-      Description: Compute the output for all the nodes
-    Backward pass:
-      Description: Compute the error and propagate the error backwards through the network
+    Feed-forward: The feed-forward step consists of simply multiplying the inputs to each neuron with their weight, adding a bias and firing the neurons according to their activation functions. This will give the output of the neural network.
+    Back-propagation:
+      Description: In order to train the network, when the output is not as expected a back-propagation will adjust the weights of the neural network which will hopefully, result in the neural network producing more accurate results.
       Steps:
-        - Calculate the difference between the real result and expected result
-        - Multiply that with the result given by each output of the previous layer (this is the delta)
-        - Update each weight as w_i = learning_rate * delta
+        - Calculate the error between the true output and the expected output as Δ_i (where i is the output number). This is real_output - expected_output
+        - Calculate the output from the previous layer as z_i
+        - Calculate the error of the previous layer as δ_i. This is the sum of all the Δ from the previous layer multiplied by the weight
+        - For each synapse update its weight to be current_weight + learning_rate * Δ_i * z_i + previous_weight. Do this for the bias weights as well
+        - This can be repeated for each layer, except that instead of using the Δ to calculate the updates the δ from the previous layer will be used

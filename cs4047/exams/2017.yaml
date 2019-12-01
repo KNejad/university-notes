@@ -1,0 +1,61 @@
+1:
+  a: Both systems are general optimisation techniques which optimise on a number of dimensions. They are both also well suited for parallelisation due to the fact that they each have many individual components which can be computed independently. Genetic Algorithms, have a population where a subset of the individuals die out each generation and mutations can happen either by combining 2 parents or randomly. Particle Swarm Optimisation on the other hand, has particles of the swarm which move through the solution space over time following the best known solution
+  b: A geographical neighbourhood for a particle will be all the other particles within a certain distance of it. A social neighbourhood on the other hand can be any kind of neighbourhood where different particles can have different neighbours. For example, in a ring neighbourhood each particle will have 2 other particles as neighbours regardless of how far away they are in the search space
+  c:
+    i:
+      - In this case, particles will not follow the other members of the neighbourhood even if they have a better solution. The particles will not move since the first location they are at will be their best historical location so they will stay at that space
+      - In this case, particles will always be moving towards the neighbourhood best solution, without any tendency to return to their own prior best found solution. This will cause more exploration but take longer to converge on an optimal value
+      - The particles will not move at all under any circumstances
+    ii: Since multiple particles can move independently of each other (assuming they are not in the same neighbourhood), 2 different particles can find 2 different optimal solutions. In order to encourage this, we will want the value of the personal best (c1) to be higher than the neighbourhood best (c2). This way the particles will be more likely to explore their own regions more, rather than quickly converge to the same neighbourhood
+    iii:
+      A:
+        Swap sequence: In problems like TSP, the solutions are represented as a list of locations to visit. The swap sequence is a set of swaps of the elements which are needed to get from one state to another
+        Basic swap sequence:
+          Description: The number of swaps needed to swap from the personal best to the global best solution found so far
+          Calculating: For each element, swap it with the element which should be in that elements index
+      B: SO(1,5), SO(2,5), SO(3,4) SO(4,6)
+2:
+  a: Artificial Neural Networks take inspiration from how real brains work. Real brains have neurons and synapses which send signals to each other (fire) causing a chain reaction in order for certain neurons to fire. ANNs follow a similar process. The reason neural networks were generated was to create a system which can solve a large number of different problems, like classification, image recognition, time series forecasting, etc.
+  b:
+    i:
+      Input weights: [1,1]
+      Bias: 1
+      Activation function: >= 3
+    ii: An XOR gate cannot be linearly separated. That is to say, that if we map the x and y variables on a 2d graph, there is no single line which can be drawn to separate the true and the false components. For this 2 layers are needed
+  c:
+    Network description: We will create a densely connected network where all activation functions are simply >= 2
+    Layers:
+      1:
+        Neurons:
+          1:
+            Weights: { bias: 0, input_1: 1, input_2: 1 }
+          2:
+            Weights: { bias: 1, input_1: 1, input_2: 1 }
+      2:
+        Neurons:
+          1:
+            Weights: { bias: 1, gate_1_output: -1, gate_2_output: 1 }
+  d:
+    i: if a1 + a2 >= 5 then true else false
+    ii: Just a single neuron since the solution is linearly separable
+    iii:
+      1:
+        Old values: { a0: 1, w0: 1.5, w1: 0, w2: −1, α: 0.1 }
+        "Sign(a0 * w0 + a1 * w1 + a2 * w2)": -1
+        Error: 2
+        New valus: { a0: 1, w0: 1.5 + 0.1 * 2 * 1 * 1 = 1.3, w1: 0 + 0.1 * 2 * 1 * 2 = 0.4, w2: -1 + 0.1 * 2 * 1 * 3 = -0.5  }
+      2:
+        Old values: { a0: 1, w0: 1.3, w1: 0.4, w2: −0.5, α: 0.1 }
+        "Sign(a0 * w0 + a1 * w1 + a2 * w2)": -1
+        Error: 2
+        New valus: { a0: 1, w0: 1.3 + 0.1 * 2 * 1 * 1 = 1.5, w1: 0.4 + 0.1 * 2 * 1 * 1 = 0.6, w2: -0.5 + 0.1 * 2 * 1 * 3 = 0 }
+  e:
+    Feed-forward: The feed-forward step consists of simply multiplying the inputs to each neuron with their weight, adding a bias and firing the neurons according to their activation functions. This will give the output of the neural network.
+    Back-propagation:
+      Description: In order to train the network, when the output is not as expected a back-propagation will adjust the weights of the neural network which will hopefully, result in the neural network producing more accurate results.
+      Steps:
+        - Calculate the error between the true output and the expected output as Δ_i (where i is the output number). This is real_output - expected_output
+        - Calculate the output from the previous layer as z_i
+        - Calculate the error of the previous layer as δ_i. This is the sum of all the Δ from the previous layer multiplied by the weight
+        - For each synapse update its weight to be current_weight + learning_rate * Δ_i * z_i + previous_weight. Do this for the bias weights as well
+        - This can be repeated for each layer, except that instead of using the Δ to calculate the updates the δ from the previous layer will be used

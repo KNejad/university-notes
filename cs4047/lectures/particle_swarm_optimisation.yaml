@@ -1,7 +1,7 @@
 Neighbourhood strategies:
   - Geographical: Neighbours are all in the same area
   - Social: Neighbours are all determined from the beginning and they stay in a single neighbourhood
-Swap sequence: In problems like TSP, the solutions are represented as a list of locations to visit. The swap sequence determines which 2 elements will swap location
+Swap sequence: In problems like TSP, the solutions are represented as a list of locations to visit. The swap sequence is a set of swaps of the elements which are needed to get from one state to another
 Basic swap sequence:
   Description: The number of swaps needed to swap from the personal best to the global best solution found so far
   Calculating: For each element, swap it with the element which should be in that elements index
