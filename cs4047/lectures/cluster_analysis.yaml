@@ -15,13 +15,6 @@ Algorithms:
           Form K clusters by assigning all points to the closest centroid
           Recompute the centroid of each cluster
         until The centroids don't change
-      Weaknesses:
-        - Must know the number of clusters before hand
-        - Bad selection of initial clusters can lead to all clusters ending up in the same place, or empty clusters
-        - All clusters will be globular
-        - Will fail if clusters have different sizes
-        - Will fail if clusters have varying density
-        - Can be sensitive to outliers
       Variants:
         - K-means++: Similar to K-means but select initial points which are far away from each other (with probability of selecting each point relative to the distance to other clusters)
         - Bisecting K-means: Creates partitional clusters by dividing existing clusters
@@ -34,25 +27,23 @@ Algorithms:
         - Minimum point distances
         - Maximum point distances
         - Group average
-        - Wards Method: Cluster based on which join of clusters will result in the lowest sum of squares error increase
-    - Density-based:
-        Methods:
-          Density-based spatial clustering of applications with noise:
-            Point types:
-              - Core: Any point which has more than a certain number of points in a given radius
-              - Border: In the neighbourhood of a core point
-              - Noise: Any point which isn't a noise or a core point
-            Steps:
-              - Eliminate all noise points
-              - For each core point, if it doesn't already have a label, give it and all its neighbouring points a label
-
+        - Wards Method: Merge based on which join of clusters will result in the lowest sum of squares error increase between members within a cluster
+  - Density-based spatial clustering of applications with noise:
+      Point types:
+        - Core: Any point which has more than a certain number of points in a given radius
+        - Border: In the neighbourhood of a core point
+        - Noise: Any point which isn't a noise or a core point
+      Steps:
+        - Eliminate all noise points
+        - For each core point, if it doesn't already have a label, give it and all its neighbouring points a label, repeat for all newly labelled points
 Evaluation of clusters:
-  - Eternal index: Check how well the clustering worked based on externally supplied labels
+  - External index: Check how well the clustering worked based on externally supplied labels
   - Internal index:
       Methods:
         - Silhouette coefficient:
-            - Calculate average distance between a selected point and other points in its cluster
-            - Work out the smallest average distance to i from points in all other clusters
-            - s = (b - a)/max(a,b)
+            - Calculate average distance between a selected point and other points in its cluster (a)
+            - Calculate average distance to i from points in all other clusters
+            - Pick the cluster with the smallest average distance (b)
+            - Compute (b - a)/max(a,b)
             - Closer to 0 the better
   - Relative index: Compare against other clustering methods
