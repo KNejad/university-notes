@@ -7,13 +7,17 @@ Affinity:
   Description: Essentially a distance measure
   Types:
     - Hamming: Count the number of changes required (e.g. "coal" is 1 distance from "goal")
-    - Euclidean
-    - Manhattan
+    - Euclidean: The distance between 2 points as the crow flies
+    - Manhattan: The distance between 2 points measured as right angles
+    - R-contiguous bits rule: The maximum number of bits in a row which are different
 Algorithms:
   - Bone marrow models
   - Clonal selection:
-    Steps:
-      - Create a random population
-      - For each pattern
-  - Positive selection
-  - Negative selection
+      Steps:
+        - Create a random population
+        - Repeat many times for each pattern in the data set:
+          - Compare its affinity with each member of the population
+          - Create clones proportional to their effectiveness
+          - Mutate the clones. The more effective clones should mutate more
+          - Kill off some of the weak old members
+  - Negative selection: Create a set of detectors which fail to match strings output by the correctly functioning system. If any ever do match then the system has deviated
