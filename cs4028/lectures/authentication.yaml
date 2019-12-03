@@ -7,7 +7,7 @@ Multi-factor authentication: Using more than one proof but of a different factor
 Time-of-check to time-of-use: The authentication time doesn't have to be at the same time as usage
 Soft authentication: Asking users whether their activity in the past was suspicious, asking them not to do something they aren't allowed to do (without actually preventing them) etcetera
 Mutual authentication: Both the server and the client must authenticate each other
-Non-repudation: When it isn't possible for agents to deny their actions
+Non-repudiation: The signer cannot claim they didn't sign a document
 AAA framework:
   - Authentication
   - Authorization

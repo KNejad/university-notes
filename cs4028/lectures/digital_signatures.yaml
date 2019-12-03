@@ -1,5 +1,4 @@
 Verifiability: The ability for a third party to verify disputes about whether a document was signed, without having to see the private key
-Non-repudiation: The signer cannot claim they didn't sign a document
 Authenticity: Nobody else can pretend to sign a document
 Signature attack types:
   - Existential forgery: Can forge a signature for at least 1 message
@@ -17,6 +16,6 @@ Weak RSA assumption: It is assumed that you cannot brute force signatures
 Properties of a good signature scheme:
   - Authentic
   - Unforgeable
-  - Not reusable
   - Unalterable
+  - Not reusable
   - Non-repudiable

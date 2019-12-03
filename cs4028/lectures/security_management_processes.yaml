@@ -9,10 +9,6 @@ Countermeasures:
 Penetration testing:
   Blue team: Tries to defend a system
   Red team: Tries to break into a system
-Impact of attacks:
-  - Functional
-  - Informational breach
-  - Recovery
 National institute of standards technology types of plans:
   - Business continuity plan
   - Disaster recovery plan
