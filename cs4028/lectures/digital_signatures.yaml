@@ -4,7 +4,7 @@ Authenticity: Nobody else can pretend to sign a document
 Signature attack types:
   - Existential forgery: Can forge a signature for at least 1 message
   - Selective forgery: Can sign a signature for a particular message chosen up front
-  - Total break: Can sign any any message
+  - Total break: Can sign any message
 Key-only attack: Only the public key is known
 Message attack:
   Description: Given some information, trying to work out the key
@@ -12,11 +12,11 @@ Message attack:
     - Known-message attack: Has signatures for some messages
     - Chosen message attack: The ability to generate any messages
     - Adaptive chosen message attack: An attacker can produce signatures for any message using enough past signed messages
-RSA Problem: How can you perform private key operations with only the public key Weak RSA assumption: It is assumed that you cannot brute force signatures
+RSA Problem: How can you perform private key operations with only the public key
+Weak RSA assumption: It is assumed that you cannot brute force signatures
 Properties of a good signature scheme:
   - Authentic
   - Unforgeable
   - Not reusable
   - Unalterable
   - Non-repudiable
-Elgamal:

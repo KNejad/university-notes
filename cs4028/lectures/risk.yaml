@@ -9,20 +9,20 @@ Core concepts of information security:
   - Integrity
   - Availability
 Parkerian hexad:
-  Description: A set of elements builiding on the CIA concepts to proposed for 
+  Description: A set of elements builiding on the CIA concepts
   Attributes:
     - Confidentiality
-    - Possession or Control
     - Integrity
-    - Authenticity
     - Availability
+    - Authenticity
+    - Possession or control
     - Utility
 Impact of an attack:
   - Loss of productivity
   - Response required
   - Replacement of equipment
   - Fines
-  - competitive disadvantage
+  - Competitive disadvantage
   - Loss of Reputation
 Calculating risk: The amount we should spend into preventing a problem should be damage_caused*probability
 Components of risk management:

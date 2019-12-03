@@ -5,8 +5,8 @@ PKIX:
   Description: A public key infrastructure used on the internet
   Attribute certificate: Verify privileges of an entity
   Public-key certificate: Contains information validating an entity
-  X.509: The most common  public key infrastructure standard
+  X.509: The most common public key infrastructure standard
 Expiry:
-  Shell model: Only issue certificates valid until the CAs expiration date, do not trust any certificates not within that range
+  Shell model: Only issue certificates valid until the CAs expiration date
   Chain model: The issuers certificate only had to be valid at the time of signing
 Simple public-key infrastructure: Certificates bind keys directly to attributes

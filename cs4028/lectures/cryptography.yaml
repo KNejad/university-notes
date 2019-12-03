@@ -13,8 +13,8 @@ Ciphers:
 Shannon's principles of confusion and diffusion:
   Confusion: The relationship between key and ciphertext should be complex
   Diffusion: The relationship between plaintext and ciphertext should be complex
-One time pad: Use a key which is at least as long as the message so there is no repetitions. This way no frequency attacks can happen
-Trapdoor function: A function for which the inverse can be computing only with a secret key
+One time pad: Use a key which is at least as long as the message so there are no repetitions. This way no frequency attacks can happen
+Trapdoor function: A function for which the inverse can be computed only with a secret key
 Discrete logarithm problem: A computationally hard problem which is the foundation of many encryptions. Namely, it is hard to compute x given g^x
 Diffie-Hellman Key Exchange:
   Description: A method for two parties to securely exchange keys
