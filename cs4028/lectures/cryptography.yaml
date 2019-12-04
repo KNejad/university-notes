@@ -2,17 +2,20 @@ Cipher: An algorithm combined with a key to encrypt data
 Block cipher:
   Description: Encrypt block by block
   Modern block ciphers:
-    - DES
-    - AES
-    - IDEA
-Stream cipher: Encrypt as a stream
-Frequency attack: Decipher an encrypted message by analysing which characters appear most often in the cipher text
+    - Data Encryption Standard
+    - Advanced Encryption Standard
+    - International Data Encryption Algorithm
+Stream cipher: Encrypt each symbol one after the other.
 Ciphers:
-  - Mono alphabetic substitution cipher
-  - Polyalphabetic stream cipher
+  - Substitution cipher: Replace a plaintext symbol with a ciphertext symbol
+  - Monoalhabetic substitution cipher: A character n will always be replaced with a character n'
+  - Transposition: Reorder plaintext symbols within the ciphertext
+  - Polyalphabetic stream cipher: Make the enciphered character depend on the position of the plaintext symbol
+Frequency attack: Decipher an encrypted message by analysing which characters appear most often in the cipher text
+Kasiski attack: When using polyalphabetic stream ciphers one can work out the length of the pass-phrase by working looking for repetitions. Then a frequency attack can happen
 Shannon's principles of confusion and diffusion:
   Confusion: The relationship between key and ciphertext should be complex
-  Diffusion: The relationship between plaintext and ciphertext should be complex
+  Diffusion: Plaintext fragments must be spread out over large parts of the cipher text
 One time pad: Use a key which is at least as long as the message so there are no repetitions. This way no frequency attacks can happen
 Electronic Code Block: Each block is encoded independently using the same key
 Cipher Block Chaining: Each block is encoded with the hash of the previous block

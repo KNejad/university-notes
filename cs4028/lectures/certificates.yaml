@@ -10,3 +10,9 @@ Expiry:
   Shell model: Only issue certificates valid until the CAs expiration date
   Chain model: The issuers certificate only had to be valid at the time of signing
 Simple public-key infrastructure: Certificates bind keys directly to attributes
+Certificate revocation lists: A list sent out at regular intervals to revoke signed certificates
+TLS handshake:
+  - Client sends: Client cryptographic suites (in preferred order) and a random number
+  - Server sends: Cryptographic suite, Server certificate and the random number
+  - Client sends: An RSA encrypted secret encrypted with servers public key
+  - Symmetric encrypted session begins
