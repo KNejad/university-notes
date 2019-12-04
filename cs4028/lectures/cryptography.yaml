@@ -51,6 +51,6 @@ RSA:
     – Compute public n = p*q
     – Choose a public encryption exponent e (prime)
     - Compute φ = (p - 1)*(q - 1).
-    - Compute d ≡ so that e*d = 1 mod φ (Note this is congruence. Not equality)
+    - Compute d so that e*d ≡ 1 mod φ (Note this is congruence. Not equality)
   Encryption: c = m^e mod n
   Decryption: m = c^d mod n
