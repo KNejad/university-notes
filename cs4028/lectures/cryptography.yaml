@@ -17,11 +17,37 @@ One time pad: Use a key which is at least as long as the message so there are no
 Electronic Code Block: Each block is encoded independently using the same key
 Cipher Block Chaining: Each block is encoded with the hash of the previous block
 Trapdoor function: A function for which the inverse can be computed only with a secret key
-Discrete logarithm problem: A computationally hard problem which is the foundation of many encryptions. Namely, it is hard to compute x given g^x
+Discrete logarithm problem: A computationally hard problem which is the foundation of many encryptions. Namely, it is hard to compute x given g^x mod p
+Perfect forward secrecy: An unauthenticated key exchange where disclosure of a long-term secret key does not compromise the security of the keys from earlier runs
 Diffie-Hellman Key Exchange:
   Description: A method for two parties to securely exchange keys
+  Man-in-the-middle vulnerability: Since there is no encryption to begin with, it is vulnerable to a man-in-the-middle attack
+  Anonymous Diffie-Hellman: The basic Diffie-Hellman protocol without authentication
+  Fixed Diffie-Hellman: Embeds the server's public parameter in the certificate
+  Ephemeral Diffie-Hellman: Each run of the protocol uses a different, signed public key
   Steps:
     - Both parties agree on a public large prime number and small integer (p, g)
     - Each party generates a large secret integer (a,b)
     - Each party performs a calculation with the above data. The result is the public key (A = g^a mod p) (same for B)
     - Using the public key and the secret integer, each party can calculate the same private key (k = A^b mod p)
+Elgamal:
+  Encryption:
+    - A chooses a prime (p), a small integer (g) and a private key (a)
+    - A shares their public key (p, g, g^a)
+    - B chooses a private k such that 1 ≤ k ≤ p-2 at random
+    - Compute G = g^k
+    - Compute H = m*(g^a)^k .
+    - Send ciphertext (G,H) to A.
+  Decryption:
+    - Y = G^(p-1-a)
+    - m = Y*H
+RSA:
+  Congruence: If two numbers b and c have the property that their difference b-c is integrally divisible by a number m. Symbolised by triple-equal sign mod m (b ≡ c (mod m))
+  Key generation:
+    – Pick two large, secret, prime numbers p, q
+    – Compute public n = p*q
+    – Choose a public encryption exponent e (prime)
+    - Compute φ = (p - 1)*(q - 1).
+    - Compute d ≡ so that e*d = 1 mod φ (Note this is congruence. Not equality)
+  Encryption: c = m^e mod n
+  Decryption: m = c^d mod n
