@@ -14,6 +14,8 @@ Shannon's principles of confusion and diffusion:
   Confusion: The relationship between key and ciphertext should be complex
   Diffusion: The relationship between plaintext and ciphertext should be complex
 One time pad: Use a key which is at least as long as the message so there are no repetitions. This way no frequency attacks can happen
+Electronic Code Block: Each block is encoded independently using the same key
+Cipher Block Chaining: Each block is encoded with the hash of the previous block
 Trapdoor function: A function for which the inverse can be computed only with a secret key
 Discrete logarithm problem: A computationally hard problem which is the foundation of many encryptions. Namely, it is hard to compute x given g^x
 Diffie-Hellman Key Exchange:

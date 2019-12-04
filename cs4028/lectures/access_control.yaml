@@ -1,6 +1,18 @@
 Identity federation: Using credentials from another organisation to gain access (e.g. sign in with Google feature)
 Discretionary access control: Define an owner for each resource. Control is at the discretion of the owner
 Mandatory access control: A system wide policy grants access
+Group: A collection of users who share a set of permissions. Permissions change frequently
+Role: A set of permissions for a given period of time. Multiple users can share a role. Permissions change infrequently
+Identity-based access control: Access is granted based on the users identities
+Attribute-based access control: Access is granted based on the users attributes
 Implementations of access control:
   - Capabilities: For each subject, keep a list of its access rights
   - Access control lists: For each object, keep a list of the access rights to it
+Windows access control model:
+  Access tokens: Contain information about a logged-on user. Every process which executes on behalf of the user will have this token
+  Security identifiers: Contains privileges over OS resources and tasks. They are linked to a user
+  Security descriptors: Contain the security information that protects a securable object.
+  System access control list: Controls how the system audits attempts to access an object
+  AccessCheck: Checks if a discretionary access control list exists for a resource, if it does not it grants access. Otherwise it assesses the DACL from top to bottom and grants permission if appropriate
+  Mandatory Integrity Control: Low privileges granted to downloaded files
+  Dynamic Access Control: Allows admins to specify access controls
