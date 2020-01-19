@@ -32,7 +32,7 @@ Diffie-Hellman Key Exchange:
     - Both parties agree on a public large prime number and small integer (p, g)
     - Each party generates a large secret integer (a,b)
     - Each party performs a calculation with the above data. The result is the public key (A = g^a mod p) (same for B)
-    - Using the public key and the secret integer, each party can calculate the same private key (k = A^b mod p)
+    - Using the public key and the secret integer, each party can calculate the same private key (k = B^a mod p)
 Elgamal:
   Encryption:
     - A chooses a prime (p), a small integer (g) and a private key (a)
